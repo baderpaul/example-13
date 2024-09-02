@@ -1,0 +1,13 @@
+.DS_Store
+.idea
+.history/
+public/fileadmin/
+public/typo3temp/
+public/typo3conf/
+public/packages/setup_package/Resources/Private/Scss/.sass-cache
+var/
+!/vendor/
+/vendor/*
+!/vendor/techdivision/
+composer.json
+composer.lock

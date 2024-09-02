@@ -1,0 +1,29 @@
+base: 'http://example-13.ddev.site/'
+dependencies:
+  - typo3/fluid-styled-content
+  - t3example/setup-package
+languages:
+  -
+    title: Deutsch
+    enabled: true
+    locale: de-DE
+    hreflang: de-DE
+    base: /
+    websiteTitle: 'Example T3-13 De'
+    navigationTitle: Deutsch
+    flag: de
+    languageId: 0
+  -
+    title: English
+    enabled: true
+    languageId: 1
+    base: /en/
+    locale: en_US.UTF-8
+    navigationTitle: English
+    flag: gb
+    hreflang: ''
+    websiteTitle: 'Example T3-13 En'
+    fallbackType: strict
+    fallbacks: ''
+rootPageId: 1
+websiteTitle: Example T3-13
