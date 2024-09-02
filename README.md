@@ -4,7 +4,7 @@ Get going quickly with TYPO3 CMS.
 
 ## Prerequisites
 
-* PHP 8.2
+* PHP 8.3
 * [Composer](https://getcomposer.org/download/)
 
 ## Quickstart
