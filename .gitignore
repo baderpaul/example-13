@@ -8,6 +8,6 @@ public/packages/setup_package/Resources/Private/Scss/.sass-cache
 var/
 !/vendor/
 /vendor/*
-!/vendor/techdivision/
+!/vendor/t3example/
 composer.json
 composer.lock
