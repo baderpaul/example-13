@@ -1,0 +1,47 @@
+page.headerData.8 = TEXT
+page.headerData.8.value (
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900&display=optional" rel="stylesheet">
+    <link rel="manifest" href = "manifest.json">
+    <meta name="theme-color" content="#444444"/>  
+    <meta name="apple-mobile-web-app-capable" content="yes">  
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+    <meta name="apple-mobile-web-app-title" content="ebusiness PWA"> 
+    <meta name="msapplication-TileImage" content="setup_package/Resources/Public/Icons/Pwa/apple-icon-144x144.png">  
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+ )
+
+page.headerData.10 < lib.preConnect
+#page.headerData.11 < lib.preLoad
+
+
+//page.headerData.13 < lib.preImage
+page.includeCSS {
+    lightbox = EXT:{$extKey}/Resources/Public/Vendor/glightbox/dist/css/glightbox.min.css
+    themestyle = EXT:{$extKey}/Resources/Public/Styles/StyleSheet.css
+    themestyle {
+        forceOnTop = 1
+        media = all
+    }   
+}
+
+page.includeJSFooter {
+    bootstrap = EXT:{$extKey}/Resources/Public/Vendor/bootstrap/dist/js/bootstrap.bundle.js
+    bootstrap.excludeFromConcatenation = 1
+    bootstrap.defer= 1
+    mobiledropdown = EXT:{$extKey}/Resources/Public/Vendor/metismenujs/dist/metismenujs.js
+    mobiledropdown.defer = 1
+    lazysizes = https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js
+    lazysizes.excludeFromConcatenation = 1
+    lazysizes.external = 1
+    lazysizes.defer = 1
+    javascriptfooter = EXT:{$extKey}/Resources/Public/JavaScript/addToFooter.js
+    javascriptfooter.defer = 1
+    lightbox = EXT:{$extKey}/Resources/Public/Vendor/glightbox/dist/js/glightbox.min.js
+    lightbox.defer = 1
+}
+
+[tree.pagelayout == "pagets__default_onepage"]
+    page.includeJSFooter.mobiledropdown >
+[END]

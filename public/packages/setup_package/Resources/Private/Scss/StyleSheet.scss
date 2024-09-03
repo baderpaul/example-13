@@ -1,0 +1,67 @@
+@import "Setup";
+
+// bootstrap5 Core CSS
+@import "../../Public/Contrib/bootstrap/scss/root";
+@import "../../Public/Contrib/bootstrap/scss/reboot";
+@import "../../Public/Contrib/bootstrap/scss/type";
+@import "../../Public/Contrib/bootstrap/scss/images";
+@import "../../Public/Contrib/bootstrap/scss/containers";
+@import "../../Public/Contrib/bootstrap/scss/grid";
+//@import "../../Public/Contrib/bootstrap/scss/tables";
+@import "../../Public/Contrib/bootstrap/scss/forms";
+@import "../../Public/Contrib/bootstrap/scss/buttons";
+
+// bootstrap5 Components
+@import "../../Public/Contrib/bootstrap/scss/transitions";
+@import "../../Public/Contrib/bootstrap/scss/dropdown";
+//@import "../../Public/Contrib/bootstrap/scss/button-group";
+@import "../../Public/Contrib/bootstrap/scss/nav";
+@import "../../Public/Contrib/bootstrap/scss/navbar";
+@import "../../Public/Contrib/bootstrap/scss/card";
+@import "../../Public/Contrib/bootstrap/scss/accordion";
+//@import "../../Public/Contrib/bootstrap/scss/breadcrumb";
+@import "../../Public/Contrib/bootstrap/scss/pagination";
+//@import "../../Public/Contrib/bootstrap/scss/badge";
+//@import "../../Public/Contrib/bootstrap/scss/alert";
+//@import "../../Public/Contrib/bootstrap/scss/progress";
+@import "../../Public/Contrib/bootstrap/scss/list-group";
+@import "../../Public/Contrib/bootstrap/scss/close";   
+//@import "../../Public/Contrib/bootstrap/scss/toasts";
+//@import "../../Public/Contrib/bootstrap/scss/modal";
+//@import "../../Public/Contrib/bootstrap/scss/tooltip";
+//@import "../../Public/Contrib/bootstrap/scss/popover";
+@import "../../Public/Contrib/bootstrap/scss/carousel";
+//@import "../../Public/Contrib/bootstrap/scss/spinners";
+//@import "../../Public/Contrib/bootstrap/scss/offcanvas";
+//@import "../../Public/Contrib/bootstrap/scss/placeholders";
+@import "../../Public/Contrib/bootstrap/scss/helpers";
+@import "../../Public/Contrib/bootstrap/scss/utilities/api";
+
+// ##### Custom #####
+//@import "CustomStyles/Utilities/FluidStyledContent";
+
+// Custom - Navs
+@import "CustomStyles/Navigations/Mega";
+//@import "CustomStyles/Navigations/SidebarMenu";
+//@import "CustomStyles/Navigations/ServiceNavigation";
+//@import "CustomStyles/Navigations/SocialMedia";
+
+// Custom - Components
+//@import "CustomStyles/Components/Slider";
+//@import "CustomStyles/Components/Accordion";
+//@import "CustomStyles/Components/Tabs";
+//@import "CustomStyles/Components/Buttons";
+//@import "CustomStyles/Components/IconTeaser";
+//@import "CustomStyles/Components/KeSearch";
+
+// Custom - Widgets 
+//@import "CustomStyles/Widgets/CookieConsent"; 
+//@import "CustomStyles/Widgets/ScrollToTop";
+//@import "CustomStyles/Widgets/GLightbox";
+
+// Utilities
+@import "CustomStyles/Utilities/Typography";
+//@import "CustomStyles/Utilities/Animation";
+//@import "CustomStyles/Utilities/Helper";
+//@import "CustomStyles/Utilities/Links";
+//@import "CustomStyles/Utilities/Browserhacks";

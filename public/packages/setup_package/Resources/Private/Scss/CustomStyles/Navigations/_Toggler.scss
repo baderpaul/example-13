@@ -1,0 +1,44 @@
+@include media-breakpoint-down(lg) {
+  .navbar-toggler {
+    top: 1.25rem;
+    right: .9375rem;
+  }
+
+  .navbar-toggler .toggle-button .icon-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    border-radius: 1px;
+    transition: all 0.3s;
+    + .icon-bar {
+      margin-top: 4px;
+    }
+  }
+  
+  .navbar-toggler[aria-expanded="false"] .toggle-button {
+    padding: 0;
+    .top-bar {
+      transform: rotate(0);
+    }
+    .middle-bar {
+      opacity: 1;
+    }
+    .bottom-bar {
+      transform: rotate(0);
+    }
+  }
+
+  .navbar-toggler[aria-expanded="true"] .toggle-button {
+    .top-bar {
+      transform: rotate(45deg);
+      transform-origin: 20% 20%;
+    }
+    .middle-bar {
+      opacity: 0;
+    }
+    .bottom-bar {
+      transform: rotate(-45deg);
+      transform-origin: 10% 90%;
+    }
+  }
+}

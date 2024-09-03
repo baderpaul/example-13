@@ -1,0 +1,38 @@
+config {
+    no_cache = 1
+    admPanel = 0
+    #frontend_editing = 0
+
+    doctype = html5
+    #htmlTag.attributes.class = h-100
+
+    #removeDefaultJS = external
+    removeDefaultCss = 1
+    inlineStyle2TempFile = 0
+    moveJsFromHeaderToFooter = 0
+    concatenateCss = 1
+    concatenateJs = 0
+    compressCss = 1
+    compressJs = 0
+
+    disablePreviewNotification = 1
+    disablePrefixComment = 1
+
+    typolinkEnableLinksAcrossDomains = 0
+
+    domainTarget = _top
+    intTarget = _self
+    extTarget = _blank
+
+    spamProtectEmailAddresses = -2
+    spamProtectEmailAddresses_lastDotSubst = (at)
+
+    sendCacheHeaders = 1
+    cache_period = 7776000
+
+    headerComment = {$td.configHeaderComment}
+
+    // Errorhandling
+    contentObjectExceptionHandler = 0
+
+}

@@ -1,0 +1,144 @@
+@import "Toggler";
+@import "MobileDropdown";
+
+@include media-breakpoint-up(lg) {
+  .toggle-menu {
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: $primary;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+      }
+      &:hover::after {
+        transform: scaleX(1);
+        transform-origin: bottom left;
+      }
+    }
+    font-size: $font-size-nav-xl;
+    ul {
+      display: none;
+      font-size: $font-size-nav-sub;
+      animation: fadeIn 900ms;
+      a {
+        font-weight: 900;
+        &:hover {
+          &:hover {
+            background-color: $primary;
+            color: $white;
+            text-decoration: none;
+          }
+          &::after {
+            transform: none;
+            transition: none;
+            background-color: $white;
+          }
+          &:hover::after {
+            transform: none;
+          }
+        }
+      }
+      
+      ul {
+        .dropdown-toggle {
+          display: none !important;
+        }
+      a {
+        text-decoration: none;
+        font-weight: 400;
+        &::after {
+          transform: none;
+          transition: none;
+          background-color: $white;
+        }
+        &:hover::after {
+          transform: none;
+        }
+        
+      }
+    }
+    }
+  .dropdown-toggle {
+        &:hover {
+          cursor: pointer;
+        }
+        &::after {
+          vertical-align: 4px;
+        }
+      }
+  }
+  @include media-breakpoint-up(xl) {
+    .toggle-menu {
+      font-size: $font-size-nav;
+  }
+  }
+  .toggle-menu .mm-collapse:not(.mm-show) {
+    background-color: rgba-white;
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    z-index: $zindex-popover;
+  }
+
+  .toggle-menu li:hover ul.mm-collapse:not(.mm-show) {
+    display: flex;
+    padding: 20px 0 30px 0 !important;
+    li {
+      display: inline-block;
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+        &::after {
+          transform: none;
+          transition: none;
+          background-color: $white;
+        }
+        &:hover::after {
+          transform: none;
+        }
+      }
+      ul {
+        border-top: none;
+        flex-direction: column;
+        position: relative;
+        padding: 0 !important;
+        li {
+          @extend .px-lg-0
+        }
+        ul {
+          display: none;
+        } 
+      }
+    }
+    .dropdown-toggle:after {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .toggle-menu li:hover ul.mm-collapse:not(.mm-show) {
+    padding: 0 350px 30px 350px !important;
+  }
+}
+
+// overrite margin right for section nav items
+.section-nav.toggle-menu {
+  .list-inline-item {
+  
+    &:not(:last-child) {
+      margin-right: 1.875rem;
+    }
+  }
+}

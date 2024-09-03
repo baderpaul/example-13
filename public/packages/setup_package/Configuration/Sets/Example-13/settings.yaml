@@ -1,12 +1,24 @@
+td:
+    #theme- or packagename - used in some typoscript files
+    themeName: setup_package
+    # company name
+    companyName: Business Inc. All rights Reserved
+    configHeaderComment: Technische Umsetzung - Business Inc. All rights Reserved
 styles:
   templates:
-    #layoutRootPath: EXT:site_package/Resources/Private/Layouts/ContentElements
-    #partialRootPath: EXT:site_package/Resources/Private/Partials/ContentElements
-    #templateRootPath: EXT:site_package/Resources/Private/Templates/ContentElements
+    layoutRootPath: EXT:setup_package/Resources/Private/Templates/FluidStyledContent/Layouts/
+    templateRootPath: EXT:setup_package/Resources/Private/Templates/FluidStyledContent/Templates/
+    partialRootPath: EXT:setup_package/Resources/Private/Templates/FluidStyledContent/Partials/  
   content:
     textmedia:
+    image:
+      lazyLoading: lazyload
       maxW: 1200
       maxWInText: 600
       linkWrap:
         lightboxEnabled: true
-        lightboxCssClass: lightbox
+        lightboxCssClass: glightbox
+        lightboxRelAttribute: noopener
+    links:
+      target:
+      extTarget: _blank

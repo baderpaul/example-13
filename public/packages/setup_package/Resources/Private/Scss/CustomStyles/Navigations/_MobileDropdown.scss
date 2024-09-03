@@ -1,0 +1,67 @@
+@import "Toggler";
+@include media-breakpoint-down(lg) {
+
+   .navbar {
+        position: absolute;
+        z-index: $zindex-dropdown;
+        width: 100%;
+        background-color: $white;
+    }
+
+    .toggle-menu {
+        li {
+            position: relative;
+            &:last-child,
+            li {
+                border: none;
+            }
+        }
+
+        a {
+            &:hover {
+                text-decoration: $link-decoration;
+            }
+        }
+    }
+
+    .toggle-menu .mm-collapse:not(.mm-show) {
+        display: none;
+    }
+
+    .toggle-menu .mm-collapsing {
+        position: relative;
+        height: 0;
+        overflow: hidden;
+        transition-timing-function: ease;
+        transition-duration: 0.5s;
+        transition-property: height, visibility;
+    }
+
+    .toggle-menu .dropdown-toggle {
+        height: 1.25rem;
+        position: absolute;
+        right: 0;
+        width: 1.25rem;
+        line-height: $line-height-sm;
+    }
+
+    .toggle-menu .dropdown-toggle:after {
+        display: block;
+        border: none;
+        font-size: $font-size-icon;
+        text-align: center;
+    }
+
+    .toggle-menu .dropdown-toggle[aria-expanded="false"]::after {
+        content: '+';
+    }
+
+    .toggle-menu .mm-active .dropdown-toggle[aria-expanded="true"]::after {
+        content: '-';
+    }
+
+    .navbar-collapse.collapse.show + .tx-kesearch-pi1 {
+        width: 100%;
+    }
+}
+

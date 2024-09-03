@@ -1,0 +1,41 @@
+page = PAGE
+page.shortcutIcon = EXT:{$extKey}/Resources/Public/Icons/favicon.ico
+page.bodyTagAdd = class="d-block mb-1 p-0 position-relative h-100"
+page {
+    10 = PAGEVIEW
+    10 {
+        paths {
+            100 = EXT:{$extKey}/Resources/Private/Templates/
+        }
+        variables {
+            colPos0 < styles.content.get
+            colPos0.select.where = colPos = 0
+
+            colPos1 < styles.content.get
+            colPos1.select.where = colPos = 1
+
+            colPos10 < styles.content.get
+            colPos10.select.where = colPos = 10
+            colPos10.slide = -1
+
+            colPos11 < styles.content.get
+            colPos11.select.where = colPos = 11
+            colPos11.slide = -1
+
+            colPos12 < styles.content.get
+            colPos12.select.where = colPos = 12
+            colPos12.slide = -1
+
+            companyName = TEXT
+            companyName.value = {$td.companyName}
+            companyName.insertData = 1
+
+            extKey = TEXT
+            extKey.value = {$td.themeName}
+
+            parentPageTitle = TEXT
+            parentPageTitle.data = levelfield:-1:title
+
+        }
+    }
+}

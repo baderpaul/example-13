@@ -1,0 +1,7 @@
+  # CSP
+    additionalHeaders.10.header = Strict-Transport-Security: max-age=31536000; includeSubDomains
+    additionalHeaders.20.header = X-Powered-By: nothing
+    additionalHeaders.30.header = Referrer-Policy: strict-origin-when-cross-origin
+    additionalHeaders.40.header = X-XSS-Protection: 1; mode=block
+    additionalHeaders.50.header = Feature-Policy: geolocation 'none'; microphone 'none'; camera 'none'
+    additionalHeaders.60.header = X-Frame-Options: deny
