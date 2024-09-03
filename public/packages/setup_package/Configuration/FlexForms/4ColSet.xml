@@ -1,0 +1,57 @@
+<T3DataStructure>
+    <ROOT >
+        <type>array</type>
+        <el >
+            <columnType >
+                <TCEforms >
+                    <label>LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:choose-grid</label>
+                    <config >
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <items >
+                            <numIndex index="0" >
+                                <numIndex index="0">1:1:1:1</numIndex>
+                                <numIndex index="1">cols-1-1-1-1</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </columnType>
+            <set-grid-frame>
+                <TCEforms>
+                    <label>LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:set-grid-frame</label>
+                    <config>
+                        <type>check</type>
+                    </config>
+                </TCEforms>
+            </set-grid-frame>
+             <backgroundcolor>
+                <TCEforms>
+                    <label>LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:set-backgroundcolor</label>
+                    <config>
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <items>
+                         <numIndex index="0" >
+                                <numIndex index="0">LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:no-bg-color</numIndex>
+                                <numIndex index="1"> </numIndex>
+                            </numIndex>
+                            <numIndex index="1" >
+                                <numIndex index="0">LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:bg-color-blue</numIndex>
+                                <numIndex index="1">1</numIndex>
+                            </numIndex>
+                            <numIndex index="2" >
+                                <numIndex index="0">LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:bg-color-gray</numIndex>
+                                <numIndex index="1">2</numIndex>
+                            </numIndex>
+                            <numIndex index="3" >
+                                <numIndex index="0">LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:bg-color-light</numIndex>
+                                <numIndex index="1">3</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </backgroundcolor>   
+        </el>
+    </ROOT>
+</T3DataStructure>

@@ -1,0 +1,123 @@
+<T3DataStructure>
+    <meta>
+        <langDisable>1</langDisable>
+    </meta>
+    <sheets>
+    <sDEF>
+    <ROOT>
+        <type>array</type>
+        <el>
+            <backgroundcolor>
+                <TCEforms>
+                    <label>LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:set-backgroundcolor</label>
+                    <config>
+                        <type>select</type>
+                        <renderType>selectSingle</renderType>
+                        <items>
+                         <numIndex index="0" >
+                                <numIndex index="0">LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:no-bg-color</numIndex>
+                                <numIndex index="1"> </numIndex>
+                            </numIndex>
+                            <numIndex index="1" >
+                                <numIndex index="0">LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:bg-color-blue</numIndex>
+                                <numIndex index="1">1</numIndex>
+                            </numIndex>
+                            <numIndex index="2" >
+                                <numIndex index="0">LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:bg-color-gray</numIndex>
+                                <numIndex index="1">2</numIndex>
+                            </numIndex>
+                            <numIndex index="3" >
+                                <numIndex index="0">LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:bg-color-light</numIndex>
+                                <numIndex index="1">3</numIndex>
+                            </numIndex>
+                        </items>
+                    </config>
+                </TCEforms>
+            </backgroundcolor>
+<container-bg-image>
+                        <TCEforms>
+                            <label>LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:background-image</label>
+                            <config>
+                                <type>inline</type>
+                                <maxitems>1</maxitems>
+                                <foreign_table>sys_file_reference</foreign_table>
+                                <foreign_table_field>tablenames</foreign_table_field>
+                                <foreign_label>uid_local</foreign_label>
+                                <foreign_sortby>sorting_foreign</foreign_sortby>
+                                <foreign_field>uid_foreign</foreign_field>
+                                <foreign_selector>uid_local</foreign_selector>
+                                <foreign_selector_fieldTcaOverride>
+                                    <config>
+                                        <appearance>
+                                            <elementBrowserType>file</elementBrowserType>
+                                            <elementBrowserAllowed>jpg,jpeg,png,svg,webp</elementBrowserAllowed>
+                                        </appearance>
+                                    </config>
+                                </foreign_selector_fieldTcaOverride>
+                                <foreign_types type="array">
+                                    <numIndex index="0">
+                                        <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,--palette--;;filePalette</showitem>
+                                    </numIndex>
+                                    <numIndex index="2">
+                                        <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,--palette--;;filePalette</showitem>
+                                    </numIndex>
+                                </foreign_types>
+                                <foreign_match_fields>
+                                    <!-- <fieldname>image</fieldname> This is the field name -->
+                                    <fieldname>flexform_imageReference</fieldname>
+                                </foreign_match_fields>
+                                <appearance type="array">
+                                    <newRecordLinkAddTitle>1</newRecordLinkAddTitle>
+                                    <headerThumbnail>
+                                        <field>uid_local</field>
+                                        <height>64</height>
+                                        <width>64</width>
+                                    </headerThumbnail>
+                                    <enabledControls>
+                                        <info>1</info>
+                                        <new>0</new>
+                                        <dragdrop>1</dragdrop>
+                                        <sort>0</sort>
+                                        <hide>1</hide>
+                                        <delete>1</delete>
+                                        <localize>1</localize>
+                                    </enabledControls>
+                                    <createNewRelationLinkTitle>LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:images.addFileReference</createNewRelationLinkTitle>
+                                </appearance>
+                                <behaviour>
+                                    <localizationMode>select</localizationMode>
+                                    <localizeChildrenAtParentLocalization>1</localizeChildrenAtParentLocalization>
+                                </behaviour>
+                                <overrideChildTca>
+                                    <columns type="array">
+                                        <uid_local type="array">
+                                            <config type="array">
+                                                <appearance type="array">
+                                                    <elementBrowserType>file</elementBrowserType>
+                                                    <elementBrowserAllowed>jpg,png,svg,jpeg,webp</elementBrowserAllowed>
+                                                </appearance>
+                                            </config>
+                                        </uid_local>
+                                    </columns>
+                                    <types type="array">
+                                        <numIndex index="2">
+                                            <showitem>--palette--;LLL:EXT:lang/locallang_tca.xlf:sys_file_reference.imageoverlayPalette;imageoverlayPalette,--palette--;;filePalette</showitem>
+                                        </numIndex>
+                                    </types>
+                                </overrideChildTca>
+                            </config>
+                        </TCEforms>
+                    </container-bg-image>
+            <no-bottom-space>
+                <TCEforms>
+                    <label>LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:no-bottom-space</label>
+                    <config>
+                        <type>check</type>
+                    </config>
+                </TCEforms>
+            </no-bottom-space>   
+        </el>
+    </ROOT>
+    </sDEF>
+    </sheets>
+</T3DataStructure>
