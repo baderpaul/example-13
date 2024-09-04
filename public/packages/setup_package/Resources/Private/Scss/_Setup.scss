@@ -1,7 +1,7 @@
 // Bootstrap 5 functions
 @import "../../Public/Contrib/bootstrap/scss/functions";
 // add custom variables overwrite bootstrap variables
-//@import "CustomVariables/Variables";
+@import "CustomVariables/Variables";
 @import "../../Public/Contrib/bootstrap/scss/variables";
 //@import "../../Public/Contrib/bootstrap/scss/variables-dark";
 @import "../../Public/Contrib/bootstrap/scss/maps";

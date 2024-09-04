@@ -1,0 +1,8 @@
+<f:if condition="{media}">
+            <then>                   
+                <f:render partial="Content/Backgroundimage" arguments="{_all}"/>
+            </then>
+            <f:else>
+                <f:render partial="Content/Backgroundimageslide" arguments="{_all}"/>
+            </f:else>                    
+</f:if>

@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+      <div class="position-relative p-0 mb-0 my-0 ar-hd">
+<picture class="top-0 start-0 w-100 h-100">
+    <source srcset="{f:uri.image(image: image, maxWidth: 1600, cropVariant: 'headerdesktop', fileExtension: 'webp')}" media="(min-width: 768px)" >
+    <source srcset="{f:uri.image(image: image, maxWidth: 767, cropVariant: 'headermobile', fileExtension: 'webp')}" media="(max-width: 767px)">
+    <img src="{f:uri.image(image: image, maxWidth: 1280, cropVariant: 'headerdesktop')}" alt="{image.alternative}">
+</picture>
+</div>
+
+<f:asset.css identifier="bgimage" priority="true">.ar-hd {aspect-ratio: 16/9;}@media (min-width: 768px) {.ar-hd {aspect-ratio: 24/7;}}</f:asset.css>
+</html>

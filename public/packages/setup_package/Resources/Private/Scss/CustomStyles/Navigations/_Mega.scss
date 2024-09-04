@@ -24,7 +24,7 @@
         transform-origin: bottom left;
       }
     }
-    font-size: $font-size-nav-xl;
+    font-size: $font-size-nav;
     ul {
       display: none;
       font-size: $font-size-nav-sub;
@@ -141,4 +141,7 @@
       margin-right: 1.875rem;
     }
   }
+}
+.test {
+  color: red;
 }

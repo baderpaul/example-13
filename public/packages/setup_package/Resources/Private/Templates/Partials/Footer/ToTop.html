@@ -1,0 +1,19 @@
+<a id="backtotop" 
+        class="border border-white btn btn-primary d-inline-block scroll-to-top-btn" 
+        aria-label="Scroll to top" 
+        href="#">
+    <i class="bi bi-chevron-up text-white scroll-to-top-link"></i> 
+    <span class="visually-hidden"  aria-hidden="true">Back to Top Button</span>
+</a>
+
+<f:asset.script identifier="scrollbtn">
+    function togtop () {
+      if (window.scrollY >= 100) {
+        document.getElementById("backtotop").classList.add("show-scroll-btn");
+      } else {
+        document.getElementById("backtotop").classList.remove("show-scroll-btn");
+      }
+    }
+    window.addEventListener("scroll", togtop);
+    window.addEventListener("resize", togtop);
+</f:asset.script>

@@ -1,0 +1,51 @@
+    <f:if condition="{menuMainMega}">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav flex-grow-0 flex-lg-grow-1 justify-content-lg-center px-20 px-md-0 mt-20 mt-md-0 toggle-menu metismenu" id="menu">
+            <f:for each="{menuMainMega}" as="mainItem" iteration="i">
+                <li class="px-0 mx-0
+                {f:if(condition: mainItem.active, then:' active')}
+                {f:if(condition: mainItem.current, then:' current')}
+                {f:if(condition:i.isLast, then: 'pe-lg-0', else: 'pe-lg-30')}">
+                
+                    <a href="{mainItem.link}" 
+                       title="{item.data.title}" 
+                       class="d-inline-block px-0 my-10 position-relative text-uppercase">
+                        {mainItem.title}
+                    </a>
+                    <f:if condition="{mainItem.children}">
+                        <span class="d-inline-block dropdown-toggle ms-10" role="button" aria-label="Zeigt das Submenu"></span>
+                        <ul class="bg-white 
+                                   justify-content-lg-center
+                                   list-unstyled 
+                                   align-items-lg-start 
+                                   row 
+                                   g-0 
+                                   row-cols-1 
+                                   row-cols-lg-4 
+                                   mx-0">
+                        <f:render section="submenu" arguments="{submenu: mainItem.children}"/>
+                        </ul>
+                    </f:if>
+                </li>
+            </f:for>
+        </ul>
+        </div>
+</f:if>
+
+<f:section name="submenu">
+        <f:for each="{submenu}" as="subItem">
+            <li class="ps-20 px-lg-10 mx-0 mb-5
+            {f:if(condition:subItem.active, then:' active')}
+            {f:if(condition:subItem.current, then:' current')}">
+                <a href="{subItem.link}" class="d-inline-block d-md-block p-5 text-center" aria-expanded="false">
+                    {subItem.title}
+                </a>
+                <f:if condition="{subItem.children}">
+                    <span class="dropdown-toggle" aria-expanded="false" role="button" aria-labelledby="togglem"></span>
+                    <ul class="list-unstyled ps-15 ps-lg-0 pb-5">
+                    <f:render section="submenu" arguments="{submenu: subItem.children}"/>
+                    </ul>
+                </f:if>
+            </li>
+        </f:for>
+</f:section>

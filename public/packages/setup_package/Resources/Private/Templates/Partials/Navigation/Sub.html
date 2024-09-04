@@ -1,0 +1,38 @@
+<f:if condition="{menuSub}">
+    <ul class="submenu d-none d-lg-block list-unstyled p-0 me-20 lh-lh">
+        <f:for each="{menuSub}" as="mainItem" iteration="i">
+            <li class="border-bottom border-light
+                {f:if(condition: mainItem.children, then:'has-submenu')}
+                {f:if(condition: mainItem.active, then:' active')}
+                {f:if(condition: mainItem.current, then:' current')}
+                {f:if(condition: i.isLast, then:' border-bottom-0 me-0')}">
+                <a href="{mainItem.link}" title="{item.data.title}" class="d-block p-6 ps-12">
+                    {mainItem.title}
+                </a>
+            <f:if condition="{mainItem.children}">
+                <f:render section="submenu" arguments="{submenu: mainItem.children}"/>
+            </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:if>
+
+<f:section name="submenu">
+    <ul class="list-unstyled border-top border-light">
+        <f:for each="{submenu}" as="subItem" iteration="i">
+            <li class="col border-bottom border-light
+            {f:if(condition: subItem.children, then:'has-submenu')}
+            {f:if(condition: subItem.active, then:' active')}
+            {f:if(condition: subItem.current, then:' current')}
+            {f:if(condition: i.isLast, then: 'border-bottom-0 me-0', else: '')}
+            ">
+                <a href="{subItem.link}" class="d-block py-6 ps-36 pe-10" title="{subItem.data.title}">
+                    {subItem.title}
+                </a>
+            <f:if condition="{subItem.children}">
+                <f:render section="submenu" arguments="{submenu: subItem.children}"/>
+            </f:if>
+            </li>
+        </f:for>
+    </ul>
+</f:section>

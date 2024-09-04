@@ -4,5 +4,5 @@ services:
     autoconfigure: true
     public: false
 
-  t3example\setuppackage\:
+  T3example\SetupPackage\:
       resource: '../Classes/*'

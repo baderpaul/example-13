@@ -1,0 +1,34 @@
+<html xmlns:ai="C1\AdaptiveImages\ViewHelpers" xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  data-namespace-typo3-fluid="true">
+<div name="top" class="d-flex flex-column h-100">
+  <header class="py-0 py-lg-5 bg-white {f:if(condition: '{data.backend_layout} == pagets__default_onepage', then: 'fixed-top autohide')}">
+    <div class="container-fluid px-0">
+      <div class="navbar navbar-expand-lg w-100">
+          <div class="container-fluid align-items-start align-items-lg-center justify-content-start justify-content-lg-between px-0" >
+            <f:comment>><f:render partial="Header/Logo" arguments="{_all}"/>   </f:comment>       
+              <f:if condition="{data.backend_layout} == 'pagets__default_onepage'">
+            <f:then>
+              <f:render partial="Navigation/Section" arguments="{_all}" />
+            </f:then>
+            <f:else>
+              <f:render partial="Navigation/Mega" arguments="{_all}" />
+            </f:else>
+          </f:if>
+         <f:comment> <f:cObject typoscriptObjectPath="lib.searchbox" /></f:comment>
+          <f:render partial="Navigation/ResponsiveToggler" arguments="{_all}" />
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container-fluid px-0 mt-70 mt-lg-0 ">
+    <f:if condition="{data.uid} > 1">
+      <f:render partial="Header/Jumbotron" arguments="{_all}" />
+    </f:if>
+    <f:render section="content" />
+    <f:render partial="Footer/FooterInfo" arguments="{_all}" />
+  </div>
+  <footer class="bg-primary text-white d-flex-column text-center mt-auto pt-30">
+    <f:render partial="Footer/Copyright" arguments="{_all}" />
+  </footer>
+</div>
+</html>
