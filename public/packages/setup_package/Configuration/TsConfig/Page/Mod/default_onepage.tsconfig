@@ -1,0 +1,27 @@
+mod {
+    web_layout {
+        allowInconsistentLanguageHandling = 1
+        BackendLayouts {
+            default_onepage {
+                title = LLL:EXT:setup_package/Resources/Private/Language/locallang_be.xlf:be-layout-5
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:setup_package/Resources/Private/Language/locallang_be.xlf:col-main-onepage
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:setup_package/Resources/Public/Icons/SVGs/Active/one-page.svg
+            }
+        }
+    }
+}

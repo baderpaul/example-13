@@ -1,0 +1,127 @@
+tt_content.cols_2 < lib.contentElement
+tt_content.cols_2 {
+    templateName = 2Col
+    templateRootPaths.10 = EXT:setup_package/Resources/Private/Templates/Container/ 
+    dataProcessing {
+        65 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        65 {
+            references {
+                fieldName = image
+                table = tt_content
+            }
+            as = image
+        }
+        200 = B13\Container\DataProcessing\ContainerProcessor
+        200 {
+            colPos = 200
+            as = header2col
+        }
+        201 = B13\Container\DataProcessing\ContainerProcessor
+        201 {
+            colPos = 201
+            as = childrenLeft
+        }
+        202 = B13\Container\DataProcessing\ContainerProcessor
+        202 {
+            colPos = 202
+            as = childrenRight
+        }
+        1002 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+        1002 {
+            fieldName = pi_flexform
+            as = flexform
+        }
+    }
+}
+
+tt_content.cols_3 < tt_content.cols_2
+tt_content.cols_3 {
+    templateName = 3Col
+    dataProcessing {
+        300 = B13\Container\DataProcessing\ContainerProcessor
+        300 {
+            colPos = 300
+            as = header3col
+        }
+        301 = B13\Container\DataProcessing\ContainerProcessor
+        301 {
+            colPos = 301
+            as = childrenLeft
+        }
+        302 = B13\Container\DataProcessing\ContainerProcessor
+        302 {
+            colPos = 302
+            as = childrenCenter
+        }
+        303 = B13\Container\DataProcessing\ContainerProcessor
+        303 {
+            colPos = 303
+            as = childrenRight
+        }
+        1003 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+        1003 {
+            fieldName = pi_flexform
+            as = flexform
+        }
+    }
+}
+
+tt_content.cols_4 < tt_content.cols_2
+tt_content.cols_4 {
+    templateName = 4Col
+    dataProcessing {
+        400 = B13\Container\DataProcessing\ContainerProcessor
+        400 {
+            colPos = 400
+            as = header4col
+        }
+        401 = B13\Container\DataProcessing\ContainerProcessor
+        401 {
+            colPos = 401
+            as = childrenLeft
+        }
+        402 = B13\Container\DataProcessing\ContainerProcessor
+        402 {
+            colPos = 402
+            as = childrenCenterLeft
+        }
+        403 = B13\Container\DataProcessing\ContainerProcessor
+        403 {
+            colPos = 403
+            as = childrenCenterRight
+        }
+        404 = B13\Container\DataProcessing\ContainerProcessor
+        404 {
+            colPos = 404
+            as = childrenRight
+        }
+        1004 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+        1004 {
+            fieldName = pi_flexform
+            as = flexform
+        }
+    }
+}
+
+
+tt_content.section < tt_content.cols_2
+tt_content.section {
+    templateName = Section
+    dataProcessing {
+        500 = B13\Container\DataProcessing\ContainerProcessor
+        500 {
+            colPos = 500
+            as = header1col
+        }
+        501 = B13\Container\DataProcessing\ContainerProcessor
+        501 {
+            colPos = 501
+            as = sectionWrapper
+        }
+        1005 = TYPO3\CMS\Frontend\DataProcessing\FlexFormProcessor
+        1005 {
+            fieldName = pi_flexform
+            as = flexform
+        }
+    }
+}

@@ -1,0 +1,29 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+      data-namespace-typo3-fluid="true">
+      <ai:ratioBox file="{file}" mediaQueries="{mobile: '(max-width:767px)', default: ''}">
+<picture class="loader">
+      <source media="(max-width: 767px)"
+              data-srcset="{ai:getSrcset(file:file, cropVariant: 'mobile', widths:'360,480,580,660,768', debug:debug)}"
+              srcset="{ai:placeholder.svg(file: file, cropVariant: 'mobile')} 1w"
+              sizes='{sizesAttr}'
+              data-sizes="auto"
+      >
+      <f:media file="{file}"
+               class="image-embed-item lazyload img-responsive"
+               width="{dimensions.width}"
+               alt="{file.alternative}"
+               title="{file.title}"
+               data="{
+                  'img-debug':'{jsdebug}',
+                  'sizes': 'auto',
+                  'srcset': '{ai:getSrcset(file:file, widths:\'360,480,580,660,768,992,1024,1280,1440,1920\', debug:debug)}'
+               }"
+               additionalAttributes="{
+                  'sizes':'100vw',
+                  'srcset': '{ai:placeholder.svg(file: file)} 1w'
+               }"
+      />
+  </picture>
+</ai:ratioBox>
+
+</html>

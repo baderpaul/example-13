@@ -1,0 +1,27 @@
+mod {
+    web_layout {
+        BackendLayouts {
+            default {
+                title = LLL:EXT:setup_package/Resources/Private/Language/locallang_be.xlf:be-layout-1
+                config {
+                    backend_layout {
+                        colCount = 1
+                        rowCount = 1
+                        rows {
+                            1 {
+                                columns {
+                                    1 {
+                                        name = LLL:EXT:setup_package/Resources/Private/Language/locallang_be.xlf:col-main
+                                        colspan = 3
+                                        colPos = 0
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                icon = EXT:setup_package/Resources/Public/Icons/SVGs/Active/1-col-page.svg
+            }
+        }
+    }
+}

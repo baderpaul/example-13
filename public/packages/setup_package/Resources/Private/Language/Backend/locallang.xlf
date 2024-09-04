@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+    <file source-language="en" datatype="plaintext" original="messages" date="2013-02-24T16:42:57Z" product-name="typo3starter_package">
+        <header/>
+        <body>
+
+        <!-- **************************************
+                        be layout cols
+        ************************************** -->
+
+            <trans-unit id="col-slider">
+                <source>Slider</source>
+            </trans-unit>
+
+            <trans-unit id="col-right">
+            <source>Rechte Spalte</source>
+            </trans-unit>
+
+            <trans-unit id="col-left">
+            <source>Linke Spalte</source>
+            </trans-unit>
+
+            <trans-unit id="col-main">
+            <source>Hauptinhaltsbereich</source>
+            </trans-unit>
+
+            <trans-unit id="col-main-contact">
+                <source>Kontaktbereich</source>
+            </trans-unit>
+
+            <trans-unit id="col-main-maps">
+                <source>Googlemaps einfügen</source>
+            </trans-unit>
+
+            <trans-unit id="col-main-social-media">
+                <source>Socialmediaicons</source>
+            </trans-unit>
+
+            <trans-unit id="col-main-footer-nav">
+                <source>Navigation im Footer</source>
+            </trans-unit>
+
+            <trans-unit id="col-main-service-nav">
+                <source>Servicenavigation im Footer wird über das Template befüllt</source>
+            </trans-unit>
+
+            <trans-unit id="col-main-copyright">
+                <source>Copyright wird über das Template befüllt</source>
+            </trans-unit>
+
+            <trans-unit id="image-gallery">
+            <source>Slider mit Thumbnav + Video</source>
+            </trans-unit>
+
+            <trans-unit id="col-main-onepage">
+            <source>Inhaltsbereich Landingpage / Es können einzelne Sections angelegt werden.</source>
+            </trans-unit>
+
+            <trans-unit id="col-main-onepage-logo">
+            <source>Bereich Linke Seite One Page nicht Editierbar</source>
+            </trans-unit>
+
+            <trans-unit id="col-main-onepage-navigation">
+            <source>Bereich für CE Menu - OnePageMenu wählen</source>
+            </trans-unit>
+
+        <!-- **************************************
+                        be layout names
+        ************************************** -->
+
+            <trans-unit id="be-layout-1">
+            <source>1 Spalte (eg. Startseite)</source>
+            </trans-unit>
+
+            <trans-unit id="be-layout-2">
+            <source>2 Spalten (Main - Rechts)</source>
+            </trans-unit>
+
+            <trans-unit id="be-layout-3">
+            <source>3 Spalten (Links - Main - Rechts)</source>
+            </trans-unit>
+
+            <trans-unit id="be-layout-4">
+            <source>2 Spalten (Links - Main)</source>
+            </trans-unit>
+
+            <trans-unit id="be-layout-5">
+            <source>One Page</source>
+            </trans-unit>
+
+        <!-- **************************************
+                        grid layout cols
+        ************************************** -->
+
+            <trans-unit id="grid-1">
+            <source>Spalte 1</source>
+            </trans-unit>
+
+            <trans-unit id="grid-2">
+            <source>Spalte 2</source>
+            </trans-unit>
+
+            <trans-unit id="grid-3">
+            <source>Spalte 3</source>
+            </trans-unit>
+
+            <trans-unit id="grid-4">
+            <source>Spalte 4</source>
+            </trans-unit>
+
+            <trans-unit id="section">
+            <source>Einzelne Section</source>
+            </trans-unit>
+
+<!--            
+            <trans-unit id="grid-accordion-container">
+            <source>Behälter für einzelne Accordion Elemente</source>
+            </trans-unit>
+
+            <trans-unit id="grid-tab-container">
+            <source>Bereich für einzelne Tab Elemente</source>
+            </trans-unit>
+
+            <trans-unit id="grid-tab-description">
+            <source>Ein Tabelement das mit CE befüllt wird.</source>
+            </trans-unit>
+
+            <trans-unit id="grid-tabs-description">
+            <source>Ein Container der mit Tabelementen befüllt wird.</source>
+            </trans-unit>
+
+            <trans-unit id="grid-tabs-container">
+            <source>Bereich für einzelne CE werden innerhalb eines Tabs angezeigt.</source>
+            </trans-unit>
+
+            <trans-unit id="grid-onepage-section">
+            <source>Behälter für OnePage Section</source>
+            </trans-unit>
+
+            <trans-unit id="grid-onepage-section-background">
+            <source>Behälter für OnePage Section mit Hintergrundbild</source>
+            </trans-unit>
+
+         **************************************
+                        grid layout names
+        ************************************** 
+
+            <trans-unit id="grid-2-col-title">
+            <source>2 Spalten Grid</source>
+            </trans-unit>
+
+            <trans-unit id="grid-3-col-title">
+            <source>3 Spalten Grid</source>
+            </trans-unit>
+
+            <trans-unit id="grid-4-col-title">
+            <source>4 Spalten Grid</source>
+            </trans-unit>
+
+            <trans-unit id="grid-section-title">
+            <source>Sectionbereich für Landingpage</source>
+            </trans-unit>
+
+            <trans-unit id="grid-2-col-70-30">
+            <source>2 Spalten Grid 70%-30%</source>
+            </trans-unit>
+
+            <trans-unit id="grid-2-col-30-70">
+            <source>2 Spalten Grid 30%-70%</source>
+            </trans-unit>
+
+            
+
+            <trans-unit id="grid-accordion">
+            <source>Accordion für TYPO3 Contentelemente</source>
+            </trans-unit>
+
+            <trans-unit id="grid-accordion-description">
+            <source>Container für einzelne Accordionelemente</source>
+            </trans-unit>
+
+            <trans-unit id="grid-accordion-element">
+            <source>Einzelnes Accordionelement für CE</source>
+            </trans-unit>
+
+            <trans-unit id="grid-accordion-element-description">
+            <source>Einzelnes Accordionelement das die TYPO3 CE enthält. Dieses wird auf- und zugeklappt.</source>
+            </trans-unit>
+
+            <trans-unit id="grid-tab">
+            <source>Container für einzelne Tabs</source>
+            </trans-unit>
+
+            <trans-unit id="grid-tabs">
+            <source>Einzelner Tab für CE</source>
+            </trans-unit>
+
+            <trans-unit id="grid-carousel">
+            <source>Carousel mit individuellen TYPO3 Contentelementen</source>
+            </trans-unit>
+
+            <trans-unit id="grid-carouse-elemente">
+            <source>Carousel wie wo was</source>
+            </trans-unit>
+
+            <trans-unit id="grid-3-col-fixed-title">
+            <source>3 Spalten Grid Fixed (eg. absolute Positionierung)</source>
+            </trans-unit>
+
+            <trans-unit id="grid-slider">
+            <source>Slider</source>
+            </trans-unit>
+
+            <trans-unit id="onepage-section">
+            <source>OnePage Section</source>
+            </trans-unit>
+
+            <trans-unit id="onepage-section-background">
+            <source>OnePage Section mit Hintergrundbild</source>
+            </trans-unit>
+-->
+
+        <!-- **************************************
+            container flexform labels
+        ************************************** -->
+
+            <trans-unit id="grid-1-col-title" resname="grid-1-col-title" approved="no">
+                <source>Container mit 1 Spalte</source>
+            </trans-unit>
+
+            <trans-unit id="grid-2-col-title" resname="grid-2-col-title" approved="no">
+                <source>Container mit 2 Spalten</source>
+            </trans-unit>
+
+            <trans-unit id="grid-3-col-title" resname="grid-2-col-title" approved="no">
+                <source>Container mit 3 Spalten</source>
+            </trans-unit>
+
+            <trans-unit id="grid-4-col-title" resname="grid-2-col-title" approved="no">
+                <source>Container mit 4 Spalten</source>
+            </trans-unit>
+
+            <trans-unit id="choose-grid">
+            <source>Variation der Spaltenelemente wählen</source>
+            </trans-unit>
+
+            <trans-unit id="set-grid-frame">
+            <source>Spaltenelemente mit Rahmen anzeigen</source>
+            </trans-unit>
+
+            <trans-unit id="no-bottom-space">
+            <source>Section ohne Abstand nach unten.</source>
+            </trans-unit>
+
+            <trans-unit id="set-backgroundcolor">
+            <source>Hintergrundfarbe für Section auswählen </source>
+            </trans-unit>
+
+            <trans-unit id="label-backgroundcolor">
+            <source>Hintergrundfarbe auswählen (Default ist Weiss mit dunklem Text)</source>
+            </trans-unit>
+
+            <trans-unit id="no-bg-color">
+            <source>Standard ohne Hintergrundfarbe</source>
+            </trans-unit>
+
+            <trans-unit id="bg-color-blue">
+            <source>Hintergrund Blau Text Weiss</source>
+            </trans-unit>
+
+             <trans-unit id="bg-color-gray">
+            <source>Hintergrund Dunkelgrau Text Weiss</source>
+            </trans-unit>
+
+             <trans-unit id="bg-color-light">
+            <source>Hintergrund Hellgrau Text Dunkel</source>
+            </trans-unit>
+
+            <trans-unit id="background-image">
+            <source>Hintergrundbild einfügen</source>
+            </trans-unit>
+
+            <trans-unit id="set-fullscreen">
+            <source>Container über ganze Inhaltsbreite anzeigen.</source>
+            </trans-unit>
+
+             <trans-unit id="grid-1" resname="grid-1" approved="no">
+                <source>Spalte 1</source>
+            </trans-unit>
+            <trans-unit id="grid-2" resname="grid-2" approved="no">
+                <source>Spalte 2</source>
+            </trans-unit>
+            <trans-unit id="grid-3" resname="grid-3" approved="no">
+                <source>Spalte 3</source>
+            </trans-unit>
+            <trans-unit id="grid-4" resname="grid-4" approved="no">
+                <source>Spalte 4</source>
+            </trans-unit>
+
+        <!-- **************************************
+            layout frames labels
+        ************************************** -->
+            <trans-unit id="frame-1">
+            <source>Layout Rahmen Rot</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

@@ -1,0 +1,11 @@
+page.mod {
+    #web_layout.allowInconsistentLanguageHandling = 1
+    wizards {
+        newContentElement {
+            wizardItems {
+                # remove old ce with css_styled_content
+                common.show := removeFromList(text,textpic,image)
+            }
+        }
+    }
+}

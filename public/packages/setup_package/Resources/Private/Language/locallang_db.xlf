@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2017-02-20T13:37:19+01:00" product-name="td_theme">
+    <header/>
+    <body>
+      <trans-unit id="feldgruppe" xml:space="preserve">
+        <source>feldgruppe</source>
+      </trans-unit>
+      <trans-unit id="feldgruppe.cardelementekey" xml:space="preserve">
+        <source>Card Datensätze</source>
+      </trans-unit>
+      <trans-unit id="tt_content.cardgroupelement" xml:space="preserve">
+        <source>Cardgruppe</source>
+      </trans-unit>
+      <trans-unit id="tt_content.link" xml:space="preserve">
+        <source>Card Link</source>
+      </trans-unit>
+      <trans-unit id="tt_content.linklabel" xml:space="preserve">
+        <source>Cardl Link Label</source>
+      </trans-unit>
+      <trans-unit id="tt_content.title" xml:space="preserve">
+        <source>Card Title</source>
+      </trans-unit>
+      <trans-unit id="tt_content.feldgruppe" xml:space="preserve">
+        <source>Card Group Datensatz</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.div._maskexport_" xml:space="preserve">
+        <source>Card Container + Elemente</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.cardsneu" xml:space="preserve">
+        <source>Cardelement</source>
+      </trans-unit>
+      <trans-unit id="tt_content.CType.gruppekey" xml:space="preserve">
+        <source>Cardcontainer</source>
+      </trans-unit>
+      <trans-unit id="tt_content.colPos.nestedContentColPos" xml:space="preserve">
+        <source>Nested content (mask_export)</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="EXT:setup_package/Resources/Private/Language/locallang_be" date="2021-06-2313:37:02Z" product-name="typo3starter_package">
+    <header>
+      <!--This translation file was generated automatically by the "datamints_locallang_builder" extension. Please note that changes to this file can be lost the next time someone triggers an export in the TYPO3 Backend-module-->
+    </header>
+    <body>
+      <trans-unit id="show-breadcrumb" resname="show-breadcrumb" approved="no">
+        <source>Breadcrumb Menu auf dieser Seite verbergen.</source>
+      </trans-unit>
+      <trans-unit id="col-slider" resname="col-slider" approved="no">
+        <source>Slider</source>
+      </trans-unit>
+      <trans-unit id="col-right" resname="col-right" approved="no">
+        <source>Rechte Spalte</source>
+      </trans-unit>
+      <trans-unit id="col-left" resname="col-left" approved="no">
+        <source>Linke Spalte</source>
+      </trans-unit>
+      <trans-unit id="col-main" resname="col-main" approved="no">
+        <source>Hauptinhaltsbereich</source>
+      </trans-unit>
+      <trans-unit id="col-offcanvas" resname="col-offcanvas" approved="no">
+        <source>Sidebar zum einblenden</source>
+      </trans-unit>
+      <trans-unit id="col-main-gfx" resname="col-main-gfx" approved="no">
+        <source>Slider oder Hintergrundgrafik</source>
+      </trans-unit>
+      <trans-unit id="col-main-contact" resname="col-main-contact" approved="no">
+        <source>Kontaktbereich</source>
+      </trans-unit>
+      <trans-unit id="col-main-maps" resname="col-main-maps" approved="no">
+        <source>Googlemaps einfügen</source>
+      </trans-unit>
+             <trans-unit id="col-footer" resname="col-footer-one" approved="no">
+        <source>Fußbereich Landingspage // Kontaktinformationen ect.</source>
+      </trans-unit>
+       <trans-unit id="col-footer-one" resname="col-footer-one" approved="no">
+        <source>Footer Spalte 1</source>
+      </trans-unit>
+      <trans-unit id="col-footer-two" resname="col-footer-two" approved="no">
+        <source>Footer Spalte 2</source>
+      </trans-unit>
+      <trans-unit id="col-footer-three" resname="col-footer-three" approved="no">
+        <source>Footer Spalte 3</source>
+      </trans-unit>
+      <trans-unit id="col-main-social-media" resname="col-main-social-media" approved="no">
+        <source>Socialmediaicons</source>
+      </trans-unit>
+      <trans-unit id="col-logocarousel" resname="col-logocarousel" approved="no">
+        <source>Logocarousel - wird über das Template befüllt</source>
+      </trans-unit>
+      <trans-unit id="col-main-footer-nav" resname="col-main-footer-nav" approved="no">
+        <source>Navigation im Footer - wird über das Template befüllt</source>
+      </trans-unit>
+      <trans-unit id="col-main-service-nav" resname="col-main-service-nav" approved="no">
+        <source>Servicenavigation im Footer - wird über das Template befüllt</source>
+      </trans-unit>
+      <trans-unit id="col-main-copyright" resname="col-main-copyright" approved="no">
+        <source>Copyright wird über das Template befüllt</source>
+      </trans-unit>
+      <trans-unit id="image-gallery" resname="image-gallery" approved="no">
+        <source>Slider mit Thumbnav + Video</source>
+      </trans-unit>
+      <trans-unit id="col-main-onepage" resname="col-main-onepage" approved="no">
+        <source>Inhaltsbereich Landingpage / Hier können einzelne Sections angelegt werden.</source>
+      </trans-unit>
+      <trans-unit id="col-main-onepage-logo" resname="col-main-onepage-logo" approved="no">
+        <source>Bereich Linke Seite One Page nicht Editierbar</source>
+      </trans-unit>
+      <trans-unit id="col-main-onepage-navigation" resname="col-main-onepage-navigation" approved="no">
+        <source>Bereich für CE Menu - OnePageMenu wählen</source>
+      </trans-unit>
+      <trans-unit id="be-layout-1" resname="be-layout-1" approved="no">
+        <source>1 Spalte (eg. Startseite)</source>
+      </trans-unit>
+            <trans-unit id="be-layout-1-sub" resname="be-layout-1-sub" approved="no">
+        <source>1 Spalte Subpages</source>
+      </trans-unit>
+      <trans-unit id="be-layout-2" resname="be-layout-2" approved="no">
+        <source>2 Spalten (Main - Rechts)</source>
+      </trans-unit>
+      <trans-unit id="be-layout-3" resname="be-layout-3" approved="no">
+        <source>3 Spalten (Links - Main - Rechts)</source>
+      </trans-unit>
+      <trans-unit id="be-layout-4" resname="be-layout-4" approved="no">
+        <source>2 Spalten (Links - Main)</source>
+      </trans-unit>
+      <trans-unit id="be-layout-5" resname="be-layout-5" approved="no">
+        <source>One Page</source>
+      </trans-unit>
+      <trans-unit id="be-layout-6" resname="be-layout-6" approved="no">
+        <source>1 Spalte Fullscreen</source>
+      </trans-unit>
+      <trans-unit id="be-layout-7" resname="be-layout-7" approved="no">
+        <source>Parallax</source>
+      </trans-unit>
+      <trans-unit id="be-layout-8" resname="be-layout-8" approved="no">
+        <source>Newsletter</source>
+      </trans-unit>
+      <trans-unit id="be-layout-9" resname="be-layout-9" approved="no">
+        <source>2 Spalten (Offcanvas - Main) </source>
+      </trans-unit>
+      <trans-unit id="grid-1" resname="grid-1" approved="no">
+        <source>Spalte 1</source>
+      </trans-unit>
+      <trans-unit id="grid-2" resname="grid-2" approved="no">
+        <source>Spalte 2</source>
+      </trans-unit>
+      <trans-unit id="grid-3" resname="grid-3" approved="no">
+        <source>Spalte 3</source>
+      </trans-unit>
+      <trans-unit id="grid-4" resname="grid-4" approved="no">
+        <source>Spalte 4</source>
+      </trans-unit>
+       <trans-unit id="choose-grid">
+        <source>Variation der Spaltenelemente wählen</source>
+      </trans-unit>
+      <trans-unit id="set-grid-frame">
+        <source>Spaltenelemente mit Rahmen anzeigen</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

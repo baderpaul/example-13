@@ -1,0 +1,12 @@
+<div class="slogan position-absolute top-60 start-50 translate-middle d-flex flex-column text-center w-75 w-md-55" style="z-index:0;">
+    <f:if condition="{data_item.tx_mask_slogan_small}"><span class="d-block text-white text-center mb-15 fadeInDown d-none d-md-inline-block">{data_item.tx_mask_slogan_small}</span></f:if>
+    <f:if condition="{data_item.tx_mask_slogan_big}"><span class="d-block text-white text-center fadeIn lh-sm lh-md-base">{data_item.tx_mask_slogan_big}</span></f:if>  
+    <f:if condition="{data_item.tx_mask_slogan_cta}">
+        <p class=" d-flex justify-content-center gap-20 gap-sm-40 text-white fadeInUp mt-15 mt-sm-30">
+        <f:for each="{data_item.tx_mask_slogan_cta}" as="data_item_item">
+                            <f:link.typolink parameter="{data_item_item.tx_mask_cta_target}" class="btn btn-primary fw-bold text-white text-uppercase rounded-pill px-10 py-5 px-sm-20 py-sm-10" additionalParams="{role: 'button'}">
+                                {data_item_item.tx_mask_cta_label}</f:link.typolink>
+                </f:for>
+            </p>
+    </f:if>
+</div>

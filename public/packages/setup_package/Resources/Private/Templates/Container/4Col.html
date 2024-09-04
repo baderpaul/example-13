@@ -1,0 +1,54 @@
+<section id="c{data.uid}" class="b13-container d-block px-10 px-lg-0">
+<div class="mb-20 mb-md-40">
+    <f:if condition="{header4col}">
+        <f:for each="{header4col}" as="child">
+            <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+    </f:if>
+    <div class="d-block d-lg-flex
+    {f:if(condition: '{flexform.set-grid-frame} == 1', then: 'border border-dark')}
+    {f:if(condition: '{data.layout} == 10', then:' container-sm')}
+    {f:if(condition: '{data.layout} == 11', then:' container-md')}
+    {f:if(condition: '{data.layout} == 12', then:' container-xl')}
+    {f:if(condition: '{data.layout} == 13', then:' container-fluid')}" >
+    <f:if condition="{childrenLeft}">
+        <div class="row">
+    <div class="
+        {f:if(condition: '{flexform.columnType} == cols-1-1-1-1', then: 'col-lg-3')}
+        {f:if(condition: '{flexform.set-grid-frame} == 1', then: 'ps-15 pe-15 pe-lg-30 pt-10 pb-0 mb-0 mx-0', else: 'px-0 pe-lg-30 pt-10 mx-0 mb-0')}">
+        <f:for each="{childrenLeft}" as="child">
+            <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+    </div>
+    </f:if>
+    <f:if condition="{childrenCenterLeft}">
+    <div class=" 
+        {f:if(condition: '{flexform.columnType} == cols-1-1-1-1', then: 'col-lg-3')}
+        {f:if(condition: '{flexform.set-grid-frame} == 1', then: 'px-15 px-lg-30 pt-15 border-bottom border-bottom-lg-0 border-top border-top-lg-0 border-start-lg border-end-lg border-dark', else: 'px-0 px-lg-15 pt-10 mx-0 mb-0')}">
+            <f:for each="{childrenCenterLeft}" as="child">
+                <f:format.raw>{child.renderedContent}</f:format.raw>
+            </f:for>
+    </div>
+    </f:if>
+    <f:if condition="{childrenCenterRight}">
+    <div class=" 
+        {f:if(condition: '{flexform.columnType} == cols-1-1-1-1', then: 'col-lg-3')}
+        {f:if(condition: '{flexform.set-grid-frame} == 1', then: 'px-15 px-lg-30 pt-10 pb-0 mb-0 mx-0 border-bottom border-bottom-lg-0 border-end-lg  border-dark', else: 'px-0 px-lg-15 pt-10 mx-0 mb-0')}">
+        <f:for each="{childrenCenterRight}" as="child">
+            <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+    </div>
+    </f:if>
+    <f:if condition="{childrenRight}">
+    <div class=" 
+        {f:if(condition: '{flexform.columnType} == cols-1-1-1-1', then: 'col-lg-3')}
+        {f:if(condition: '{flexform.set-grid-frame} == 1', then: 'ps-15 ps-lg-30 pe-15 pt-10 mb-0 mx-0', else: 'px-0 ps-lg-15 pt-10 mx-0 mb-0')}">
+        <f:for each="{childrenRight}" as="child">
+            <f:format.raw>{child.renderedContent}</f:format.raw>
+        </f:for>
+    </div>
+    </f:if>
+</div>
+    </div>
+</div>
+</section>

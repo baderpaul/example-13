@@ -1,0 +1,31 @@
+<xliff version="1.0">
+     <file source-language="de" target-language="en" datatype="plaintext" original="messages" date="2011-10-18T18:20:51Z" product-name="my-ext">
+             <header/>
+             <body>
+                <trans-unit id="vorname" xml:space="preserve">
+                    <source>Vorname:</source>
+                    <target>First Name:</target>
+                </trans-unit>
+
+                <trans-unit id="nachname" xml:space="preserve">
+                    <source>Nachname:</source>
+                    <target>Last Name:</target>
+                </trans-unit>
+
+                <trans-unit id="submit" xml:space="preserve">
+                     <source>senden</source>
+                     <target>submit:</target>
+                </trans-unit>
+
+                <trans-unit id="Kontakt.email_admin_subject" xml:space="preserve">
+                     <source>Kontakt email admin Subject</source>
+                     <target>Admin English subject</target>
+                </trans-unit>
+
+                <trans-unit id="Kontakt.email_user_subject" xml:space="preserve">
+                     <source>Kontakt email user Subject</source>
+                     <target>User English subject:</target>
+                </trans-unit>
+             </body>
+     </file>
+</xliff>

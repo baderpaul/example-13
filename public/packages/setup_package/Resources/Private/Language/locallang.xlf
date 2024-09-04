@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="EXT:typo3starter_package/Resources/Private/Language/locallang" date="2021-06-2314:06:10Z" product-name="typo3starter_package">
+    <header>
+      <!--This translation file was generated automatically by the "datamints_locallang_builder" extension. Please note that changes to this file can be lost the next time someone triggers an export in the TYPO3 Backend-module-->
+    </header>
+    <body>
+      <trans-unit id="vorname" resname="vorname" approved="no" xml:space="preserve">
+        <source>First Name Test:</source>
+      </trans-unit>
+      <trans-unit id="nachname" resname="nachname" approved="no" xml:space="preserve">
+        <source>Last Name:</source>
+      </trans-unit>
+      <trans-unit id="submit" resname="submit" approved="no" xml:space="preserve">
+        <source>submit:</source>
+      </trans-unit>
+      <trans-unit id="Kontakt.email_admin_subject" resname="Kontakt.email_admin_subject" approved="no" xml:space="preserve">
+        <source>Admin English subject</source>
+      </trans-unit>
+      <trans-unit id="Kontakt.email_user_subject" resname="Kontakt.email_user_subject" approved="no" xml:space="preserve">
+        <source>User English subject:</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

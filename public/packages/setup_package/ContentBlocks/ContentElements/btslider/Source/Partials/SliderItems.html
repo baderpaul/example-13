@@ -1,0 +1,20 @@
+<f:for each="{data.slides}" as="slide" iteration="indicator-2">
+            <div class="carousel-item {f:if(condition:'{indicator-2.isFirst}',then:' active')}">
+                <f:for each="{slide.image}" as="image">
+                    <f:image image="{image.originalFile}" loading="lazy" alt="{slide.title}" />
+            
+                </f:for>
+
+ <f:comment>   
+<f:if condition="{data_item.tx_mask_slogan_big} || {data_item.tx_mask_slogan_small} || {data_item.tx_mask_slogan_cta}">
+    <f:render partial="Partials/Slider/SliderSlogan" arguments="{_all}"/>
+</f:if>
+        <f:if condition="{data_item.tx_mask_imagedescription}">
+            <f:render partial="Partials/Slider/SliderItemDescrption" arguments="{_all}"/>
+        </f:if>
+    </f:comment>   
+    </div>
+    
+</f:for>
+<f:asset.css identifier="slider" priority="true">
+.fadeIn{animation-name: fadeIn;animation-duration: 2s;animation-timing-function: ease-in-out;}.fadeInUp {animation-name: fadeInUp;animation-duration: 1s;animation-timing-function: ease-in-out;}.fadeInDown {animation-name: fadeInDown;animation-duration: 1s;animation-timing-function: ease-in-out;}.text-shadow-hero {text-shadow: 2px 1px 2px #adb5bd;}</f:asset.css>

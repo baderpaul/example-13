@@ -1,0 +1,149 @@
+RTE.default.preset = custom
+#RTE.default.proc.overruleMode = default
+#RTE.default.proc.allowTagsOutside = hr, header, div
+#RTE.config.tt_content.tx_mask_content.types.mask_bticonteaser.preset = mask
+#RTE.config.tx_news_domain_model_news.bodytext.preset = news
+
+# Show the content element wizard with tabs (for consistency)
+mod.wizards.newContentElement.renderMode = tabs
+#mod.web_list.tableDisplayOrder {}
+
+# deleted records listing in TYPO3 backend recycler
+mod.recycler.recordsPageLimit = 100
+#-------------------------------------------------------------------------------
+#    Backend Layouts & Page
+#-------------------------------------------------------------------------------
+TCEFORM.pages {
+    # Hide backend layout label
+    layout.disabled = 1
+    # Show backend_layout label
+    backend_layout.removeItems = -1
+    backend_layout_next_level.removeItems = -1
+    #backend_layout.altLabels.0 = default (auto)
+
+}
+#-------------------------------------------------------------------------------
+#    Content elements
+#-------------------------------------------------------------------------------
+TCEFORM.tt_content {
+    # layouts in ce
+    layout {
+        disabled = 0
+        removeItems = 0,1,2,3
+        #altLabels {
+        #    0 = Fullscreenansicht wählen
+        #    1 = Fullscreen nur Mobile
+        #    2 = Fullscreen nur Mobile/Tablet
+        #   3 = Fullscreen von Mobile bis Desktop
+        #}
+        addItems {
+            9 =  Keine-Auswahl
+            10 = Fullscreen-Mobile-Portrait-SM 
+            11 = Fullscreen-Mobile-MD
+            12 = Fullscreen-Mobile-Tablet-LG
+            13 = Fullscreen-von-Mobile-bis-Desktop
+        }
+    }
+    # owen frames in ce - the same as section_frame before TYPO3 7.6
+    #frame_class {
+           # removeItems = ruler-before, ruler-after, indent, indent-left, indent-right
+            #addItems {
+             #   hintergrundbild-1 = Hintergrund 1
+             #   hintergrundbild-2 = Hintergrund 2
+            #}
+        #}
+    frame_class.disabled = 1
+    imageheight.disabled = 1
+    imagewidth.disabled = 1
+    CType {
+        # Removed reintroduced "CSS Styled Content" content elements - they are not work with fluid_styled_content
+         removeItems := addToList(text,textpic,image)
+    }
+
+    # disable space before/after - can be a problem width beusers and responsive pages
+    space_before_class.disabled = 0
+    space_after_class.disabled = 0
+
+    # Reduce header layouts
+    header_layout.removeItems = 0,5
+    #header_layout.addItems.6 = <H2> Kleinere Überschrift grün
+
+    # Add new Labels
+    header_layout {
+        altLabels.1 = <H1> Hauptüberschrift
+        altLabels.2 = <H2> Kleinere Überschrift
+        altLabels.3 = <H3> Kleinere Überschrift
+        altLabels.4 = <H4> Kleinere Überschrift mit Großbuchstaben
+        #altLabels.6 = <H2> Kleinere Überschrift grün
+    }
+    # overwrite for bootstrap5
+    header_position {
+        removeItems = left,right
+        addItems {
+            start = Links
+            end = Rechts
+        }
+    }
+}
+
+#-------------------------------------------------------------------------------
+#    Rights for a new page
+#-------------------------------------------------------------------------------
+TCEMAIN.permissions {
+        #groupid 
+        #userid 
+        user = show,edit,delete,new,editcontent
+        group = show,edit,delete,new,editcontent
+        everybody = show
+}
+
+#-------------------------------------------------------------------------------
+#    History erweitern
+#-------------------------------------------------------------------------------
+TCEMAIN.default {
+    history.maxAgeDays = 3650
+    history.keepEntries = 10000
+}
+
+#-------------------------------------------------------------------------------
+#    copy options
+#-------------------------------------------------------------------------------
+TCEMAIN.table.tt_content {
+    disablePrependAtCopy = 1
+    disableHideAtCopy = 1
+}
+
+TCEMAIN.table.pages {
+   disablePrependAtCopy = 1
+   disableHideAtCopy = 1
+}
+
+#-------------------------------------------------------------------------------
+#    clear cache for new created newsreccords
+#-------------------------------------------------------------------------------
+#TCEMAIN.clearCacheCmd = 213
+
+#-------------------------------------------------------------------------------
+#    delete folder tab
+#-----------------------------------------------------------------------------
+#TCEMAIN.linkHandler.folder >
+
+#-------------------------------------------------------------------------------
+#    linkhandler for tx_news in pagebrowser
+#-------------------------------------------------------------------------------
+
+TCEMAIN.linkHandler.tx_news {
+    handler = TYPO3\CMS\Backend\LinkHandler\RecordLinkHandler
+    label = Mit Newsartikel verlinken
+    configuration {
+        table = tx_news_domain_model_news
+        storagePid = 213
+        hidePageTree = 0
+    }
+    scanAfter = page
+
+tx_news.templateLayouts {
+        1 = Listansicht Card
+        2 = Listansicht bei Detailansicht
+}
+}

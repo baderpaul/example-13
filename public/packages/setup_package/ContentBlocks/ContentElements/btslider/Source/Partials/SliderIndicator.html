@@ -1,0 +1,26 @@
+<ol class="carousel-indicators
+                    {f:if(condition: '{data.tx_mask_indicatorthumbnail}==1', then: ' position-relative')} p-0 m-0 d-none d-lg-flex">
+    <f:for each="{data.tx_mask_slideimages}" as="data_item" iteration="indicator">
+        <f:for each="{data_item.tx_mask_slideitem}" as="file">
+            <li data-bs-target="#carouselExampleIndicators-{data.uid}"  data-bs-slide-to="{indicator.index}"
+                class="d-inline-block
+                        {f:if(condition:indicator.isFirst, then:'active')}
+                        {f:if(condition: '{data.tx_mask_indicatorthumbnail}==1', then: ' slider-thumb-width')}">
+            
+            </li>
+        </f:for>
+    </f:for>
+</ol>
+<f:if condition="{data.tx_mask_indicatorthumbnail}==1">
+<f:asset.css identifier="id-css-btslider-c{data.uid}" priority="true">
+    .slider-thumb-width {
+        max-width: 3.125rem;
+        height: auto !important;   
+    }
+    @media (min-width: 992px) {
+    .slider-thumb-width {
+        max-width: 12.5rem;
+    }
+}
+</f:asset.css>
+</f:if>

@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="Labels.xlf" source-language="en" date="2024-01-15T15:15:06+00:00" product-name="techdivision/btslider">
+		<header/>
+		<body>
+			<trans-unit id="title" resname="title">
+				<source>Content-Block Bootstrap Carousel</source>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Carousel/Imageslider width Bootstrap</source>
+			</trans-unit>
+			<trans-unit id="header.label" resname="header.label">
+				<source>Pluginheadline im TYPO3 Backend</source>
+			</trans-unit>
+			<trans-unit id="tabs.tab_1" resname="tabs.tab_1">
+				<source>General</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_1.label" resname="palettes.palette_1.label">
+				<source>Slidereinstellungen</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_1.description" resname="palettes.palette_1.description">
+				<source>slide/fade, prev/next auswählen</source>
+			</trans-unit>
+			<trans-unit id="modus.label" resname="modus.label">
+				<source>Slidermodus</source>
+			</trans-unit>
+			<trans-unit id="control.label" resname="control.label">
+				<source>control</source>
+			</trans-unit>
+			<trans-unit id="tabs.tab_2" resname="tabs.tab_2">
+				<source>Slideimages</source>
+			</trans-unit>
+			<trans-unit id="prev-next.label" resname="prev-next.label">
+				<source>Prev/Next aktivieren</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

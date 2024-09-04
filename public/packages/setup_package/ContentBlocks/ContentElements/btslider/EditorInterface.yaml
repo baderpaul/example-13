@@ -1,0 +1,74 @@
+name: t3example/btslider
+title: t3example/btslider
+description: 'Carousel/Imageslider width Bootstrap'
+basics:
+     - TYPO3/Appearance
+     - TYPO3/Links
+#group: common
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: header
+    useExistingField: true
+    label: Pluginbeschreibung für TYPO3 BE
+  - identifier: tab_1
+    type: Tab
+  - identifier: palette_1
+    type: Palette
+    label: Palette 1
+    description: My palette description
+    fields:
+      - identifier: modus
+        type: Select
+        renderType: selectMultipleSideBySide
+        maxitems: 1
+        items:
+        - label: slide
+          value: 1
+        - label: fade
+          value: 2
+      - type: Linebreak      
+      - identifier: control
+        type: Checkbox
+        renderType: checkboxToggle
+        default: 0
+  - identifier: tab_2
+    type: Tab
+  - identifier: palette_2
+    type: Palette
+    label: Slideimages anlegen
+    fields:
+  - identifier: slides
+    type: Collection
+    labelField: title
+    fields:
+      - identifier: image
+        type: File
+        allowed: common-image-types
+      - identifier: title
+        type: Text
+      - identifier: palette_3
+        type: Palette
+        label: Slogan zum Bild - animiert
+      - identifier: slogan_big
+        type: Textarea
+        placeholder: Text groß - wird einzeln animiert
+        rows: 10
+      - identifier: slogan_small
+        type: Textarea
+        placeholder: Text klein - wird einzeln animiert
+        rows: 10
+      - identifier: links
+        type: Collection
+        labelField: link_title
+        fields:
+          - identifier: link
+            type: Link
+            autocomplete: true
+            allowedTypes:
+              - page
+              - url
+              - file
+            max: 150
+          - identifier: link_title
+            type: Text
