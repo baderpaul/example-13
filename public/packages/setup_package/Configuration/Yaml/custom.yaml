@@ -1,0 +1,86 @@
+imports:
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Processing.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml' }
+    - { resource: 'EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml' }
+
+editor:
+  config:
+    contentsCss: 'EXT:setup_package/Resources/Public/Styles/CkEditorRTE.css'
+    height: 150
+    width: 'auto'
+
+    #htmlSupport:
+     # allow: 
+       # - { name: 'div', classes: true, styles: true } 
+
+    style:
+      definitions:
+        # block level styles
+        - { name: 'H2', element: 'h2', classes: [fs-17 pb-10 text-uppercase], styles: { color: 'orange', background: 'red' } }
+        - { name: 'H3', element: 'h3', classes: [], styles: { color: 'orange', background: 'blue' } }
+        - { name: 'container', element: 'div', classes: [col], styles: { border: 'solid black 12px"' } }
+        - { name: 'Quote / Citation', element: 'blockquote', classes: [],  }
+        - { name: 'Code block', element: 'code', classes: [],  }
+        - { name: 'Test', element: 'p', classes: ['text-capitalize'], styles: { color: 'red', background: 'blue' } }
+        # Inline styles
+        - { name: 'Yellow marker', element: 'h2', classes: [], styles: { background-color: 'yellow' } }
+        - { name: 'Link underline', element: 'a', classes: [link-underline-primary text-decoration-underline], styles: {text-decoration: 'underline'}}
+
+    heading:
+      options:
+        - { model: 'paragraph', title: 'Paragraph' }
+        - { model: 'heading2', view: 'h2', title: 'Heading 2' }
+        - { model: 'heading3', view: 'h3', title: 'Heading 3' }
+        - { model: 'formatted', view: 'pre', title: 'Pre-Formatted Text' }
+
+    toolbar:
+      items:
+        - removeFormat
+        - undo
+        - redo
+        # grouping separator
+        - '|'
+        - findAndReplace
+        - selectAll
+        - link
+        - specialCharacters
+        - '|'
+        - '-'
+        - '|'
+        - insertTable
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - TableProperties
+        - TableCellProperties
+        - '|'
+        - selectAll
+        - '|'
+        - sourceEditing
+        - showBlocks
+        # line break
+        - '-'
+        - bold
+        - italic
+        - underline
+        - strikethrough
+        - horizontalLine
+        - subscript
+        - superscript
+        - softhyphen
+        - '|'
+        - bulletedList
+        - numberedList
+        - blockQuote
+        - indent
+        - outdent
+        - alignment
+        - '|'
+
+        - '-'
+        - style
+        - heading
+        #- fontFamily
+        #- fontBackgroundColor
+        #- fontColor
+        #- fontSize
