@@ -9,9 +9,7 @@
                         {f:if(condition: '{data.layout} == 11', then:' container-md')}
                         {f:if(condition: '{data.layout} == 12', then:' container-xl')}
                         {f:if(condition: '{data.layout} == 13', then:' container-fluid')}
-                        {f:if(condition: '{data.CType} == textmedia', then:' px-0 px-sm-0 mx-lg-0')} 
-                        mb-md-20"
-                style="border: solid red 1px">
+                        mb-md-20 mx-auto">
                 <f:if condition="{data._LOCALIZED_UID}">
                     <a id="c{data._LOCALIZED_UID}"></a>
                 </f:if>
@@ -31,7 +29,6 @@
             </div>
         </f:then>
         <f:else>
-
             <a id="c{data.uid}"></a>
             <f:if condition="{data._LOCALIZED_UID}">
                 <a id="c{data._LOCALIZED_UID}"></a>

@@ -1,0 +1,77 @@
+TYPO3:
+  CMS:
+    Form:
+      persistenceManager:
+        #allowedFileMounts:
+        #  100: 2:/FormsActive/
+        allowSaveToExtensionPaths: true
+        allowDeleteFromExtensionPaths: true
+        allowedExtensionPaths:
+          100: 'EXT:setup_package/Configuration/Yaml/Forms/'
+        sortByKeys:
+          - name
+          - fileUid
+        sortAscending: true
+      prototypes:
+        standard:
+          formElementsDefinition:
+            Form:
+              renderingOptions:
+                #templateVariant: version2
+                templateRootPaths:
+                  100: 'EXT:setup_package/Resources/Private/Templates/TxForms/Frontend/Templates/'
+                partialRootPaths:
+                  100: 'EXT:setup_package/Resources/Private/Templates/TxForms/Frontend/Partials/'
+                layoutRootPaths:
+                  100: 'EXT:setup_package/Resources/Private/Templates/TxForms/Frontend/Layouts/'
+                translation:
+                  translationFiles:
+                    20: 'EXT:setup_package/Resources/Private/Language/Form/language.xlf'
+                    30: 'EXT:setup_package/Resources/Private/Language/Form/error.xlf'
+                honeypot:
+                  enable: true
+                  formElementToUse: 'Honeypot'
+
+            Honeypot:
+              properties:
+                elementClassAttribute: 'position-absolute ms-n999'
+                renderAsHiddenField: false
+                styleAttribute: ''
+
+            GridRow:
+              properties:
+                elementClassAttribute: 'row g-15'
+
+            Fieldset:
+              properties:
+                elementClassAttribute: ''
+
+            SingleSelect:
+              properties:
+                containerClassAttribute:
+                elementClassAttribute: 'form-select'
+                elementErrorClassAttribute: 'is-invalid'
+
+            Text:
+              properties:
+                elementErrorClassAttribute: 'is-invalid'
+
+            Email:
+              properties:
+                elementErrorClassAttribute: 'is-invalid'
+
+            Textarea:
+              properties:
+                elementErrorClassAttribute: 'is-invalid'
+
+            Checkbox:
+              properties:
+                elementErrorClassAttribute: 'is-invalid'
+
+            RadioButton:
+              properties:
+                elementErrorClassAttribute: 'is-invalid'
+
+            Telephone:
+              properties:
+                elementErrorClassAttribute: 'is-invalid'

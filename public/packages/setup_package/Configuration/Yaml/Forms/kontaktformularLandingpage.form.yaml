@@ -1,0 +1,210 @@
+
+renderingOptions:
+  submitButtonLabel: 'Nachricht senden'
+type: Form
+identifier: kontaktformularLandingpage
+label: 'Kontaktformular Landingpage'
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: '{text-2}  '
+      recipients:
+        '{email-1}': '{text-1}'
+      senderAddress: '{email-1}'
+      senderName: '{text-1}'
+      addHtmlPart: true
+      layoutRootPaths:
+        100: 'EXT:setup_package/Resources/Private/Templates/TxForms/Frontend/Layouts/'
+      attachUploads: false
+      useFluidEmail: true
+      title: '{text-2}'
+    identifier: EmailToSender
+  -
+    options:
+      subject: '{text-1}'
+      recipients:
+        baderp@gmx.de: 'Bader Paul'
+      senderAddress: '{email-1}'
+      senderName: '{text-1}'
+      addHtmlPart: true
+      layoutRootPaths:
+        100: 'EXT:setup_package/Resources/Private/Templates/TxForms/Frontend/Layouts/'
+      attachUploads: true
+      translation:
+        language: Standard
+      useFluidEmail: false
+      title: ''
+    identifier: EmailToReceiver
+  -
+    options:
+      message: 'Danke, wir haben ihre Nachricht erhalten und werden uns bei Ihnen melden.'
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Vorherige Seite'
+      nextButtonLabel: 'Nächster Schritt'
+    type: Page
+    identifier: page-1
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-1
+      -
+        type: GridRow
+        identifier: gridrow-1
+        label: 'Grid: Zeile'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Name
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  md:
+                    numbersOfColumnsToUse: '6'
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: Name
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Dieses Feld muss noch ausgefüllt werden.'
+                -
+                  code: 1221560718
+                  message: 'Dieses Feld muss noch ausgefüllt werden.'
+                -
+                  code: 1347992400
+                  message: 'Dieses Feld muss noch ausgefüllt werden.'
+                -
+                  code: 1347992453
+                  message: 'Dieses Feld muss noch ausgefüllt werden.'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Email
+            identifier: email-1
+            label: E-Mail
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  md:
+                    numbersOfColumnsToUse: '6'
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: E-Mail
+              validationErrorMessages:
+                -
+                  code: 1221559976
+                  message: 'Bitte geben Sie ihre E-Mail Adresse an.'
+                -
+                  code: 1221560910
+                  message: 'Dieses Feld ist falsch ausgefüllt.'
+                -
+                  code: 1221560718
+                  message: 'Dieses Feld ist falsch ausgefüllt.'
+                -
+                  code: 1347992400
+                  message: 'Dieses Feld ist falsch ausgefüllt.'
+                -
+                  code: 1347992453
+                  message: 'Dieses Feld ist falsch ausgefüllt.'
+            validators:
+              -
+                identifier: EmailAddress
+              -
+                identifier: NotEmpty
+      -
+        type: GridRow
+        identifier: gridrow-2
+        label: 'Grid: Zeile'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: 'Ihr Anliegen'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'Ihr Anliegen'
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Bitte geben Sie ihr Anliegen an.'
+                -
+                  code: 1221560718
+                  message: 'Bitte geben Sie ihr Anliegen an.'
+                -
+                  code: 1347992400
+                  message: 'Bitte geben Sie ihr Anliegen an.'
+                -
+                  code: 1347992453
+                  message: 'Bitte geben Sie ihr Anliegen an.'
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  md:
+                    numbersOfColumnsToUse: '6'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-3
+            label: Telefon
+            properties:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  md:
+                    numbersOfColumnsToUse: '6'
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: Telefon
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Bitte teilen Sie uns ihre Telefonnummer mit'
+                -
+                  code: 1221560718
+                  message: 'Bitte teilen Sie uns ihre Telefonnummer mit'
+                -
+                  code: 1347992400
+                  message: 'Bitte teilen Sie uns ihre Telefonnummer mit'
+                -
+                  code: 1347992453
+                  message: 'Bitte teilen Sie uns ihre Telefonnummer mit'
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Textarea
+        identifier: textarea-1
+        label: 'Ihre Nachricht'
+        properties:
+          fluidAdditionalAttributes:
+            required: required
+            placeholder: 'Ihre Nachricht'
+          validationErrorMessages:
+            -
+              code: 1221560910
+              message: 'Geben sie eine Nachricht ein.'
+            -
+              code: 1221560718
+              message: 'Geben sie eine Nachricht ein.'
+            -
+              code: 1347992400
+              message: 'Geben sie eine Nachricht ein.'
+            -
+              code: 1347992453
+              message: 'Geben sie eine Nachricht ein.'
+        validators:
+          -
+            identifier: NotEmpty

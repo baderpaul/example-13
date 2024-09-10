@@ -1,0 +1,12 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" xmlns:formvh="http://typo3.org/ns/TYPO3/CMS/Form/ViewHelpers" data-namespace-typo3-fluid="true">
+<div id="{form.identifier}" class="form-msg">
+    <f:if condition="{isPreparedMessage}">
+        <f:then>
+           <p class="bg-success"><i class="fa fa-check"></i>{message -> f:format.raw()}</p> 
+        </f:then>
+        <f:else>
+            <p>{message -> f:format.nl2br()}</p>
+        </f:else>
+    </f:if>
+</div>
+</html>

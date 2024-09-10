@@ -1,0 +1,364 @@
+
+renderingOptions:
+  submitButtonLabel: Absenden
+type: Form
+identifier: form-1
+label: Kontaktformular
+prototypeName: standard
+finishers:
+  -
+    options:
+      subject: 'Eine Kontaktanfrage an TD'
+      message: 'Anfragenmessage von der Website - Test Message'
+      recipients:
+        '{email-1}': '{text-2} {text-3}'
+      senderAddress: '{email-1}'
+      senderName: '{text-2} {text-3}'
+      addHtmlPart: false
+      layoutRootPaths:
+        100: 'EXT:setup_package/Resources/Private/Templates/TxForms/Frontend/Layouts/'
+      attachUploads: false
+      translation:
+        language: default
+      useFluidEmail: true
+    identifier: EmailToReceiver
+  -
+    options:
+      subject: 'Ihre Kontaktanfrage an die TD'
+      message: 'Danke für Ihre Anfrage - Test Message'
+      recipients:
+        '{email-1}': '{text-2}'
+      senderAddress: info@td.de
+      senderName: TechDivision
+      addHtmlPart: false
+      layoutRootPaths:
+        100: 'EXT:setup_package/Resources/Private/Templates/TxForms/Frontend/Layouts/'
+      attachUploads: false
+      useFluidEmail: true
+    identifier: EmailToSender
+  -
+    options:
+      pageUid: '232'
+      additionalParameters: ''
+    identifier: Redirect
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Vorherige Seite'
+      nextButtonLabel: 'Nächster Schritt'
+    type: Page
+    identifier: page-1
+    label: ''
+    renderables:
+      -
+        type: Fieldset
+        identifier: fieldset-1
+        label: ''
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Betreff
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'Bitte Wählen'
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Bitte teilen Sie uns den Betreff Ihrer Nachricht mit.'
+                -
+                  code: 1221560718
+                  message: 'Bitte teilen Sie uns den Betreff Ihrer Nachricht mit.'
+                -
+                  code: 1347992400
+                  message: 'Bitte teilen Sie uns den Betreff Ihrer Nachricht mit.'
+                -
+                  code: 1347992453
+                  message: 'Bitte teilen Sie uns den Betreff Ihrer Nachricht mit.'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-2
+            label: Name
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: Name
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Bitte teilen Sie uns Ihren Namen mit.'
+                -
+                  code: 1221560718
+                  message: 'Bitte teilen Sie uns Ihren Namen mit.'
+                -
+                  code: 1347992400
+                  message: 'Bitte teilen Sie uns Ihren Namen mit.'
+                -
+                  code: 1347992453
+                  message: 'Bitte teilen Sie uns Ihren Namen mit.'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-3
+            label: Vorname
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: Vorname
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Bitte füllen Sie dieses Feld aus.'
+                -
+                  code: 1221560718
+                  message: 'Bitte füllen Sie dieses Feld aus.'
+                -
+                  code: 1347992400
+                  message: 'Bitte füllen Sie dieses Feld aus.'
+                -
+                  code: 1347992453
+                  message: 'Bitte füllen Sie dieses Feld aus.'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            type: GridRow
+            identifier: gridrow-1
+            label: 'Grid PLZ+Ort'
+            renderables:
+              -
+                defaultValue: ''
+                type: Text
+                identifier: text-4
+                label: Postleitzahl
+                properties:
+                  fluidAdditionalAttributes:
+                    required: required
+                    minlength: '5'
+                    maxlength: '5'
+                    placeholder: PLZ
+                  validationErrorMessages:
+                    -
+                      code: 1221560910
+                      message: 'Bitte tragen sie eine PLZ ein.'
+                    -
+                      code: 1221560718
+                      message: 'Bitte tragen sie eine PLZ ein.'
+                    -
+                      code: 1347992400
+                      message: 'Bitte tragen sie eine PLZ ein.'
+                    -
+                      code: 1347992453
+                      message: 'Bitte tragen sie eine PLZ ein.'
+                    -
+                      code: 1238110957
+                      message: 'Bitte tragen Sie eine gültige Postleitzahl ein.'
+                    -
+                      code: 1269883975
+                      message: 'Bitte tragen Sie eine gültige Postleitzahl ein.'
+                    -
+                      code: 1428504122
+                      message: 'Bitte tragen Sie eine gültige Postleitzahl ein.'
+                    -
+                      code: 1238108068
+                      message: 'Bitte tragen Sie eine gültige Postleitzahl ein.'
+                    -
+                      code: 1238108069
+                      message: 'Bitte tragen Sie eine gültige Postleitzahl ein.'
+                  gridColumnClassAutoConfiguration:
+                    viewPorts:
+                      lg:
+                        numbersOfColumnsToUse: '3'
+                      sm:
+                        numbersOfColumnsToUse: '6'
+                      xs:
+                        numbersOfColumnsToUse: '12'
+                      md:
+                        numbersOfColumnsToUse: '3'
+                validators:
+                  -
+                    identifier: NotEmpty
+                  -
+                    options:
+                      minimum: '5'
+                      maximum: '5'
+                    identifier: StringLength
+              -
+                defaultValue: ''
+                type: Text
+                identifier: text-5
+                label: Ort
+                properties:
+                  fluidAdditionalAttributes:
+                    required: required
+                    placeholder: Ort
+                  validationErrorMessages:
+                    -
+                      code: 1221560910
+                      message: 'Bitte füllen Sie dieses Feld aus.'
+                    -
+                      code: 1221560718
+                      message: 'Bitte füllen Sie dieses Feld aus.'
+                    -
+                      code: 1347992400
+                      message: 'Bitte füllen Sie dieses Feld aus.'
+                    -
+                      code: 1347992453
+                      message: 'Bitte füllen Sie dieses Feld aus.'
+                  gridColumnClassAutoConfiguration:
+                    viewPorts:
+                      lg:
+                        numbersOfColumnsToUse: '9'
+                      md:
+                        numbersOfColumnsToUse: '9'
+                      sm:
+                        numbersOfColumnsToUse: '6'
+                      xs:
+                        numbersOfColumnsToUse: '12'
+                validators:
+                  -
+                    identifier: NotEmpty
+          -
+            type: GridRow
+            identifier: gridrow-2
+            label: 'Grid Str+Nr'
+            renderables:
+              -
+                defaultValue: ''
+                type: Text
+                identifier: text-6
+                label: Straßenangabe
+                properties:
+                  gridColumnClassAutoConfiguration:
+                    viewPorts:
+                      xs:
+                        numbersOfColumnsToUse: '12'
+                      sm:
+                        numbersOfColumnsToUse: '12'
+                      md:
+                        numbersOfColumnsToUse: '9'
+                      lg:
+                        numbersOfColumnsToUse: '9'
+                  fluidAdditionalAttributes:
+                    required: required
+                    placeholder: Straße
+                  validationErrorMessages:
+                    -
+                      code: 1221560910
+                      message: 'Bitte füllen Sie dieses Feld aus.'
+                    -
+                      code: 1221560718
+                      message: 'Bitte füllen Sie dieses Feld aus.'
+                    -
+                      code: 1347992400
+                      message: 'Bitte füllen Sie dieses Feld aus.'
+                    -
+                      code: 1347992453
+                      message: 'Bitte füllen Sie dieses Feld aus.'
+                validators:
+                  -
+                    identifier: NotEmpty
+              -
+                defaultValue: ''
+                type: Text
+                identifier: text-7
+                label: 'Nr. od. Zusatz'
+                properties:
+                  gridColumnClassAutoConfiguration:
+                    viewPorts:
+                      xs:
+                        numbersOfColumnsToUse: '12'
+                      sm:
+                        numbersOfColumnsToUse: '12'
+                      md:
+                        numbersOfColumnsToUse: '3'
+                      lg:
+                        numbersOfColumnsToUse: '3'
+                  fluidAdditionalAttributes:
+                    placeholder: Straßenzusatz
+          -
+            defaultValue: ''
+            type: Telephone
+            identifier: telephone-1
+            label: Telefon
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: Telefon
+          -
+            defaultValue: ''
+            type: Telephone
+            identifier: telephone-2
+            label: Mobile
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: Mobile
+          -
+            defaultValue: ''
+            type: Email
+            identifier: email-1
+            label: E-Mail
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: E-Mail
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Dieses Feld muss ausgefüllt werden'
+                -
+                  code: 1221560718
+                  message: 'Dieses Feld muss ausgefüllt werden'
+                -
+                  code: 1347992400
+                  message: 'Dieses Feld muss ausgefüllt werden'
+                -
+                  code: 1347992453
+                  message: 'Dieses Feld muss ausgefüllt werden'
+                -
+                  code: 1221559976
+                  message: 'Geben sie eine gültige E-Mailadresse an.'
+            validators:
+              -
+                identifier: EmailAddress
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Textarea
+            identifier: textarea-1
+            label: 'Ihre Nachricht'
+            properties:
+              fluidAdditionalAttributes:
+                required: required
+                placeholder: 'Ihre Nachricht an uns.'
+              validationErrorMessages:
+                -
+                  code: 1221560910
+                  message: 'Bitte teilen sie uns Ihr Anliegen mit.'
+                -
+                  code: 1221560718
+                  message: 'Bitte teilen sie uns Ihr Anliegen mit.'
+                -
+                  code: 1347992400
+                  message: 'Bitte teilen sie uns Ihr Anliegen mit.'
+                -
+                  code: 1347992453
+                  message: 'Bitte teilen sie uns Ihr Anliegen mit.'
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            properties:
+              text: 'Felder mit * sind Pflichtfelder und müssen ausgefüllt werden!'
+            type: StaticText
+            identifier: statictext-1
+            label: ''

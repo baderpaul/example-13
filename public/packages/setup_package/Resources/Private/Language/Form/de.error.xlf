@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.0" xmlns:t3="http://typo3.org/schemas/xliff">
+    <file t3:id="1475977066" source-language="en" datatype="plaintext" original="messages" date="2016-10-09T03:38:32Z" product-name="form">
+        <header/>
+        <body>
+             <trans-unit id="anrede-email-user" xml:space="preserve">
+                <source>Dear Mrs, Mr. Company</source>
+             </trans-unit>
+             <trans-unit id="message-email-user" xml:space="preserve">
+                <source>Dear Mrs, Mr. Company</source>
+             </trans-unit>
+        </body>
+    </file>
+</xliff>

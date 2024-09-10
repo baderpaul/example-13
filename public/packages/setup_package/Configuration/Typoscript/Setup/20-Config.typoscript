@@ -4,9 +4,8 @@ config {
     #frontend_editing = 0
 
     doctype = html5
-    #htmlTag.attributes.class = h-100
+    htmlTag.attributes.class = h-100
 
-    #removeDefaultJS = external
     removeDefaultCss = 1
     inlineStyle2TempFile = 0
     moveJsFromHeaderToFooter = 0

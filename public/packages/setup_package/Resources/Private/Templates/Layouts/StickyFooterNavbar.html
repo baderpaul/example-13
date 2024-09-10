@@ -1,5 +1,7 @@
-<html xmlns:ai="C1\AdaptiveImages\ViewHelpers" xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
-  data-namespace-typo3-fluid="true">
+<html xmlns:ai="C1\AdaptiveImages\ViewHelpers" 
+xmlns:f="https://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+  data-namespace-typo3-fluid="true"
+  class="h-100">
 <div name="top" class="d-flex flex-column h-100">
   <header class="py-0 py-lg-5 bg-white {f:if(condition: '{data.backend_layout} == pagets__default_onepage', then: 'fixed-top autohide')}">
     <div class="container-fluid px-0">
@@ -20,7 +22,7 @@
       </div>
     </div>
   </header>
-  <div class="container-fluid px-0 mt-70 mt-lg-0 ">
+  <div class="container-fluid px-0 mt-70 mt-lg-0 mb-auto">
     <f:if condition="{data.uid} > 1">
       <f:render partial="Header/Jumbotron" arguments="{_all}" />
     </f:if>

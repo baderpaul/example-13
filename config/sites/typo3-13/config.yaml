@@ -2,6 +2,7 @@ base: 'http://example-13.ddev.site/'
 dependencies:
   - typo3/fluid-styled-content
   - t3example/setup-package
+  - typo3/form
 languages:
   -
     title: Deutsch
