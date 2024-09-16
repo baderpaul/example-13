@@ -1,0 +1,6 @@
+inheritDefault: true
+mutations:
+  - mode: extend
+    directive: 'script-src'
+    sources:
+      - "'nonce-proxy'"

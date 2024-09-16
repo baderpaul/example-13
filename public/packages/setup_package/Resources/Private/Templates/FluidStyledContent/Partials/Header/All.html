@@ -1,11 +1,7 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:if condition="{data.header_layout} != 100">
     <f:if condition="{data.header} || {data.subheader} || {data.date}">
-        <header class="
-        {f:if(condition: '{flexform.backgroundcolor} == 1', then: ' bg-primary text-white')}
-        {f:if(condition: '{flexform.backgroundcolor} == 2', then: ' bg-secondary text-light')}
-        {f:if(condition: '{flexform.backgroundcolor} == 3', then: ' bg-light text-dark')}"
-        >
+        <header>
             <f:render partial="Header/Header" arguments="{
                 header: data.header,
                 layout: data.header_layout,

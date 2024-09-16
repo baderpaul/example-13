@@ -4,6 +4,18 @@ $enable-dark-mode: false;
 $enable-important-utilities:  false;
 $enable-shadows: false;
 
+// Reset Browser defaults
+* {
+  margin-block-start: 0; 
+  margin-block-end: 0; 
+  margin-inline-start: 0; 
+  margin-inline-end: 0;
+  padding-block-start: 0; 
+  padding-block-end: 0; 
+  padding-inline-start: 0; 
+  padding-inline-end: 0;
+}
+
 // prefix
 $prefix: bs-;
 
@@ -171,7 +183,7 @@ $font-weight-600: 600;
 $font-weight-500: 500;
 
 // Fonthandling
-$font-family-base: 'Helvetica Neue';
+$font-family-base: 'Roboto';
 
 $font-size-base: $spacer;
 $font-size-sm: $font-size-base * .875;
@@ -218,8 +230,8 @@ $line-height-lg: 1.6;
 $line-height-sm: 1.2;
 
 // headings-variables
-$headings-margin-bottom: 0;
-$headings-font-family: 'Raleway',sans-serif;
+$headings-margin-bottom: $spacer;
+$headings-font-family: 'Roboto';
 $headings-font-weight: 700;
 $headings-line-height: $line-height-lg;
 $headings-color: $gray-900;

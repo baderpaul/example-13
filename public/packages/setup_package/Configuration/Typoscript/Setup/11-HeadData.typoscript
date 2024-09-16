@@ -1,9 +1,6 @@
 page.headerData.8 = TEXT
 page.headerData.8.value (
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>   
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700|Raleway:300,400,400i,500,500i,700,800,900&display=optional" rel="stylesheet">
-    <link rel="manifest" href = "manifest.json">
+
     <meta name="theme-color" content="#444444"/>  
     <meta name="apple-mobile-web-app-capable" content="yes">  
     <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
@@ -11,7 +8,9 @@ page.headerData.8.value (
     <meta name="msapplication-TileImage" content="setup_package/Resources/Public/Icons/Pwa/apple-icon-144x144.png">  
     <meta name="msapplication-TileColor" content="#FFFFFF">
  )
-
+   # <link rel="preconnect" href="https://fonts.googleapis.com">
+   # <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   # <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
 page.headerData.10 < lib.preConnect
 #page.headerData.11 < lib.preLoad
 
@@ -27,10 +26,10 @@ page.includeCSS {
 }
 
 page.includeJSFooter {
-    bootstrap = EXT:{$extKey}/Resources/Public/Vendor/bootstrap/dist/js/bootstrap.bundle.js
+    bootstrap = EXT:{$extKey}/Resources/Public/Contrib/bootstrap/dist/js/bootstrap.bundle.js
     bootstrap.excludeFromConcatenation = 1
     bootstrap.defer= 1
-    mobiledropdown = EXT:{$extKey}/Resources/Public/Vendor/metismenujs/dist/metismenujs.js
+    mobiledropdown = EXT:{$extKey}/Resources/Public/Contrib/metismenujs/dist/metismenujs.js
     mobiledropdown.defer = 1
     lazysizes = https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js
     lazysizes.excludeFromConcatenation = 1
@@ -38,7 +37,7 @@ page.includeJSFooter {
     lazysizes.defer = 1
     javascriptfooter = EXT:{$extKey}/Resources/Public/JavaScript/addToFooter.js
     javascriptfooter.defer = 1
-    lightbox = EXT:{$extKey}/Resources/Public/Vendor/glightbox/dist/js/glightbox.min.js
+    lightbox = EXT:{$extKey}/Resources/Public/Contrib/glightbox/dist/js/glightbox.min.js
     lightbox.defer = 1
 }
 

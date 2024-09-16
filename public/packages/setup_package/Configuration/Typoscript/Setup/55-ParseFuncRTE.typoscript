@@ -1,0 +1,4 @@
+lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.nonWrappedTag = figure
+lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.nonWrappedTag >
+lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines >
+lib.parseFunc_RTE.externalBlocks.table.stdWrap >

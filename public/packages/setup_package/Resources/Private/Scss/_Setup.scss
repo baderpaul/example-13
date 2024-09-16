@@ -1,11 +1,13 @@
-// Bootstrap 5 functions
+// Bootstrap functions
 @import "../../Public/Contrib/bootstrap/scss/functions";
 // add custom variables overwrite bootstrap variables
 @import "CustomVariables/Variables";
 @import "../../Public/Contrib/bootstrap/scss/variables";
 //@import "../../Public/Contrib/bootstrap/scss/variables-dark";
 @import "../../Public/Contrib/bootstrap/scss/maps";
-//@import "CustomVariables/Maps";
+@import "CustomVariables/RemoveFromMaps";
+@import "CustomVariables/AddToMaps";
+
 // add custom mixins overwrite bootstrap mixins
 @import "../../Public/Contrib/bootstrap/scss/mixins";
 //@import "CustomVariables/Mixins";
@@ -16,3 +18,8 @@
 
 //  custom Bootstrap Icons 
 //@import "CustomStyles/BootstrapIcons/BootstrapIcons";
+
+:root {
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
+    --bs-body-font-family: "Roboto";
+}

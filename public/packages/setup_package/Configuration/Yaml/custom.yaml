@@ -9,23 +9,26 @@ editor:
     height: 150
     width: 'auto'
 
-    #htmlSupport:
-     # allow: 
-       # - { name: 'div', classes: true, styles: true } 
+    htmlSupport:
+      allow: 
+        - { name: 'table', classes: true} 
+      disallow:
+        - { name: 'figure'}
 
     style:
       definitions:
+        # table classes
+        - { name: 'Tabelle', element: 'table', classes: [table] }
+        - { name: 'Tabelle gestreift', element: 'table', classes: [table-striped] }
+        - { name: 'Tabelle mit Border', element: 'table', classes: [table-bordered] }
+        - { name: 'Tabelle mit Hovereffekt', element: 'table', classes: [table-hover] }   
+        - { name: 'Tabelle mit weniger Abständen', element: 'table', classes: [table-sm] }      
         # block level styles
-        - { name: 'H2', element: 'h2', classes: [fs-17 pb-10 text-uppercase], styles: { color: 'orange', background: 'red' } }
-        - { name: 'H3', element: 'h3', classes: [], styles: { color: 'orange', background: 'blue' } }
-        - { name: 'container', element: 'div', classes: [col], styles: { border: 'solid black 12px"' } }
+        - { name: 'H2', element: 'h2', classes: [fs-17 text-uppercase] }
         - { name: 'Quote / Citation', element: 'blockquote', classes: [],  }
         - { name: 'Code block', element: 'code', classes: [],  }
-        - { name: 'Test', element: 'p', classes: ['text-capitalize'], styles: { color: 'red', background: 'blue' } }
+        - { name: 'Test P', element: 'p', classes: ['text-capitalize'] }
         # Inline styles
-        - { name: 'Yellow marker', element: 'h2', classes: [], styles: { background-color: 'yellow' } }
-        - { name: 'Link underline', element: 'a', classes: [link-underline-primary text-decoration-underline], styles: {text-decoration: 'underline'}}
-
     heading:
       options:
         - { model: 'paragraph', title: 'Paragraph' }
@@ -84,3 +87,32 @@ editor:
         #- fontBackgroundColor
         #- fontColor
         #- fontSize
+
+    alignment:
+      options:
+        - { name: 'left', className: 'text-start' }
+        - { name: 'center', className: 'text-center' }
+        - { name: 'right', className: 'text-end' }
+        - { name: 'justify', className: 'text-justify' }
+
+    table:
+      #defaultHeadings: { rows: 1 }
+      contentToolbar:
+        - tableColumn
+        - tableRow
+        - mergeTableCells
+        - tableProperties
+        - tableCellProperties
+        - toggleTableCaption
+
+    removeButtons:
+      - anchor
+      - superscript
+      - subscript
+      - underline
+      - strike
+      
+    importModules:
+      - { module: '@ckeditor/ckeditor5-word-count', exports: ['WordCount'] }
+      # Provides showBlocks toolbar item
+      - { module: '@ckeditor/ckeditor5-show-blocks', exports: ['ShowBlocks'] }

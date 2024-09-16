@@ -4,16 +4,3 @@ $theme-colors-text: map-remove($theme-colors-text, "info", "warning", "success",
 $theme-colors-bg-subtle: map-remove($theme-colors-bg-subtle, "info", "warning", "success", "danger");
 $theme-colors-border-subtle: map-remove($theme-colors-border-subtle, "info", "warning", "success", "danger");
 $grays: map-remove($grays,"100", "200", "400", "500", "600", "700");
-
-// add aspect ratio
-$add-aspect-ratios:(
-  "193x65": calc(65 / 193 * 100%),
-  "150x51": calc(51 / 150 * 100%)
-);
-$aspect-ratios: map-merge($aspect-ratios,$add-aspect-ratios);
-
-// add position-value
-$add-position-values: (
- "10": $spacer
-);
-$position-values: map-merge($position-values,$add-position-values);

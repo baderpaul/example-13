@@ -104,6 +104,9 @@ return [
         'displayErrors' => 0,
         'encryptionKey' => '19a17220d28f3dd85dce69268fed79bc2198f5d0f30387c07cfbe31ad4e1d8cea3dd3fadca23d34e39d0e0dac559b5b4',
         'exceptionalErrors' => 4096,
+        'features' => [
+            'security.frontend.enforceContentSecurityPolicy' => true,
+        ],
         'sitename' => 'TYPO3-13',
         'systemLocale' => 'de_DE.UTF-8',
         'systemMaintainers' => [
