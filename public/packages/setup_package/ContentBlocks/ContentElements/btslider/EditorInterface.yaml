@@ -2,8 +2,8 @@ name: t3example/btslider
 title: t3example/btslider
 description: 'Carousel/Imageslider width Bootstrap'
 basics:
-     - TYPO3/Appearance
-     - TYPO3/Links
+  - TYPO3/Appearance
+  - TYPO3/Links
 #group: common
 prefixFields: true
 prefixType: full
