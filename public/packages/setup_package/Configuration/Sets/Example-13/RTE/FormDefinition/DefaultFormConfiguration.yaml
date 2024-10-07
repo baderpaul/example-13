@@ -7,7 +7,7 @@ TYPO3:
         allowSaveToExtensionPaths: true
         allowDeleteFromExtensionPaths: true
         allowedExtensionPaths:
-          100: 'EXT:setup_package/Configuration/Yaml/Forms/'
+          100: 'EXT:setup_package/Configuration/Sets/Example-13/RTE/Forms/'
         sortByKeys:
           - name
           - fileUid

@@ -2,3 +2,10 @@
 .ms-n999 {
     margin-left: -2000px;
 }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 60px var(--#{$prefix}body-bg) inset!important;
+}

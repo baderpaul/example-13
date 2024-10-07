@@ -17,7 +17,7 @@ page.headerData.10 < lib.preConnect
 
 //page.headerData.13 < lib.preImage
 page.includeCSS {
-    lightbox = EXT:{$extKey}/Resources/Public/Vendor/glightbox/dist/css/glightbox.min.css
+    lightbox = EXT:{$extKey}/Resources/Public/Contrib/glightbox/dist/css/glightbox.min.css
     themestyle = EXT:{$extKey}/Resources/Public/Styles/StyleSheet.css
     themestyle {
         forceOnTop = 1

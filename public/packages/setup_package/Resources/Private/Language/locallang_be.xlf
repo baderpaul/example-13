@@ -6,7 +6,13 @@
     </header>
     <body>
       <trans-unit id="show-breadcrumb" resname="show-breadcrumb" approved="no">
-        <source>Breadcrumb Menu auf dieser Seite verbergen.</source>
+        <source>Breadcrumb</source>
+      </trans-unit>
+      <trans-unit id="bc-active" resname="show-breadcrumb" approved="no">
+        <source>Aktiv</source>
+      </trans-unit>
+      <trans-unit id="bc-deactive" resname="show-breadcrumb" approved="no">
+        <source>Deaktiviert</source>
       </trans-unit>
       <trans-unit id="col-slider" resname="col-slider" approved="no">
         <source>Slider</source>

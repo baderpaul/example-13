@@ -37,6 +37,13 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = "EXT:$packageKey/Confi
 ##$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['news'] = "EXT:$packageKey/Configuration/Yaml/RTE/news.yaml";
 
 /***************
+ * Define TypoScript as content rendering template.
+ * This is normally set in Fluid Styled Content.
+ */
+
+$GLOBALS['TYPO3_CONF_VARS']['FE']['contentRenderingTemplates'][] = "$packageKey/Configuration/TypoScript/";
+
+/***************
  * extend css for CkEditor backend
  */
 #$GLOBALS['TYPO3_CONF_VARS']['BE']['stylesheets']['setup_package']  = "EXT:$packageKey/Resources/Public/Styles/Backend/";
@@ -49,9 +56,15 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = "EXT:$packageKey/Confi
         module.tx_form {
         settings {
             yamlConfigurations {
-                100 = EXT:setup_package/Configuration/Yaml/FormDefinition/DefaultFormConfiguration.yaml
+                100 = EXT:setup_package/Configuration/Sets/Example-13/RTE/FormDefinition/DefaultFormConfiguration.yaml
                 }
             }
         }
     ')
 );
+
+/***************
+ * Cache schema EXT
+*/
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['caching']['cacheConfigurations']['tx_schema']['backend']
+   ??= \TYPO3\CMS\Core\Cache\Backend\FileBackend::class;

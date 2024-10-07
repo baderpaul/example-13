@@ -1,0 +1,5 @@
+name: t3example/news
+label: News Typoscript Configuration
+
+dependencies:
+  - t3example/setup-package

@@ -43,6 +43,14 @@ return [
             'automaticInstallation' => '1',
             'offlineMode' => '0',
         ],
+        'schema' => [
+            'allowOnlyOneBreadcrumbList' => '0',
+            'automaticBreadcrumbExcludeAdditionalDoktypes' => '',
+            'automaticBreadcrumbSchemaGeneration' => '0',
+            'automaticWebPageSchemaGeneration' => '1',
+            'embedMarkupInBodySection' => '0',
+            'embedMarkupOnNoindexPages' => '1',
+        ],
     ],
     'FE' => [
         'debug' => false,

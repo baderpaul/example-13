@@ -142,8 +142,8 @@ TCEMAIN.linkHandler.tx_news {
     }
     scanAfter = page
 
-tx_news.templateLayouts {
-        1 = Listansicht Card
-        2 = Listansicht bei Detailansicht
-}
+#tx_news.templateLayouts {
+#        1 = Listansicht Card
+#        2 = Listansicht bei Detailansicht
+#}
 }

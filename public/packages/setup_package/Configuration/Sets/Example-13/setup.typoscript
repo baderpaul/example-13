@@ -1,1 +1,1 @@
-@import 'EXT:setup_package/Configuration/TypoScript/setup.typoscript'
+@import './TypoScript/setup.typoscript'

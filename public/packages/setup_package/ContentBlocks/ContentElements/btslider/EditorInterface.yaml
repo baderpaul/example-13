@@ -30,8 +30,13 @@ fields:
       - type: Linebreak      
       - identifier: control
         type: Checkbox
-        renderType: checkboxToggle
+        renderType: checkboxLabeledToggle
         default: 0
+        items:
+        - label: 'Prev / Next Button einblenden'
+          labelChecked: 'On'
+          labelUnchecked: 'Out'
+          invertStateDisplay: true
   - identifier: tab_2
     type: Tab
   - identifier: palette_2

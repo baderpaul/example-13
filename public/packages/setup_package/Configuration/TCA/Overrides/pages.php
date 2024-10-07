@@ -11,13 +11,12 @@ $newFields = [
         'exclude' => 1,
         'config' => [
             'type' => "check",
-            'renderType' => 'checkboxToggle',
+            'renderType' => 'checkboxLabeledToggle',
             'items' => [
                 [
-                    'label' => '0',
-                    'value' => '',
-                    'label' => '1',
-                    'value' => '',
+                    0 => '',
+                    'labelChecked' => 'LLL:' . $packageKey . '/Resources/Private/Language/locallang_be.xlf:bc-active',
+                    'labelUnchecked' => 'LLL:' . $packageKey . '/Resources/Private/Language/locallang_be.xlf:bc-deactive',
                 ]
             ],
         ]

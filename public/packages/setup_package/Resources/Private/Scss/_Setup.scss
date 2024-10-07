@@ -4,14 +4,14 @@
 @import "CustomVariables/Variables";
 @import "../../Public/Contrib/bootstrap/scss/variables";
 //@import "../../Public/Contrib/bootstrap/scss/variables-dark";
-@import "../../Public/Contrib/bootstrap/scss/maps";
 @import "CustomVariables/RemoveFromMaps";
 @import "CustomVariables/AddToMaps";
+@import "../../Public/Contrib/bootstrap/scss/maps";
 
 // add custom mixins overwrite bootstrap mixins
 @import "../../Public/Contrib/bootstrap/scss/mixins";
 //@import "CustomVariables/Mixins";
-//@import "../../Public/Contrib/bootstrap/scss/root";
+
 // add custom utilities overwrite/extend bootstrap utilities
 @import "../../Public/Contrib/bootstrap/scss/utilities";
 //@import "CustomVariables/Utilities";

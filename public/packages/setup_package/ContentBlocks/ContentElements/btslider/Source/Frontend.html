@@ -1,17 +1,16 @@
-<f:debug>{_all}</f:debug>
-
-    <div id="carouselExampleIndicators-{data.uid}"
+<f:layout name="Default" />
+<f:section name="Main">
+<div id="carouselExampleIndicators-{data.uid}"
     class="carousel slide {f:if(condition: '{data._raw.techdivision_btslider_modus} == 2', then: 'carousel-fade')}"
     data-bs-ride="carousel">
    <div class="carousel-inner">
        <f:render partial="SliderItems" arguments="{data: data}"/>
    </div>
-   <f:comment>
    <f:if condition="{data.tx_mask_carouselindicator}==1">
      <f:render partial="SliderIndicator" arguments="{data: data}"/>
    </f:if>
    <f:if condition="{data.tx_mask_carouselcontrol}==1">
       <f:render partial="SliderControl" arguments="{data: data}"/>
    </f:if>
-  </f:comment>
 </div>
+</f:section>
