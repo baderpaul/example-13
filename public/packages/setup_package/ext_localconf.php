@@ -31,7 +31,7 @@ $packageKey = "setup_package";
  * add custom RTE configuration
  */
 if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] )) {
-$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = "EXT:$packageKey/Configuration/Yaml/custom.yaml";
+$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = "EXT:$packageKey/Configuration/Sets/Example-13/RTE/custom.yaml";
 }
 #$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['mask'] = "EXT:$packageKey/Configuration/Yaml/RTE/mask.yaml";
 ##$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['news'] = "EXT:$packageKey/Configuration/Yaml/RTE/news.yaml";

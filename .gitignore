@@ -9,5 +9,3 @@ var/
 !/vendor/
 /vendor/*
 !/vendor/t3example/
-composer.json
-composer.lock

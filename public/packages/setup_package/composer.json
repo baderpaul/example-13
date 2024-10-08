@@ -1,0 +1,16 @@
+{
+    "name": "t3example/setup-package",
+    "type": "typo3-cms-extension",
+    "description": "Pagesetup with all stuff",
+    "version": "1.0.0",
+    "extra": {
+      "typo3/cms": {
+        "extension-key": "setup_package"
+      }
+    },
+    "autoload": {
+      "psr-4": {
+        "T3example\\SetupPackage\\": "Classes/"
+      }
+    }
+  }
