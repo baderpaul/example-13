@@ -1,6 +1,8 @@
 lib.contentBlock {
     #settings < lib.contentElement.settings
     partialRootPaths.0 < lib.contentElement.partialRootPaths.0
+    partialRootPaths.10 = EXT:setup_package/Resources/Private/Templates/FluidStyledContent/Partials/
+    
     layoutRootPaths.0 < lib.contentElement.layoutRootPaths.0
     layoutRootPaths.10 = EXT:setup_package/Resources/Private/Templates/FluidStyledContent/Layouts/
 }

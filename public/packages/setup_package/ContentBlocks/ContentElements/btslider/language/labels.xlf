@@ -13,7 +13,7 @@
 				<source>Pluginheadline im TYPO3 Backend</source>
 			</trans-unit>
 			<trans-unit id="tabs.tab_1" resname="tabs.tab_1">
-				<source>General</source>
+				<source>Slide + Prev Einstellungen</source>
 			</trans-unit>
 			<trans-unit id="palettes.palette_1.label" resname="palettes.palette_1.label">
 				<source>Slidereinstellungen</source>

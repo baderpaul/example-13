@@ -44,9 +44,9 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = "EXT:$packageKey/Confi
 $GLOBALS['TYPO3_CONF_VARS']['FE']['contentRenderingTemplates'][] = "$packageKey/Configuration/TypoScript/";
 
 /***************
- * extend css for CkEditor backend
+ * extend css for TYPO3 BE + CkEditor backend
  */
-#$GLOBALS['TYPO3_CONF_VARS']['BE']['stylesheets']['setup_package']  = "EXT:$packageKey/Resources/Public/Styles/Backend/";
+$GLOBALS['TYPO3_CONF_VARS']['BE']['stylesheets']['setup_package']  = "EXT:$packageKey/Resources/Public/Styles/OverwriteBe.css";
 
 /***************
  * BE setup for form

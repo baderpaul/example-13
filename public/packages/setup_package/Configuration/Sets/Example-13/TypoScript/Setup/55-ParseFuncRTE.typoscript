@@ -1,4 +1,24 @@
 lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.nonWrappedTag = figure
-lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.nonWrappedTag >
-lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines >
-lib.parseFunc_RTE.externalBlocks.table.stdWrap >
+#lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines.nonWrappedTag >
+#lib.parseFunc_RTE.nonTypoTagStdWrap.encapsLines >
+#lib.parseFunc_RTE.externalBlocks.table.stdWrap >
+lib.parseFunc_RTE {
+    externalBlocks {
+        table {
+            stripNL = 1
+            stdWrap {
+                HTMLparser = 1
+                HTMLparser {
+                    tags.table.fixAttrib.class {
+                        default = table table-striped table-bordered table-hover table-hover table-sm
+                        always = 1
+                        list = table table-striped table-bordered table-hover table-hover table-sm
+                    }
+                    keepNonMatchedTags = 1
+                }
+            }
+        }
+    }
+}
+
+#lib.parseFunc_RTE.externalBlocks.table.stdWrap.HTMLparser.tags.table.fixAttrib.class.list = table,table-striped,table-bordered,table-hover,table-hover,table-sm

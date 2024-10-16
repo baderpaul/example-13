@@ -1,0 +1,19 @@
+# To be used within ContentElements
+identifier: t3example/Links
+fields:
+  -
+    identifier: links_tab
+    type: Tab
+    label: Links
+  -
+    identifier: links_palette
+    type: Palette
+    fields:
+      -
+        identifier: sectionIndex
+        useExistingField: true
+      -
+        identifier: linkToTop
+        useExistingField: true
+      - type: Linebreak 
+       

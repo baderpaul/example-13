@@ -1,130 +1,75 @@
 <?php
 defined('TYPO3') or die();
-// Feld definieren
-$tempColumns = [
-    
-    'tx_imagetext_color' => [
-    'label' => 'color',
-    'exclude' => 0,
-    'config' => [
-    'type' => 'input',
-    'eval' => 'trim',
-    ]
-    ],
-    'tx_imagetext_image' => [
-    'label' => 'image',
-       'config' => [
-       'type' => 'select',
-       'renderType' => 'selectSingle',
-       'special' => 'languages',
-       'items' => [
-           [
-           'LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages',
-           -1,
-           'flags-multiple'
-           ]
-       ],
-       'default' => 0,
-       ],
-    ]
-   ];
-   
-   // Feld der allgemeinen Datensatzbeschreibung hinzufügen - noch keine Ausgabe im Backend!
-   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
-   
-   // Feld einer neuen Palette hinzufügen
-   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
-           'tt_content',
-           '--palette--;New Fields;New Fieldss',
-           'imagetext',
-           'tx_imagetext_color, tx_imagetext_image'
-           );
 
-   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
-   'tt_content',
-   'frames',
-   '--palette--;New Fields;New Fieldss',
-   ' --linebreak--,tx_imagetext_color, tx_imagetext_image',
-   'after:space_after_class'
-);
-   // Neue Palette dem Tag hinzufügen, nach dem Titel - Dadurch Anzeige im Backend
-   \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-    'tt_content',
-    '--div--;Animation,
-    --palette--;;imagetext',
-    '',
-    ''
-   ); 
-   
-/*
 $tempColumns = [
-    'tx_content_animations_animation' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:label.animation',
-        'config' => [
-            'items' => [
-                ['LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:item.no-animation', ''],
-                ['LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:item.fade-animations', '--div--'],
-                ['fade', 'fade', 'EXT:content_animations/Resources/Public/Images/fade.gif'],
-                ['fade-up', 'fade-up', 'EXT:content_animations/Resources/Public/Images/fade-up.gif'],
-                ['fade-down', 'fade-down', 'EXT:content_animations/Resources/Public/Images/fade-down.gif'],
-                ['fade-right', 'fade-right', 'EXT:content_animations/Resources/Public/Images/fade-right.gif'],
-                ['fade-left', 'fade-left', 'EXT:content_animations/Resources/Public/Images/fade-left.gif'],
-                ['fade-up-right', 'fade-up-right', 'EXT:content_animations/Resources/Public/Images/fade-up-right.gif'],
-                ['fade-up-left', 'fade-up-left', 'EXT:content_animations/Resources/Public/Images/fade-up-left.gif'],
-                ['fade-down-right', 'fade-down-right', 'EXT:content_animations/Resources/Public/Images/fade-down-right.gif'],
-                ['fade-down-left', 'fade-down-left', 'EXT:content_animations/Resources/Public/Images/fade-down-left.gif'],
-                ['LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:item.flip-animations', '--div--'],
-                ['flip-up', 'flip-up', 'EXT:content_animations/Resources/Public/Images/flip-up.gif'],
-                ['flip-down', 'flip-down', 'EXT:content_animations/Resources/Public/Images/flip-down.gif'],
-                ['flip-left', 'flip-left', 'EXT:content_animations/Resources/Public/Images/flip-left.gif'],
-                ['flip-right', 'flip-right', 'EXT:content_animations/Resources/Public/Images/flip-right.gif'],
-                ['LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:item.slide-animations', '--div--'],
-                ['slide-up', 'slide-up', 'EXT:content_animations/Resources/Public/Images/slide-up.gif'],
-                ['slide-down', 'slide-down', 'EXT:content_animations/Resources/Public/Images/slide-down.gif'],
-                ['slide-right', 'slide-right', 'EXT:content_animations/Resources/Public/Images/slide-right.gif'],
-                ['slide-left', 'slide-left', 'EXT:content_animations/Resources/Public/Images/slide-left.gif'],
-                ['LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:item.zoom-animations', '--div--'],
-                ['zoom-in', 'zoom-in', 'EXT:content_animations/Resources/Public/Images/zoom-in.gif'],
-                ['zoom-in-up', 'zoom-in-up', 'EXT:content_animations/Resources/Public/Images/zoom-in-up.gif'],
-                ['zoom-in-down', 'zoom-in-down', 'EXT:content_animations/Resources/Public/Images/zoom-in-down.gif'],
-                ['zoom-in-right', 'zoom-in-right', 'EXT:content_animations/Resources/Public/Images/zoom-in-right.gif'],
-                ['zoom-in-left', 'zoom-in-left', 'EXT:content_animations/Resources/Public/Images/zoom-in-left.gif'],
-                ['zoom-out', 'zoom-out', 'EXT:content_animations/Resources/Public/Images/zoom-out.gif'],
-                ['zoom-out-up', 'zoom-out-up', 'EXT:content_animations/Resources/Public/Images/zoom-out-up.gif'],
-                ['zoom-out-down', 'zoom-out-down', 'EXT:content_animations/Resources/Public/Images/zoom-out-down.gif'],
-                ['zoom-out-right', 'zoom-out-right', 'EXT:content_animations/Resources/Public/Images/zoom-out-right.gif'],
-                ['zoom-out-left', 'zoom-out-left', 'EXT:content_animations/Resources/Public/Images/zoom-out-left.gif'],
+    'animations' => [
+            'exclude' => true,
+            'label' => 'Animation',
+            'config' => [
+                'type' => 'select',
+                'renderType' => 'selectSingle',
+                'items' => [
+                    ['keine Animation','none'],
+                    ['Fadeanimationen'],
+                    ['fade', 'fade'],
+                    ['fade-up', 'fade-up'],
+                    ['fade-down', 'fade-down'],
+                    ['fade-right', 'fade-right'],
+                    ['fade-left', 'fade-left'],
+                    ['fade-up-right', 'fade-up-right'],
+                    ['fade-up-left', 'fade-up-left'],
+                    ['fade-down-right', 'fade-down-right'],
+                    ['fade-down-left', 'fade-down-left'],
+                    [ 'Flipanimationen'],
+                    ['flip-up', 'flip-up'],
+                    ['flip-down', 'flip-down'],
+                    ['flip-left', 'flip-left'],
+                    ['flip-right', 'flip-right'],
+                    ['Slideanimationen'],
+                    ['slide-up', 'slide-up'],
+                    ['slide-down', 'slide-down'],
+                    ['slide-right', 'slide-right'],
+                    ['slide-left', 'slide-left'],
+                    ['Zoomanimationen'],
+                    ['zoom-in', 'zoom-in'],
+                    ['zoom-in-up', 'zoom-in-up'],
+                    ['zoom-in-down', 'zoom-in-down'],
+                    ['zoom-in-right', 'zoom-in-right'],
+                    ['zoom-in-left', 'zoom-in-left'],
+                    ['zoom-out', 'zoom-out'],
+                    ['zoom-out-up', 'zoom-out-up'],
+                    ['zoom-out-down', 'zoom-out-down'],
+                    ['zoom-out-right', 'zoom-out-right'],
+                    ['zoom-out-left', 'zoom-out-left'],
+                ],
             ],
-            'renderType' => 'animationPreview',
-            'type' => 'select',
-            'size' => 1,
         ],
-    ],
-    'tx_content_animations_duration' => [
+    'duration' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:label.duration',
+        'label' => 'Länge in Millisekunden',
+        'description' => 'Default 0.0',
         'config' => [
             'type' => 'input',
-            'size' => 5,
+            'size' => 7,
             'eval' => 'trim,int',
             'range' => [
-                'lower' => 400,
+                'lower' => 0,
                 'upper' => 3000,
             ],
-            'default' => 800,
+            'default' => 0,
             'slider' => [
-                'step' => 50,
-                'width' => 200,
+                'step' => 100,
+                'width' => 400,
             ],
         ],
     ],
-    'tx_content_animations_delay' => [
+    'delay' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:label.delay',
+        'label' => 'Verzögerung in Millisekunden',
+        'description' => 'Default 0',
         'config' => [
             'type' => 'input',
-            'size' => 5,
+            'size' => 7,
             'eval' => 'trim,int',
             'range' => [
                 'lower' => 0,
@@ -137,10 +82,10 @@ $tempColumns = [
             ],
         ],
     ],
-
-    'tx_content_animations_offset' => [
+    'offset' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:label.offset',
+        'label' => 'Versatz',
+        'description' => 'Versatz in Pixel',
         'config' => [
             'type' => 'input',
             'size' => 5,
@@ -148,10 +93,10 @@ $tempColumns = [
             'default' => 0,
         ],
     ],
-
-    'tx_content_animations_anchor_placement' => [
+    'anchor_placement' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:label.anchor-placement',
+        'label' => 'Ankerplatzierung',
+        'description' => 'Versatz in Pixel',
         'config' => [
             'type' => 'select',
             'renderType' => 'selectSingle',
@@ -170,88 +115,43 @@ $tempColumns = [
             ],
         ],
     ],
-    'tx_content_animations_once' => [
+    'animations_once' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:label.once',
-        'description' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:desc.once',
+        'label' => 'Animation einmalig abspielen',
+        'description' => 'Animation wird nur einmalig, beim herunterscrollen, abgespielt',
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',
             'default' => 1,
         ],
     ],
-    'tx_content_animations_mirror' => [
+    'animations_mirror' => [
         'exclude' => true,
-        'label' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:label.mirror',
-        'description' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:desc.mirror',
+        'label' => 'Spiegeln',
+        'description' => 'Animation wird beim herunterscrollen gespiegelt ausgeblendet',
         'config' => [
             'type' => 'check',
             'renderType' => 'checkboxToggle',
             'default' => 0,
         ],
     ],
-    'tx_content_animations_easing' => [
-        'exclude' => true,
-        'label' => 'LLL:EXT:content_animations/Resources/Private/Language/locallang_be.xlf:label.easing',
-        'config' => [
-            'type' => 'select',
-            'renderType' => 'selectSingle',
-            'items' => [
-                ['', ''],
-                ['linear', 'linear'],
-                ['ease', 'ease'],
-                ['ease-in', 'ease-in'],
-                ['ease-out', 'ease-out'],
-                ['ease-in-out', 'ease-in-out'],
-                ['ease-in-back', 'ease-in-back'],
-                ['ease-out-back', 'ease-out-back'],
-                ['ease-in-out-back', 'ease-in-out-back'],
-                ['ease-in-sine', 'ease-in-sine'],
-                ['ease-out-sine', 'ease-out-sine'],
-                ['ease-in-out-sine', 'ease-in-out-sine'],
-                ['ease-in-quad', 'ease-in-quad'],
-                ['ease-out-quad', 'ease-out-quad'],
-                ['ease-in-out-quad', 'ease-in-out-quad'],
-                ['ease-in-cubic', 'ease-in-cubic'],
-                ['ease-out-cubic', 'ease-out-cubic'],
-                ['ease-in-out-cubic', 'ease-in-out-cubic'],
-                ['ease-in-quart', 'ease-in-quart'],
-                ['ease-out-quart', 'ease-out-quart'],
-                ['ease-in-out-quart', 'ease-in-out-quart'],
-            ],
-        ],
-    ],
 ];
 
-// add new animation palettes
-$GLOBALS['TCA']['tt_content']['palettes']['tx_content_animations_animation'] = [
-    'showitem' => 'tx_content_animations_animation',
-];
-
-// add new animation speed palette
-$GLOBALS['TCA']['tt_content']['palettes']['tx_content_animations_timing'] = [
-    'showitem' => '
-        tx_content_animations_duration,
-        tx_content_animations_delay
-    ',
-];
-
-// add new extended animations palette
-$GLOBALS['TCA']['tt_content']['palettes']['tx_content_animations_extended'] = [
-    'showitem' => '
-        tx_content_animations_once,
-        tx_content_animations_mirror,
-        --linebreak--,
-        tx_content_animations_easing,
-        --linebreak--,
-        tx_content_animations_anchor_placement,
-        --linebreak--,
-        tx_content_animations_offset
-    ',
-];
-
-// add all fields to tt_content
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+        'tt_content',
+        'animation',
+        'animations,--linebreak--,duration,delay,--linebreak--,offset,anchor_placement,--linebreak--,animations_once,animations_mirror'
+        );
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+    'tt_content',
+    '--palette--;Animation;animation',
+    '',
+    'after:sectionIndex'
+);
+
 
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
@@ -374,4 +274,4 @@ ExtensionManagementUtility::addPiFlexFormValue(
     'FILE:' . $packageKey . '/Configuration/FlexForms/4ColSet.xml',
     'cols_4'
 );
-$GLOBALS['TCA']['tt_content']['types']['cols_4']['showitem'] = 'sys_language_uid,CType,header,layout,colPos,tx_container_parent,pi_flexform';*/
+$GLOBALS['TCA']['tt_content']['types']['cols_4']['showitem'] = 'sys_language_uid,CType,header,layout,colPos,tx_container_parent,pi_flexform';

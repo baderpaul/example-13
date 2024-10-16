@@ -1,16 +1,29 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+ <f:if condition="{data.animations} != none">
+    <f:asset.css identifier="aos-css" href="https://unpkg.com/aos@next/dist/aos.css" />
+<f:asset.script identifier="aos-animation" src="https://unpkg.com/aos@next/dist/aos.js" />
+<f:asset.script identifier="aos-animation">
+   AOS.init();
+</f:asset.script></f:if>
+<f:comment></f:comment>
     <f:if condition="{data.frame_class} != none">
         <f:then>
             <div id="c{data.uid}"
+                 {f:if(condition:data.animations, then:' data-aos="{data.animations}"')}
+                 {f:if(condition:data.duration, then:' data-aos-duration="{data.duration}"')}
+                 {f:if(condition:data.delay, then:' data-aos-delay="{data.delay}"')}
+                 {f:if(condition:data.offset, then:' data-aos-offset="{data.offset}"')}
+                 {f:if(condition:'{data.animations_once} == 1', then:' data-aos-once="true"', else:' data-aos-once="false"')}
+                
                  class="frame frame-type-{data.CType} frame-layout-{data.layout}
-                 {f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}
-                 {f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}
-                        {f:if(condition: '{data.layout} == 10', then:' container-sm mx-0')}
-                        {f:if(condition: '{data.layout} == 11', then:' container-md')}
-                        {f:if(condition: '{data.layout} == 12', then:' container-xl')}
-                        {f:if(condition: '{data.layout} == 13', then:' container-fluid')}
+                 {f:if(condition: data.space_before_class, then:' frame-space-before-{data.space_before_class}')}
+                 {f:if(condition: data.space_after_class, then:' frame-space-after-{data.space_after_class}')}
+                        {f:if(condition:'{data.layout} == 10', then:' container-sm mx-0')}
+                        {f:if(condition:'{data.layout} == 11', then:' container-md')}
+                        {f:if(condition:'{data.layout} == 12', then:' container-xl')}
+                        {f:if(condition:'{data.layout} == 13', then:' container-fluid')}
                         mb-md-20 mx-auto"
-                        style="border: solid red 1px;">
+                    >
                 <f:if condition="{data._LOCALIZED_UID}">
                     <a id="c{data._LOCALIZED_UID}"></a>
                 </f:if>

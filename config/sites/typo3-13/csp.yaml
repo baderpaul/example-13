@@ -1,6 +1,16 @@
-inheritDefault: true
-mutations:
-  - mode: extend
-    directive: 'script-src'
-    sources:
-      - "'nonce-proxy'"
+active: false
+#inheritDefault: true
+#mutations:
+#  - mode: set
+#    directive: 'script-src'
+#    sources:
+#      - "'self'"
+#  - mode: extend
+#    directive: 'img-src'
+#    sources:
+#      - 'data:'
+#      - 'http://example-13.ddev.site/'
+#  - mode: extend
+#    directive: 'script-src'
+#    sources:
+#      - "'nonce-proxy'"     

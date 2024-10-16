@@ -4,8 +4,8 @@ baseVariants:
     base: 'http://example-13.ddev.site/'
     condition: "applicationContext == 'Development/DDEV'"
 dependencies:
-  - typo3/fluid-styled-content
   - t3example/setup-package
+  - typo3/fluid-styled-content
   - typo3/form
 languages:
   -

@@ -1,2 +1,5 @@
 name: t3example/setup-package
 label: Basic Sitepackage with TYPO3 13
+
+dependencies:
+  - typo3/fluid-styled-content

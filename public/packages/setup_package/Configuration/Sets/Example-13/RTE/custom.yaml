@@ -5,7 +5,7 @@ imports:
 
 editor:
   config:
-    contentsCss: 'EXT:setup_package/Resources/Public/Styles/CkEditorRTE.css'
+    contentsCss: 'EXT:setup_package/Resources/Public/Styles/OverwriteBe.css'
     height: 150
     width: 'auto'
 
