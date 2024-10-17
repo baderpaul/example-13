@@ -1,5 +1,11 @@
-<section id="c{data.uid}" class="d-block px-10 px-lg-0">
-<div class="mb-20 mb-lg-40">
+<section id="c{data.uid}" 
+class="d-block px-10 px-lg-0">
+<div class="
+{f:if(condition: '{data.layout} == 10', then:' container-sm')}
+{f:if(condition: '{data.layout} == 11', then:' container-md')}
+{f:if(condition: '{data.layout} == 12', then:' container-xl')}
+{f:if(condition: '{data.layout} == 13', then:' container-fluid')}
+mb-20 mb-lg-40">
  <f:if condition="{header2col}">
     <f:for each="{header2col}" as="child">
         <f:format.raw>{child.renderedContent}</f:format.raw>

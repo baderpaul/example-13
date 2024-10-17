@@ -8,7 +8,6 @@
         <type>array</type>
         <el>
             <backgroundcolor>
-                <TCEforms>
                     <label>LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:set-backgroundcolor</label>
                     <config>
                         <type>select</type>
@@ -32,10 +31,8 @@
                             </numIndex>
                         </items>
                     </config>
-                </TCEforms>
             </backgroundcolor>
 <container-bg-image>
-                        <TCEforms>
                             <label>LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:background-image</label>
                             <config>
                                 <type>inline</type>
@@ -106,15 +103,12 @@
                                     </types>
                                 </overrideChildTca>
                             </config>
-                        </TCEforms>
                     </container-bg-image>
             <no-bottom-space>
-                <TCEforms>
                     <label>LLL:EXT:setup_package/Resources/Private/Language/Backend/locallang.xlf:no-bottom-space</label>
                     <config>
                         <type>check</type>
                     </config>
-                </TCEforms>
             </no-bottom-space>   
         </el>
     </ROOT>
