@@ -20,7 +20,7 @@ mod {
                         }
                     }
                 }
-                icon = EXT:setup_package/Resources/Public/Icons/SVGs/Active/one-page.svg
+                icon = one-page
             }
         }
     }

@@ -8,16 +8,16 @@ $package = 'setup_package';
 $newFields = [
     'breadcrumb' => [
         'label' => 'LLL:' . $packageKey . '/Resources/Private/Language/locallang_be.xlf:show-breadcrumb',
-        'exclude' => 1,
         'config' => [
-            'type' => "check",
+            'type' => 'check',
             'renderType' => 'checkboxLabeledToggle',
             'items' => [
-                [
-                    0 => '',
-                    'labelChecked' => 'LLL:' . $packageKey . '/Resources/Private/Language/locallang_be.xlf:bc-active',
-                    'labelUnchecked' => 'LLL:' . $packageKey . '/Resources/Private/Language/locallang_be.xlf:bc-deactive',
-                ]
+                    [
+                        'label' => ' ',
+                        'labelChecked' => 'LLL:' . $packageKey . '/Resources/Private/Language/locallang_be.xlf:bc-active',
+                        'labelUnchecked' => 'LLL:' . $packageKey . '/Resources/Private/Language/locallang_be.xlf:bc-deactive',
+                    ],
+
             ],
         ]
     ]

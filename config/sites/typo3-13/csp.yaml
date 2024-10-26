@@ -1,16 +1,32 @@
-active: false
-#inheritDefault: true
-#mutations:
-#  - mode: set
-#    directive: 'script-src'
-#    sources:
-#      - "'self'"
-#  - mode: extend
-#    directive: 'img-src'
-#    sources:
-#      - 'data:'
-#      - 'http://example-13.ddev.site/'
-#  - mode: extend
-#    directive: 'script-src'
-#    sources:
-#      - "'nonce-proxy'"     
+# Inherits default site-unspecific frontend policy mutations (enabled per default)
+inheritDefault: true
+mutations:
+  # Results in `default-src 'self'`
+  - mode: "set"
+    directive: "default-src"
+    sources:
+      - "'self'"
+
+  # Extends the ancestor directive ('default-src'),
+  # thus reuses 'self' and adds additional sources
+  # Results in `img-src 'self' data: https://*.typo3.org`
+  - mode: "extend"
+    directive: "img-src"
+    sources:
+      - "data:"
+      - "http://example-13.ddev.site/"
+
+  # Extends the ancestor directive ('default-src'),
+  # thus reuses 'self' and adds additional sources
+  # Results in `script-src 'self' 'nonce-[random]'`
+  # ('nonce-proxy' is substituted when compiling the policy)
+  - mode: "extend"
+    directive: "script-src"
+    sources:
+      - "'nonce-proxy'"
+
+  # Results in `worker-src blob:`
+  #- mode: "set"
+  #  directive: "worker-src"
+  #  sources:
+  #    - "blob:"

@@ -1,6 +1,6 @@
 $colors: map-remove($colors, "purple", "red", "green", "pink", "orange", "yellow", "cyan", "indigo", "teal");
 $theme-colors: map-remove($theme-colors, "info", "warning", "success", "danger", "grays");
-$theme-colors-text: map-remove($theme-colors-text, "info", "warning", "success", "danger");
-$theme-colors-bg-subtle: map-remove($theme-colors-bg-subtle, "info", "warning", "success", "danger");
-$theme-colors-border-subtle: map-remove($theme-colors-border-subtle, "info", "warning", "success", "danger");
+//$theme-colors-text: map-remove($theme-colors-text", "info", "warning", "success", "danger");
+//$theme-colors-bg-subtle: map-remove($theme-colors-bg-subtle, "info", "warning", "success", "danger");
+//$theme-colors-border-subtle: map-remove($theme-colors-border-subtle, "info", "warning", "success", "danger");
 $grays: map-remove($grays,"100", "200", "400", "500", "600", "700");

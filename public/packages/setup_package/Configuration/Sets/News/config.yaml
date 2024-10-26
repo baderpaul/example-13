@@ -1,5 +1,5 @@
 name: t3example/news
-label: News Typoscript Configuration
+label: Additional Typoscript for Ext news
 
 dependencies:
   - t3example/setup-package

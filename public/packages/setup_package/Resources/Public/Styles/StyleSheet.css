@@ -36,14 +36,26 @@
   --bs-white-rgb: 255, 255, 255;
   --bs-primary-text-emphasis: #113242;
   --bs-secondary-text-emphasis: #1b1b1b;
+  --bs-success-text-emphasis: #0a3622;
+  --bs-info-text-emphasis: #055160;
+  --bs-warning-text-emphasis: #664d03;
+  --bs-danger-text-emphasis: #58151c;
   --bs-light-text-emphasis: #495057;
   --bs-dark-text-emphasis: #495057;
   --bs-primary-bg-subtle: #d4e5ed;
   --bs-secondary-bg-subtle: #dadada;
+  --bs-success-bg-subtle: #d1e7dd;
+  --bs-info-bg-subtle: #cff4fc;
+  --bs-warning-bg-subtle: #fff3cd;
+  --bs-danger-bg-subtle: #f8d7da;
   --bs-light-bg-subtle: #fcfcfd;
   --bs-dark-bg-subtle: #ced4da;
   --bs-primary-border-subtle: #aacbdb;
   --bs-secondary-border-subtle: #b4b4b4;
+  --bs-success-border-subtle: #a3cfbb;
+  --bs-info-border-subtle: #9eeaf9;
+  --bs-warning-border-subtle: #ffe69c;
+  --bs-danger-border-subtle: #f1aeb5;
   --bs-light-border-subtle: #e9ecef;
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
@@ -14305,6 +14317,60 @@ textarea.form-control-lg {
 
   .d-print-none {
     display: none; } }
+/* Space */
+.frame-space-before-extra-small {
+  margin-top: 1em; }
+
+.frame-space-before-small {
+  margin-top: 2em; }
+
+.frame-space-before-medium {
+  margin-top: 3em; }
+
+.frame-space-before-large {
+  margin-top: 4em; }
+
+.frame-space-before-extra-large {
+  margin-top: 5em; }
+
+.frame-space-after-extra-small {
+  margin-bottom: 1em; }
+
+.frame-space-after-small {
+  margin-bottom: 2em; }
+
+.frame-space-after-medium {
+  margin-bottom: 3em; }
+
+.frame-space-after-large {
+  margin-bottom: 4em; }
+
+.frame-space-after-extra-large {
+  margin-bottom: 5em; }
+
+/* Frame */
+.frame-ruler-before:before {
+  content: '';
+  display: block;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  margin-bottom: 2em; }
+
+.frame-ruler-after:after {
+  content: '';
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  margin-top: 2em; }
+
+.frame-indent {
+  margin-left: 15%;
+  margin-right: 15%; }
+
+.frame-indent-left {
+  margin-left: 33%; }
+
+.frame-indent-right {
+  margin-right: 33%; }
+
 @media (max-width: 991.98px) {
   .navbar-toggler {
     top: 1.25rem;

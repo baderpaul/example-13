@@ -1,8 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
  <f:if condition="{data.animations} != none">
-    <f:asset.css identifier="aos-css" href="https://unpkg.com/aos@next/dist/aos.css" />
-<f:asset.script identifier="aos-js" src="https://unpkg.com/aos@next/dist/aos.js" />
-<f:asset.script identifier="aos-js-i">
+    <f:asset.css identifier="aos-css" useNonce="1" href="https://unpkg.com/aos@next/dist/aos.css" />
+<f:asset.script identifier="aos-js" useNonce="1" src="https://unpkg.com/aos@next/dist/aos.js" />
+<f:asset.script identifier="aos-js-i" useNonce="1">
    AOS.init();
 </f:asset.script></f:if>
 <f:comment></f:comment>

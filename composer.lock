@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "86ea73f000237a6c2d5ca3453fdad2f9",
+    "content-hash": "5c3b081b131f207bbb76b47a9b3d677a",
     "packages": [
         {
             "name": "b13/container",
@@ -124,42 +124,42 @@
         },
         {
             "name": "brotkrueml/schema",
-            "version": "v3.7.0",
+            "version": "v3.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brotkrueml/schema.git",
-                "reference": "993d9eafea2751cd47d269ab1a3ea522a9afd5e6"
+                "reference": "9ca22865a252563925c4ae1644a3b3f73f540628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brotkrueml/schema/zipball/993d9eafea2751cd47d269ab1a3ea522a9afd5e6",
-                "reference": "993d9eafea2751cd47d269ab1a3ea522a9afd5e6",
+                "url": "https://api.github.com/repos/brotkrueml/schema/zipball/9ca22865a252563925c4ae1644a3b3f73f540628",
+                "reference": "9ca22865a252563925c4ae1644a3b3f73f540628",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "typo3/cms-core": "^11.5.19 || ^12.4 || ^13.3",
-                "typo3/cms-fluid": "^11.5.19 || ^12.4 || ^13.3",
-                "typo3/cms-frontend": "^11.5.19 || ^12.4 || ^13.3"
+                "typo3/cms-core": "^11.5.19 || ^12.4 || ^13.4",
+                "typo3/cms-fluid": "^11.5.19 || ^12.4 || ^13.4",
+                "typo3/cms-frontend": "^11.5.19 || ^12.4 || ^13.4"
             },
             "conflict": {
                 "brotkrueml/sdbreadcrumb": "*"
             },
             "require-dev": {
-                "brotkrueml/coding-standards": "~6.0.0",
-                "ergebnis/composer-normalize": "~2.43.0",
+                "brotkrueml/coding-standards": "~6.1.0",
+                "ergebnis/composer-normalize": "~2.44.0",
                 "ext-sqlite3": "*",
-                "infection/infection": "^0.29.6",
+                "infection/infection": "^0.29.7",
                 "phpstan/extension-installer": "^1.4",
-                "phpstan/phpstan": "1.12.3",
-                "phpunit/phpunit": "^10.5 || ^11.3",
-                "rector/rector": "1.2.5",
-                "symfony/yaml": "^5.4 || ^6.4 || ^7.0",
+                "phpstan/phpstan": "1.12.7",
+                "phpunit/phpunit": "^10.5 || ^11.4",
+                "rector/rector": "1.2.8",
+                "symfony/yaml": "^5.4 || ^6.4 || ^7.1",
                 "symplify/phpstan-rules": "^13.0",
                 "tomasvotruba/cognitive-complexity": "^0.2.3",
-                "typo3/cms-adminpanel": "^11.5.19 || ^12.4 || ^13.3",
-                "typo3/cms-lowlevel": "^11.5.19 || ^12.4 || ^13.3",
-                "typo3/testing-framework": "^7.0 || ^8.2"
+                "typo3/cms-adminpanel": "^11.5.19 || ^12.4 || ^13.4",
+                "typo3/cms-lowlevel": "^11.5.19 || ^12.4 || ^13.4",
+                "typo3/testing-framework": "^7.0 || ^8.2 || ^9.0"
             },
             "suggest": {
                 "brotkrueml/schema-auto": "Provides additional terms related to auto",
@@ -211,7 +211,7 @@
                 "issues": "https://github.com/brotkrueml/schema/issues",
                 "source": "https://github.com/brotkrueml/schema"
             },
-            "time": "2024-09-19T08:49:43+00:00"
+            "time": "2024-10-22T15:51:27+00:00"
         },
         {
             "name": "christian-riesen/base32",
@@ -968,16 +968,16 @@
         },
         {
             "name": "friendsoftypo3/content-blocks",
-            "version": "1.0.0",
+            "version": "1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/content-blocks.git",
-                "reference": "6302af1335f9568296096c36830ac0476e9a55ab"
+                "reference": "4006096631fa2535d4247f84ae0690b2777ded7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/6302af1335f9568296096c36830ac0476e9a55ab",
-                "reference": "6302af1335f9568296096c36830ac0476e9a55ab",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/4006096631fa2535d4247f84ae0690b2777ded7f",
+                "reference": "4006096631fa2535d4247f84ae0690b2777ded7f",
                 "shasum": ""
             },
             "require": {
@@ -1042,7 +1042,107 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2024-10-15T09:27:42+00:00"
+            "time": "2024-10-25T17:34:09+00:00"
+        },
+        {
+            "name": "georgringer/news",
+            "version": "12.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/georgringer/news.git",
+                "reference": "f5e5d78bc78b14363d15cfe739ef90b53a6d9812"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/georgringer/news/zipball/f5e5d78bc78b14363d15cfe739ef90b53a6d9812",
+                "reference": "f5e5d78bc78b14363d15cfe739ef90b53a6d9812",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">= 8.1 < 8.4",
+                "symfony/console": "^5.4 || ^6.4 || ^7.0",
+                "typo3/cms-backend": "^12.4.2 || ^13.1",
+                "typo3/cms-core": "^12.4.2 || ^13.1",
+                "typo3/cms-extbase": "^12.4.2 || ^13.1",
+                "typo3/cms-fluid": "^12.4.2 || ^13.1",
+                "typo3/cms-frontend": "^12.4.2 || ^13.1"
+            },
+            "replace": {
+                "typo3-ter/news": "self.version"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3.47.1",
+                "phpunit/phpunit": "^10.5",
+                "typo3/cms-install": "^12.4.2 || ^13.1",
+                "typo3/cms-seo": "^12.4.2 || ^13.1",
+                "typo3/coding-standards": "^0.5.5",
+                "typo3/testing-framework": "^8.0.9",
+                "webmozart/assert": "^1.11.0"
+            },
+            "suggest": {
+                "georgringer/news-tagsuggest": "On the fly creation of tag records within a news record",
+                "georgringer/numbered-pagination": "Improved pagination API",
+                "reelworx/rx-shariff": "GDPR compliant social sharing",
+                "typo3/cms-install": "Upgrade wizards",
+                "typo3/cms-scheduler": "XML and ICS import",
+                "typo3/cms-seo": "Sitemaps"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "news",
+                    "app-dir": ".Build",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "GeorgRinger\\News\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Georg Ringer",
+                    "homepage": "https://ringer.it",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Versatile news system based on Extbase & Fluid and using the latest technologies provided by TYPO3 CMS.",
+            "homepage": "https://extensions.typo3.org/extension/news",
+            "keywords": [
+                "article",
+                "extension",
+                "news",
+                "typo3"
+            ],
+            "support": {
+                "docs": "https://docs.typo3.org/p/georgringer/news/main/en-us/",
+                "issues": "https://github.com/georgringer/news/issues",
+                "source": "https://github.com/georgringer/news"
+            },
+            "funding": [
+                {
+                    "url": "https://paypal.me/GeorgRinger/10",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://www.amazon.de/hz/wishlist/ls/8F573K08TSDG",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/georgringer",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/georgringer",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2024-10-20T19:06:37+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",
@@ -1172,16 +1272,16 @@
         },
         {
             "name": "guzzlehttp/promises",
-            "version": "2.0.3",
+            "version": "2.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/promises.git",
-                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8"
+                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/promises/zipball/6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
-                "reference": "6ea8dd08867a2a42619d65c3deb2c0fcbf81c8f8",
+                "url": "https://api.github.com/repos/guzzle/promises/zipball/f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
+                "reference": "f9c436286ab2892c7db7be8c8da4ef61ccf7b455",
                 "shasum": ""
             },
             "require": {
@@ -1235,7 +1335,7 @@
             ],
             "support": {
                 "issues": "https://github.com/guzzle/promises/issues",
-                "source": "https://github.com/guzzle/promises/tree/2.0.3"
+                "source": "https://github.com/guzzle/promises/tree/2.0.4"
             },
             "funding": [
                 {
@@ -1251,7 +1351,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-07-18T10:29:17+00:00"
+            "time": "2024-10-17T10:06:22+00:00"
         },
         {
             "name": "guzzlehttp/psr7",
@@ -5152,22 +5252,98 @@
             }
         },
         {
-            "name": "typo3/class-alias-loader",
-            "version": "v1.1.4",
+            "name": "tpwd/ke_search",
+            "version": "v6.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/TYPO3/class-alias-loader.git",
-                "reference": "f6fc1f5fb04c42195e8e663b43aced4919ef318f"
+                "url": "https://github.com/tpwd/ke_search.git",
+                "reference": "f0f858b79ec7083760b647329c375a3ce63ac592"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/class-alias-loader/zipball/f6fc1f5fb04c42195e8e663b43aced4919ef318f",
-                "reference": "f6fc1f5fb04c42195e8e663b43aced4919ef318f",
+                "url": "https://api.github.com/repos/tpwd/ke_search/zipball/f0f858b79ec7083760b647329c375a3ce63ac592",
+                "reference": "f0f858b79ec7083760b647329c375a3ce63ac592",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pdo": "*",
+                "php": "^8.1",
+                "typo3/cms-core": "^12.3 || ^13"
+            },
+            "replace": {
+                "teaminmedias-pluswerk/ke_search": "self.version",
+                "typo3-ter/ke_search": "self.version"
+            },
+            "require-dev": {
+                "ext-dom": "*",
+                "ext-json": "*",
+                "ext-libxml": "*",
+                "ext-zip": "*",
+                "friendsofphp/php-cs-fixer": "^3",
+                "phpstan/phpstan": "^1",
+                "phpunit/phpunit": "^10",
+                "typo3/cms-dashboard": "^12 || ^13",
+                "typo3/cms-indexed-search": "^12 || ^13",
+                "typo3/cms-info": "^12 || ^13",
+                "typo3/cms-install": "^12 || ^13",
+                "typo3/cms-scheduler": "^12 || ^13",
+                "typo3/coding-standards": "^0.8.0"
+            },
+            "suggest": {
+                "typo3/cms-dashboard": "Use widgets in dashboard"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "ke_search",
+                    "web-dir": ".Build/web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tpwd\\KeSearch\\": "Classes"
+                },
+                "classmap": [
+                    "Classes"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Search Extension for TYPO3, including faceting search functions.",
+            "homepage": "https://www.typo3-macher.de/en/facetted-search-ke-search/",
+            "keywords": [
+                "TYPO3 CMS",
+                "faceted search",
+                "faceting",
+                "ke_search",
+                "kesearch",
+                "search"
+            ],
+            "support": {
+                "issues": "https://github.com/tpwd/ke_search/issues",
+                "source": "https://github.com/tpwd/ke_search/tree/v6.0.1"
+            },
+            "time": "2024-10-25T08:34:55+00:00"
+        },
+        {
+            "name": "typo3/class-alias-loader",
+            "version": "v1.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3/class-alias-loader.git",
+                "reference": "cf2aebabe1886474da7194e1531900039263b3e0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3/class-alias-loader/zipball/cf2aebabe1886474da7194e1531900039263b3e0",
+                "reference": "cf2aebabe1886474da7194e1531900039263b3e0",
                 "shasum": ""
             },
             "require": {
                 "composer-plugin-api": "^1.0 || ^2.0",
-                "php": ">=5.3.7"
+                "php": ">=7.1"
             },
             "replace": {
                 "helhum/class-alias-loader": "*"
@@ -5209,9 +5385,9 @@
             ],
             "support": {
                 "issues": "https://github.com/TYPO3/class-alias-loader/issues",
-                "source": "https://github.com/TYPO3/class-alias-loader/tree/v1.1.4"
+                "source": "https://github.com/TYPO3/class-alias-loader/tree/v1.2.0"
             },
-            "time": "2022-08-07T14:48:42+00:00"
+            "time": "2024-10-11T08:11:39+00:00"
         },
         {
             "name": "typo3/cms-backend",

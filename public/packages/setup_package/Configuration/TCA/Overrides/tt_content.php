@@ -9,49 +9,145 @@ $tempColumns = [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['keine Animation','none'],
-                    ['Fadeanimationen'],
-                    ['fade', 'fade'],
-                    ['fade-up', 'fade-up'],
-                    ['fade-down', 'fade-down'],
-                    ['fade-right', 'fade-right'],
-                    ['fade-left', 'fade-left'],
-                    ['fade-up-right', 'fade-up-right'],
-                    ['fade-up-left', 'fade-up-left'],
-                    ['fade-down-right', 'fade-down-right'],
-                    ['fade-down-left', 'fade-down-left'],
-                    [ 'Flipanimationen'],
-                    ['flip-up', 'flip-up'],
-                    ['flip-down', 'flip-down'],
-                    ['flip-left', 'flip-left'],
-                    ['flip-right', 'flip-right'],
-                    ['Slideanimationen'],
-                    ['slide-up', 'slide-up'],
-                    ['slide-down', 'slide-down'],
-                    ['slide-right', 'slide-right'],
-                    ['slide-left', 'slide-left'],
-                    ['Zoomanimationen'],
-                    ['zoom-in', 'zoom-in'],
-                    ['zoom-in-up', 'zoom-in-up'],
-                    ['zoom-in-down', 'zoom-in-down'],
-                    ['zoom-in-right', 'zoom-in-right'],
-                    ['zoom-in-left', 'zoom-in-left'],
-                    ['zoom-out', 'zoom-out'],
-                    ['zoom-out-up', 'zoom-out-up'],
-                    ['zoom-out-down', 'zoom-out-down'],
-                    ['zoom-out-right', 'zoom-out-right'],
-                    ['zoom-out-left', 'zoom-out-left'],
+                    [
+                        'label' => 'keine Animation',
+                        'value' => 'none'
+                    ],
+                    [
+                        'label' => 'Fadeanimationen',
+                        'value' => '--div--'
+                    ],
+                    [
+                        'label' => 'fade',
+                        'value' => 'fade'
+                    ],
+                    [
+                        'label' => 'fade-up',
+                        'value' => 'fade-up'
+                    ],
+                    [
+                        'label' => 'fade-down',
+                        'value' => 'fade-down'
+                    ],
+                    [
+                        'label' => 'fade-right',
+                        'value' => 'fade-right'
+                    ],
+                    [
+                        'label' => 'fade-left',
+                        'value' => 'fade-left'
+                    ],
+                    [
+                        'label' => 'fade-up-right',
+                        'value' => 'fade-up-right'
+                    ],
+                    [
+                        'label' => 'fade-up-left',
+                        'value' => 'fade-up-left'
+                    ],
+                    [
+                        'label' => 'fade-down-left',
+                        'value' => 'fade-down-left'
+                    ],
+                    [
+                        'label' => 'Flipanimationen',
+                        'value' => '--div--'
+                    ],
+                    [
+                        'label' => 'flip-up',
+                        'value' => 'flip-up'
+                    ],
+                    [
+                        'label' => 'flip-down',
+                        'value' => 'flip-down'
+                    ],
+                    [
+                        'label' => 'flip-left',
+                        'value' => 'flip-left'
+                    ],
+                    [
+                        'label' => 'flip-right',
+                        'value' => 'flip-right'
+                    ],
+                    [
+                        'label' => 'Slideanimationen',
+                        'value' => '--div--'
+                    ],
+                    [
+                        'label' => 'slide-up',
+                        'value' => 'slide-up'
+                    ],
+                    [
+                        'label' => 'slide-down',
+                        'value' => 'slide-down'
+                    ],
+                    [
+                        'label' => 'slide-right',
+                        'value' => 'slide-right'
+                    ],
+                    [
+                        'label' => 'slide-right',
+                        'value' => 'slide-right'
+                    ],
+                    [
+                        'label' => 'Zoomanimationen',
+                        'value' => '--div--'
+                    ],
+                    [
+                        'label' => 'zoom-in',
+                        'value' => 'zoom-in'
+                    ],
+                    [
+                        'label' => 'zoom-in-up',
+                        'value' => 'zoom-in-up'
+                    ],
+                    [
+                        'label' => 'zoom-in-down',
+                        'value' => 'zoom-in-down'
+                    ],
+                    [
+                        'label' => 'zoom-in-right',
+                        'value' => 'zoom-in-right'
+                    ],
+                    [
+                        'label' => 'zoom-in-right',
+                        'value' => 'zoom-in-right'
+                    ],
+                    [
+                        'label' => 'zoom-in-left',
+                        'value' => 'zoom-in-left'
+                    ],
+                    [
+                        'label' => 'zoom-out',
+                        'value' => 'zoom-out'
+                    ],
+                    [
+                        'label' => 'zoom-out-up',
+                        'value' => 'zoom-out-up'
+                    ],
+                    [
+                        'label' => 'zoom-out-down',
+                        'value' => 'zoom-out-down'
+                    ],
+                    [
+                        'label' => 'zoom-out-right',
+                        'value' => 'zoom-out-right'
+                    ],
+                    [
+                        'label' => 'zoom-out-left',
+                        'value' => 'zoom-out-left'
+                    ],
                 ],
             ],
         ],
     'duration' => [
         'exclude' => true,
         'label' => 'Länge in Millisekunden',
-        'description' => 'Default 0.0',
+        'description' => 'Default 0',
         'config' => [
-            'type' => 'input',
+            'type' => 'number',
             'size' => 7,
-            'eval' => 'trim,int',
+            //'eval' => 'trim,num',
             'range' => [
                 'lower' => 0,
                 'upper' => 3000,
@@ -68,7 +164,7 @@ $tempColumns = [
         'label' => 'Verzögerung in Millisekunden',
         'description' => 'Default 0',
         'config' => [
-            'type' => 'input',
+            'type' => 'number',
             'size' => 7,
             'eval' => 'trim,int',
             'range' => [
@@ -87,7 +183,7 @@ $tempColumns = [
         'label' => 'Versatz',
         'description' => 'Versatz in Pixel',
         'config' => [
-            'type' => 'input',
+            'type' => 'number',
             'size' => 5,
             'eval' => 'trim,int',
             'default' => 0,
@@ -102,16 +198,46 @@ $tempColumns = [
             'renderType' => 'selectSingle',
             //'size' => 1,
             'items' => [
-                ['', ''],
-                ['top-bottom', 'top-bottom'],
-                ['top-center', 'top-center'],
-                ['top-top', 'top-top'],
-                ['center-bottom', 'center-bottom'],
-                ['center-center', 'center-center'],
-                ['center-top', 'center-top'],
-                ['bottom-bottom', 'bottom-bottom'],
-                ['bottom-center', 'bottom-center'],
-                ['bottom-top', 'bottom-top'],
+                [
+                    'label' => '',
+                    'value' => ''
+                ],
+                [
+                    'label' => 'top-bottom',
+                    'value' => 'top-bottom'
+                ],
+                [
+                    'label' => 'top-center',
+                    'value' => 'top-center'
+                ],
+                [
+                    'label' => 'top-top',
+                    'value' => 'top-top'
+                ],
+                [
+                    'label' => 'center-bottom',
+                    'value' => 'center-bottom'
+                ],
+                [
+                    'label' => 'center-center',
+                    'value' => 'center-center'
+                ],
+                [
+                    'label' => 'center-top',
+                    'value' => 'center-top'
+                ],
+                [
+                    'label' => 'bottom-bottom',
+                    'value' => 'bottom-bottom'
+                ],
+                [
+                    'label' => 'bottom-center',
+                    'value' => 'bottom-center'
+                ],
+                [
+                    'label' => 'bottom-top',
+                    'value' => 'bottom-top'
+                ],
             ],
         ],
     ],
@@ -228,12 +354,9 @@ GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureConta
         'LLL:' . $packageKey . '' . $locallangFile . ':ctype.col-3.desc',
         [
             [
-                ['name' => 'header', 'colPos' => 300, 'colspan' => 3, 'allowed' => ['CType' => 'header, textmedia']]
-            ],
-            [
                 ['name' => 'LLL:' . $packageKey . '' . $locallangBackendFile . ':grid-1', 'colPos' => 301],
-                ['name' => 'LLL:' . $packageKey . '' . $locallangBackendFile . '', 'colPos' => 302],
-                ['name' => 'LLL:' . $packageKey . '' . $locallangBackendFile . '', 'colPos' => 303]
+                ['name' => 'LLL:' . $packageKey . '' . $locallangBackendFile . ':grid-2', 'colPos' => 302],
+                ['name' => 'LLL:' . $packageKey . '' . $locallangBackendFile . ':grid-3', 'colPos' => 303]
             ]
         ]
         )
@@ -255,9 +378,6 @@ GeneralUtility::makeInstance(\B13\Container\Tca\Registry::class)->configureConta
         'LLL:' . $packageKey . '' . $locallangBackendFile . ':grid-4-col-title',
         'LLL:' . $packageKey . '' . $locallangFile . ':ctype.col-4.desc',
         [
-            [
-                ['name' => 'header', 'colPos' => 400, 'colspan' => 4, 'allowed' => ['CType' => 'header, textmedia']]
-            ],
             [
                 ['name' => 'LLL:' . $packageKey . '' . $locallangBackendFile . ':grid-1', 'colPos' => 401],
                 ['name' => 'LLL:' . $packageKey . '' . $locallangBackendFile . ':grid-2', 'colPos' => 402],
