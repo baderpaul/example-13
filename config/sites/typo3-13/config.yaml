@@ -2,10 +2,14 @@ base: 'http://example-13.ddev.site/'
 baseVariants:
   -
     base: 'http://example-13.ddev.site/'
-    condition: "applicationContext == 'Development/DDEV'"
+    condition: 'applicationContext == "Development"'
 dependencies:
   - t3example/setup-package
   - typo3/fluid-styled-content
+  - georgringer/news
+  - georgringer/news-twb5
+  - t3example/setupnews
+  - t3example/setupextentions
   - typo3/form
 languages:
   -

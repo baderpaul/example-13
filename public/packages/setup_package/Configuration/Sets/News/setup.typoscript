@@ -1,0 +1,145 @@
+plugin.tx_news {
+    mvc.callDefaultActionIfActionCantBeResolved = 1
+
+    view {
+        templateRootPaths {
+            0 = EXT:news/Resources/Private/Templates/
+            1 = EXT:{$extKey}/Resources/Private/Templates/News/Templates/
+            2 = EXT:{$extKey}/Resources/Private/Templates/News/Twb5/Templates/
+        }
+
+        partialRootPaths {
+            0 = EXT:news/Resources/Private/Partials/
+            1 = EXT:{$extKey}/Resources/Private/Templates/News/Partials/
+            2 = EXT:{$extKey}/Resources/Private/Templates/News/Twb5/Partials/
+        }
+
+        layoutRootPaths {
+            0 = EXT:news/Resources/Private/Layouts/
+            1 = EXT:{$extKey}/Resources/Private/Templates/News/Layouts/
+            2 = EXT:{$extKey}/Resources/Private/Templates/News/Twb5/Layouts/
+        }
+
+        widget.GeorgRinger\News\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:{$extKey}/Resources/Private/Templates/Plugins/News/Styles/Twb/Templates/
+    }
+
+    # ====================================
+    # Settings available inside Controller and View by accessing $this->settings or {settings.xyz}
+    # ====================================
+    settings {
+        cssFile >
+        overrideFlexformSettingsIfEmpty = singleNews,cropMaxCharacters,dateField,timeRestriction,timeRestrictionHigh,archiveRestriction,orderBy,orderDirection,backPid,listPid,startingpoint,recursive,list.paginate.itemsPerPage,list.paginate.templatePath
+        #Displays a dummy image if the news have no media items
+        displayDummyIfNoMedia = 0
+        # adjust the last news as default for detailview if no id given
+        #useStdWrap = singleNews
+        #singleNews.stdWrap.cObject = CONTENT
+        #singleNews.stdWrap.cObject {
+        #        select {
+        #                max = 1
+        #                orderBy = datetime desc
+        #                pidInList = 213
+        #        }
+        #        renderObj = TEXT
+        #        renderObj.field = uid
+        #}
+
+        link {
+            typesOpeningInNewWindow = 2
+            hrDate = 0
+            hrDate {
+                day = j
+                month = n
+                year = Y
+            }
+            role = button
+
+            skipControllerAndAction = 1
+        }
+
+        cropMaxCharacters = 150
+        orderBy = datetime
+        orderDirection = desc
+        topNewsFirst = 0
+        orderByAllowed = sorting,author,uid,title,teaser,author,tstamp,crdate,datetime,categories.title
+
+        facebookLocale = de_DE
+        googlePlusLocale = de
+
+        # --------------
+        #  Detail
+        # --------------
+        detail {
+            errorHandling = showStandaloneTemplate,EXT:news/Resources/Private/Templates/News/DetailNotFound.html,404
+            checkPidOfNewsRecord = 0
+            registerProperties = keywords,title
+            showPrevNext = 0
+            showSocialShareButtons = 1
+            showMetaTags = 1
+
+            # media configuration
+            media {
+                image {
+                    # choose the rel tag like gallery[fo]
+                    lightbox = fancybox
+                    #lightbox {
+                    #    enabled = {$styles.content.textmedia.linkWrap.lightboxEnabled}
+                    #    class = {$styles.content.textmedia.linkWrap.lightboxCssClass}
+                    #    width = {$styles.content.textmedia.linkWrap.width}
+                    #    height = {$styles.content.textmedia.linkWrap.height}
+                    #    rel = lightbox[myImageSet]
+                   # }
+                    maxWidth = 900
+                    maxHeight =
+                }
+            }
+            pageTitle = 1
+            pageTitle {
+                provider = GeorgRinger\News\Seo\NewsTitleProvider
+                properties = teaser,title
+            }
+        }
+
+        # --------------
+        #  List
+        # --------------
+        list {
+            # media configuration
+            media {
+                #image.width = 200
+                
+                image >
+                image.maxWidthCard = 480
+                image.maxWidthListDetail = 170
+
+                dummyImage = EXT:news/Resources/Public/Images/dummy-preview-image.png
+            }
+
+            # Paginate configuration.
+            paginate {
+                class = GeorgRinger\NumberedPagination\NumberedPagination
+                itemsPerPage = 3
+                insertAbove = 0
+                insertBelow = 1
+                #prevNextHeaderTags = 1
+                maximumNumberOfLinks = 10
+            }
+        }
+    }
+}
+
+# ==============================================
+# BE-module configuration for EXT:news
+# ==============================================
+module.tx_news < plugin.tx_news
+module.tx_news {
+    settings.list.paginate.itemsPerPage = 40
+}
+
+# ==============================================
+# Add news title as "fake" entry to the rootline menu
+# ==============================================
+#page.10.dataProcessing {
+#    900 = GeorgRinger\News\DataProcessing\AddNewsToMenuProcessor
+#    900.menus = rootline
+#}

@@ -6,7 +6,8 @@
 	"config": {
 		"allow-plugins": {
 			"typo3/class-alias-loader": true,
-			"typo3/cms-composer-installers": true
+			"typo3/cms-composer-installers": true,
+			"helhum/dotenv-connector": true
 		},
 		"platform": {
 			"php": "8.3"
@@ -23,7 +24,10 @@
 		"b13/container": "^3.0",
 		"brotkrueml/schema": "^3.7",
 		"friendsoftypo3/content-blocks": "^1.0",
+		"georgringer/news": "dev-main",
+		"helhum/dotenv-connector": "^3.1",
 		"t3example/setup-package": "^1.0",
+		"tpwd/ke_search": "^6.0",
 		"typo3/cms-backend": "^13.3",
 		"typo3/cms-belog": "^13.3",
 		"typo3/cms-beuser": "^13.3",
@@ -50,9 +54,6 @@
 		"typo3/cms-t3editor": "^13.3",
 		"typo3/cms-tstemplate": "^13.3",
 		"typo3/cms-viewpage": "^13.3",
-		"typo3/cms-webhooks": "^13.3",
-        "georgringer/news": "^12.0",
-		"tpwd/ke_search": "^6.0"
-		
+		"typo3/cms-webhooks": "^13.3"
 	}
 }

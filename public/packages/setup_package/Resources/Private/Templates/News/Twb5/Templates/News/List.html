@@ -1,0 +1,136 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+<f:layout name="General" />
+<f:comment><!--
+	=====================
+		Templates/News/List.html
+--></f:comment>
+
+<f:section name="content">
+<f:if condition="{news}">
+	<f:then>
+        <f:if condition="{settings.templateLayout} == 1">
+                <f:then>
+                <div class="news-list-view {f:if(condition: '{settings.templateLayout} == 1', then: 'row row-cols-1 row-cols-sm-2 row-cols-lg-4 gy-25 gx-0 g-md-30')}" id="news-container-{contentObjectData.uid}">
+                    <f:if condition="{settings.hidePagination}">
+                        <f:then>
+                                <f:for each="{news}" as="newsItem" iteration="iterator">
+                                    <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                </f:for>
+                                <f:asset.script identifier="news-card-list-js">
+                                                document.querySelector(".card-news").ontouchstart = function (e) {
+                                                document.querySelector(".card-news .news-overlay").classList.toggle("news-overlay-touch");
+                                            }
+                                        </f:asset.script>                           
+                                        <f:asset.css identifier="news-card-list-css" priority="true">
+                                            .news-overlay,
+                                            .news-overlay-touch {
+                                                position: absolute;
+                                                bottom: 100%;
+                                                left: .625rem;
+                                                right: .625rem;
+                                                overflow: hidden;
+                                                width: calc(100% - 1.25rem);
+                                                height:0;
+                                                transition: .2s ease;
+                                                z-index: 1020;
+                                            }
+                                            @media (min-width: 768px) { 
+                                                .news-overlay,
+                                                .news-overlay-touch {
+                                                    left: .9375rem;
+                                                    right: .9375rem;
+                                                    width: calc(100% - 1.875rem);
+                                                }
+                                            }
+                                            
+                                            .card-news:hover .news-overlay,
+                                            .card-news .news-overlay-touch {
+                                                bottom: 0;
+                                                left: .625rem;
+                                                right: .625rem;
+                                                height: 100%;
+                                                z-index: 1020;
+                                            }
+                                            @media (min-width: 768px) { 
+                                                .card-news:hover .news-overlay,
+                                                .card-news .news-overlay-touch {
+                                                    left: .9375rem;
+                                                    right: .9375rem;
+                                                }
+                                            }
+
+                                            .card-news .news-overlay h5,
+                                            .card-news .news-overlay-touch h5 {
+                                                display: none;
+                                            }
+
+                                            .card-news:hover .news-overlay h5,
+                                            .card-news .news-overlay-touch h5 {
+                                                color: $white;
+                                                position: absolute;
+                                                display: block;
+                                                top: 50%;
+                                                left: 50%;
+                                                transform: translate(-50%, -50%);
+                                                text-align: center;
+                                                }
+
+                                            .card-news:hover .news-overlay h5:after,
+                                            .card-news .news-overlay-touch h5:after {
+                                                    border: none;
+                                                }
+                                        </f:asset.css>
+
+                        </f:then>
+                        <f:else>
+                            <f:if condition="{settings.list.paginate.insertAbove}">
+                                <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+                            </f:if>
+                                <f:for each="{pagination.paginator.paginatedItems}" as="newsItem" iteration="iterator">
+                                    <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                </f:for>
+                            <f:if condition="{settings.list.paginate.insertBelow}">
+                                <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+                            </f:if>
+                        </f:else>
+                    </f:if>
+                </div>
+        </f:then>       
+        <f:else>          
+                <f:if condition="{settings.hidePagination}">
+                    <f:then>
+                        <div class="news-list-view">
+                                <ul class="list-group list-group-flush p-0 m-0 list-unstyled position-relative">
+                            <f:for each="{news}" as="newsItem" iteration="iterator">
+                                <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                            </f:for>
+                            </ul></div>
+                    </f:then>
+                    <f:else>
+                        <f:if condition="{settings.list.paginate.insertAbove}">
+                            <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+                        </f:if>
+                        <div class="news-list-view">
+                            <ul class="list-group list-group-flush p-0 m-0 list-unstyled position-relative">
+                            <f:for each="{pagination.paginator.paginatedItems}" as="newsItem" iteration="iterator">
+                                <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                            </f:for>
+                        </ul></div>
+                        <f:if condition="{settings.list.paginate.insertBelow}">
+                            <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
+                        </f:if>
+                    </f:else>
+                </f:if>
+        </f:else>
+        </f:if>
+		</f:then>
+		<f:else>
+			<div class="alert ">
+				<f:translate key="list_nonewsfound" />
+			</div>
+		</f:else>
+	</f:if>
+</f:section>
+</html>

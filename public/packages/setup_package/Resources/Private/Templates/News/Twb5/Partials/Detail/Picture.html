@@ -1,0 +1,15 @@
+<div class="ratio-21x9 d-inline">
+    <picture class="position-relative">
+        <source srcset="{f:uri.image(image: mediaElement, width: '950', cropVariant: 'newssingleview')}" media="(min-width: 992px)">
+        <source srcset="{f:uri.image(image: mediaElement, width: '700', cropVariant: 'newssingleview')}" media="(min-width: 768px)">
+        <source srcset="{f:uri.image(image: mediaElement, width: '500', cropVariant: 'newssingleview')}" media="(min-width: 577px)">
+        <source srcset="{f:uri.image(image: mediaElement, width: '400', cropVariant: 'newssingleview')}" media="(min-width: 310px)">
+        <f:comment> Fallback</f:comment>
+        <f:image image="{mediaElement}" 
+            cropVariant="newssingleview"
+            title="{mediaElement.title}" 
+            class="img-fluid lazyload" 
+            alt="{mediaElement.alternative}" 
+            additionalAttributes="{itemprop:'image'}" />
+    </picture>
+</div>

@@ -1,0 +1,30 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+	  xmlns:n="http://typo3.org/ns/GeorgRinger/News/ViewHelpers"
+	  data-namespace-typo3-fluid="true">
+	<f:if condition="{mediaElement.link}">
+		<f:then>
+			<f:link.typolink parameter="{mediaElement.link}" target="{n:targetLink(link:mediaElement.link)}">
+				<f:render partial="Detail/Picture" arguments="{mediaElement: mediaElement, settings:settings}"/>
+			</f:link.typolink>
+		</f:then>
+		<f:else>
+			<f:if condition="{settings.detail.media.image.lightbox.enabled}">
+				<f:then>
+					<a href="{f:uri.image(image:mediaElement, width:'{settings.detail.media.image.lightbox.width}', height:'{settings.detail.media.image.lightbox.height}')}" title="{mediaElement.title}" class="{settings.detail.media.image.lightbox.class}" rel="{settings.detail.media.image.lightbox.rel}">
+							<f:render partial="Detail/Picture" arguments="{mediaElement: mediaElement, settings:settings}"/>
+					</a>
+				</f:then>
+				<f:else>
+					<f:image image="{mediaElement}" 
+					cropVariant="newssingleview"
+					title="{mediaElement.title}" 
+					class="img-fluid lazyload" 
+					alt="{mediaElement.alternative}" 
+					maxWidth="{f:if(condition: settings.media.maxWidth, then: settings.media.maxWidth, else: settings.detail.media.image.maxWidth)}" 
+					maxHeight="{f:if(condition: settings.media.maxHeight, then: settings.media.maxHeight, else: settings.detail.media.image.maxHeight)}" 
+					additionalAttributes="{itemprop:'image'}" />
+				</f:else>
+			</f:if>
+		</f:else>
+	</f:if>
+</html>

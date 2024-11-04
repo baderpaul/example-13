@@ -14,7 +14,7 @@
 
 // add custom utilities overwrite/extend bootstrap utilities
 @import "../../Public/Contrib/bootstrap/scss/utilities";
-//@import "CustomVariables/Utilities";
+@import "CustomVariables/Utilities";
 
 //  custom Bootstrap Icons 
 //@import "CustomStyles/BootstrapIcons/BootstrapIcons";

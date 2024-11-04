@@ -1,0 +1,5 @@
+name: t3example/setupextentions
+label: Custom Typoscript for extentions without default set
+
+dependencies:
+  - t3example/setup-package
