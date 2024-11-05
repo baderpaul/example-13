@@ -6,11 +6,12 @@
    <div class="carousel-inner">
        <f:render partial="SliderItems" arguments="{data: data}"/>
    </div>
-   <f:if condition="{data.tx_mask_carouselindicator}==1">
+   <f:if condition="{data.indicator}==1">
      <f:render partial="SliderIndicator" arguments="{data: data}"/>
    </f:if>
-   <f:if condition="{data.tx_mask_carouselcontrol}==1">
+   <f:if condition="{data.control}==1">
       <f:render partial="SliderControl" arguments="{data: data}"/>
    </f:if>
 </div>
+<f:debug>{_all}</f:debug>
 </f:section>

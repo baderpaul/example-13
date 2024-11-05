@@ -15079,4 +15079,62 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 60px var(--bs-body-bg) inset !important; }
 
+.img-filter {
+  filter: brightness(60%); }
+
+.slogan span {
+  font-family: "Roboto";
+  font-weight: 700;
+  line-height: 1.6;
+  font-size: cal(2rem); }
+
+.slogan span + span {
+  font-size: cal(1.5rem); }
+
+.carousel-indicators[data-bs-target] {
+  text-indent: 0; }
+
+.carousel-indicators {
+  bottom: 1.25rem; }
+
+.carousel-indicators .active {
+  background-color: #2a7da6;
+  animation: rotate-in 1s; }
+
+@media (min-width: 992px) {
+  .slogan span + span {
+    font-size: cal(3.125rem); }
+
+  .carousel .carousel-control-prev,
+  .carousel .carousel-control-next {
+    transition: width 1.2s ease-in-out;
+    width: 8%; }
+
+  .carousel:hover .carousel-control-prev,
+  .carousel:hover .carousel-control-next {
+    transition: width 1.2s ease-in-out;
+    width: 15%; } }
+@media (max-width: 767.98px) {
+  .carousel-control-prev {
+    left: .1875rem; }
+
+  .carousel-control-next {
+    right: .1875rem; } }
+/*a:focus,
+a:active,
+a:active:focus,
+.btn:focus,
+.btn.focus,
+.btn-primary:focus,
+.btn-primary.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}*/
+.btnintext {
+  line-height: .7;
+  vertical-align: baseline; }
+
+.btn.btn-primary.rounded-pill:hover {
+  background: none; }
+
 /*# sourceMappingURL=StyleSheet.css.map */

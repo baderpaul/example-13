@@ -1,0 +1,19 @@
+/*a:focus,
+a:active,
+a:active:focus,
+.btn:focus,
+.btn.focus,
+.btn-primary:focus,
+.btn-primary.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}*/
+
+.btnintext {
+    line-height: .7;
+    vertical-align: baseline;
+}
+
+.btn.btn-primary.rounded-pill:hover {
+    background: none;
+}

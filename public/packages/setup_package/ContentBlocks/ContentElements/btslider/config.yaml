@@ -32,9 +32,19 @@ fields:
       - identifier: control
         type: Checkbox
         renderType: checkboxLabeledToggle
-        default: 0
+        #default: 0
         items:
         - label: 'Prev / Next Button einblenden'
+          labelChecked: 'On'
+          labelUnchecked: 'Out'
+          invertStateDisplay: true
+      - type: Linebreak      
+      - identifier: indicator
+        type: Checkbox
+        renderType: checkboxLabeledToggle
+        #default: 0
+        items:
+        - label: 'Slideindikatoren anzeigen / Bulletpoints'
           labelChecked: 'On'
           labelUnchecked: 'Out'
           invertStateDisplay: true

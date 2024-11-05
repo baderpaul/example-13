@@ -5,14 +5,12 @@
             
                 </f:for>
 
- <f:comment>   
-<f:if condition="{data_item.tx_mask_slogan_big} || {data_item.tx_mask_slogan_small} || {data_item.tx_mask_slogan_cta}">
-    <f:render partial="Partials/Slider/SliderSlogan" arguments="{_all}"/>
+<f:if condition="{slide.slogan_big} || {slide.slogan_small} || {slide.slogan_cta}">
+    <f:render partial="SliderSlogan" arguments="{_all}"/>
 </f:if>
-        <f:if condition="{data_item.tx_mask_imagedescription}">
-            <f:render partial="Partials/Slider/SliderItemDescrption" arguments="{_all}"/>
-        </f:if>
-    </f:comment>   
+        <f:if condition="{slide.imagedescription}">
+            <f:render partial="SliderItemDescrption" arguments="{_all}"/>
+        </f:if>   
     </div>
     
 </f:for>

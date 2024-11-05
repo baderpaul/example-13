@@ -4,8 +4,95 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "606d94dd4410553b9b97f11faa2e8ad6",
+    "content-hash": "1f17aef4eb7777e81d02467de895d038",
     "packages": [
+        {
+            "name": "autodudes/ai-suite",
+            "version": "13.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/autodudesde/ai-suite.git",
+                "reference": "ac7ff42daa734291c92862cb2f5385f439b14a6b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/autodudesde/ai-suite/zipball/ac7ff42daa734291c92862cb2f5385f439b14a6b",
+                "reference": "ac7ff42daa734291c92862cb2f5385f439b14a6b",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1",
+                "typo3/cms-backend": "^13.4",
+                "typo3/cms-filelist": "^13.4",
+                "typo3/cms-fluid": "^13.4",
+                "typo3/cms-rte-ckeditor": "13.4",
+                "typo3/cms-seo": "^13.4"
+            },
+            "conflict": {
+                "dmitryd/dd-deepl": "^12.0",
+                "passionweb/ai-seo-helper": "*",
+                "pits/ai_translate": "^3.1",
+                "web-vision/wv_deepltranslate": "^4.3"
+            },
+            "require-dev": {
+                "b13/container": "^3.0",
+                "bk2k/bootstrap-package": "^15.0",
+                "contentblocks/content-blocks": "^1.0",
+                "friendsofphp/php-cs-fixer": "^3.52",
+                "georgringer/news": "^12.0",
+                "helhum/typo3-console": "^8.2",
+                "phpstan/phpstan": "^1.10",
+                "typo3/cms-beuser": "^13.4",
+                "typo3/cms-install": "^13.4",
+                "typo3/cms-lowlevel": "^13.4",
+                "typo3/cms-tstemplate": "^13.4",
+                "typo3/coding-standards": "^0.8"
+            },
+            "suggest": {
+                "b13/container": "*"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "ai_suite",
+                    "web-dir": ".Build/Web"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "AutoDudes\\AiSuite\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "AutoDudes",
+                    "email": "service@autodudes.de",
+                    "homepage": "https://www.autodudes.de",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Adds a backend module as well as various helper functionalities and features to your TYPO3 backend, which are intended to make the daily work of editors easier and faster with the help of AI.",
+            "homepage": "https://www.autodudes.de",
+            "keywords": [
+                "AI Suite",
+                "AutoDudes",
+                "Content Automation",
+                "Content Creation",
+                "Content Generation",
+                "TYPO3 AI",
+                "TYPO3 CMS",
+                "artificial intelligence"
+            ],
+            "support": {
+                "issues": "https://github.com/autodudesde/ai-suite/issues",
+                "source": "https://github.com/autodudesde/ai-suite/tree/v13.0.0"
+            },
+            "time": "2024-11-04T22:53:38+00:00"
+        },
         {
             "name": "b13/container",
             "version": "3.0.0",

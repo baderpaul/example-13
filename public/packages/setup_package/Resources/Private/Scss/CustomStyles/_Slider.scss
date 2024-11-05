@@ -1,0 +1,60 @@
+.img-filter {
+    filter: brightness(60%);
+}
+
+.slogan span {
+    font-family: $headings-font-family;
+    font-weight: $headings-font-weight;
+    line-height: $headings-line-height;
+    font-size: cal($font-size-base * 2);
+}
+
+.slogan span + span {
+    font-size: cal($font-size-base * 1.5);
+}
+
+.carousel-indicators[data-bs-target] { 
+    text-indent: 0;
+}
+
+.carousel-indicators {
+    bottom: 1.25rem;
+}
+
+.carousel-indicators .active {
+    background-color: $primary;
+    animation: rotate-in 1s;
+}
+
+@include media-breakpoint-up(lg) { 
+
+    .slogan span + span {
+        font-size: cal($font-size-base * 3.125);
+    }
+
+    .carousel {
+        .carousel-control-prev,
+        .carousel-control-next {
+        transition: width 1.2s ease-in-out;
+        width: 8%;
+        }
+    }
+
+    .carousel:hover {
+        .carousel-control-prev,
+        .carousel-control-next {
+        transition: width 1.2s ease-in-out;
+        width: 15%;
+        }
+    }
+ }
+ 
+ @include media-breakpoint-down(md) {
+     .carousel-control-prev {
+         left: .1875rem;
+     }
+
+     .carousel-control-next {
+         right: .1875rem;
+     }
+ }
