@@ -1,18 +1,16 @@
 <f:for each="{data.slides}" as="slide" iteration="indicator-2">
-            <div class="carousel-item {f:if(condition:'{indicator-2.isFirst}',then:' active')}">
-                <f:for each="{slide.image}" as="image">
-                    <f:image image="{image.originalFile}" loading="lazy" alt="{slide.title}" />
-            
-                </f:for>
 
-<f:if condition="{slide.slogan_big} || {slide.slogan_small} || {slide.slogan_cta}">
-    <f:render partial="SliderSlogan" arguments="{_all}"/>
-</f:if>
-        <f:if condition="{slide.imagedescription}">
-            <f:render partial="SliderItemDescrption" arguments="{_all}"/>
-        </f:if>   
-    </div>
-    
+    <f:for each="{slide.image}" as="image">
+        <div class="carousel-item {f:if(condition:'{indicator-2.isFirst}',then:' active')}">
+            <f:image image="{image.originalFile}" alt="{slide.title}" />
+
+            <f:if condition="{slide.slogan_big} || {slide.slogan_small} || {slide.slogan_cta}">
+                <f:render partial="SliderSlogan" arguments="{_all}" />
+            </f:if>
+            <f:if condition="{slide.imagedescription}">
+                <f:render partial="SliderItemDescrption" arguments="{_all}" />
+            </f:if>
+        </div>
+    </f:for>
 </f:for>
-<f:asset.css identifier="slider" priority="true" useNonce="1">
-.fadeIn{animation-name: fadeIn;animation-duration: 2s;animation-timing-function: ease-in-out;}.fadeInUp {animation-name: fadeInUp;animation-duration: 1s;animation-timing-function: ease-in-out;}.fadeInDown {animation-name: fadeInDown;animation-duration: 1s;animation-timing-function: ease-in-out;}.text-shadow-hero {text-shadow: 2px 1px 2px #adb5bd;}</f:asset.css>
+<f:asset.css identifier="myCssIdentifier" useNonce="1" href="{cb:assetPath()}/frontend.css" />

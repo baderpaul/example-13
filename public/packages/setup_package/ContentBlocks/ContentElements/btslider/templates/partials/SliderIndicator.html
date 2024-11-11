@@ -1,18 +1,22 @@
 <ol class="carousel-indicators
-                    {f:if(condition: '{data.indicatorthumbnail}==1', then: ' position-relative')} p-0 m-0 d-none d-lg-flex" style="border: solid green 1px;">
-    <f:for each="{data.slideimages}" as="data_item" iteration="i">
-        <f:for each="{data_item}" as="file">
-            <li data-bs-target="#carouselExampleIndicators-{uid}"  data-bs-slide-to="{i.index}"
+                    {f:if(condition: '{data.indicatorthumbnail}==1', then: ' position-relative')} p-0 m-0 d-none d-lg-flex">
+    <f:for each="{data.slides}" as="slide" iteration="i">
+        <f:for each="{slide.image}" as="slide-item" >
+            <li data-bs-target="#carouselExampleIndicators-{data.uid}"  data-bs-slide-to="{i.index}"
                 class="d-inline-block
-                        {f:if(condition:indicator.isFirst, then:'active')}
-                        {f:if(condition:'{data.indicatorthumbnail}==1', then: ' slider-thumb-width')}">
+                      {f:if(condition:i.isFirst, then:' active')}
+                      {f:if(condition:'{data.indicatorthumbnail}==1', then: ' slider-thumb-width')}"
+                      aria-current="true"
+                      aria-label="Slide {i.index}"
+                      >
             
             </li>                
         </f:for>    
-    </f:for>                  
-</ol>        
+    </f:for>              
+</ol>
+
 <f:if condition="{data.indicatorthumbnail}==1">
-<f:asset.css identifier="id-css-btslider-c{uid}" priority="true">
+<f:asset.css identifier="id-css-btslider-c{data.uid}" priority="true" useNonce="1">
     .slider-thumb-width {
         max-width: 3.125rem;
         height: auto !important;   

@@ -30,3 +30,4 @@ mutations:
   #  directive: "worker-src"
   #  sources:
   #    - "blob:"
+  #unsafe-inline TODO - How can i add this

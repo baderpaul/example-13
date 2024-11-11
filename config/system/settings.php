@@ -88,7 +88,7 @@ return [
             'prependAtCopy' => '1',
             'resourceFolderImporter' => '/news_import',
             'rteForTeaser' => '0',
-            'showAdministrationModule' => '1',
+            'showAdministrationModule' => '0',
             'slugBehaviour' => 'unique',
             'storageUidImporter' => '1',
             'tagPid' => '1',
@@ -100,6 +100,23 @@ return [
             'automaticWebPageSchemaGeneration' => '1',
             'embedMarkupInBodySection' => '0',
             'embedMarkupOnNoindexPages' => '1',
+        ],
+        'solver' => [
+            'api' => [
+                'key' => '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',
+            ],
+            'attributes' => [
+                'maxTokens' => '300',
+                'model' => 'gpt-3.5-turbo-0301',
+                'numberOfCompletions' => '1',
+                'temperature' => '0.5',
+            ],
+            'cache' => [
+                'lifetime' => '86400',
+            ],
+            'ignoredCodes' => '',
+            'prompt' => 'EliasHaeussler\\Typo3Solver\\Prompt\\DefaultPrompt',
+            'provider' => 'EliasHaeussler\\Typo3Solver\\Solution\\Provider\\OpenAISolutionProvider',
         ],
     ],
     'FE' => [
@@ -131,12 +148,17 @@ return [
         ],
     ],
     'MAIL' => [
-        'transport' => 'sendmail',
+        'defaultMailFromAddress' => 'baderp@gmx.de',
+        'defaultMailFromName' => '',
+        'defaultMailReplyToAddress' => '',
+        'defaultMailReplyToName' => '',
+        'transport' => '',
         'transport_sendmail_command' => '/usr/local/bin/mailpit sendmail -t --smtp-addr 127.0.0.1:1025',
-        'transport_smtp_encrypt' => '',
+        'transport_smtp_encrypt' => false,
         'transport_smtp_password' => '',
         'transport_smtp_server' => '',
         'transport_smtp_username' => '',
+        'validators' => [],
     ],
     'SYS' => [
         'caching' => [
@@ -158,6 +180,7 @@ return [
                 ],
             ],
         ],
+        'debugExceptionHandler' => 'EliasHaeussler\\Typo3Solver\\Error\\AiSolverExceptionHandler',
         'devIPmask' => '',
         'displayErrors' => 0,
         'encryptionKey' => '19a17220d28f3dd85dce69268fed79bc2198f5d0f30387c07cfbe31ad4e1d8cea3dd3fadca23d34e39d0e0dac559b5b4',

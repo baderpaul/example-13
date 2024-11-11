@@ -25,14 +25,14 @@ fields:
         maxitems: 1
         items:
         - label: slide
-          value: 1
+          value: 0
         - label: fade
-          value: 2
+          value: 1
       - type: Linebreak      
       - identifier: control
         type: Checkbox
         renderType: checkboxLabeledToggle
-        #default: 0
+        default: 0
         items:
         - label: 'Prev / Next Button einblenden'
           labelChecked: 'On'

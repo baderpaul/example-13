@@ -26,7 +26,7 @@ page.includeCSS {
 }
 
 page.includeJSFooter {
-    bootstrap = EXT:{$extKey}/Resources/Public/Contrib/bootstrap/dist/js/bootstrap.bundle.js
+    bootstrap = EXT:{$extKey}/Resources/Public/Contrib/bootstrap/dist/js/bootstrap.bundle.min.js
     bootstrap.excludeFromConcatenation = 1
     bootstrap.defer= 1
     mobiledropdown = EXT:{$extKey}/Resources/Public/Contrib/metismenujs/dist/metismenujs.js

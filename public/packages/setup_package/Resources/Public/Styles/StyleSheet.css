@@ -15086,10 +15086,10 @@ input:-webkit-autofill:active {
   font-family: "Roboto";
   font-weight: 700;
   line-height: 1.6;
-  font-size: cal(2rem); }
+  font-size: 2rem; }
 
 .slogan span + span {
-  font-size: cal(1.5rem); }
+  font-size: 1.5rem; }
 
 .carousel-indicators[data-bs-target] {
   text-indent: 0; }
@@ -15103,7 +15103,7 @@ input:-webkit-autofill:active {
 
 @media (min-width: 992px) {
   .slogan span + span {
-    font-size: cal(3.125rem); }
+    font-size: 3.125rem; }
 
   .carousel .carousel-control-prev,
   .carousel .carousel-control-next {
