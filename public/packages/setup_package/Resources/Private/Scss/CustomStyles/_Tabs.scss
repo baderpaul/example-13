@@ -1,0 +1,7 @@
+/* overwrite default style from bootstrap 
+   .tab-content > .active  --> display:block 
+   set it to display:flex
+*/
+.tab-content > .d-flex.active {
+    display: flex;
+  }

@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file datatype="plaintext" original="Labels.xlf" source-language="en" date="2024-01-15T15:15:06+00:00" product-name="techdivision/btslider">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-05T10:37:38+00:00" product-name="t3example/btslider">
 		<header/>
 		<body>
 			<trans-unit id="title" resname="title">
-				<source>Content-Block Bootstrap Carousel</source>
+				<source>Bootstrap Carousel</source>
 			</trans-unit>
 			<trans-unit id="description" resname="description">
 				<source>Carousel/Imageslider width Bootstrap</source>
@@ -24,11 +24,50 @@
 			<trans-unit id="modus.label" resname="modus.label">
 				<source>Slidermodus</source>
 			</trans-unit>
+			<trans-unit id="modus.items.0.label" resname="modus.items.0.label">
+				<source>slide</source>
+			</trans-unit>
+			<trans-unit id="modus.items.1.label" resname="modus.items.1.label">
+				<source>fade</source>
+			</trans-unit>
 			<trans-unit id="control.label" resname="control.label">
 				<source>control</source>
 			</trans-unit>
+			<trans-unit id="control.items.0.label" resname="control.items.0.label">
+				<source>Prev / Next Button einblenden</source>
+			</trans-unit>
+			<trans-unit id="indicator.label" resname="indicator.label">
+				<source>indicator</source>
+			</trans-unit>
+			<trans-unit id="indicator.items.0.label" resname="indicator.items.0.label">
+				<source>Slideindikatoren anzeigen / Bulletpoints</source>
+			</trans-unit>
 			<trans-unit id="tabs.tab_2" resname="tabs.tab_2">
 				<source>Slideimages</source>
+			</trans-unit>
+			<trans-unit id="slides.label" resname="slides.label">
+				<source>Slideitems mit Textslogans anlegen</source>
+			</trans-unit>
+			<trans-unit id="slides.image.label" resname="slides.image.label">
+				<source>Bild</source>
+			</trans-unit>
+			<trans-unit id="slides.slogan_big.label" resname="slides.slogan_big.label">
+				<source>Slogan Groß</source>
+			</trans-unit>
+			<trans-unit id="slides.slogan_small.label" resname="slides.slogan_small.label">
+				<source>Slogan Klein</source>
+			</trans-unit>
+			<trans-unit id="slides.links.label" resname="slides.links.label">
+				<source>Call to Action Link</source>
+			</trans-unit>
+			<trans-unit id="slides.links.link.label" resname="slides.links.link.label">
+				<source>link</source>
+			</trans-unit>
+			<trans-unit id="slides.links.link_title.label" resname="slides.links.link_title.label">
+				<source>link_title</source>
+			</trans-unit>
+			<trans-unit id="tabs.links_tab" resname="tabs.links_tab">
+				<source>Links</source>
 			</trans-unit>
 			<trans-unit id="prev-next.label" resname="prev-next.label">
 				<source>Prev/Next aktivieren</source>

@@ -58,3 +58,79 @@
          right: .1875rem;
      }
  }
+
+ .fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+}
+
+.fadeInUp {
+    animation-name: fadeInUp;
+    animation-duration: 1ms;
+    animation-timing-function: ease-in-out;
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-duration: 1ms;
+    animation-timing-function: ease-in-out;
+}
+
+.text-shadow-hero {
+    text-shadow: 2px 1px 2px #adb5bd;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .9;
+  }
+}
+
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translate3d(0, -100%, 0);
+    }
+  
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes rotate-in {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+  }
+  

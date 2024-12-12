@@ -147,3 +147,8 @@ TCEMAIN.linkHandler.tx_news {
 #        2 = Listansicht bei Detailansicht
 #}
 }
+TCAdefaults {
+    tt_content {
+        imagecols = 1
+    }
+}

@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-05T15:53:43+00:00" product-name="example/card">
+		<header/>
+		<body>
+			<trans-unit id="title" resname="title">
+				<source>example/card</source>
+			</trans-unit>
+			<trans-unit id="title.label" resname="title.label">
+				<source>Title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

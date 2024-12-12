@@ -14,14 +14,13 @@ return [
             'Default' => [
                 'charset' => 'utf8mb4',
                 'dbname' => 'db',
+                'defaultTableOptions' => [
+                    'collate' => 'utf8mb4_unicode_ci',
+                ],
                 'driver' => 'mysqli',
                 'host' => 'db',
                 'password' => 'db',
                 'port' => '3306',
-                'tableoptions' => [
-                    'charset' => 'utf8mb4',
-                    'collate' => 'utf8mb4_unicode_ci',
-                ],
                 'user' => 'db',
             ],
         ],
@@ -85,6 +84,7 @@ return [
             'dateTimeNotRequired' => '0',
             'hidePageTreeForAdministrationModule' => '0',
             'manualSorting' => '1',
+            'pageTreePluginPreview' => '1',
             'prependAtCopy' => '1',
             'resourceFolderImporter' => '/news_import',
             'rteForTeaser' => '0',
@@ -93,6 +93,11 @@ return [
             'storageUidImporter' => '1',
             'tagPid' => '1',
         ],
+        'paste_reference' => [
+            'disableCopyFromPageButton' => '0',
+            'enableExtendedShortcutPreviewRenderer' => '1',
+            'overlayShortcutTranslation' => '0',
+        ],
         'schema' => [
             'allowOnlyOneBreadcrumbList' => '0',
             'automaticBreadcrumbExcludeAdditionalDoktypes' => '',
@@ -100,23 +105,6 @@ return [
             'automaticWebPageSchemaGeneration' => '1',
             'embedMarkupInBodySection' => '0',
             'embedMarkupOnNoindexPages' => '1',
-        ],
-        'solver' => [
-            'api' => [
-                'key' => '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',
-            ],
-            'attributes' => [
-                'maxTokens' => '300',
-                'model' => 'gpt-3.5-turbo-0301',
-                'numberOfCompletions' => '1',
-                'temperature' => '0.5',
-            ],
-            'cache' => [
-                'lifetime' => '86400',
-            ],
-            'ignoredCodes' => '',
-            'prompt' => 'EliasHaeussler\\Typo3Solver\\Prompt\\DefaultPrompt',
-            'provider' => 'EliasHaeussler\\Typo3Solver\\Solution\\Provider\\OpenAISolutionProvider',
         ],
     ],
     'FE' => [
@@ -180,7 +168,6 @@ return [
                 ],
             ],
         ],
-        'debugExceptionHandler' => 'EliasHaeussler\\Typo3Solver\\Error\\AiSolverExceptionHandler',
         'devIPmask' => '',
         'displayErrors' => 0,
         'encryptionKey' => '19a17220d28f3dd85dce69268fed79bc2198f5d0f30387c07cfbe31ad4e1d8cea3dd3fadca23d34e39d0e0dac559b5b4',

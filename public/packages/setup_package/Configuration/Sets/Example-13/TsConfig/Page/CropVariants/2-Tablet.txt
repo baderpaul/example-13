@@ -15,6 +15,11 @@ TCEFORM.sys_file_reference.crop.config.cropVariants {
                     title = 1:1
                     value = 1
                 }
+                4:3 {
+                   title = 4:3
+                    value = 1.3333333
+                 }
+            }
             }
         }
 }

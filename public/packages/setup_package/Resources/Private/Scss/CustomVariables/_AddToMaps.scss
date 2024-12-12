@@ -1,7 +1,8 @@
 // add aspect ratio
 $add-aspect-ratios:(
   "193x65": calc(65 / 193 * 100%),
-  "150x51": calc(51 / 150 * 100%)
+  "150x51": calc(51 / 150 * 100%),
+  "1024x640": calc(640 / 1024 * 100%)
 );
 $aspect-ratios: map-merge($aspect-ratios,$add-aspect-ratios);
 

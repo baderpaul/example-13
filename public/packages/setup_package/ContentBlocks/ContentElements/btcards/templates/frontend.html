@@ -1,0 +1,41 @@
+<f:layout name="Default" />
+<f:section name="Main">
+    <div class="row mb-25 mb-md-30 mx-0
+        {f:if(condition: '{data.responsive_xs}', then: '{data.responsive_xs}')}
+        {f:if(condition: '{data.responsive_sm}', then: '{data.responsive_sm}')}
+        {f:if(condition: '{data.responsive_md}', then: '{data.responsive_md}')}
+        {f:if(condition: '{data.responsive_lg}', then: '{data.responsive_lg}')}
+        {f:if(condition: '{data.cardspace_mobile}', then: '{data.cardspace_mobile}')}
+        {f:if(condition: '{data.cardspace_tablet}', then: '{data.cardspace_tablet}')}
+        {f:if(condition: '{data.cardspace_desktop}', then: '{data.cardspace_desktop}')}   
+">
+        <f:for each="{data.cardsets}" as="cardset" iteration="i">
+            <div class="col">
+                <div class="card h-100 border border-primary">
+                    <f:if condition="{cardset.image}">
+                        <f:for each="{cardset.image}" as="image">
+                            <f:render partial="CardImage" arguments="{_all}" />
+                        </f:for>
+                    </f:if>
+                    <div class="card-body">
+                        <f:render partial="CardTitle" arguments="{_all}" />
+                        <f:render partial="CardBody" arguments="{_all}" />
+                    </div>
+                    <f:if condition="{cardset.linkcard} || {cardset.linklabel}">
+                        <f:then>
+                          <div class="card-footer">
+                            <f:render partial="CardFooter.html" arguments="{_all}" />
+                        </div>
+                        </f:then>
+                        <f:else>
+                            <div class="card-footer bg-primary-subtle text-primary-emphasis {cardset.linkposition}">
+                                {cardset.footertext}
+                              </div>
+                        </f:else>
+                        </f:if>   
+                </div>
+            </div>          
+        </f:for>
+    </div>
+   
+</f:section>

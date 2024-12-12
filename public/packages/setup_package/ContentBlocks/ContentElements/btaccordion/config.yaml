@@ -1,0 +1,41 @@
+name: t3example/btaccordion
+title: t3example/btaccordion
+description: 'Accordion with Bootstrap'
+basics:
+  - t3example/Appearance
+  - t3example/Links
+group: ContentBlocks
+saveAndClose: true
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: header
+    useExistingField: true
+    label: Pluginbeschreibung für TYPO3 BE
+  - identifier: tab_1
+    type: Tab
+    label: Accordion Einstellungen
+  - identifier: palette_1
+    type: Palette
+  - identifier: choose-icon
+    type: Select
+    renderType: selectSingle
+    label: Close/Open Icon auswählen
+    default: 'one'
+    items:
+      - label: 'Mit Pfeilchen'
+        value: one
+      - label: 'Mit Plus - Minus Zeichen'
+        value: two
+  - identifier: tab_2
+    type: Tab
+    label: Accordion Items
+  - identifier: palette_2
+    type: Palette
+  - identifier: accordionsets
+    type: Collection
+    label: Accordionitems anlegen
+    minitems: 2
+    foreign_table: tx_example_textimage
+    shareAcrossTables: true
+    shareAcrossFields: true

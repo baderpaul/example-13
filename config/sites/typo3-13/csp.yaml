@@ -6,6 +6,7 @@ mutations:
     directive: "default-src"
     sources:
       - "'self'"
+      - "http://example-13.ddev.site"
 
   # Extends the ancestor directive ('default-src'),
   # thus reuses 'self' and adds additional sources
@@ -13,8 +14,9 @@ mutations:
   - mode: "extend"
     directive: "img-src"
     sources:
+      - "'self'"
       - "data:"
-      - "http://example-13.ddev.site/"
+      - "http://example-13.ddev.site"
 
   # Extends the ancestor directive ('default-src'),
   # thus reuses 'self' and adds additional sources
@@ -24,10 +26,14 @@ mutations:
     directive: "script-src"
     sources:
       - "'nonce-proxy'"
+      - "'unsafe-eval'"
+      - "'self'"
+      - "http://example-13.ddev.site"
+      - "https://unpkg.com/aos@next/dist/aos.js"
 
   # Results in `worker-src blob:`
-  #- mode: "set"
-  #  directive: "worker-src"
-  #  sources:
-  #    - "blob:"
+  - mode: "set"
+    directive: "worker-src"
+    sources:
+      - "blob:"
   #unsafe-inline TODO - How can i add this

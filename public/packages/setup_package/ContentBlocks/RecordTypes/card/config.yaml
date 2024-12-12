@@ -1,0 +1,122 @@
+name: example/card
+table: tx_example_card
+title: Einzelnes Cardelement
+prefixFields: false
+security:
+  ignorePageTypeRestriction: true
+fields:
+  - identifier: palette_1
+    type: Palette
+    label: Cardcontent
+    description: Text und Headline
+    fields:
+      - identifier: heading
+        label: Überschrift/Cardtitel
+        useExistingField: true
+        type: Text
+        placeholder: Cardtitel
+      - type: Linebreak
+      - identifier: bodytextsimple
+        label: Cardtext anlegen
+        type: Textarea
+        placeholder: Cardtext      
+        useExistingField: true
+        enableRichtext: true
+        richtextConfiguration: simple
+      - type: Linebreak
+  - identifier: palette_2
+    type: Palette
+    label: Cardimage
+    description: Text und Headline 
+    fields:
+      - identifier: image
+        label: Bild zum Text einfügen (max 1)
+        useExistingField: true
+        type: File
+        extendedPalette: true
+        maxitems: 1
+        allowed: jpg,png,svg,webp,gif
+        cropVariants:
+          desktop:
+            title: Desktop
+            allowedAspectRatios:
+              landscape:
+                title: Landscape
+                value: 16 / 10
+          tablet:
+            title: Tablet
+            allowedAspectRatios:
+              landscape:
+                title: Landscape
+                value: 16 / 10
+          smartphone:
+            title: Smartphone
+            allowedAspectRatios:
+              landscape:
+                title: Landscape
+                value: 16 / 10
+  - identifier: palette_3
+    type: Palette
+    label: Verlinkung und Textlabel auswählen bzw. angeben
+    description: Bei Verlinkung des ganzen Cards muss zumindest ein Call to Action Text angegeben werden.
+    fields:
+      - identifier: cta
+        label: Linktext
+        useExistingField: true
+        type: Text
+        placeholder: Call to Action Text
+      - identifier: url
+        label: Linkziel
+        type: Link
+        autocomplete: true
+        allowedTypes:
+          - page
+          - url
+          - file
+      - type: Linebreak
+      - identifier: linklabel
+        label: Nur Linklabel verlinken
+        type: Checkbox
+        renderType: checkboxLabeledToggle
+        items:
+        - label: 'Auswählen'
+          labelChecked: 'Label ist verlinkt'
+          labelUnchecked: 'Label ist nicht verlinkt'
+          invertStateDisplay: false
+      - identifier: linkcard
+        label: Ganzes Cardelement verlinken
+        type: Checkbox
+        renderType: checkboxLabeledToggle
+        items:
+        - label: 'Auswählen'
+          labelChecked: 'Card ist verlinkt'
+          labelUnchecked: 'Card ist nicht verlinkt'
+          invertStateDisplay: false
+      - identifier: linkposition
+        label: Position des Links auswählen
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Links'
+            value: text-start
+          - label: 'Mittig'
+            value: text-center
+          - label: 'Rechts'
+            value: text-end
+  - identifier: palette_4
+    type: Palette
+    label: Infotext im Footerbereich
+    description: Es kann entweder ein Link oder ein Infotext angezeigt werden.
+    fields:
+      - identifier: showtextfooter
+        label: Hinweistext anzeigen 
+        type: Checkbox
+        renderType: checkboxLabeledToggle
+        items:
+        - label: 'Auswählen'
+          labelChecked: 'Text wird angezeigt'
+          labelUnchecked: 'Text wird nicht angezeigt'
+          invertStateDisplay: false
+      - identifier: footertext
+        label: Text kann in Footer angezeigt wedern falls kein Link angelegt ist
+        type: Text

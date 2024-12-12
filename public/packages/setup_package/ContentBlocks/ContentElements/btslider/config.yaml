@@ -1,11 +1,10 @@
 name: t3example/btslider
-title: t3example/btslider
-description: 'Carousel/Imageslider width Bootstrap'
-label: 'test'
+label: t3example/btslider
+description: 'Carousel/Imageslider with Bootstrap'
 basics:
   #- t3example/Appearance
   - t3example/Links
-  #group: common
+group: ContentBlocks
 prefixFields: true
 prefixType: full
 fields:
@@ -32,7 +31,7 @@ fields:
       - identifier: control
         type: Checkbox
         renderType: checkboxLabeledToggle
-        default: 0
+        default: 
         items:
         - label: 'Prev / Next Button einblenden'
           labelChecked: 'On'
@@ -56,25 +55,27 @@ fields:
     fields:
   - identifier: slides
     type: Collection
-    labelField: title
+    label: Slideitems mit Textslogans anlegen
     fields:
       - identifier: image
+        label: Bild
         type: File
         allowed: common-image-types
-      - identifier: title
-        type: Text
       - identifier: palette_3
         type: Palette
         label: Slogan zum Bild - animiert
       - identifier: slogan_big
+        label: Slogan Groß
         type: Textarea
         placeholder: Text groß - wird einzeln animiert
         rows: 10
       - identifier: slogan_small
+        label: Slogan Klein
         type: Textarea
         placeholder: Text klein - wird einzeln animiert
         rows: 10
       - identifier: links
+        label: Call to Action Link
         type: Collection
         labelField: link_title
         fields:

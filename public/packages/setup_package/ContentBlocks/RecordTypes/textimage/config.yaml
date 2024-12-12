@@ -1,0 +1,62 @@
+name: example/textimage
+table: tx_example_textimage
+title: Textimage für Tabs und Accordion
+prefixFields: false
+labelField: heading
+security:
+  ignorePageTypeRestriction: true
+fields:
+  - identifier: heading
+    label: Tab-/Panelbeschriftung
+    useExistingField: true
+    type: Text
+    placeholder: Beschriftung eingeben
+  - identifier: header
+    label: Überschrift/Headline
+    useExistingField: true
+    type: Text
+  - identifier: bodytext
+    label: Text eingeben
+    type: Textarea
+    useExistingField: true
+    enableRichtext: true
+  - identifier: image
+    label: Bild zum Text einfügen (max 1)
+    useExistingField: true
+    type: File
+    extendedPalette: true
+    maxitems: 1
+    allowed: common-image-types
+    cropVariants:
+      desktop:
+        title: Desktop
+        allowedAspectRatios:
+          portrait:
+            title: Portrait
+            value: 3 / 4
+          landscape:
+            title: Landscape
+            value: 4 / 3
+      tablet:
+        title: Tablet
+        allowedAspectRatios:
+          square:
+            title: Square
+            value: 1 / 1
+      smartphone:
+        title: Smartphone
+        allowedAspectRatios:
+          landscape:
+            title: Landscape
+            value: 4 / 3
+          portrait:
+            title: Portrait
+            value: 3 / 4
+  - identifier: imageposition
+    type: Select
+    renderType: selectSingle
+    items:
+      - label: 'Links'
+        value: left
+      - label: 'Rechts'
+        value: right

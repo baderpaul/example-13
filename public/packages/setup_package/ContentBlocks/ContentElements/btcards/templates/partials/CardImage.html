@@ -1,0 +1,20 @@
+<f:for each="{cardset.image}" as="image">
+    <picture class="ratio ratio-1024x640">
+        <source
+            srcset="{f:uri.image(image: image, maxWidth: '350', fileExtension:'webp', fileExtension:'webp', cropVariant: 'desktop')}"
+            media="(min-width: 1200px)">
+        <source
+            srcset="{f:uri.image(image: image, maxWidth: '250', fileExtension:'webp', cropVariant: 'desktop')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '250', cropVariant: 'desktop')} 2x"
+            media="(min-width: 992px)">
+        <source
+            srcset="{f:uri.image(image: image, maxWidth: '350', fileExtension:'webp', cropVariant: 'tablet')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '350', cropVariant: 'tablet')} 2x"
+            media="(min-width: 577px)">
+        <source
+            srcset="{f:uri.image(image: image, maxWidth: '550', fileExtension:'webp', cropVariant: 'smartphone')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '550', cropVariant: 'smartphone')} 2x"
+            media="(max-width: 576px)">
+        <!--Fallback-->
+        <img class="img-fluid"
+            src="{f:uri.image(image: image, maxWidth: settings.maxImgWidth, cropVariant: 'default', fileExtension:'webp')}"
+            alt="{image.alternative}" longdesc="{image.description}" title="{image.title}" loading="lazy">
+    </picture>
+</f:for>

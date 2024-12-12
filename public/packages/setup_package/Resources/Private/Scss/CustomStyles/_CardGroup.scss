@@ -1,0 +1,47 @@
+/*
+  Fix for gutter padding left & right - remove it.
+  Gap works for cards in Bootstrap 6 not jet.
+*/
+@include media-breakpoint-down(sm) {
+    .row-cols-1>.col {
+        padding-left: 0;
+    }
+
+    .row-cols-1>.col {
+        padding-right: 0;
+    }
+}
+
+@include media-breakpoint-only(sm) {
+    .row-cols-sm-2>.col:nth-child(2n + 1) {
+        padding-left: 0;
+    }
+
+    .row-cols-sm-2>.col:nth-child(2n + 2) {
+        padding-right: 0;
+    }
+}
+
+@include media-breakpoint-between(md, lg) {
+    .row-cols-md-3>.col:nth-child(3n + 1) {
+        padding-left: 0;
+    }
+
+    .row-cols-md-3>.col:nth-child(3n + 3) {
+        padding-right: 0;
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+    .row-cols-lg-3>.col:nth-child(3n + 1),
+    .row-cols-lg-4>.col:nth-child(4n + 1),
+    .row-cols-lg-5>.col:nth-child(5n + 1) {
+        padding-left: 0;
+    }
+    .row-cols-lg-3>.col:nth-child(3n + 3),
+    .row-cols-lg-4>.col:nth-child(4n + 4),
+    .row-cols-lg-5>.col:nth-child(5n + 5) {
+        padding-right: 0;
+    }
+}

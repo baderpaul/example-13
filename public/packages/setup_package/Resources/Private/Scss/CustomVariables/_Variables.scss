@@ -3,6 +3,8 @@
 $enable-dark-mode: false;
 $enable-important-utilities:  false;
 $enable-shadows: false;
+$enable-cssgrid: true;
+$enable-negative-margins: true;
 
 // Reset Browser defaults
 * {
@@ -123,7 +125,7 @@ $spacers: (0: 0,
   24: $spacer * 1.5,
   25: $spacer * 1.5625,
   30: $spacer * 1.875,
-  //35: $spacer * 2.1875,
+  35: $spacer * 2.1875,
   36: $spacer * 2.25,
   40: $spacer * 2.5,
   45: $spacer * 2.8125,
@@ -183,6 +185,7 @@ $font-weight-600: 600;
 $font-weight-500: 500;
 
 // Fonthandling
+$font-family-sans-serif: 'Roboto'; 
 $font-family-base: 'Roboto';
 
 $font-size-base: $spacer;
@@ -335,7 +338,7 @@ $transition-collapse: height .8s ease;
 // Accordion
 $accordion-button-active-bg: $primary;
 $accordion-button-active-color: $white;
-$accordion-padding-y: 0.5rem;
+$accordion-padding-y: 0.75rem;
 $accordion-padding-x: 1.25rem;
 $accordion-button-padding-y: $accordion-padding-y;
 $accordion-button-padding-x: $accordion-padding-x;

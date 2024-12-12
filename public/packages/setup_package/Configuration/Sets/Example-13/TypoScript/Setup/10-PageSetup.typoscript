@@ -1,5 +1,5 @@
 page = PAGE
-page.shortcutIcon = EXT:{$extKey}/Resources/Public/Icons/favicon.ico
+page.shortcutIcon = EXT:{$extKey}/Resources/Public/Favicon/favicon.ico
 page.bodyTagAdd = class="d-flex flex-column mb-1 p-0 h-100"
 page {
     10 = PAGEVIEW

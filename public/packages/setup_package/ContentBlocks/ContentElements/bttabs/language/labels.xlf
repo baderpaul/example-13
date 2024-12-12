@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-05T10:37:38+00:00" product-name="t3example/bttabs">
+		<header/>
+		<body>
+			<trans-unit id="title" resname="title">
+				<source>Bootstrap Tabs</source>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Tabscontainer width Bootstrap</source>
+			</trans-unit>
+			<trans-unit id="header.label" resname="header.label">
+				<source>Pluginbeschreibung für TYPO3 BE</source>
+			</trans-unit>
+			<trans-unit id="tabs.tab_1" resname="tabs.tab_1">
+				<source>Tab Einstellungen</source>
+			</trans-unit>
+			<trans-unit id="choose-display.label" resname="choose-display.label">
+				<source>Ansicht zwischen Tabs &amp; Pills auswählen</source>
+			</trans-unit>
+			<trans-unit id="choose-display.items.one.label" resname="choose-display.items.one.label">
+				<source>Tabs (eckig)</source>
+			</trans-unit>
+			<trans-unit id="choose-display.items.two.label" resname="choose-display.items.two.label">
+				<source>Pills (abgerundet)</source>
+			</trans-unit>
+			<trans-unit id="tabs.tab_2" resname="tabs.tab_2">
+				<source>Tabs Items</source>
+			</trans-unit>
+			<trans-unit id="tabsets.label" resname="tabsets.label">
+				<source>Tabitems anlegen</source>
+			</trans-unit>
+			<trans-unit id="tabs.links_tab" resname="tabs.links_tab">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="accordionsets.label" resname="accordionsets.label">
+				<source>Tabsitems anlegen</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

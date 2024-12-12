@@ -37,7 +37,7 @@
 @import "../../Public/Contrib/bootstrap/scss/helpers";
 @import "../../Public/Contrib/bootstrap/scss/utilities/api";
 
-// ##### Custom #####
+// Custom - Margin + Frame styles from FluidStyledContent
 @import "CustomStyles/FluidStyledContent";
 
 // Custom - Navs
@@ -49,8 +49,9 @@
 
 // Custom - Components
 @import "CustomStyles/Slider";
-//@import "CustomStyles/Components/Accordion";
-//@import "CustomStyles/Components/Tabs";
+@import "CustomStyles/Accordion";
+@import "CustomStyles/Tabs";
+@import "CustomStyles/CardGroup";
 @import "CustomStyles/Buttons";
 //@import "CustomStyles/Components/IconTeaser";
 //@import "CustomStyles/Components/KeSearch";

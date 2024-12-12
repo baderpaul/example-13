@@ -1,0 +1,47 @@
+<f:layout name="Default" />
+
+<f:section name="Main">
+    <ul class="nav pt-20 pt-md-40 {f:if(condition: '{data.choose-display} == two', then: 'nav-pills justify-content-left', else: 'nav-tabs')} "
+    id="tab-{data.uid}" role="tablist">
+    <f:for each="{data.tabsets}" as="tabset" iteration="i">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link {f:if(condition:i.isFirst, then: 'active')}" id="{data.uid}-tab"
+                type="button" data-bs-toggle="tab" data-bs-target="#tab-{i.index}" role="tab"
+                aria-controls="tab-{data.uid}" aria-selected="true">
+                {tabset.heading -> f:format.nl2br()}</button>
+        </li>
+    </f:for>
+</ul>
+<div class="tab-content mb-25 mb-md-30 p-20 {f:if(condition: '{data.choose-display} == two', then: ' border-0 px-0', else: ' border border-primary')} border-1 {f:if(condition: '{data.choose-display} == one', then: ' border-top-0')}"
+id="tab-{data.uid}">
+<f:for each="{data.tabsets}" as="tabset" iteration="i">
+    <div class="tab-pane fade {f:if(condition:i.isFirst, then: 'show active')} {f:if(condition:'{tabset.imageposition}', then: 'clearfix')}" id="tab-{i.index}"
+        role="tabpanel" aria-labelledby="tab-{data.uid}">
+        <f:if condition="{tabset.image}">
+                            <f:for each="{tabset.image}" as="image">
+                                <picture class="mb-5 {f:if(condition:'{tabset.imageposition} == right', then: 'float-end ms-20 ', else: 'float-start me-20' )}">
+                                    <source
+                                        srcset="{f:uri.image(image: image, maxWidth: '250', fileExtension:'webp', fileExtension:'webp', cropVariant: 'desktop')}"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="{f:uri.image(image: image, maxWidth: '200', fileExtension:'webp', cropVariant: 'desktop')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '200', cropVariant: 'desktop')} 2x"
+                                        media="(min-width: 992px)">
+                                    <source
+                                        srcset="{f:uri.image(image: image, maxWidth: '170', fileExtension:'webp', cropVariant: 'tablet')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '150', cropVariant: 'tablet')} 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="{f:uri.image(image: image, maxWidth: '150', fileExtension:'webp', cropVariant: 'smartphone')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '100', cropVariant: 'smartphone')} 2x"
+                                        media="(max-width: 767px)">
+                                    <!--Fallback-->
+                                    <img class="img-responsive"
+                                        src="{f:uri.image(image: image, maxWidth: settings.maxImgWidth, cropVariant: 'default', fileExtension:'webp')}"
+                                        alt="{image.alternative}" longdesc="{image.description}" title="{image.title}" loading="lazy">
+                                </picture>
+                            </f:for>
+                        </f:if>
+
+       <span> {tabset.bodytext -> f:format.stripTags(allowedTags: "<span><button><a><strong><i>")}</span>
+    </div>
+</f:for>
+</div>
+</f:section>

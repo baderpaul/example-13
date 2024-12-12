@@ -1,0 +1,47 @@
+<f:layout name="Default" />
+<f:section name="Main">
+    <div id="accordion-{data.uid}" class="accordion">
+        <f:for each="{data.accordionsets}" as="accordionset" iteration="i">
+            <div class="accordion-item">
+                <h2 class="accordion-header mb-0 d-block">
+                    <button class="accordion-button fs-5
+                    {f:if(condition:'{data.choose-icon} == two', then: ' accordion-button-plus-minus')} 
+                    {f:if(condition:i.isFirst, then: ' collapsed')}" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#accordion-{i.index}"
+                        aria-expanded="{f:if(condition:i.isFirst, then: 'true', else: 'false')}"
+                        aria-controls="accordion-{data.uid}">
+                        {accordionset.heading -> f:format.nl2br()}
+                    </button>
+                </h2>
+                <div id="accordion-{i.index}" data-bs-parent="#accordion-{data.uid}"
+                    class="accordion-collapse collapse {f:if(condition:i.isFirst, then: ' show')}">
+                    <div class="accordion-body d-flex {f:if(condition:'{accordionset.imageposition} == right', then: 'flex-row-reverse column-gap-20', else: 'flex-row column-gap-20')} ">   
+                        <f:if condition="{accordionset.image}">
+                            <f:for each="{accordionset.image}" as="image">
+                                <picture>
+                                    <source
+                                        srcset="{f:uri.image(image: image, maxWidth: '250', fileExtension:'webp', fileExtension:'webp', cropVariant: 'desktop')}"
+                                        media="(min-width: 1200px)">
+                                    <source
+                                        srcset="{f:uri.image(image: image, maxWidth: '200', fileExtension:'webp', cropVariant: 'desktop')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '200', cropVariant: 'desktop')} 2x"
+                                        media="(min-width: 992px)">
+                                    <source
+                                        srcset="{f:uri.image(image: image, maxWidth: '150', fileExtension:'webp', cropVariant: 'tablet')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '150', cropVariant: 'tablet')} 2x"
+                                        media="(min-width: 768px)">
+                                    <source
+                                        srcset="{f:uri.image(image: image, maxWidth: '100', fileExtension:'webp', cropVariant: 'smartphone')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '100', cropVariant: 'smartphone')} 2x"
+                                        media="(max-width: 767px)">
+                                    <!--Fallback-->
+                                    <img class="img-responsive"
+                                        src="{f:uri.image(image: image, maxWidth: settings.maxImgWidth, cropVariant: 'default', fileExtension:'webp')}"
+                                        alt="{image.alternative}" longdesc="{image.description}" title="{image.title}" loading="lazy">
+                                </picture>
+                            </f:for>
+                        </f:if>
+                        {accordionset.bodytext -> f:format.stripTags(allowedTags: "<span><button><a>")}
+                    </div>
+                </div>
+            </div>
+        </f:for>
+    </div>
+</f:section>

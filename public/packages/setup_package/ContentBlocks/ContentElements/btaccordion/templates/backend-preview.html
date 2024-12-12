@@ -1,0 +1,18 @@
+<f:asset.css identifier="content-block-t3example-t3example/btaccordion-be" href="{cb:assetPath()}/preview.css" />
+<div class="mb-3">Vorhandene Accordionelemente</div>
+<div class="d-inline-flex flex-wrap" style="gap: 24px">
+    <f:for each="{data.accordionsets}" as="accordionset" iteration="i">
+        <div class="d-inline-flex flex-column">
+            <h2 class="mb-0" style="font-size: 16px;"> {accordionset.heading -> f:format.nl2br()}
+            </h2>
+            <p>
+                {accordionset.bodytext -> f:format.crop(maxCharacters: 20) -> f:format.stripTags()}
+            </p>
+            <f:for each="{accordionset.image}" as="image">
+                <img 
+                src="{f:uri.image(image: image, fileExtension:'webp')}"
+                 alt="{image.alternative}" width="100px" loading="lazy">
+            </f:for>            
+        </div>
+    </f:for>
+</div>

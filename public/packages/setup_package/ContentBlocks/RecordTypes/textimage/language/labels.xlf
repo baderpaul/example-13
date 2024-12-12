@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-05T10:37:38+00:00" product-name="example/textimage">
+		<header/>
+		<body>
+			<trans-unit id="title" resname="title">
+				<source>Text/Imageelement für ContentBlocks Collections</source>
+			</trans-unit>
+			<trans-unit id="heading.label" resname="heading.label">
+				<source>Tab-/Panelbeschriftung</source>
+			</trans-unit>
+			<trans-unit id="header.label" resname="header.label">
+				<source>Überschrift/Headline</source>
+			</trans-unit>
+			<trans-unit id="bodytext.label" resname="bodytext.label">
+				<source>Text eingeben</source>
+			</trans-unit>
+			<trans-unit id="image.label" resname="image.label">
+				<source>Bild zum Text einfügen (max 1)</source>
+			</trans-unit>
+			<trans-unit id="imageposition.label" resname="imageposition.label">
+				<source>imageposition</source>
+			</trans-unit>
+			<trans-unit id="imageposition.items.left.label" resname="imageposition.items.left.label">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="imageposition.items.right.label" resname="imageposition.items.right.label">
+				<source>Rechts</source>
+			</trans-unit>
+			<trans-unit id="title.label" resname="title.label">
+				<source>Title</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

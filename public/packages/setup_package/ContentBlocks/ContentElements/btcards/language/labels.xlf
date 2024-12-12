@@ -1,0 +1,164 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-05T10:37:38+00:00" product-name="t3example/btcards">
+		<header/>
+		<body>
+			<trans-unit id="title" resname="title">
+				<source>Bootstrap Cards</source>
+			</trans-unit>
+			<trans-unit id="description" resname="description">
+				<source>Cardgroup Einstellungen</source>
+			</trans-unit>
+			<trans-unit id="header.label" resname="header.label">
+				<source>Pluginbeschreibung für TYPO3 BE</source>
+			</trans-unit>
+			<trans-unit id="tabs.tab_1" resname="tabs.tab_1">
+				<source>Cardgroup Einstellungen</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_1.label" resname="palettes.palette_1.label">
+				<source>Anzahl der Cards</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_1.description" resname="palettes.palette_1.description">
+				<source>Anzahl der Cardselemente die innerhalb einer Reihe je Breakpoint(Device) angezeigt werden sollen.</source>
+			</trans-unit>
+			<trans-unit id="responsive_xs.label" resname="responsive_xs.label">
+				<source>Anzahl Cards Mobile kleiner 576px</source>
+			</trans-unit>
+			<trans-unit id="responsive_xs.items.label" resname="responsive_xs.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_xs.items.row-cols-1.label" resname="responsive_xs.items.row-cols-1.label">
+				<source>1</source>
+			</trans-unit>
+			<trans-unit id="responsive_xs.items.row-cols-2.label" resname="responsive_xs.items.row-cols-2.label">
+				<source>2</source>
+			</trans-unit>
+			<trans-unit id="responsive_xs.items.row-cols-3.label" resname="responsive_xs.items.row-cols-3.label">
+				<source>3</source>
+			</trans-unit>
+			<trans-unit id="responsive_sm.label" resname="responsive_sm.label">
+				<source>Anzahl Cards Mobile sm &gt; 576px</source>
+			</trans-unit>
+			<trans-unit id="responsive_sm.items.label" resname="responsive_sm.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_sm.items.row-cols-sm-2.label" resname="responsive_sm.items.row-cols-sm-2.label">
+				<source>2</source>
+			</trans-unit>
+			<trans-unit id="responsive_sm.items.row-cols-sm-3.label" resname="responsive_sm.items.row-cols-sm-3.label">
+				<source>3</source>
+			</trans-unit>
+			<trans-unit id="responsive_md.label" resname="responsive_md.label">
+				<source>Anzahl Cards Tablet md &lt; 768px</source>
+			</trans-unit>
+			<trans-unit id="responsive_md.items.label" resname="responsive_md.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_md.items.row-cols-md-2.label" resname="responsive_md.items.row-cols-md-2.label">
+				<source>2</source>
+			</trans-unit>
+			<trans-unit id="responsive_md.items.row-cols-md-3.label" resname="responsive_md.items.row-cols-md-3.label">
+				<source>3</source>
+			</trans-unit>
+			<trans-unit id="responsive_md.items.row-cols-md-4.label" resname="responsive_md.items.row-cols-md-4.label">
+				<source>4</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.label" resname="responsive_lg.label">
+				<source>Anzahl Cards Desktop lg &gt; 992px</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.items.label" resname="responsive_lg.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.items.row-cols-lg-3.label" resname="responsive_lg.items.row-cols-lg-3.label">
+				<source>3</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.items.row-cols-lg-4.label" resname="responsive_lg.items.row-cols-lg-4.label">
+				<source>4</source>
+			</trans-unit>
+			<trans-unit id="responsive_xl.label" resname="responsive_xl.label">
+				<source>Anzahl Cards Desktop xl &gt; 1200px</source>
+			</trans-unit>
+			<trans-unit id="responsive_xl.items.label" resname="responsive_xl.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_xl.items.row-cols-xl-3.label" resname="responsive_xl.items.row-cols-xl-3.label">
+				<source>3</source>
+			</trans-unit>
+			<trans-unit id="responsive_xl.items.row-cols-xl-4.label" resname="responsive_xl.items.row-cols-xl-4.label">
+				<source>4</source>
+			</trans-unit>
+			<trans-unit id="responsive_xl.items.row-cols-xl-5.label" resname="responsive_xl.items.row-cols-xl-5.label">
+				<source>5</source>
+			</trans-unit>
+			<trans-unit id="responsive_xxl.label" resname="responsive_xxl.label">
+				<source>Anzahl Cards Desktop xxl &gt; 1400px</source>
+			</trans-unit>
+			<trans-unit id="responsive_xxl.items.label" resname="responsive_xxl.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_xxl.items.row-cols-xxl-4.label" resname="responsive_xxl.items.row-cols-xxl-4.label">
+				<source>4</source>
+			</trans-unit>
+			<trans-unit id="responsive_xxl.items.row-cols-xxl-5.label" resname="responsive_xxl.items.row-cols-xxl-5.label">
+				<source>5</source>
+			</trans-unit>
+			<trans-unit id="responsive_xxl.items.row-cols-xxl-6.label" resname="responsive_xxl.items.row-cols-xxl-6.label">
+				<source>6</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_2.label" resname="palettes.palette_2.label">
+				<source>Abstand zwischen den einzelnen Cardelementen</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_2.description" resname="palettes.palette_2.description">
+				<source>Horizontal und Vertikaler Zwischenraum zwischen den Cardelementen. .</source>
+			</trans-unit>
+			<trans-unit id="cardspace_mobile.label" resname="cardspace_mobile.label">
+				<source>Abstand Mobiledevices auswählen</source>
+			</trans-unit>
+			<trans-unit id="cardspace_mobile.items.label" resname="cardspace_mobile.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="cardspace_mobile.items.gap-10.label" resname="cardspace_mobile.items.gap-10.label">
+				<source>10px</source>
+			</trans-unit>
+			<trans-unit id="cardspace_mobile.items.gap-15.label" resname="cardspace_mobile.items.gap-15.label">
+				<source>15px</source>
+			</trans-unit>
+			<trans-unit id="cardspace_mobile.items.gap-20.label" resname="cardspace_mobile.items.gap-20.label">
+				<source>20px</source>
+			</trans-unit>
+			<trans-unit id="cardspace_tablet.label" resname="cardspace_tablet.label">
+				<source>Abstand Tabletdevices auswählen</source>
+			</trans-unit>
+			<trans-unit id="cardspace_tablet.items.label" resname="cardspace_tablet.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="cardspace_tablet.items.gap-15.label" resname="cardspace_tablet.items.gap-15.label">
+				<source>15px</source>
+			</trans-unit>
+			<trans-unit id="cardspace_tablet.items.gap-20.label" resname="cardspace_tablet.items.gap-20.label">
+				<source>20px</source>
+			</trans-unit>
+			<trans-unit id="cardspace_tablet.items.gap-25.label" resname="cardspace_tablet.items.gap-25.label">
+				<source>25px</source>
+			</trans-unit>
+			<trans-unit id="cardspace_desktop.label" resname="cardspace_desktop.label">
+				<source>Abstand Desktopdevices auswählen</source>
+			</trans-unit>
+			<trans-unit id="cardspace_desktop.items.label" resname="cardspace_desktop.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="cardspace_desktop.items.gap-20.label" resname="cardspace_desktop.items.gap-20.label">
+				<source>20px</source>
+			</trans-unit>
+			<trans-unit id="cardspace_desktop.items.gap-25.label" resname="cardspace_desktop.items.gap-25.label">
+				<source>25px</source>
+			</trans-unit>
+			<trans-unit id="cardspace_desktop.items.gap-30.label" resname="cardspace_desktop.items.gap-30.label">
+				<source>30px</source>
+			</trans-unit>
+			<trans-unit id="tabs.links_tab" resname="tabs.links_tab">
+				<source>Links</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

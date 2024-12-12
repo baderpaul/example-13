@@ -1,10 +1,13 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     xmlns:cb="http://typo3.org/ns/TYPO3/CMS/ContentBlocks/ViewHelpers" data-namespace-typo3-fluid="true">
-<f:asset.css identifier="content-block-techdivision-techdivision/btslider-be" file="EditorPreview.css" />
 <div>Vorhandene Slideelemente</div>
-<f:for each="{data.slides}" as="slide"><f:for each="{slide.image}" as="image">
-    <div style="display: inline-block">
-    <f:image image="{image.originalFile}" alt="{slide.title}" width="100" height="auto"/>
-    <p>{slide.title}</p></div>
-</f:for></f:for> 
+<div class="d-inline-flex flex-wrap" style="gap: 24px">
+    <f:for each="{data.slides}" as="slide">
+        <f:for each="{slide.image}" as="image">
+            <div style="display: inline-block">
+                <f:image image="{image.originalFile}" alt="{slide.title}" width="100" height="auto" />
+                <p>{slide.title}</p>
+            </div>
+        </f:for></f:for>
+</div>
 </html>

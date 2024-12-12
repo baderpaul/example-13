@@ -4,7 +4,7 @@ config {
     #frontend_editing = 0
 
     doctype = html5
-    htmlTag.attributes.class = h-100
+    #htmlTag.attributes.class = h-100
 
     removeDefaultCss = 1
     inlineStyle2TempFile = 0
@@ -34,4 +34,16 @@ config {
     // Errorhandling
     contentObjectExceptionHandler = 0
 
+    max-age=31536000
+
 }
+
+[applicationContext matches "/^Development/"]
+    config {
+        compressCss = 0
+        compressJs = 0
+        concatenateJs = 0
+        concatenateCss = 0
+    }
+[end]
+
