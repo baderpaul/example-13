@@ -9,3 +9,4 @@ var/
 !/vendor/
 /vendor/*
 !/vendor/t3example/
+!/config/system/
