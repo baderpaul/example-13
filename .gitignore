@@ -9,6 +9,4 @@ var/
 !/vendor/
 /vendor/*
 !/vendor/t3example/
-config/sites/system/
-/config/sites/system/additional.php
-/config/sites/system/settings.php
+config/system/
