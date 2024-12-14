@@ -31,10 +31,10 @@
                                     <source
                                         srcset="{f:uri.image(image: image, maxWidth: '100', fileExtension:'webp', cropVariant: 'smartphone')}, {f:uri.image(image: image, fileExtension:'webp', maxWidth: '100', cropVariant: 'smartphone')} 2x"
                                         media="(max-width: 767px)">
-                                    <!--Fallback-->
+                                    <f:comment>Fallback</f:comment>
                                     <img class="img-responsive"
                                         src="{f:uri.image(image: image, maxWidth: settings.maxImgWidth, cropVariant: 'default', fileExtension:'webp')}"
-                                        alt="{image.alternative}" longdesc="{image.description}" title="{image.title}" loading="lazy">
+                                        alt="{image.alternative}" title="{image.title}" loading="lazy">
                                 </picture>
                             </f:for>
                         </f:if>

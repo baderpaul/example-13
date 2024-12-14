@@ -1,0 +1,11 @@
+name: t3example/bttextcolumnsicons
+title: t3example/bttextcolumnsicons
+description: 'Teasertext mit Icon und ggf. Verlinkung'
+basics:
+  - t3example/Appearance
+  - t3example/Links
+group: ContentBlocks
+saveAndClose: true
+prefixFields: true
+prefixType: full
+fields:

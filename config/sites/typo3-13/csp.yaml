@@ -29,7 +29,6 @@ mutations:
       - "'unsafe-eval'"
       - "'self'"
       - "http://example-13.ddev.site"
-      - "https://unpkg.com/aos@next/dist/aos.js"
 
   # Results in `worker-src blob:`
   - mode: "set"
