@@ -1,4 +1,28 @@
 <f:layout name="Default" />
-
 <f:section name="Main">
+    <div class="d-flex justify-content-center">
+        <div class="row position-relative
+        {f:if(condition: '{data.responsive_xs}', then: '{data.responsive_xs}')}
+        {f:if(condition: '{data.responsive_sm}', then: '{data.responsive_sm}')}
+        {f:if(condition: '{data.responsive_md}', then: '{data.responsive_md}')}
+        {f:if(condition: '{data.responsive_lg}', then: '{data.responsive_lg}')}
+        {f:if(condition: '{data.space_mobile}', then: '{data.space_mobile}')}
+        {f:if(condition: '{data.space_tablet}', then: '{data.space_tablet}')}
+        {f:if(condition: '{data.space_desktop}', then: '{data.space_desktop}')} ">
+            <f:for each="{data.collectionsets}" as="collectionset" iteration="i">
+                <div class="col  position-relative 
+                        border-bottom border-primary border-bottom-sm-0
+                        d-flex flex-column {data.teaseralignment}
+                        {f:if(condition:i.isLast, then: 'border-bottom-0')}">
+                    <f:if condition="{data.teasermodus}==one">
+                        <f:render partial="SvgItem" arguments="{_all}" />
+                    </f:if>
+                    <f:render partial="TeaserContent" arguments="{_all}" />
+                    <f:if condition="{data.teasermodus}==two">
+                        <f:render partial="SvgItem" arguments="{_all}" />
+                    </f:if>
+                </div>
+            </f:for>
+        </div>
+    </div>
 </f:section>

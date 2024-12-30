@@ -15,7 +15,7 @@ fields:
   - identifier: tab_1
     type: Tab
     label: Accordion Einstellungen
-  - identifier: palette_1
+  - identifier: palette_21
     type: Palette
   - identifier: choose-icon
     type: Select
@@ -30,7 +30,7 @@ fields:
   - identifier: tab_2
     type: Tab
     label: Accordion Items
-  - identifier: palette_2
+  - identifier: palette_22
     type: Palette
   - identifier: accordionsets
     type: Collection

@@ -1,0 +1,9 @@
+<f:if condition="{collectionset.teaserheadline}">
+    <h4>
+        {collectionset.teaserheadline}
+    </h4>
+</f:if>
+<p>{collectionset.bodytextsimple -> f:format.stripTags()}</p>
+<f:if condition="{collectionset.url}">
+    <div class="{f:if(condition: '{data.ctabuttonsameheight}==1', then:' mt-auto')}"><f:render partial="TeaserLink" arguments="{_all}"/></div>
+</f:if>

@@ -1,4 +1,8 @@
 <?php
+
+use TYPO3\CMS\Core\Utility\GeneralUtility;
+use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
+
 defined('TYPO3') or die();
 
 $tempColumns = [
@@ -263,24 +267,20 @@ $tempColumns = [
     ],
 ];
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
+ExtensionManagementUtility::addTCAcolumns('tt_content', $tempColumns);
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette(
+ExtensionManagementUtility::addFieldsToPalette(
         'tt_content',
         'animation',
         'animations,--linebreak--,duration,delay,--linebreak--,offset,anchor_placement,--linebreak--,animations_once,animations_mirror'
         );
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+ExtensionManagementUtility::addToAllTCAtypes(
     'tt_content',
     '--palette--;Animation;animation',
     '',
     'after:sectionIndex'
 );
-
-
-use TYPO3\CMS\Core\Utility\GeneralUtility;
-use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $packageKey = 'EXT:setup_package';
 $locallangFile = '/Resources/Private/Language/locallang.xlf';

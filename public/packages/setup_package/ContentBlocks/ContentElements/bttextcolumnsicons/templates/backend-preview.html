@@ -1,18 +1,19 @@
-<f:asset.css identifier="content-block-t3example-t3example/bttabs-be" href="{cb:assetPath()}/preview.css"/>
-<div class="mb-3">Vorhandene Accordionelemente</div>
-<div class="d-inline-flex flex-wrap" style="gap: 24px">
-    <f:for each="{data.tabsets}" as="tabset" iteration="i">
+<f:asset.css identifier="content-block-t3example-t3example/bttextcolumnsicons-be" href="{cb:assetPath()}/preview.css" />
+<div class="mb-3">Vorhandene Teaser mit Icon</div>
+<div class="d-inline-flex flex-wrap" style="gap: 20px;">
+    <f:for each="{data.collectionsets}" as="collectionset">
         <div class="d-inline-flex flex-column">
-            <h2 class="mb-0" style="font-size: 16px;"> {tabsetset.heading -> f:format.nl2br()}
+            <f:if condition="{data.teasermodus}==one">
+                <f:render partial="SvgItemPreview" arguments="{_all}"/>
+        </f:if>
+            <h2 class="mb-0" style="font-size: 16px;"> {collectionset.teaserheadline -> f:format.nl2br()}
             </h2>
             <p>
-                {tabset.bodytext -> f:format.crop(maxCharacters: 15) -> f:format.stripTags()}
+                {collectionset.bodytextsimple -> f:format.crop(maxCharacters: 25) -> f:format.stripTags()}
             </p>
-            <f:for each="{tabset.image}" as="image">
-                <img 
-                src="{f:uri.image(image: image, fileExtension:'webp')}"
-                 alt="{image.alternative}" width="100px" loading="lazy">
-            </f:for>            
+            <f:if condition="{data.teasermodus}==two">
+                <f:render partial="SvgItemPreview" arguments="{_all}"/>
+        </f:if>
         </div>
     </f:for>
 </div>

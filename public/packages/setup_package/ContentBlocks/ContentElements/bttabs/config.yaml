@@ -15,26 +15,28 @@ fields:
   - identifier: tab_1
     type: Tab
     label: Tab Einstellungen
-  - identifier: palette_1
+  - identifier: palette_41
     type: Palette
-  - identifier: choose-display
-    type: Select
-    renderType: selectSingle
-    label: Ansicht zwischen Tabs & Pills auswählen
-    default: 'one'
-    items:
-      - label: 'Tabs (eckig)'
-        value: one
-      - label: 'Pills (abgerundet)'
-        value: two
+    fields:
+      - identifier: choose-display
+        type: Select
+        renderType: selectSingle
+        label: Ansicht zwischen Tabs & Pills auswählen
+        default: 'one'
+        items:
+          - label: 'Tabs (eckig)'
+            value: one
+          - label: 'Pills (abgerundet)'
+            value: two
   - identifier: tab_2
     type: Tab
     label: Tab Items
-  - identifier: palette_2
+  - identifier: palette_42
     type: Palette
-  - identifier: tabsets
-    type: Collection
-    label: Tabitem anlegen
-    foreign_table: tx_example_textimage
-    shareAcrossTables: true
-    shareAcrossFields: true
+    fields:
+      - identifier: tabsets
+        type: Collection
+        label: Tabitem anlegen
+        foreign_table: tx_example_textimage
+        shareAcrossTables: true
+        shareAcrossFields: true

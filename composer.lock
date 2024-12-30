@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa4e22cdd8629ab104a5e4855f263448",
+    "content-hash": "362c1a8d9346e2203c221c8c76b550f0",
     "packages": [
         {
             "name": "autodudes/ai-suite",
@@ -54,8 +54,8 @@
             "type": "typo3-cms-extension",
             "extra": {
                 "typo3/cms": {
-                    "extension-key": "ai_suite",
-                    "web-dir": ".Build/Web"
+                    "web-dir": ".Build/Web",
+                    "extension-key": "ai_suite"
                 }
             },
             "autoload": {
@@ -878,16 +878,16 @@
         },
         {
             "name": "egulias/email-validator",
-            "version": "4.0.2",
+            "version": "4.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/egulias/EmailValidator.git",
-                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e"
+                "reference": "b115554301161fa21467629f1e1391c1936de517"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/ebaaf5be6c0286928352e054f2d5125608e5405e",
-                "reference": "ebaaf5be6c0286928352e054f2d5125608e5405e",
+                "url": "https://api.github.com/repos/egulias/EmailValidator/zipball/b115554301161fa21467629f1e1391c1936de517",
+                "reference": "b115554301161fa21467629f1e1391c1936de517",
                 "shasum": ""
             },
             "require": {
@@ -933,7 +933,7 @@
             ],
             "support": {
                 "issues": "https://github.com/egulias/EmailValidator/issues",
-                "source": "https://github.com/egulias/EmailValidator/tree/4.0.2"
+                "source": "https://github.com/egulias/EmailValidator/tree/4.0.3"
             },
             "funding": [
                 {
@@ -941,101 +941,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2023-10-06T06:47:41+00:00"
-        },
-        {
-            "name": "ehaerer/paste-reference",
-            "version": "4.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Kephson/paste_reference.git",
-                "reference": "cab98a849efa3f111907b236113b8e77a2399de8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Kephson/paste_reference/zipball/cab98a849efa3f111907b236113b8e77a2399de8",
-                "reference": "cab98a849efa3f111907b236113b8e77a2399de8",
-                "shasum": ""
-            },
-            "require": {
-                "php": "^8.2",
-                "typo3/cms-backend": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-core": "^13.3.1 || ^13.4 || dev-main"
-            },
-            "conflict": {
-                "gridelementsteam/gridelements": "*"
-            },
-            "require-dev": {
-                "ergebnis/composer-normalize": "^2.31",
-                "friendsofphp/php-cs-fixer": "^3.64.0",
-                "phpstan/phpstan": "^1.12.5",
-                "phpstan/phpstan-phpunit": "^1.4.0",
-                "phpunit/phpunit": "^10.5.35",
-                "typo3/cms-adminpanel": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-belog": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-beuser": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-dashboard": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-extbase": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-extensionmanager": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-filelist": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-fluid": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-fluid-styled-content": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-form": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-frontend": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-info": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-install": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-lowlevel": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-opendocs": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-recycler": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-redirects": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-reports": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-rte-ckeditor": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-scheduler": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-seo": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-setup": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-styleguide": "^13.3",
-                "typo3/cms-tstemplate": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-viewpage": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/cms-workspaces": "^13.3.1 || ^13.4 || dev-main",
-                "typo3/testing-framework": "^8.2.2"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "web-dir": ".Build/public",
-                    "extension-key": "paste_reference"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "EHAERER\\PasteReference\\": "Classes"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Ephraim Härer",
-                    "email": "mail@ephra.im",
-                    "homepage": "https://ephra.im",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Paste reference instead of copy for content elements in TYPO3",
-            "homepage": "https://github.com/kephson/paste-reference",
-            "keywords": [
-                "TYPO3 CMS",
-                "content element",
-                "copy paste",
-                "references"
-            ],
-            "support": {
-                "issues": "https://github.com/kephson/paste-reference/issues",
-                "source": "https://github.com/Kephson/paste_reference/tree/4.0.2"
-            },
-            "time": "2024-11-28T18:15:31+00:00"
+            "time": "2024-12-27T00:36:43+00:00"
         },
         {
             "name": "enshrined/svg-sanitize",
@@ -1650,63 +1556,50 @@
             "time": "2024-07-18T11:15:46+00:00"
         },
         {
-            "name": "helhum/dotenv-connector",
-            "version": "v3.1.0",
+            "name": "helhum/config-loader",
+            "version": "v0.12.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/helhum/dotenv-connector.git",
-                "reference": "36ad148c1ac934b011d50116395f885bd379f9ae"
+                "url": "https://github.com/helhum/config-loader.git",
+                "reference": "f761ab3fcf888b9d17d679d94b14aca24fe6bfab"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/helhum/dotenv-connector/zipball/36ad148c1ac934b011d50116395f885bd379f9ae",
-                "reference": "36ad148c1ac934b011d50116395f885bd379f9ae",
+                "url": "https://api.github.com/repos/helhum/config-loader/zipball/f761ab3fcf888b9d17d679d94b14aca24fe6bfab",
+                "reference": "f761ab3fcf888b9d17d679d94b14aca24fe6bfab",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0",
-                "php": ">=7.2",
-                "symfony/dotenv": "^5.1 || ^6.4 || ^7.0"
+                "php": ">=7.2"
             },
             "require-dev": {
-                "composer/composer": "^1.0 || ^2.0",
-                "composer/semver": "^1.0 || ^2.0 || ^3.0",
-                "mikey179/vfsstream": "^1.6.0",
-                "phpunit/phpunit": "^5"
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpunit/phpunit": "^8.5",
+                "symfony/yaml": "^2.8 || ^3.3 || ^4.0 || ^5.0"
             },
-            "type": "composer-plugin",
+            "suggest": {
+                "ext-yaml": "For improved performance when parsing yaml files you should use the PECL YAML Parser php extension",
+                "symfony/yaml": "To be able to parse yaml files, you will need symfony/yaml"
+            },
+            "type": "library",
             "extra": {
-                "class": "Helhum\\DotEnvConnector\\Plugin",
                 "branch-alias": {
-                    "dev-latest": "3.x-dev"
+                    "dev-main": "1.0.x-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "Helhum\\DotEnvConnector\\": "src/"
+                    "Helhum\\ConfigLoader\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-                "MIT"
+                "GPL-2.0-or-later"
             ],
-            "authors": [
-                {
-                    "name": "Helmut Hummel",
-                    "email": "info@helhum.io"
-                }
-            ],
-            "description": "Makes it possible to set environment variables for composer projects.",
-            "homepage": "https://github.com/helhum/dotenv-connector",
-            "keywords": [
-                "12factor",
-                "composer",
-                "dotenv",
-                "env"
-            ],
+            "description": "Generic config loader with context and environment support.",
             "support": {
-                "issues": "https://github.com/helhum/dotenv-connector/issues",
-                "source": "https://github.com/helhum/dotenv-connector/tree/v3.1.0"
+                "issues": "https://github.com/helhum/config-loader/issues",
+                "source": "https://github.com/helhum/config-loader/tree/v0.12.5"
             },
             "funding": [
                 {
@@ -1718,53 +1611,37 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-02-07T13:03:15+00:00"
+            "time": "2022-02-21T15:32:39+00:00"
         },
         {
-            "name": "ichhabrecht/content-defender",
-            "version": "3.5.1",
+            "name": "helhum/php-error-reporting",
+            "version": "v1.0.1",
             "source": {
                 "type": "git",
-                "url": "https://github.com/IchHabRecht/content_defender.git",
-                "reference": "e850c080f3ba9544564e919d4257d1b337969673"
+                "url": "https://github.com/helhum/php-error-reporting.git",
+                "reference": "c9f1a0b6fedf7e641bce23b65eeeea946a6f7eb9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/IchHabRecht/content_defender/zipball/e850c080f3ba9544564e919d4257d1b337969673",
-                "reference": "e850c080f3ba9544564e919d4257d1b337969673",
+                "url": "https://api.github.com/repos/helhum/php-error-reporting/zipball/c9f1a0b6fedf7e641bce23b65eeeea946a6f7eb9",
+                "reference": "c9f1a0b6fedf7e641bce23b65eeeea946a6f7eb9",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.1",
-                "typo3/cms-backend": "^11.5 || ^12.4 || ^13.4",
-                "typo3/cms-core": "^11.5 || ^12.4 || ^13.4"
-            },
-            "replace": {
-                "typo3-ter/content-defender": "self.version"
+                "php": ">=7.4.1"
             },
             "require-dev": {
-                "php-parallel-lint/php-parallel-lint": "^1.4",
-                "phpspec/prophecy": "^1.12.1",
-                "phpspec/prophecy-phpunit": "^2.0",
-                "phpunit/phpunit": "^10.5",
-                "typo3/cms-fluid-styled-content": "^11.5 || ^12.4 || ^13.4",
-                "typo3/cms-indexed-search": "^11.5 || ^12.4 || ^13.4",
-                "typo3/cms-workspaces": "^11.5 || ^12.4 || ^13.4",
-                "typo3/minimal": "^11.5 || ^12.0 || ^13.0",
-                "typo3/testing-framework": "^7.0.4 || ^8.2.3"
+                "friendsofphp/php-cs-fixer": "^3.2",
+                "phpstan/phpstan": "^1.0",
+                "phpstan/phpstan-deprecation-rules": "^1.0",
+                "phpstan/phpstan-doctrine": "^1.0",
+                "phpstan/phpstan-phpunit": "^1.0",
+                "phpstan/phpstan-strict-rules": "^1.0"
             },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "app-dir": ".Build",
-                    "web-dir": ".Build/public",
-                    "extension-key": "content_defender",
-                    "cms-package-dir": "{$vendor-dir}/typo3/cms"
-                }
-            },
+            "type": "library",
             "autoload": {
                 "psr-4": {
-                    "IchHabRecht\\ContentDefender\\": "Classes/"
+                    "ErrorReporting\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -1773,24 +1650,128 @@
             ],
             "authors": [
                 {
-                    "name": "Nicole Cordes",
-                    "email": "typo3@cordes.co",
+                    "name": "Helmut Hummel",
+                    "email": "typo3@helhum.io"
+                }
+            ],
+            "description": "Create ErrorException with clean trace from PHP error handler errors, inspired by Sentry PHP SDK",
+            "homepage": "https://helhum.io",
+            "keywords": [
+                "error reporting",
+                "sentry"
+            ],
+            "support": {
+                "issues": "https://github.com/helhum/php-error-reporting",
+                "source": "https://github.com/helhum/php-error-reporting/tree/v1.0.1"
+            },
+            "time": "2023-01-12T14:49:10+00:00"
+        },
+        {
+            "name": "helhum/typo3-console",
+            "version": "v8.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-Console/TYPO3-Console.git",
+                "reference": "b105fc1c5765f6a5376e58b0e5533ebc841f6965"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-Console/TYPO3-Console/zipball/b105fc1c5765f6a5376e58b0e5533ebc841f6965",
+                "reference": "b105fc1c5765f6a5376e58b0e5533ebc841f6965",
+                "shasum": ""
+            },
+            "require": {
+                "composer-runtime-api": "^2.1",
+                "helhum/config-loader": ">=0.9 <0.13",
+                "helhum/php-error-reporting": "^1.0",
+                "php": ">=8.1",
+                "symfony/console": "^5.4 || ^6.4 || ^7.0",
+                "symfony/process": "^5.4 || ^6.4 || ^7.0",
+                "typo3/cms-backend": "^11.5.26 || ^12.4.18 || ^13.1",
+                "typo3/cms-composer-installers": "^4.0@rc || >=5.0",
+                "typo3/cms-core": "^11.5.26 || ^12.4.18 || ^13.1",
+                "typo3/cms-extbase": "^11.5.26 || ^12.4.18 || ^13.1",
+                "typo3/cms-extensionmanager": "^11.5.26 || ^12.4.18 || ^13.1",
+                "typo3/cms-fluid": "^11.5.26 || ^12.4.18 || ^13.1",
+                "typo3/cms-frontend": "^11.5.26 || ^12.4.18 || ^13.1",
+                "typo3/cms-install": "^11.5.26 || ^12.4.18 || ^13.1"
+            },
+            "replace": {
+                "typo3-ter/typo3-console": "self.version"
+            },
+            "require-dev": {
+                "dg/bypass-finals": "^1.4",
+                "friendsofphp/php-cs-fixer": "^3.57",
+                "php-parallel-lint/php-parallel-lint": "^1.2",
+                "phpunit/phpunit": "^9.5.25",
+                "symfony/expression-language": "^5.4 || ^6.4 || ^7.0",
+                "symfony/filesystem": "^5.4 || ^6.4 || ^7.0",
+                "typo3-console/create-reference-command": "^1.0",
+                "typo3-console/sql-command": "^1.0",
+                "typo3/cms-filemetadata": "^11.5.26 || ^12.4.18 || ^13.1",
+                "typo3/cms-recordlist": "^11.5.26 || ^12.4.18 || ^13.1",
+                "typo3/cms-reports": "^11.5.26 || ^12.4.18 || ^13.1"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "Package": {
+                        "protected": true,
+                        "serviceProvider": "Helhum\\Typo3Console\\ServiceProvider",
+                        "partOfMinimalUsableSystem": true
+                    },
+                    "extension-key": "typo3_console",
+                    "ignore-as-root": false
+                },
+                "branch-alias": {
+                    "dev-main": "8.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Helhum\\Typo3Console\\": [
+                        "Classes/Console/",
+                        "Classes/Compatibility/"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Helmut Hummel",
+                    "email": "info@helhum.io",
+                    "homepage": "https://helhum.io",
                     "role": "Developer"
                 }
             ],
-            "description": "Define allowed or denied content element types in your backend layouts",
-            "homepage": "https://github.com/IchHabRecht/content_defender",
+            "description": "A reliable and powerful command line interface for TYPO3 CMS",
+            "homepage": "https://insight.helhum.io/post/104528981610/about-the-beauty-and-power-of-typo3-console",
             "keywords": [
-                "TYPO3 CMS",
-                "backend",
-                "content",
-                "restrict"
+                "cli",
+                "command",
+                "commandline",
+                "console",
+                "typo3"
             ],
             "support": {
-                "issues": "https://github.com/IchHabRecht/content_defender/issues",
-                "source": "https://github.com/IchHabRecht/content_defender/tree/3.5.1"
+                "docs": "https://docs.typo3.org/p/helhum/typo3-console/main/en-us/",
+                "issues": "https://github.com/TYPO3-Console/TYPO3-Console/issues",
+                "source": "https://github.com/TYPO3-Console/TYPO3-Console"
             },
-            "time": "2024-12-09T14:49:57+00:00"
+            "funding": [
+                {
+                    "url": "https://www.paypal.me/helhum/19.99",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/helhum",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-12-27T16:56:20+00:00"
         },
         {
             "name": "lolli42/finediff",
@@ -2889,12 +2870,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -3286,12 +3267,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -3407,80 +3388,6 @@
             "time": "2024-10-18T09:50:33+00:00"
         },
         {
-            "name": "symfony/dotenv",
-            "version": "v7.2.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dotenv.git",
-                "reference": "28347a897771d0c28e99b75166dd2689099f3045"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dotenv/zipball/28347a897771d0c28e99b75166dd2689099f3045",
-                "reference": "28347a897771d0c28e99b75166dd2689099f3045",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.2"
-            },
-            "conflict": {
-                "symfony/console": "<6.4",
-                "symfony/process": "<6.4"
-            },
-            "require-dev": {
-                "symfony/console": "^6.4|^7.0",
-                "symfony/process": "^6.4|^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\Dotenv\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Registers environment variables from a .env file",
-            "homepage": "https://symfony.com",
-            "keywords": [
-                "dotenv",
-                "env",
-                "environment"
-            ],
-            "support": {
-                "source": "https://github.com/symfony/dotenv/tree/v7.2.0"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2024-11-27T11:18:42+00:00"
-        },
-        {
             "name": "symfony/event-dispatcher",
             "version": "v7.2.0",
             "source": {
@@ -3580,12 +3487,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -5177,12 +5084,12 @@
             },
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "autoload": {
@@ -5646,16 +5553,16 @@
         },
         {
             "name": "tpwd/ke_search",
-            "version": "v6.1.2",
+            "version": "v6.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tpwd/ke_search.git",
-                "reference": "83d57605a851c43e0a829c0ed63ed5e2583a664b"
+                "reference": "a7049618a55cf95334a1e0e148608a7a3c0272ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tpwd/ke_search/zipball/83d57605a851c43e0a829c0ed63ed5e2583a664b",
-                "reference": "83d57605a851c43e0a829c0ed63ed5e2583a664b",
+                "url": "https://api.github.com/repos/tpwd/ke_search/zipball/a7049618a55cf95334a1e0e148608a7a3c0272ef",
+                "reference": "a7049618a55cf95334a1e0e148608a7a3c0272ef",
                 "shasum": ""
             },
             "require": {
@@ -5716,9 +5623,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tpwd/ke_search/issues",
-                "source": "https://github.com/tpwd/ke_search/tree/v6.1.2"
+                "source": "https://github.com/tpwd/ke_search/tree/v6.1.3"
             },
-            "time": "2024-11-15T09:45:02+00:00"
+            "time": "2024-12-20T11:08:02+00:00"
         },
         {
             "name": "typo3/class-alias-loader",

@@ -3,7 +3,6 @@ defined('TYPO3') or die();
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $packageKey = 'EXT:setup_package';
-$package = 'setup_package';
 
 $newFields = [
     'breadcrumb' => [

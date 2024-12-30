@@ -1,0 +1,7 @@
+<f:if condition="{collectionset.svgidentifier}">
+    <div class="feature-icon mx-auto {data.iconsize}">
+        <svg class="text-black-50 bi {data.iconsize}" width="3rem" height="3rem" fill="currentColor">
+            <use xlink:href="{f:uri.resource(path:'EXT:setup_package/Resources/Public/Contrib/bootstrap-icons/bootstrap-icons.svg')}#{collectionset.svgidentifier}"/>
+        </svg>
+    </div>
+</f:if>

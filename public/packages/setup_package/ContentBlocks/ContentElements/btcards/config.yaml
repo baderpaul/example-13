@@ -14,7 +14,7 @@ fields:
   - identifier: tab_1
     type: Tab
     label: Cardgroup Einstellungen Global
-  - identifier: palette_1
+  - identifier: palette_01
     type: Palette
     label: Anzahl der Cards
     description: Anzahl der Cardselemente die innerhalb einer Reihe je Breakpoint(Device) angezeigt werden sollen.
@@ -93,7 +93,7 @@ fields:
       #      value: row-cols-xxl-5
       #    - label: '6'
       #      value: row-cols-xxl-6
-  - identifier: palette_2
+  - identifier: palette_02
     type: Palette
     label: Abstand zwischen den einzelnen Cardelementen
     description: Horizontal und Vertikaler Zwischenraum zwischen den Cardelementen.
@@ -141,7 +141,7 @@ fields:
   - identifier: tab_2
     type: Tab
     label: Cards anlegen
-  - identifier: palette_3
+  - identifier: palette_03
     type: Palette
   - identifier: cardsets
     type: Collection

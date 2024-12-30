@@ -1,0 +1,7 @@
+<f:link.typolink parameter="{collectionset.url}"
+        additionalAttributes="{role: 'button'}"
+        class="btn btn-outline-primary
+        {f:if(condition: '{data.ctabuttonsameheight}==1', then:' mt-auto')}
+        {f:if(condition: '{collectionset.linkcard}', then: 'stretched-link')}">    
+    {collectionset.cta}
+</f:link.typolink>

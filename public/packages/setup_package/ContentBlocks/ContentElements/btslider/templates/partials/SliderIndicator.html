@@ -3,18 +3,15 @@
     <f:for each="{data.slides}" as="slide" iteration="i">
         <f:for each="{slide.image}" as="slide-item" >
             <li data-bs-target="#carouselExampleIndicators-{data.uid}"  data-bs-slide-to="{i.index}"
-                class="d-inline-block
-                      {f:if(condition:i.isFirst, then:' active')}
-                      {f:if(condition:'{data.indicatorthumbnail}==1', then: ' slider-thumb-width')}"
-                      aria-current="true"
+                class="d-inline-block {f:if(condition:i.isFirst, then:' active')} {f:if(condition:'{data.indicatorthumbnail}==1', then: ' slider-thumb-width')}"
                       aria-label="Slide {i.index}"
+                      aria-current="true"
                       >
-            
             </li>                
         </f:for>    
     </f:for>              
 </ol>
-
+<f:comment>
 <f:if condition="{data.indicatorthumbnail}==1">
 <f:asset.css identifier="id-css-btslider-c{data.uid}" priority="true" useNonce="1">
     .slider-thumb-width {
@@ -28,3 +25,4 @@
 }
 </f:asset.css>
 </f:if>
+</f:comment>

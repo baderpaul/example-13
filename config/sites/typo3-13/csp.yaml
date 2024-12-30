@@ -31,8 +31,8 @@ mutations:
       - "http://example-13.ddev.site"
 
   # Results in `worker-src blob:`
-  - mode: "set"
-    directive: "worker-src"
-    sources:
-      - "blob:"
+  #- mode: "set"
+  #  directive: "worker-src"
+  #  sources:
+   #   - "blob:"
   #unsafe-inline TODO - How can i add this

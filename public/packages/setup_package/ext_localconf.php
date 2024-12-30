@@ -36,6 +36,9 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = "EXT:$packageKey/Confi
 if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['simple'] )) {
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['simple'] = "EXT:$packageKey/Configuration/Sets/Example-13/RTE/simple.yaml";
     }
+    if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['iconteaser'] )) {
+        $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['iconteaser'] = "EXT:$packageKey/Configuration/Sets/Example-13/RTE/iconteaser.yaml";
+        }
 #$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['mask'] = "EXT:$packageKey/Configuration/Yaml/RTE/mask.yaml";
 ##$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['news'] = "EXT:$packageKey/Configuration/Yaml/RTE/news.yaml";
 

@@ -8,6 +8,71 @@
   padding-inline-start: 0;
   padding-inline-end: 0; }
 
+@font-face {
+  font-family: "bootstrap-icons";
+  src: url("../Icons/font/fonts/bootstrap-icons.woff2") format("woff2"), url("../Icons/font/fonts/bootstrap-icons.woff") format("woff");
+  font-display: swap; }
+.bi::before,
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+  display: inline-block;
+  font-family: "bootstrap-icons" !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  vertical-align: baseline;
+  /* -webkit-font-smoothing: antialiased;*/
+  -moz-osx-font-smoothing: grayscale; }
+
+.social-media-link.bi::before {
+  font-size: 1.875rem; }
+
+/*Socialmediaicons*/
+.bi-facebook::before {
+  content: "\F344"; }
+
+.bi-youtube::before {
+  content: "\F62B"; }
+
+.bi-linkedin::before {
+  content: "\F472"; }
+
+.bi-xing::before {
+  content: "\F169"; }
+
+.bi-whatsapp::before {
+  content: "\f618"; }
+
+.bi-twitter::before {
+  content: "\f5ef"; }
+
+.bi-instagram::before {
+  content: "\f437"; }
+
+/*Search*/
+.bi-search::before {
+  content: "\f52a"; }
+
+@media (min-width: 992px) {
+  .bi-search::before {
+    color: #ffffff; } }
+/*ToTop*/
+.bi-chevron-up::before {
+  content: "\f286"; }
+
+/*Carousel*/
+.bi-chevron-left::before {
+  content: "\f284"; }
+
+.bi-chevron-right::before {
+  content: "\f285"; }
+
+/*List check*/
+.bi-check::before {
+  content: "\f1e2"; }
+
 :root {
   --bs-body-font-family: "Roboto"; }
 
@@ -1038,6 +1103,14 @@ progress {
 .gy-30 {
   --bs-gutter-y: 1.875rem; }
 
+.g-40,
+.gx-40 {
+  --bs-gutter-x: 2.5rem; }
+
+.g-40,
+.gy-40 {
+  --bs-gutter-y: 2.5rem; }
+
 .g-50,
 .gx-50 {
   --bs-gutter-x: 3.125rem; }
@@ -1254,6 +1327,14 @@ progress {
   .gy-sm-30 {
     --bs-gutter-y: 1.875rem; }
 
+  .g-sm-40,
+  .gx-sm-40 {
+    --bs-gutter-x: 2.5rem; }
+
+  .g-sm-40,
+  .gy-sm-40 {
+    --bs-gutter-y: 2.5rem; }
+
   .g-sm-50,
   .gx-sm-50 {
     --bs-gutter-x: 3.125rem; }
@@ -1468,6 +1549,14 @@ progress {
   .g-md-30,
   .gy-md-30 {
     --bs-gutter-y: 1.875rem; }
+
+  .g-md-40,
+  .gx-md-40 {
+    --bs-gutter-x: 2.5rem; }
+
+  .g-md-40,
+  .gy-md-40 {
+    --bs-gutter-y: 2.5rem; }
 
   .g-md-50,
   .gx-md-50 {
@@ -1684,6 +1773,14 @@ progress {
   .gy-lg-30 {
     --bs-gutter-y: 1.875rem; }
 
+  .g-lg-40,
+  .gx-lg-40 {
+    --bs-gutter-x: 2.5rem; }
+
+  .g-lg-40,
+  .gy-lg-40 {
+    --bs-gutter-y: 2.5rem; }
+
   .g-lg-50,
   .gx-lg-50 {
     --bs-gutter-x: 3.125rem; }
@@ -1898,6 +1995,14 @@ progress {
   .g-xl-30,
   .gy-xl-30 {
     --bs-gutter-y: 1.875rem; }
+
+  .g-xl-40,
+  .gx-xl-40 {
+    --bs-gutter-x: 2.5rem; }
+
+  .g-xl-40,
+  .gy-xl-40 {
+    --bs-gutter-y: 2.5rem; }
 
   .g-xl-50,
   .gx-xl-50 {
@@ -5919,7 +6024,8 @@ textarea.form-control-lg {
 .mb-45 {
   margin-bottom: 2.8125rem; }
 
-.mb-50 {
+.mb-50, .feature-icon-wrapper ~ p,
+.feature-icon-wrapper ~ div p {
   margin-bottom: 3.125rem; }
 
 .mb-60 {
@@ -18984,5 +19090,78 @@ a:active:focus,
 
 .btn.btn-primary.rounded-pill:hover {
   background: none; }
+
+.bi {
+  vertical-align: baseline;
+  fill: currentColor; }
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 0.75rem;
+  width: 3rem;
+  height: 3rem; }
+
+@media (min-width: 576px) {
+  .feature-icon-sm {
+    width: 5rem;
+    height: 5rem; } }
+
+@media (min-width: 768px) {
+  .feature-icon-md {
+    width: 7rem;
+    height: 7rem; } }
+
+@media (min-width: 992px) {
+  .feature-icon-lg {
+    width: 8rem;
+    height: 8rem; } }
+
+.bi.feature-icon-sm {
+  width: 3rem;
+  height: 3rem; }
+
+.bi.feature-icon-md {
+  width: 4rem;
+  height: 4rem; }
+  @media (max-width: 991.98px) {
+    .bi.feature-icon-md {
+      width: 3rem;
+      height: 3rem; } }
+
+.bi.feature-icon-lg {
+  width: 5rem;
+  height: 5rem; }
+  @media (max-width: 991.98px) {
+    .bi.feature-icon-lg {
+      width: 3rem;
+      height: 3rem; } }
+
+.feature-icon-round {
+  border-radius: 50%; }
+
+.icon-link {
+  display: inline-flex;
+  align-items: center; }
+
+.icon-link > .bi {
+  margin-top: 0.125rem;
+  margin-left: 0.125rem;
+  transition: transform 0.25s ease-in-out;
+  fill: currentColor; }
+
+.icon-link:hover > .bi {
+  transform: translate(0.25rem); }
+
+.icon-square {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.75rem; }
 
 /*# sourceMappingURL=StyleSheet.css.map */

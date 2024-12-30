@@ -9,3 +9,212 @@ saveAndClose: true
 prefixFields: true
 prefixType: full
 fields:
+  - identifier: header
+    useExistingField: true
+    label: Pluginbeschreibung für TYPO3 BE
+  - identifier: tab_1
+    type: Tab
+    label: Globale Einstellungen für Teaser mit Icons
+  - identifier: palette_31
+    type: Palette
+    label: Positionierungen / Größe
+    fields:
+      - identifier: teasermodus
+        type: Radio
+        label: Vertikal Modus auswählen
+        default: 'one'
+        items:
+          - label: 'Oberhalb'
+            value: one
+          - label: 'Unterhalb'
+            value: two
+      - identifier: teaseralignment
+        label: Horizontale Position des Teasers auswählen
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Links'
+            value: text-start
+          - label: 'Mittig'
+            value: text-center
+          - label: 'Rechts'
+            value: text-end
+      - type: Linebreak
+      - identifier: iconsize
+        label: Größe des Icons auswählen
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Klein'
+            value: feature-icon-sm
+          - label: 'Mittel'
+            value: feature-icon-md
+          - label: 'Groß'
+            value: feature-icon-lg              
+      - identifier: ctabuttonsameheight
+        label: 'Alle CTA Buttons auf gleiche Höhe setzen'
+        type: Checkbox  
+        renderType: checkboxLabeledToggle
+        items:
+          - label: ''
+            labelChecked: 'CTA Buttons sind auf gleicher Höhe gesetzt'
+            labelUnchecked: 'Alle CTA Buttons sind nicht auf gleicher Höhe gesetzt'
+            invertStateDisplay: true          
+  - identifier: palette_32
+    type: Palette
+    label: Responsives Verhalten / Anzahl der Teaser in einer Reihe
+    fields:
+      - identifier: responsive_xs
+        type: Select
+        renderType: selectSingle
+        label: Anzahl Mobil < 576px
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '1'
+            value: row-cols-1
+          - label: '2'
+            value: row-cols-2
+      - identifier: responsive_sm
+        label: Anzahl Tablet > 576px
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '1'
+            value: row-cols-sm-1
+          - label: '2'
+            value: row-cols-sm-2
+      - identifier: responsive_md
+        type: Select
+        renderType: selectSingle
+        label: Anzahl Tablet > 768px
+        items:
+          - label: 'Auswählen'
+            value: ''      
+          - label: '3'
+            value: row-cols-md-3
+          - label: '4'
+            value: row-cols-md-4
+      - identifier: responsive_lg
+        type: Select
+        renderType: selectSingle
+        label: Anzahl Desktop > 992px
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '3'
+            value: row-cols-lg-3
+          - label: '4'
+            value: row-cols-lg-4
+          - label: '5'
+            value: row-cols-lg-5
+          - label: '6'
+            value: row-cols-lg-6
+      - type: Linebreak
+  - identifier: palette_33
+    type: Palette
+    label: Abstand zwischen den einzelnen Teaserboxen.
+    description: Horizontal und Vertikaler Zwischenraum zwischen den Teaserboxen.
+    fields:
+      - identifier: space_mobile
+        type: Select
+        renderType: selectSingle
+        label: Abstand Mobiledevices auswählen
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '10px'
+            value: g-10
+          - label: '15px'
+            value: g-15
+          - label: '20px'
+            value: g-20
+      - identifier: space_tablet
+        type: Select
+        renderType: selectSingle
+        label: Abstand Tabletdevices auswählen
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '15px'
+            value: g-ms-15
+          - label: '20px'
+            value: g-ms-20
+          - label: '25px'
+            value: g-ms-25
+      - identifier: space_desktop
+        type: Select
+        renderType: selectSingle
+        label: Abstand Desktopdevices auswählen
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '25px'
+            value: g-md-25
+          - label: '30px'
+            value: g-md-30
+          - label: '40px'
+            value: g-md-40
+      - type: Linebreak            
+  - identifier: palette_34
+    type: Palette
+    label: Einzelne Icon Teaser 
+    fields:
+      - identifier: collectionsets
+        type: Collection
+        label: Einzelne Teaser anlegen.
+        appearance:
+          collapseAll: true
+          levelLinksPosition: both   
+        fields:
+          - identifier: teaserheadline
+            type: Text
+            label: Kurze Headline des Teasers
+            description: Wird mit H4 angezeigt
+            placeholder: Kurze Headline anlegen
+          - identifier: svgidentifier
+            type: Text
+            label: Iconidentifier
+            description: Der Identifier für den Icon kann von https://icons.getbootstrap.com/ kopiert werden. Einfach den Identifiertext unterhalb des gewünschten Icons kopieren und in das Eingabefeld eintragen
+            placeholder: Beispiel - plus-square-fill
+          - identifier: bodytextsimple
+            label: Teasertext
+            description: Kurzer Text.
+            type: Textarea
+            placeholder: Teasertext      
+            enableRichtext: true
+            richtextConfiguration: iconteaser
+          - identifier: cta
+            label: Linktext
+            useExistingField: true
+            type: Text
+            placeholder: Call to Action Text
+          - identifier: url
+            label: Linkziel
+            type: Link
+            autocomplete: true
+            allowedTypes:
+              - page
+              - url
+              - file
+            useExistingField: true
+          - identifier: linklabel
+            label: Nur Linklabel verlinken
+            type: Checkbox
+            renderType: checkboxLabeledToggle
+            items:
+              - label: 'Auswählen'
+                labelChecked: 'Label ist verlinkt'
+                labelUnchecked: 'Label verlinken'
+                invertStateDisplay: false
+          - identifier: linkcard
+            label: Ganzen Teaser verlinken
+            type: Checkbox
+            renderType: checkboxLabeledToggle
+            items:
+              - label: 'Auswählen'
+                labelChecked: 'Iconteaser ist verlinkt'
+                labelUnchecked: 'Iconteaser verlinken'
+                invertStateDisplay: false

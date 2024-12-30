@@ -5,7 +5,7 @@ prefixFields: false
 security:
   ignorePageTypeRestriction: true
 fields:
-  - identifier: palette_1
+  - identifier: palette_11
     type: Palette
     label: Cardcontent
     description: Text und Headline
@@ -24,7 +24,7 @@ fields:
         enableRichtext: true
         richtextConfiguration: simple
       - type: Linebreak
-  - identifier: palette_2
+  - identifier: palette_12
     type: Palette
     label: Cardimage
     description: Text und Headline 
@@ -55,7 +55,7 @@ fields:
               landscape:
                 title: Landscape
                 value: 16 / 10
-  - identifier: palette_3
+  - identifier: palette_13
     type: Palette
     label: Verlinkung und Textlabel auswählen bzw. angeben
     description: Bei Verlinkung des ganzen Cards muss zumindest ein Call to Action Text angegeben werden.
@@ -103,7 +103,7 @@ fields:
             value: text-center
           - label: 'Rechts'
             value: text-end
-  - identifier: palette_4
+  - identifier: palette_14
     type: Palette
     label: Infotext im Footerbereich
     description: Es kann entweder ein Link oder ein Infotext angezeigt werden.

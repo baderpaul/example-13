@@ -1,0 +1,91 @@
+.bi {
+  vertical-align: baseline;
+  fill: currentColor;
+}
+
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 0.75rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+  .feature-icon-sm {
+    @include media-breakpoint-up(sm) {
+    width: 5rem;
+    height: 5rem;
+  }
+}
+
+  .feature-icon-md {
+    @include media-breakpoint-up(md) {
+    width: 7rem;
+    height: 7rem;
+  }
+}
+
+  .feature-icon-lg {
+    @include media-breakpoint-up(lg) {
+    width: 8rem;
+    height: 8rem;
+  }
+}
+
+.bi.feature-icon-sm {
+  width: 3rem;
+  height: 3rem;
+}
+
+.bi.feature-icon-md {
+  width: 4rem;
+  height: 4rem;
+  @include media-breakpoint-down(lg) {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.bi.feature-icon-lg {
+  width: 5rem;
+  height: 5rem;
+  @include media-breakpoint-down(lg) {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.feature-icon-round {
+  border-radius: 50%;
+}
+
+.feature-icon-wrapper ~ p,
+.feature-icon-wrapper ~ div p {
+  @extend .mb-50;
+}
+
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+}
+.icon-link > .bi {
+  margin-top: 0.125rem;
+  margin-left: 0.125rem;
+  transition: transform 0.25s ease-in-out;
+  fill: currentColor;
+}
+.icon-link:hover > .bi {
+  transform: translate(0.25rem);
+}
+
+.icon-square {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.5rem;
+  border-radius: 0.75rem;
+}
