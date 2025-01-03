@@ -10,24 +10,28 @@
 
 @font-face {
   font-family: "bootstrap-icons";
-  src: url("../Icons/font/fonts/bootstrap-icons.woff2") format("woff2"), url("../Icons/font/fonts/bootstrap-icons.woff") format("woff");
+  src: url("../Contrib/bootstrap-icons/font/fonts/bootstrap-icons.woff2") format("woff2"), url("../Contrib/bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff");
   font-display: swap; }
 .bi::before,
 [class^="bi-"]::before,
 [class*=" bi-"]::before {
   display: inline-block;
-  font-family: "bootstrap-icons" !important;
+  font-family: "bootstrap-icons";
   font-style: normal;
-  font-weight: normal !important;
+  font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  vertical-align: baseline;
-  /* -webkit-font-smoothing: antialiased;*/
-  -moz-osx-font-smoothing: grayscale; }
+  vertical-align: baseline; }
 
-.social-media-link.bi::before {
-  font-size: 1.875rem; }
+.sm-icon-small.bi::before {
+  font-size: 1rem; }
+
+.sm-icon-medium.bi::before {
+  font-size: 2rem; }
+
+.sm-icon-large.bi::before {
+  font-size: 3rem; }
 
 /*Socialmediaicons*/
 .bi-facebook::before {
@@ -45,11 +49,14 @@
 .bi-whatsapp::before {
   content: "\f618"; }
 
-.bi-twitter::before {
-  content: "\f5ef"; }
+.bi-twitter-x::before {
+  content: "\F8DB"; }
 
 .bi-instagram::before {
   content: "\f437"; }
+
+.bi-tiktok::before {
+  content: "\F6CC"; }
 
 /*Search*/
 .bi-search::before {

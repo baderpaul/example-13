@@ -1,0 +1,15 @@
+<div class="mb-3">Vorhandene Social Media Links</div>
+<div class="d-inline-flex flex-wrap" style="gap: 20px;">
+    <f:for each="{data.socialmediasets}" as="socialmediaset">
+        <div class="d-inline-flex flex-column">
+                {f:if(condition: '{socialmediaset.socialmediaitem} == facebook', then: ' Facebook')}
+                {f:if(condition: '{socialmediaset.socialmediaitem} == x', then: ' X')}
+                {f:if(condition: '{socialmediaset.socialmediaitem} == youtube', then: ' Youtube')}
+                {f:if(condition: '{socialmediaset.socialmediaitem} == instagram', then: ' Instagram')}
+                {f:if(condition: '{socialmediaset.socialmediaitem} == linkedin', then: ' Linkedin')}
+                {f:if(condition: '{socialmediaset.socialmediaitem} == xing', then: ' Xing')}
+                {f:if(condition: '{socialmediaset.socialmediaitem} == whatsapp', then: ' Whats App')}
+                {f:if(condition: '{socialmediaset.socialmediaitem} == tiktok', then: ' Tik Tok')}
+        </div>
+    </f:for>
+</div>

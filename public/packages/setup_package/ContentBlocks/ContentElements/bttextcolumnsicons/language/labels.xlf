@@ -1,16 +1,211 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-05T10:37:38+00:00" product-name="t3example/bttabs">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-30T13:19:25+00:00" product-name="t3example/bttextcolumnsicons">
 		<header/>
 		<body>
-			<trans-unit id="title" resname="title">
+			<trans-unit id="title">
 				<source>Teasertext mit Icon und ggf. Verlinkung</source>
 			</trans-unit>
-			<trans-unit id="description" resname="description">
+			<trans-unit id="description">
 				<source>TextIconteaser width Bootstrap</source>
 			</trans-unit>
-			<trans-unit id="header.label" resname="header.label">
+			<trans-unit id="header.label">
 				<source>Pluginbeschreibung für TYPO3 BE</source>
+			</trans-unit>
+			<trans-unit id="tabs.tab_1">
+				<source>Globale Einstellungen für Teaser mit Icons</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_31.label">
+				<source>Positionierungen / Größe</source>
+			</trans-unit>
+			<trans-unit id="teasermodus.label">
+				<source>Vertikal Modus auswählen</source>
+			</trans-unit>
+			<trans-unit id="teasermodus.items.one.label">
+				<source>Oberhalb</source>
+			</trans-unit>
+			<trans-unit id="teasermodus.items.two.label">
+				<source>Unterhalb</source>
+			</trans-unit>
+			<trans-unit id="teaseralignment.label">
+				<source>Horizontale Position des Teasers auswählen</source>
+			</trans-unit>
+			<trans-unit id="teaseralignment.items.text-start.label">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="teaseralignment.items.text-center.label">
+				<source>Mittig</source>
+			</trans-unit>
+			<trans-unit id="teaseralignment.items.text-end.label">
+				<source>Rechts</source>
+			</trans-unit>
+			<trans-unit id="iconsize.label">
+				<source>Größe des Icons auswählen</source>
+			</trans-unit>
+			<trans-unit id="iconsize.items.feature-icon-sm.label">
+				<source>Klein</source>
+			</trans-unit>
+			<trans-unit id="iconsize.items.feature-icon-md.label">
+				<source>Mittel</source>
+			</trans-unit>
+			<trans-unit id="iconsize.items.feature-icon-lg.label">
+				<source>Groß</source>
+			</trans-unit>
+			<trans-unit id="ctabuttonsameheight.label">
+				<source>Alle CTA Buttons auf gleiche Höhe setzen</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_32.label">
+				<source>Responsives Verhalten / Anzahl der Teaser in einer Reihe</source>
+			</trans-unit>
+			<trans-unit id="responsive_xs.label">
+				<source>Anzahl Mobil &lt; 576px</source>
+			</trans-unit>
+			<trans-unit id="responsive_xs.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_xs.items.row-cols-1.label">
+				<source>1</source>
+			</trans-unit>
+			<trans-unit id="responsive_xs.items.row-cols-2.label">
+				<source>2</source>
+			</trans-unit>
+			<trans-unit id="responsive_sm.label">
+				<source>Anzahl Tablet &gt; 576px</source>
+			</trans-unit>
+			<trans-unit id="responsive_sm.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_sm.items.row-cols-sm-1.label">
+				<source>1</source>
+			</trans-unit>
+			<trans-unit id="responsive_sm.items.row-cols-sm-2.label">
+				<source>2</source>
+			</trans-unit>
+			<trans-unit id="responsive_md.label">
+				<source>Anzahl Tablet &gt; 768px</source>
+			</trans-unit>
+			<trans-unit id="responsive_md.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_md.items.row-cols-md-3.label">
+				<source>3</source>
+			</trans-unit>
+			<trans-unit id="responsive_md.items.row-cols-md-4.label">
+				<source>4</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.label">
+				<source>Anzahl Desktop &gt; 992px</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.items.row-cols-lg-3.label">
+				<source>3</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.items.row-cols-lg-4.label">
+				<source>4</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.items.row-cols-lg-5.label">
+				<source>5</source>
+			</trans-unit>
+			<trans-unit id="responsive_lg.items.row-cols-lg-6.label">
+				<source>6</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_33.label">
+				<source>Abstand zwischen den einzelnen Teaserboxen.</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_33.description">
+				<source>Horizontal und Vertikaler Zwischenraum zwischen den Teaserboxen.</source>
+			</trans-unit>
+			<trans-unit id="space_mobile.label">
+				<source>Abstand Mobiledevices auswählen</source>
+			</trans-unit>
+			<trans-unit id="space_mobile.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="space_mobile.items.g-10.label">
+				<source>10px</source>
+			</trans-unit>
+			<trans-unit id="space_mobile.items.g-15.label">
+				<source>15px</source>
+			</trans-unit>
+			<trans-unit id="space_mobile.items.g-20.label">
+				<source>20px</source>
+			</trans-unit>
+			<trans-unit id="space_tablet.label">
+				<source>Abstand Tabletdevices auswählen</source>
+			</trans-unit>
+			<trans-unit id="space_tablet.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="space_tablet.items.g-ms-15.label">
+				<source>15px</source>
+			</trans-unit>
+			<trans-unit id="space_tablet.items.g-ms-20.label">
+				<source>20px</source>
+			</trans-unit>
+			<trans-unit id="space_tablet.items.g-ms-25.label">
+				<source>25px</source>
+			</trans-unit>
+			<trans-unit id="space_desktop.label">
+				<source>Abstand Desktopdevices auswählen</source>
+			</trans-unit>
+			<trans-unit id="space_desktop.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="space_desktop.items.g-md-25.label">
+				<source>25px</source>
+			</trans-unit>
+			<trans-unit id="space_desktop.items.g-md-30.label">
+				<source>30px</source>
+			</trans-unit>
+			<trans-unit id="space_desktop.items.g-md-40.label">
+				<source>40px</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_34.label">
+				<source>Einzelne Icon Teaser</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.label">
+				<source>Einzelne Teaser anlegen.</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.teaserheadline.label">
+				<source>Kurze Headline des Teasers</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.teaserheadline.description">
+				<source>Wird mit H4 angezeigt</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.svgidentifier.label">
+				<source>Iconidentifier</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.svgidentifier.description">
+				<source>Der Identifier für den Icon kann von https://icons.getbootstrap.com/ kopiert werden. Einfach den Identifiertext unterhalb des gewünschten Icons kopieren und in das Eingabefeld eintragen</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.bodytextsimple.label">
+				<source>Teasertext</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.bodytextsimple.description">
+				<source>Kurzer Text.</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.cta.label">
+				<source>Linktext</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.url.label">
+				<source>Linkziel</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.linklabel.label">
+				<source>Nur Linklabel verlinken</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.linklabel.items.0.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.linkcard.label">
+				<source>Ganzen Teaser verlinken</source>
+			</trans-unit>
+			<trans-unit id="collectionsets.linkcard.items.0.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="tabs.links_tab">
+				<source>Links</source>
 			</trans-unit>
 		</body>
 	</file>

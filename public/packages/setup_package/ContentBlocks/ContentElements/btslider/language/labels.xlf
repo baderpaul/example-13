@@ -1,75 +1,78 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-05T10:37:38+00:00" product-name="t3example/btslider">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-30T13:19:25+00:00" product-name="t3example/btslider">
 		<header/>
 		<body>
-			<trans-unit id="title" resname="title">
+			<trans-unit id="title">
 				<source>Bootstrap Carousel</source>
 			</trans-unit>
-			<trans-unit id="description" resname="description">
+			<trans-unit id="description">
 				<source>Carousel/Imageslider width Bootstrap</source>
 			</trans-unit>
-			<trans-unit id="header.label" resname="header.label">
+			<trans-unit id="header.label">
 				<source>Pluginheadline im TYPO3 Backend</source>
 			</trans-unit>
-			<trans-unit id="tabs.tab_1" resname="tabs.tab_1">
+			<trans-unit id="tabs.tab_1">
 				<source>Slide + Prev Einstellungen</source>
 			</trans-unit>
-			<trans-unit id="palettes.palette_1.label" resname="palettes.palette_1.label">
+			<trans-unit id="palettes.palette_1.label">
 				<source>Slidereinstellungen</source>
 			</trans-unit>
-			<trans-unit id="palettes.palette_1.description" resname="palettes.palette_1.description">
+			<trans-unit id="palettes.palette_1.description">
 				<source>slide/fade, prev/next auswählen</source>
 			</trans-unit>
-			<trans-unit id="modus.label" resname="modus.label">
+			<trans-unit id="modus.label">
 				<source>Slidermodus</source>
 			</trans-unit>
-			<trans-unit id="modus.items.0.label" resname="modus.items.0.label">
+			<trans-unit id="modus.items.0.label">
 				<source>slide</source>
 			</trans-unit>
-			<trans-unit id="modus.items.1.label" resname="modus.items.1.label">
+			<trans-unit id="modus.items.1.label">
 				<source>fade</source>
 			</trans-unit>
-			<trans-unit id="control.label" resname="control.label">
+			<trans-unit id="control.label">
 				<source>control</source>
 			</trans-unit>
-			<trans-unit id="control.items.0.label" resname="control.items.0.label">
+			<trans-unit id="control.items.0.label">
 				<source>Prev / Next Button einblenden</source>
 			</trans-unit>
-			<trans-unit id="indicator.label" resname="indicator.label">
+			<trans-unit id="indicator.label">
 				<source>indicator</source>
 			</trans-unit>
-			<trans-unit id="indicator.items.0.label" resname="indicator.items.0.label">
+			<trans-unit id="indicator.items.0.label">
 				<source>Slideindikatoren anzeigen / Bulletpoints</source>
 			</trans-unit>
-			<trans-unit id="tabs.tab_2" resname="tabs.tab_2">
+			<trans-unit id="tabs.tab_2">
 				<source>Slideimages</source>
 			</trans-unit>
-			<trans-unit id="slides.label" resname="slides.label">
+			<trans-unit id="palettes.palette_2.label">
+				<source>Slideimages anlegen</source>
+			</trans-unit>
+			<trans-unit id="slides.label">
 				<source>Slideitems mit Textslogans anlegen</source>
 			</trans-unit>
-			<trans-unit id="slides.image.label" resname="slides.image.label">
+			<trans-unit id="slides.image.label">
 				<source>Bild</source>
 			</trans-unit>
-			<trans-unit id="slides.slogan_big.label" resname="slides.slogan_big.label">
+			<trans-unit id="slides.slogan_big.label">
 				<source>Slogan Groß</source>
 			</trans-unit>
-			<trans-unit id="slides.slogan_small.label" resname="slides.slogan_small.label">
+			<trans-unit id="slides.slogan_small.label">
 				<source>Slogan Klein</source>
 			</trans-unit>
-			<trans-unit id="slides.links.label" resname="slides.links.label">
+			<trans-unit id="slides.links.label">
 				<source>Call to Action Link</source>
 			</trans-unit>
-			<trans-unit id="slides.links.link.label" resname="slides.links.link.label">
+			<trans-unit id="slides.links.link.label">
 				<source>link</source>
 			</trans-unit>
-			<trans-unit id="slides.links.link_title.label" resname="slides.links.link_title.label">
+			<trans-unit id="slides.links.link_title.label">
 				<source>link_title</source>
 			</trans-unit>
-			<trans-unit id="tabs.links_tab" resname="tabs.links_tab">
+			<trans-unit id="tabs.links_tab">
 				<source>Links</source>
 			</trans-unit>
-			<trans-unit id="prev-next.label" resname="prev-next.label">
+			<trans-unit id="prev-next.label">
 				<source>Prev/Next aktivieren</source>
 			</trans-unit>
 		</body>

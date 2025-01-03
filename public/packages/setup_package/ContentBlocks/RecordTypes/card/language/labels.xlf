@@ -1,12 +1,84 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-05T15:53:43+00:00" product-name="example/card">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-30T13:19:25+00:00" product-name="example/card">
 		<header/>
 		<body>
-			<trans-unit id="title" resname="title">
+			<trans-unit id="title">
 				<source>example/card</source>
 			</trans-unit>
-			<trans-unit id="title.label" resname="title.label">
+			<trans-unit id="palettes.palette_11.label">
+				<source>Cardcontent</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_11.description">
+				<source>Text und Headline</source>
+			</trans-unit>
+			<trans-unit id="heading.label">
+				<source>Überschrift/Cardtitel</source>
+			</trans-unit>
+			<trans-unit id="bodytextsimple.label">
+				<source>Cardtext anlegen</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_12.label">
+				<source>Cardimage</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_12.description">
+				<source>Text und Headline</source>
+			</trans-unit>
+			<trans-unit id="image.label">
+				<source>Bild zum Text einfügen (max 1)</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_13.label">
+				<source>Verlinkung und Textlabel auswählen bzw. angeben</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_13.description">
+				<source>Bei Verlinkung des ganzen Cards muss zumindest ein Call to Action Text angegeben werden.</source>
+			</trans-unit>
+			<trans-unit id="cta.label">
+				<source>Linktext</source>
+			</trans-unit>
+			<trans-unit id="url.label">
+				<source>Linkziel</source>
+			</trans-unit>
+			<trans-unit id="linklabel.label">
+				<source>Nur Linklabel verlinken</source>
+			</trans-unit>
+			<trans-unit id="linklabel.items.0.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="linkcard.label">
+				<source>Ganzes Cardelement verlinken</source>
+			</trans-unit>
+			<trans-unit id="linkcard.items.0.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="linkposition.label">
+				<source>Position des Links auswählen</source>
+			</trans-unit>
+			<trans-unit id="linkposition.items.text-start.label">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="linkposition.items.text-center.label">
+				<source>Mittig</source>
+			</trans-unit>
+			<trans-unit id="linkposition.items.text-end.label">
+				<source>Rechts</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_14.label">
+				<source>Infotext im Footerbereich</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_14.description">
+				<source>Es kann entweder ein Link oder ein Infotext angezeigt werden.</source>
+			</trans-unit>
+			<trans-unit id="showtextfooter.label">
+				<source>Hinweistext anzeigen</source>
+			</trans-unit>
+			<trans-unit id="showtextfooter.items.0.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="footertext.label">
+				<source>Text kann in Footer angezeigt wedern falls kein Link angelegt ist</source>
+			</trans-unit>
+			<trans-unit id="title.label">
 				<source>Title</source>
 			</trans-unit>
 		</body>

@@ -1,0 +1,98 @@
+name: t3example/btsocialmedialist
+label: t3example/btsocialmedialist
+basics:
+  - t3example/Appearance
+  - t3example/Links
+group: ContentBlocks
+saveAndClose: true
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: header
+    useExistingField: true
+    label: Pluginbeschreibung für TYPO3 BE
+  - identifier: tab_1
+    type: Tab
+    label: Socialmedia List
+  - identifier: palette_41
+    type: Palette
+    label: Globale Eistellungen
+    description: Abstand zwischen den Icons, Größe und vertikale Ausrichtung
+    fields:
+      - identifier: iconsize
+        label: Größe des Icons auswählen
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Klein'
+            value: sm-icon-small
+          - label: 'Mittel'
+            value: sm-icon-medium
+          - label: 'Groß'
+            value: sm-icon-large 
+      - identifier: space_icons
+        type: Select
+        renderType: selectSingle
+        label: Abstand zwischen den Icons auswählen
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '20px'
+            value: me-20
+          - label: '25px'
+            value: me-25
+          - label: '30px'
+            value: me-30
+      - identifier: iconalignment
+        label: Horizontale Position der Icons auswählen
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Links'
+            value: justify-content-start
+          - label: 'Mittig'
+            value: justify-content-center
+          - label: 'Rechts'
+            value: justify-content-end
+      - type: Linebreak            
+  - identifier: palette_42
+    type: Palette
+    label: Einzelne Socialmedialinks definieren
+    description: Pro Datensatz kann nur ein Socialmedium ausgewählt werden.
+    fields:
+      - identifier: socialmediasets
+        type: Collection
+        label: Links zu den Medien anlegen.
+        appearance:
+          collapseAll: true
+          levelLinksPosition: both   
+        fields:
+          - identifier: socialmediaitem
+            type: Select
+            renderType: selectSingle
+            label: Einzelne Medien auswählen
+            items:
+              - label: 'Auswählen'
+                value: ''
+              - label: 'facebook'
+                value: facebook
+              - label: 'X'
+                value: x
+              - label: 'youtube'
+                value: youtube
+              - label: 'instagram'
+                value: instagram
+              - label: 'Linkedin'
+                value: linkedin
+              - label: 'WhatsApp'
+                value: whatsapp
+              - label: 'TikTok'
+                value: tiktok 
+          - identifier: url
+            label: Linkziel
+            type: Link
+            autocomplete: true
+            allowedTypes:
+              - url
+              - telephone
+            useExistingField: true

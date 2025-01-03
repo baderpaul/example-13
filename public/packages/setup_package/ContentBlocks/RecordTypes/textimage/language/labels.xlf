@@ -1,33 +1,33 @@
 <?xml version="1.0"?>
 <xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
-	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-05T10:37:38+00:00" product-name="example/textimage">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-30T13:19:25+00:00" product-name="example/textimage">
 		<header/>
 		<body>
-			<trans-unit id="title" resname="title">
+			<trans-unit id="title">
 				<source>Text/Imageelement für ContentBlocks Collections</source>
 			</trans-unit>
-			<trans-unit id="heading.label" resname="heading.label">
+			<trans-unit id="heading.label">
 				<source>Tab-/Panelbeschriftung</source>
 			</trans-unit>
-			<trans-unit id="header.label" resname="header.label">
+			<trans-unit id="header.label">
 				<source>Überschrift/Headline</source>
 			</trans-unit>
-			<trans-unit id="bodytext.label" resname="bodytext.label">
+			<trans-unit id="bodytext.label">
 				<source>Text eingeben</source>
 			</trans-unit>
-			<trans-unit id="image.label" resname="image.label">
+			<trans-unit id="image.label">
 				<source>Bild zum Text einfügen (max 1)</source>
 			</trans-unit>
-			<trans-unit id="imageposition.label" resname="imageposition.label">
+			<trans-unit id="imageposition.label">
 				<source>imageposition</source>
 			</trans-unit>
-			<trans-unit id="imageposition.items.left.label" resname="imageposition.items.left.label">
+			<trans-unit id="imageposition.items.left.label">
 				<source>Links</source>
 			</trans-unit>
-			<trans-unit id="imageposition.items.right.label" resname="imageposition.items.right.label">
+			<trans-unit id="imageposition.items.right.label">
 				<source>Rechts</source>
 			</trans-unit>
-			<trans-unit id="title.label" resname="title.label">
+			<trans-unit id="title.label">
 				<source>Title</source>
 			</trans-unit>
 		</body>

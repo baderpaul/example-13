@@ -1,5 +1,6 @@
 name: t3example/btaccordion
 title: t3example/btaccordion
+typeName: t3example_btaccordion
 description: 'Accordion with Bootstrap'
 basics:
   - t3example/Appearance

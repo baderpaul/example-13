@@ -26,7 +26,6 @@ mutations:
     directive: "script-src"
     sources:
       - "'nonce-proxy'"
-      - "'unsafe-eval'"
       - "'self'"
       - "http://example-13.ddev.site"
 

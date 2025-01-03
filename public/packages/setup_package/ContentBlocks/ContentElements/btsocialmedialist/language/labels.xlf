@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2025-01-02T12:00:52+00:00" product-name="t3example/btsocialmedialist">
+		<header/>
+		<body>
+			<trans-unit id="title">
+				<source>Socialmedia Linklist</source>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Socialmedia Linklist width Bootstrap</source>
+			</trans-unit>
+			<trans-unit id="header.label">
+				<source>Pluginbeschreibung für TYPO3 BE</source>
+			</trans-unit>
+			<trans-unit id="tabs.tab_1">
+				<source>Socialmedia List</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_41.label">
+				<source>Globale Eistellungen</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_41.description">
+				<source>Abstand zwischen den Icons, Größe und vertikale Ausrichtung</source>
+			</trans-unit>
+			<trans-unit id="iconsize.label">
+				<source>Größe des Icons auswählen</source>
+			</trans-unit>
+			<trans-unit id="iconsize.items.sm-icon-small.label">
+				<source>Klein</source>
+			</trans-unit>
+			<trans-unit id="iconsize.items.sm-icon-medium.label">
+				<source>Mittel</source>
+			</trans-unit>
+			<trans-unit id="iconsize.items.sm-icon-large.label">
+				<source>Groß</source>
+			</trans-unit>
+			<trans-unit id="space_icons.label">
+				<source>Abstand zwischen den Icons auswählen</source>
+			</trans-unit>
+			<trans-unit id="space_icons.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="space_icons.items.me-20.label">
+				<source>20px</source>
+			</trans-unit>
+			<trans-unit id="space_icons.items.me-25.label">
+				<source>25px</source>
+			</trans-unit>
+			<trans-unit id="space_icons.items.me-30.label">
+				<source>30px</source>
+			</trans-unit>
+			<trans-unit id="iconalignment.label">
+				<source>Horizontale Position der Icons auswählen</source>
+			</trans-unit>
+			<trans-unit id="iconalignment.items.justify-content-start.label">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="iconalignment.items.justify-content-center.label">
+				<source>Mittig</source>
+			</trans-unit>
+			<trans-unit id="iconalignment.items.justify-content-end.label">
+				<source>Rechts</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_42.label">
+				<source>Einzelne Socialmedialinks definieren</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_42.description">
+				<source>Pro Datensatz kann nur ein Socialmedium ausgewählt werden.</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.label">
+				<source>Links zu den Medien anlegen.</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.socialmediaitem.label">
+				<source>Einzelne Medien auswählen</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.socialmediaitem.items.label">
+				<source>Auswählen</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.socialmediaitem.items.facebook.label">
+				<source>facebook</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.socialmediaitem.items.x.label">
+				<source>X</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.socialmediaitem.items.youtube.label">
+				<source>youtube</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.socialmediaitem.items.instagram.label">
+				<source>instagram</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.socialmediaitem.items.linkedin.label">
+				<source>Linkedin</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.socialmediaitem.items.whatsapp.label">
+				<source>WhatsApp</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.socialmediaitem.items.tiktok.label">
+				<source>TikTok</source>
+			</trans-unit>
+			<trans-unit id="socialmediasets.url.label">
+				<source>Linkziel</source>
+			</trans-unit>
+			<trans-unit id="tabs.links_tab">
+				<source>Links</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
