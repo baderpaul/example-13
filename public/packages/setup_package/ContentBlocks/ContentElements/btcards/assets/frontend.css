@@ -1,1 +1,43 @@
-/* Created by Content Blocks */
+.carousel-inner {
+    overflow: hidden; /* Verhindert Überlappung der Slides */
+    border: solid red 1px;
+}
+
+
+/* Optionales Styling */
+.slide {
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f0f0f0;
+    flex: 0 0 25%; /* Nimmt genau 25% der Container-Breite ein */
+    max-width: 25%;
+    min-width: 25%;
+
+}
+
+.slide:nth-child(odd) {
+    background-color: #e0e0e0;
+}
+
+/* Responsive Anpassungen - sind im JS implementiert, werden hier aber für die "Optik" trotzdem verwendet*/
+@media (max-width: 768px) {
+    .slide {
+        padding: 10px;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px){
+     .slide {
+         padding: 15px;
+         font-size: 15px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .slide {
+        padding: 20px;
+         font-size: 16px;
+    }
+}

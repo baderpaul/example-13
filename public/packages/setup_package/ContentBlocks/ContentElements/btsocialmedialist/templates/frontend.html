@@ -1,8 +1,7 @@
 <f:layout name="Default" />
 <f:section name="Main">
-
     <f:if condition="{data.socialmediasets}">
-        <ul class="list-unstyled d-flex flex-row {data.iconalignment}">
+        <ul class="list-unstyled d-flex flex-row mb-0 {data.iconalignment}">
             <f:for each="{data.socialmediasets}" as="socialmediaset" iteration="i">
                 <li class="{f:if(condition:i.isLast, then: ' me-0', else: '{data.space_icons}')}">
                     <f:link.typolink parameter="{socialmediaset.url}"

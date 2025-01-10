@@ -53,6 +53,7 @@ fields:
             title: Portrait
             value: 3 / 4
   - identifier: imageposition
+    label: Bildposition
     type: Select
     renderType: selectSingle
     items:

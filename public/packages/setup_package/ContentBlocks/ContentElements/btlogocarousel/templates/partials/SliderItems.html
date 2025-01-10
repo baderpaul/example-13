@@ -1,0 +1,21 @@
+<f:for each="{data.slideitems}" as="slideitem" iteration="indicator-2">
+
+<f:for each="{slideitem.image}" as="image">
+    <div class="carousel-item {f:if(condition:'{indicator-2.isFirst}',then:' active')} text-center">
+        <div class="col bg-body">
+            <f:if condition="{slideitem.link.url}">
+                <f:then>
+                    <f:link.typolink parameter="{slideitem.link.url}" target="{slideitem.link.target}" class="d-flex justify-content-center">
+                        <f:image image="{image.originalFile}" fileExtension="webp" alt="{slideitem.title}" class="d-block" title="Weiter zu {slideitem.title}" loading="lazy" maxHeight="50" />
+                    </f:link.typolink>
+                </f:then>
+                <f:else>
+                    <div class="d-flex justify-content-center">
+        <f:image image="{image.originalFile}" fileExtension="webp" alt="{slideitem.title}" class="d-block" title="Weiter zu {slideitem.title}" loading="lazy" maxHeight="50" />
+    </div>
+                </f:else>>
+            </f:if>
+        </div>
+    </div>
+</f:for>
+</f:for>

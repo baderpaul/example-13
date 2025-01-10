@@ -1,0 +1,12 @@
+<ol class="carousel-indicators position-relative">
+    <f:for each="{data.slideitems}" as="slideitem" iteration="i">
+        <f:for each="{slideitem.image}" as="image" >
+            <li data-bs-target="#logoslider"  data-bs-slide-to="{i.index}"
+                class="d-inline-block bg-primary {f:if(condition:i.isFirst, then:' active')}"
+                      aria-label="Slide {i.index}"
+                      aria-current="true"
+                      >
+            </li>                
+        </f:for>    
+    </f:for>              
+</ol>

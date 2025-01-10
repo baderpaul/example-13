@@ -126,11 +126,11 @@ fields:
           - label: 'Auswählen'
             value: ''
           - label: '10px'
-            value: g-10
+            value: gx-10
           - label: '15px'
-            value: g-15
+            value: gx-15
           - label: '20px'
-            value: g-20
+            value: gx-20
       - identifier: space_tablet
         type: Select
         renderType: selectSingle
@@ -139,11 +139,11 @@ fields:
           - label: 'Auswählen'
             value: ''
           - label: '15px'
-            value: g-ms-15
+            value: gx-ms-15
           - label: '20px'
-            value: g-ms-20
+            value: gx-ms-20
           - label: '25px'
-            value: g-ms-25
+            value: gx-ms-25
       - identifier: space_desktop
         type: Select
         renderType: selectSingle
@@ -152,11 +152,11 @@ fields:
           - label: 'Auswählen'
             value: ''
           - label: '25px'
-            value: g-md-25
+            value: gx-md-25
           - label: '30px'
-            value: g-md-30
+            value: gx-md-30
           - label: '40px'
-            value: g-md-40
+            value: gx-md-40
       - type: Linebreak            
   - identifier: palette_34
     type: Palette

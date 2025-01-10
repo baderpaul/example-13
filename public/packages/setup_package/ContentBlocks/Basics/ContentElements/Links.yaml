@@ -16,4 +16,3 @@ fields:
         identifier: linkToTop
         useExistingField: true
       - type: Linebreak 
-       

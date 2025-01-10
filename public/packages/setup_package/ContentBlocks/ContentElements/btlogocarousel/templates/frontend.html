@@ -1,0 +1,25 @@
+<f:layout name="Default" />
+<f:section name="Main">
+    <f:asset.css identifier="myCssIdentifier" href="{cb:assetPath()}/frontend.css" useNonce="1" />
+
+    <f:asset.script identifier="myJavascriptIdentifier" src="{cb:assetPath()}/frontend.js" useNonce="1" />
+
+    <div class="row mx-auto my-auto justify-content-center">
+        <div id="logoslider" class="logoslider carousel slide text-center" data-bs-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+
+                <f:render partial="SliderItems" arguments="{data: data}" />
+            </div>
+
+
+            <f:if condition="{data.indicator}==0">
+                <f:render partial="SliderIndicator" arguments="{data: data}" />
+            </f:if>
+
+            <f:if condition="{data.control}==0">
+                <f:render partial="SliderControl" arguments="{data: data}" />
+            </f:if>
+
+        </div>
+    </div>
+</f:section>

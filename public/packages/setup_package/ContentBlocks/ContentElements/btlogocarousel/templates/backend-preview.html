@@ -1,0 +1,17 @@
+<div class="mb-3">Vorhandene Logos</div>
+<div class="d-inline-flex flex-wrap" style="gap: 20px;">
+        <f:for each="{data.slideitems}" as="slideitem">
+        <div class="d-inline-flex flex-column">
+            <h2 class="mb-0" style="font-size: 16px;"> {slideitem.title -> f:format.nl2br()}
+            </h2>
+            <p>
+                {collectionset.bodytextsimple -> f:format.crop(maxCharacters: 25) -> f:format.stripTags()}
+            </p>
+            <f:for each="{slideitem.image}" as="image">
+                <img 
+                src="{f:uri.image(image: image, fileExtension:'webp')}"
+                 alt="{image.alternative}" width="100px" loading="lazy">
+            </f:for> 
+        </div>
+    </f:for>
+</div>

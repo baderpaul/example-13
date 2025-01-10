@@ -7,7 +7,7 @@
 				<source>Bootstrap Cards</source>
 			</trans-unit>
 			<trans-unit id="description">
-				<source>Cardgroup Einstellungen</source>
+				<source>Cardcontainer for many Cards</source>
 			</trans-unit>
 			<trans-unit id="header.label">
 				<source>Pluginbeschreibung für TYPO3 BE</source>

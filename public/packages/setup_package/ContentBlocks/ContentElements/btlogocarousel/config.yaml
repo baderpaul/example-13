@@ -1,0 +1,69 @@
+name: t3example/btlogocarousel
+typeName: t3example_btlogocarousel
+label: t3example/btlogocarousel
+description: 'Logo/Customercarousel with Bootstrap'
+basics:
+  - t3example/Appearance
+  - t3example/Links
+group: ContentBlocks
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: header
+    useExistingField: true
+    label: Pluginbeschreibung für TYPO3 BE
+  - identifier: tab_1
+    type: Tab
+    label: Slidereinstellungen Global
+  - identifier: palette_51
+    type: Palette
+    label: Slidenavigationen ein- od. ausblenden
+    fields:    
+      - identifier: control
+        label: 'Prev / Next Button einblenden'
+        type: Checkbox
+        renderType: checkboxLabeledToggle
+        default: '1'
+        items:
+          - label: ''
+            labelUnchecked: 'wird nicht eingeblendet'
+            labelChecked: 'wird eingeblendet'
+            invertStateDisplay: true  
+      - identifier: indicator
+        label: 'Slideindikatoren - Bulletpoints einblenden'
+        type: Checkbox
+        renderType: checkboxLabeledToggle
+        default: '1'
+        items:
+          - label: ''
+            labelUnchecked: 'wird nicht eingeblendet'
+            labelChecked: 'wird eingeblendet'
+            invertStateDisplay: true          
+  - identifier: tab_2
+    type: Tab
+    label: Vorhandene Logos bearbeiten
+  - identifier: palette_52
+    type: Palette
+    label: Einzelne Logos oder Produkte anlegen
+    fields:
+      - identifier: slideitems
+        type: Collection
+        label: Logo od. Produkt anlegen
+        description: Logos können verlinkt werden.
+        fields:
+          - identifier: title
+            label: Logotitel
+            description: Wird für alternativtet verwendet
+            type: Text
+          - identifier: image
+            label: Bild
+            type: File
+            maxitems: 1
+            allowed: jpg,png,svg,gif,webp
+          - identifier: link
+            type: Link
+            autocomplete: true
+            allowedTypes:
+              - page
+              - url
+            max: 150
