@@ -1,6 +1,6 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
 <f:if condition="{data.header_layout} != 100">
-    <f:if condition="{data.header} || {data.subheader} || {data.date}">
+    <f:if condition="{data.header} || {data.subheader} || {data.date}"><f:then>
         <header>
             <f:render partial="Header/Header" arguments="{
                 header: data.header,
@@ -17,6 +17,8 @@
                 date: data.date,
                 positionClass: '{f:if(condition: data.header_position, then: \'p-10 p-lg-0 text-start text-{data.header_position}\')}'}" />
         </header>
+    </f:then>
+    <f:else></f:else>
     </f:if>
 </f:if>
 </html>

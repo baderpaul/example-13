@@ -9,7 +9,7 @@
 			<trans-unit id="description">
 				<source>Carousel/Imageslider width Bootstrap</source>
 			</trans-unit>
-			<trans-unit id="header.label">
+			<trans-unit id="cb_header.label">
 				<source>Pluginheadline im TYPO3 Backend</source>
 			</trans-unit>
 			<trans-unit id="tabs.tab_1">

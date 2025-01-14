@@ -8,9 +8,9 @@ saveAndClose: true
 prefixFields: true
 prefixType: full
 fields:
-  - identifier: header
-    useExistingField: true
+  - identifier: cb_header
     label: Pluginbeschreibung für TYPO3 BE
+    type: Text
   - identifier: tab_1
     type: Tab
     label: Cardgroup Einstellungen Global

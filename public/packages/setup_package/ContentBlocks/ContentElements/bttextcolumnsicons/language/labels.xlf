@@ -9,7 +9,7 @@
 			<trans-unit id="description">
 				<source>TextIconteaser width Bootstrap</source>
 			</trans-unit>
-			<trans-unit id="header.label">
+			<trans-unit id="cb_header.label">
 				<source>Pluginbeschreibung für TYPO3 BE</source>
 			</trans-unit>
 			<trans-unit id="tabs.tab_1">
