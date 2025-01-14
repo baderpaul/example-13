@@ -6,7 +6,7 @@ mutations:
     directive: "default-src"
     sources:
       - "'self'"
-      - "http://example-13.ddev.site"
+      - "https://example-13.ddev.site"
 
   # Extends the ancestor directive ('default-src'),
   # thus reuses 'self' and adds additional sources
@@ -16,7 +16,7 @@ mutations:
     sources:
       - "'self'"
       - "data:"
-      - "http://example-13.ddev.site"
+      - "https://example-13.ddev.site"
 
   # Extends the ancestor directive ('default-src'),
   # thus reuses 'self' and adds additional sources
@@ -27,7 +27,7 @@ mutations:
     sources:
       - "'nonce-proxy'"
       - "'self'"
-      - "http://example-13.ddev.site"
+      - "https://example-13.ddev.site"
 
   # Results in `worker-src blob:`
   #- mode: "set"

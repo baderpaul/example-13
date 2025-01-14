@@ -1,3 +1,7 @@
+/*
+ Bootstrap Accordion width js
+ some default css classes also used in deteails accordion
+*/
 .accordion-header::after {
     display: none;
 }
@@ -12,6 +16,7 @@
     box-shadow: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
+
 
 .accordion-body{
     h2 {
@@ -30,3 +35,88 @@ background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg
 transform: rotate(360deg) .2s ease-in-out;
 scale: 1.7;
 }
+
+/*
+ Details Accordion widthout js
+ some css styles come from the default Bootstrap Accordion
+ Good Pages for Informations are
+ https://christianoliff.com/blog/building-a-bootstrap-accordion-with-the-details-summary-html-tags/
+ https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+ https://nerdy.dev/open-and-close-transitions-for-the-details-element
+*/
+
+details {
+    
+    @media (prefers-reduced-motion: no-preference) {
+      interpolate-size: allow-keywords;
+    }
+    
+    &::details-content {
+      opacity: 0;
+      block-size: 0;
+      overflow-y: clip; 
+      transition: content-visibility 1s allow-discrete,
+                  opacity 1s,
+                  block-size 1s;
+    }
+    
+    &[open]::details-content {
+      opacity: 1;
+      block-size: auto;
+    }
+  }
+/*
+  <h2 class="accordion-header mb-0 d-block">
+  <button class="accordion-button fs-5
+   
+   collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-0" aria-expanded="true" aria-controls="accordion-33">
+      Panel 1
+  </button>
+</h2>
+
+
+  
+  details.accordion-item:not([open]) .accordion-button {
+    background-color: var(--bs-accordion-bg);
+  }*/
+
+  
+  details.accordion-item:not([open]):last-of-type .accordion-button {
+    border-bottom-right-radius: var(--bs-accordion-border-radius);
+    border-bottom-left-radius: var(--bs-accordion-border-radius);
+  }
+  
+  details.accordion-item:not([open]) .accordion-button::after {
+    background-image: var(--bs-accordion-btn-active-icon);
+    transform: unset;
+  }
+  details.accordion-item .accordion-button,
+  details.accordion-item[open] .accordion-button {
+    box-shadow: none;
+  }
+  
+  details.accordion-item[open] .accordion-button::after {
+    background-image: var(--bs-accordion-btn-icon);
+    transform: var(--bs-accordion-btn-icon-transform);
+  }
+
+  summary {
+    border-color: var(--bs-accordion-border-color);
+  }
+  
+  /* Hide the default disclosure triangle on Safari */
+  summary.accordion-button::-webkit-details-marker {
+    display: none;
+  }
+
+  summary.accordion-button:focus:not(:focus-visible) {
+    border-bottom: 0;
+}
+
+  .accordion-button-plus-minus-dialog::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' font-weight='bold' fill='white'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/></svg>") !important;
+  }
+
+  details[open] :is(summary.accordion-button-plus-minus-dialog)::after {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' font-weight='bold' fill='white'> <path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>") !important;
+  }

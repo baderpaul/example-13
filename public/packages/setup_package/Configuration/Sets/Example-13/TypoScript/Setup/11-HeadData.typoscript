@@ -2,7 +2,7 @@ page.headerData.8 = TEXT
 page.headerData.8.value (
 
     <meta name="theme-color" content="#444444"/>  
-    <meta name="apple-mobile-web-app-capable" content="yes">  
+    <meta name="mobile-web-app-capable" content="yes">  
     <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
     <meta name="apple-mobile-web-app-title" content="ebusiness PWA"> 
     <meta name="msapplication-TileImage" content="setup_package/Resources/Public/Icons/Pwa/apple-icon-144x144.png">  

@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+	<file datatype="plaintext" original="labels.xlf" source-language="en" date="2024-12-30T13:19:25+00:00" product-name="t3example/btaccordion">
+		<header/>
+		<body>
+			<trans-unit id="title">
+				<source>Bootstrap Detail Accordion</source>
+			</trans-unit>
+			<trans-unit id="description">
+				<source>Accordion width Bootstrap und Detail Tag</source>
+			</trans-unit>
+			<trans-unit id="header.label">
+				<source>Pluginbeschreibung für TYPO3 BE</source>
+			</trans-unit>
+			<trans-unit id="tabs.tab_1">
+				<source>Globale Accordion Einstellungen</source>
+			</trans-unit>
+			<trans-unit id="choose-icon.label">
+				<source>Close/Open Icon auswählen</source>
+			</trans-unit>
+			<trans-unit id="choose-icon.items.one.label">
+				<source>Mit Pfeilchen</source>
+			</trans-unit>
+			<trans-unit id="choose-icon.items.two.label">
+				<source>Mit Plus - Minus Zeichen</source>
+			</trans-unit>
+			<trans-unit id="tabs.tab_2">
+				<source>Accordion Items</source>
+			</trans-unit>
+			<trans-unit id="accordionsets.label">
+				<source>Accordionitems anlegen</source>
+			</trans-unit>
+			<trans-unit id="tabs.links_tab">
+				<source>Links</source>
+			</trans-unit>
+			<trans-unit id="accordionitems.label">
+				<source>Accordionitems anlegen</source>
+			</trans-unit>
+			<trans-unit id="accordionitems.description">
+				<source>Accordion Einstellungen</source>
+			</trans-unit>
+			<trans-unit id="accordionitems.panel.label">
+				<source>Panelbeschriftung</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_3.description">
+				<source>Accordioncontent</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_2.label">
+				<source>Palette 2</source>
+			</trans-unit>
+			<trans-unit id="palettes.palette_2.description">
+				<source>Accordionpanel</source>
+			</trans-unit>
+			<trans-unit id="panel.label">
+				<source>Panelbeschriftung</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

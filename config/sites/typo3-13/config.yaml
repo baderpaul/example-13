@@ -1,7 +1,7 @@
-base: 'http://example-13.ddev.site/'
+base: 'https://example-13.ddev.site/'
 baseVariants:
   -
-    base: 'http://example-13.ddev.site/'
+    base: 'https://example-13.ddev.site/'
     condition: 'applicationContext == "Development"'
 dependencies:
   - t3example/setup-package
