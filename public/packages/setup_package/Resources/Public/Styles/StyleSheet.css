@@ -19066,20 +19066,6 @@ details[open]::details-content {
   opacity: 1;
   block-size: auto; }
 
-/*
-  <h2 class="accordion-header mb-0 d-block">
-  <button class="accordion-button fs-5
-   
-   collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-0" aria-expanded="true" aria-controls="accordion-33">
-      Panel 1
-  </button>
-</h2>
-
-
-  
-  details.accordion-item:not([open]) .accordion-button {
-    background-color: var(--bs-accordion-bg);
-  }*/
 details.accordion-item:not([open]):last-of-type .accordion-button {
   border-bottom-right-radius: var(--bs-accordion-border-radius);
   border-bottom-left-radius: var(--bs-accordion-border-radius); }

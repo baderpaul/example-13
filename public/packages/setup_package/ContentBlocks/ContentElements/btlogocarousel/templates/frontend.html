@@ -10,8 +10,6 @@
 
                 <f:render partial="SliderItems" arguments="{data: data}" />
             </div>
-
-
             <f:if condition="{data.indicator}==0">
                 <f:render partial="SliderIndicator" arguments="{data: data}" />
             </f:if>
@@ -19,7 +17,6 @@
             <f:if condition="{data.control}==0">
                 <f:render partial="SliderControl" arguments="{data: data}" />
             </f:if>
-
         </div>
     </div>
 </f:section>
