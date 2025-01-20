@@ -1,0 +1,152 @@
+name: t3example/filterbtcards
+label: t3example/filterbtcards
+basics:
+  - t3example/Appearance
+  - t3example/Links
+group: ContentBlocks
+saveAndClose: true
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: cb_header
+    label: Pluginbeschreibung für TYPO3 BE
+    type: Text
+  - identifier: tab_1
+    type: Tab
+    label: Cardgroup Einstellungen Global
+  - identifier: palette_00
+    type: Palette
+    label: Filter aktivieren und Filterbegriffe anlegen (Tags)
+    description: Aus den Begriffen wird eine Suchnavigation gebildet. Dies Tags können dann den einzelnen Cards zugeordnet werden.
+    fields:
+      - identifier: activate_filter
+        label: 'Filter ainblenden'
+        type: Checkbox
+        renderType: checkboxLabeledToggle
+        default: '1'
+        items:
+          - label: ''
+            labelUnchecked: 'ohne Filter'
+            labelChecked: 'Filter wird verwendet'
+            invertStateDisplay: true 
+      - type: Linebreak
+      - identifier: filter
+        type: Collection
+        label: Suchbegriffe anlegen
+        description: Bitte einfach Begriffe ohne Unterstriche und Zahlen verwenden hieraus wird der Filter generiert
+        appearance:
+          collapseAll: true
+          levelLinksPosition: both 
+        foreign_table: tx_example_filter
+        shareAcrossTables: true
+        shareAcrossFields: true    
+  - identifier: palette_01
+    type: Palette
+    label: Responsives Verhalten der Cards
+    description: Anzahl der Cardselemente die innerhalb einer Reihe je Breakpoint(Device) angezeigt werden sollen.
+    fields:
+      - identifier: responsive_xs
+        type: Select
+        renderType: selectSingle
+        label: Anzahl Cards Mobile kleiner 576px
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '1'
+            value: row-cols-1
+          - label: '2'
+            value: row-cols-2
+      - identifier: responsive_sm
+        type: Select
+        renderType: selectSingle
+        label: Anzahl Cards Mobile sm > 576px 
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '2'
+            value: row-cols-sm-2
+          - label: '3'
+            value: row-cols-sm-3
+      - identifier: responsive_md
+        type: Select
+        renderType: selectSingle
+        label: Anzahl Cards Tablet md > 768px
+        items:
+          - label: 'Auswählen'
+            value: ''      
+          - label: '3'
+            value: row-cols-md-3
+          - label: '4'
+            value: row-cols-md-4
+      #- type: Linebreak
+      - identifier: responsive_lg
+        type: Select
+        renderType: selectSingle
+        label: Anzahl Cards Desktop lg > 992px
+        items:
+          - label: 'Auswählen'
+            value: ''      
+          - label: '3'
+            value: row-cols-lg-3
+          - label: '4'
+            value: row-cols-lg-4
+          - label: '5'
+            value: row-cols-lg-5
+      - type: Linebreak            
+  - identifier: palette_02
+    type: Palette
+    label: Abstand zwischen den einzelnen Cardelementen
+    description: Horizontal und Vertikaler Zwischenraum zwischen den Cardelementen.
+    fields:
+      - identifier: cardspace_mobile
+        type: Select
+        renderType: selectSingle
+        label: Abstand Mobiledevices auswählen
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '10px'
+            value: g-10
+          - label: '15px'
+            value: g-15
+          - label: '20px'
+            value: g-20
+      - identifier: cardspace_tablet
+        type: Select
+        renderType: selectSingle
+        label: Abstand Tabletdevices auswählen
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '15px'
+            value: g-ms-15
+          - label: '20px'
+            value: g-ms-20
+          - label: '25px'
+            value: g-ms-25
+      - identifier: cardspace_desktop
+        type: Select
+        renderType: selectSingle
+        label: Abstand Desktopdevices auswählen
+        items:
+          - label: 'Auswählen'
+            value: ''
+          - label: '25px'
+            value: g-md-25
+          - label: '30px'
+            value: g-md-30
+          - label: '40px'
+            value: g-md-40
+      - type: Linebreak
+  - identifier: tab_2
+    type: Tab
+    label: Cards anlegen
+  - identifier: palette_03
+    type: Palette
+    fields:
+      - identifier: cardsets
+        type: Collection
+        label: Cards anlegen
+        foreign_table: tx_example_card
+        shareAcrossTables: true
+        shareAcrossFields: true

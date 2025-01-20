@@ -4,29 +4,29 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "07aba58e8793701cc634a570b1e2d0d5",
+    "content-hash": "db7467dca6d64b8cc42375e497ee4ade",
     "packages": [
         {
             "name": "autodudes/ai-suite",
-            "version": "13.0.2",
+            "version": "13.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/autodudesde/ai-suite.git",
-                "reference": "813d81000384c28df4a449d49147f77ef6722dd3"
+                "reference": "1e8e4cb4be543c159be669ea83c02325ce553342"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/autodudesde/ai-suite/zipball/813d81000384c28df4a449d49147f77ef6722dd3",
-                "reference": "813d81000384c28df4a449d49147f77ef6722dd3",
+                "url": "https://api.github.com/repos/autodudesde/ai-suite/zipball/1e8e4cb4be543c159be669ea83c02325ce553342",
+                "reference": "1e8e4cb4be543c159be669ea83c02325ce553342",
                 "shasum": ""
             },
             "require": {
                 "php": "^8.2",
-                "typo3/cms-backend": "^13.4",
-                "typo3/cms-filelist": "^13.4",
-                "typo3/cms-fluid": "^13.4",
-                "typo3/cms-rte-ckeditor": "^13.4",
-                "typo3/cms-seo": "^13.4"
+                "typo3/cms-backend": "^13.4.1",
+                "typo3/cms-filelist": "^13.4.1",
+                "typo3/cms-fluid": "^13.4.1",
+                "typo3/cms-rte-ckeditor": "^13.4.1",
+                "typo3/cms-seo": "^13.4.1"
             },
             "conflict": {
                 "dmitryd/dd-deepl": "^12.0",
@@ -42,10 +42,10 @@
                 "georgringer/news": "^12.0",
                 "helhum/typo3-console": "^8.2",
                 "phpstan/phpstan": "^1.10",
-                "typo3/cms-beuser": "^13.4",
-                "typo3/cms-install": "^13.4",
-                "typo3/cms-lowlevel": "^13.4",
-                "typo3/cms-tstemplate": "^13.4",
+                "typo3/cms-beuser": "^13.4.1",
+                "typo3/cms-install": "^13.4.1",
+                "typo3/cms-lowlevel": "^13.4.1",
+                "typo3/cms-tstemplate": "^13.4.1",
                 "typo3/coding-standards": "^0.8"
             },
             "suggest": {
@@ -89,9 +89,9 @@
             ],
             "support": {
                 "issues": "https://github.com/autodudesde/ai-suite/issues",
-                "source": "https://github.com/autodudesde/ai-suite/tree/v13.0.2"
+                "source": "https://github.com/autodudesde/ai-suite/tree/v13.1.0"
             },
-            "time": "2024-11-20T21:10:47+00:00"
+            "time": "2025-01-18T12:43:34+00:00"
         },
         {
             "name": "b13/container",
@@ -488,16 +488,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "4.2.1",
+            "version": "4.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "dadd35300837a3a2184bd47d403333b15d0a9bd0"
+                "reference": "19a2b7deb5fe8c2df0ff817ecea305e50acb62ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/dadd35300837a3a2184bd47d403333b15d0a9bd0",
-                "reference": "dadd35300837a3a2184bd47d403333b15d0a9bd0",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/19a2b7deb5fe8c2df0ff817ecea305e50acb62ec",
+                "reference": "19a2b7deb5fe8c2df0ff817ecea305e50acb62ec",
                 "shasum": ""
             },
             "require": {
@@ -510,16 +510,14 @@
                 "doctrine/coding-standard": "12.0.0",
                 "fig/log-test": "^1",
                 "jetbrains/phpstorm-stubs": "2023.2",
-                "phpstan/phpstan": "1.12.6",
-                "phpstan/phpstan-phpunit": "1.4.0",
-                "phpstan/phpstan-strict-rules": "^1.6",
-                "phpunit/phpunit": "10.5.30",
-                "psalm/plugin-phpunit": "0.19.0",
+                "phpstan/phpstan": "2.1.1",
+                "phpstan/phpstan-phpunit": "2.0.3",
+                "phpstan/phpstan-strict-rules": "^2",
+                "phpunit/phpunit": "10.5.39",
                 "slevomat/coding-standard": "8.13.1",
                 "squizlabs/php_codesniffer": "3.10.2",
                 "symfony/cache": "^6.3.8|^7.0",
-                "symfony/console": "^5.4|^6.3|^7.0",
-                "vimeo/psalm": "5.25.0"
+                "symfony/console": "^5.4|^6.3|^7.0"
             },
             "suggest": {
                 "symfony/console": "For helpful console commands such as SQL execution and import of files."
@@ -576,7 +574,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/4.2.1"
+                "source": "https://github.com/doctrine/dbal/tree/4.2.2"
             },
             "funding": [
                 {
@@ -592,7 +590,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-10-10T18:01:27+00:00"
+            "time": "2025-01-16T08:40:56+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -5554,16 +5552,16 @@
         },
         {
             "name": "tpwd/ke_search",
-            "version": "v6.1.3",
+            "version": "v6.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tpwd/ke_search.git",
-                "reference": "a7049618a55cf95334a1e0e148608a7a3c0272ef"
+                "reference": "f2f6a8c88ac2f6f5ba08d26488c7f416418da52a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tpwd/ke_search/zipball/a7049618a55cf95334a1e0e148608a7a3c0272ef",
-                "reference": "a7049618a55cf95334a1e0e148608a7a3c0272ef",
+                "url": "https://api.github.com/repos/tpwd/ke_search/zipball/f2f6a8c88ac2f6f5ba08d26488c7f416418da52a",
+                "reference": "f2f6a8c88ac2f6f5ba08d26488c7f416418da52a",
                 "shasum": ""
             },
             "require": {
@@ -5624,9 +5622,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tpwd/ke_search/issues",
-                "source": "https://github.com/tpwd/ke_search/tree/v6.1.3"
+                "source": "https://github.com/tpwd/ke_search/tree/v6.2.0"
             },
-            "time": "2024-12-20T11:08:02+00:00"
+            "time": "2025-01-17T09:05:23+00:00"
         },
         {
             "name": "typo3/class-alias-loader",
@@ -7664,7 +7662,132 @@
             "time": "2022-06-03T18:03:27+00:00"
         }
     ],
-    "packages-dev": [],
+    "packages-dev": [
+        {
+            "name": "typo3/cms-indexed-search",
+            "version": "v13.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/indexed_search.git",
+                "reference": "6baabc7ffc4b94abc9700ec2021ecca69fd7ceab"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/indexed_search/zipball/6baabc7ffc4b94abc9700ec2021ecca69fd7ceab",
+                "reference": "6baabc7ffc4b94abc9700ec2021ecca69fd7ceab",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "13.4.3"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "suggest": {
+                "ext-exif": "Used to extract exif metadata 'COMMENT' and 'ImageDescription' of uploaded images",
+                "typo3/cms-scheduler": "For garbage collection of search statistics"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "indexed_search"
+                },
+                "branch-alias": {
+                    "dev-main": "13.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\IndexedSearch\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 CMS Indexed Search - Provides indexing functionality for TYPO3 pages and records as well as files including PDF, Word, HTML and plain text.",
+            "homepage": "https://typo3.org",
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org/c/typo3/cms-indexed-search/main/en-us",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2025-01-14T10:07:28+00:00"
+        },
+        {
+            "name": "typo3/cms-styleguide",
+            "version": "v13.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/TYPO3-CMS/styleguide.git",
+                "reference": "e081e072873ce40f02bc76e540ee0ee2c68e745a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/TYPO3-CMS/styleguide/zipball/e081e072873ce40f02bc76e540ee0ee2c68e745a",
+                "reference": "e081e072873ce40f02bc76e540ee0ee2c68e745a",
+                "shasum": ""
+            },
+            "require": {
+                "typo3/cms-core": "13.4.3",
+                "typo3/cms-felogin": "13.4.3",
+                "typo3/cms-fluid-styled-content": "13.4.3",
+                "typo3/cms-form": "13.4.3",
+                "typo3/cms-indexed-search": "13.4.3",
+                "typo3/cms-seo": "13.4.3"
+            },
+            "conflict": {
+                "typo3/cms": "*"
+            },
+            "type": "typo3-cms-framework",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "styleguide"
+                },
+                "branch-alias": {
+                    "dev-main": "13.4.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "TYPO3\\CMS\\Styleguide\\": "Classes/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "TYPO3 Core Team",
+                    "email": "typo3cms@typo3.org",
+                    "role": "Developer"
+                }
+            ],
+            "description": "TYPO3 extension to showcase TYPO3 Backend capabilities",
+            "homepage": "https://typo3.org",
+            "keywords": [
+                "style guide",
+                "typo3",
+                "typo3 backend"
+            ],
+            "support": {
+                "chat": "https://typo3.org/help",
+                "docs": "https://docs.typo3.org",
+                "issues": "https://forge.typo3.org",
+                "source": "https://github.com/typo3/typo3"
+            },
+            "time": "2025-01-14T10:07:28+00:00"
+        }
+    ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {},

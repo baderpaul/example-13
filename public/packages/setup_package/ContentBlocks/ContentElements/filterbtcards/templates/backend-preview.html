@@ -1,0 +1,18 @@
+<f:asset.css identifier="content-block-t3example-t3example/btcards-be" href="{cb:assetPath()}/preview.css"/>
+<div class="mb-3">Vorhandene Cards</div>
+<div class="d-inline-flex flex-wrap" style="gap: 24px">
+    <f:for each="{data.cardsets}" as="cardset" iteration="i">
+        <div class="d-inline-flex flex-column">
+            <h2 class="mb-0" style="font-size: 16px;"> {cardset.heading -> f:format.nl2br()}
+            </h2>
+            <p>
+                {cardset.bodytextsimple -> f:format.crop(maxCharacters: 20) -> f:format.stripTags()}
+            </p>
+            <f:for each="{cardset.image}" as="image">
+                <img 
+                src="{f:uri.image(image: image, fileExtension:'webp')}"
+                 alt="{image.alternative}" width="100px" loading="lazy">
+            </f:for>            
+        </div>
+    </f:for>
+</div>

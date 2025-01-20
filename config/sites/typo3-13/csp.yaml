@@ -17,7 +17,6 @@ mutations:
       - "'self'"
       - "data:"
       - "https://example-13.ddev.site"
-      - "https://via.placeholder.com"
 
   # Extends the ancestor directive ('default-src'),
   # thus reuses 'self' and adds additional sources

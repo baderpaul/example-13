@@ -120,3 +120,13 @@ fields:
       - identifier: footertext
         label: Text kann in Footer angezeigt wedern falls kein Link angelegt ist
         type: Text
+      - type: Linebreak
+      - identifier: filter_names
+        label: Filter auswählen
+        description: Es kann derzeit nur ein Filter pro Item ausgewählt werden.
+        type: Select
+        renderType: selectMultipleSideBySide
+        maxitems: 1
+        items:
+        foreign_table: tx_example_filter
+        foreign_table_where: 'AND {#tx_example_filter}.{#pid}=###CURRENT_PID### ORDER BY filter_name'

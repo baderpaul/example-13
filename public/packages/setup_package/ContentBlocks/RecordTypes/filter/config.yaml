@@ -1,0 +1,9 @@
+name: example/filter
+table: tx_example_filter
+title: Filter anlegen
+prefixFields: false
+security:
+  ignorePageTypeRestriction: true
+fields:
+  - identifier: filter_name
+    type: Text
