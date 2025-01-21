@@ -1,26 +1,23 @@
-
-
 <f:layout name="Default" />
 <f:section name="Main">
-    <f:comment><!-- Include the assets/frontend.css stylesheet --></f:comment>
-<f:asset.css identifier="123" href="{cb:assetPath()}/frontend.css" useNonce="1" />
+    <f:comment><!-- Include the assets/frontend.js script --></f:comment>
+    <f:asset.script identifier="123" src="{cb:assetPath()}/frontend.js" useNonce="1" />
 
-<f:comment><!-- Include the assets/frontend.js script --></f:comment>
-<f:asset.script identifier="123" src="{cb:assetPath()}/frontend.js" useNonce="1" />
     <f:comment>Filter die verwendet werden</f:comment>
-        <div class="d-flex flex-row justify-content-center mb-20 filters">
+    <div class="d-flex flex-row justify-content-center mb-20 filters">
         <f:for each="{data.filter}" as="filterset" iteration="i">
             <span class="badge p-5 rounded-pill filter mx-20 {f:if(condition:i.isFirst, then: ms-0 me-20')} {f:if(condition:i.isLast, then: ms-20 me-0')}
             {f:if(condition:'{filterset.filter_name} == Herbst', then: ' text-bg-primary')}
             {f:if(condition:'{filterset.filter_name} == \'Frühling\'', then: ' text-bg-secondary')}
             {f:if(condition:'{filterset.filter_name} == Sommer', then: ' text-bg-danger')}
-            {f:if(condition:'{filterset.filter_name} == Winter', then: ' text-bg-info')}" data-filter="{filterset.filter_name}">
-                {filterset.filter_name} 
+            {f:if(condition:'{filterset.filter_name} == Winter', then: ' text-bg-info')}"
+                data-filter="{filterset.filter_name}">
+                {filterset.filter_name}
             </span>
         </f:for>
         <span class="badge p-5 me-5 rounded-pill filter text-bg-primary" data-filter="all">Alle</span>
     </div>
-    <div class="row mb-25 mb-md-30 mx-0 projects justify-content-center
+    <div class="row p-0 mb-25 mb-md-30 projects
         {f:if(condition: '{data.responsive_xs}', then: '{data.responsive_xs}')}
         {f:if(condition: '{data.responsive_sm}', then: '{data.responsive_sm}')}
         {f:if(condition: '{data.responsive_md}', then: '{data.responsive_md}')}
@@ -29,10 +26,10 @@
         {f:if(condition: '{data.cardspace_tablet}', then: '{data.cardspace_tablet}')}
         {f:if(condition: '{data.cardspace_desktop}', then: '{data.cardspace_desktop}')}   
 ">
-        
         <f:comment>Einzelne Element nach denen gesucht werden kann.</f:comment>
         <f:for each="{data.cardsets}" as="cardset" iteration="i">
-            <div class="col project" data-filter="{f:if(condition: cardset.filter_names, then: '{filter_name.filter_name}') -> f:for(each:'{cardset.filter_names}', as: 'filter_name')}">
+            <div class="col project"
+                data-category="{f:if(condition: cardset.filter_names, then: '{filter_name.filter_name} ') -> f:for(each:'{cardset.filter_names}', as: 'filter_name')}">
 
                 <div class="card h-100 border border-primary">
                     <f:if condition="{cardset.image}">
@@ -56,18 +53,19 @@
                             </div>
                         </f:else>
                     </f:if>
-                   
+
                 </div>
                 <f:if condition="{cardset.filter_names}">
                     <div class="d-flex flex-row justify-content-center pt-5">
-                    <f:for each="{cardset.filter_names}" as="filter_name">
-                        <span class="badge p-5 rounded-pill {f:if(condition:'{filter_name.filter_name} == Herbst', then: ' text-bg-primary')}
+                        <f:for each="{cardset.filter_names}" as="filter_name">
+                            <span
+                                class="badge p-5 rounded-pill {f:if(condition:'{filter_name.filter_name} == Herbst', then: ' text-bg-primary')}
                         {f:if(condition:'{filter_name.filter_name} == \'Frühling\'', then: ' text-bg-secondary')}
                         {f:if(condition:'{filter_name.filter_name} == Sommer', then: ' text-bg-danger')}
-                        {f:if(condition:'{filter_name.filter_name} == Winter', then: ' text-bg-info')}">{filter_name.filter_name}</span> 
-                    </f:for>
+                        {f:if(condition:'{filter_name.filter_name} == Winter', then: ' text-bg-info')}">{filter_name.filter_name}</span>
+                        </f:for>
                     </div>
-                    </f:if>
+                </f:if>
             </div>
         </f:for>
     </div>

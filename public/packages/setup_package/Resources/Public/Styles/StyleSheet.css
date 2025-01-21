@@ -19286,36 +19286,57 @@ details[open] :is(summary.accordion-button-plus-minus-dialog)::after {
 
 /*
   Fix for gutter padding left & right - remove it.
-  Gap works for cards in Bootstrap 6 not jet.
+  Gap will works for cards in Bootstrap 6 not jet.
 */
 @media (max-width: 575.98px) {
-  .row-cols-1 > .col {
+  .cardgroup.row-cols-1 > .col {
     padding-left: 0; }
 
-  .row-cols-1 > .col {
+  .cardgroup.row-cols-1 > .col {
     padding-right: 0; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .row-cols-sm-2 > .col:nth-child(2n + 1) {
+  .cardgroup.row-cols-sm-2 > .col:nth-child(2n + 1) {
     padding-left: 0; }
 
-  .row-cols-sm-2 > .col:nth-child(2n + 2) {
+  .cardgroup.row-cols-sm-2 > .col:nth-child(2n + 2) {
     padding-right: 0; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .row-cols-md-3 > .col:nth-child(3n + 1) {
+  .cardgroup.row-cols-md-3 > .col:nth-child(3n + 1) {
     padding-left: 0; }
 
-  .row-cols-md-3 > .col:nth-child(3n + 3) {
+  .cardgroup.row-cols-md-3 > .col:nth-child(3n + 3) {
     padding-right: 0; } }
 @media (min-width: 992px) {
-  .row-cols-lg-3 > .col:nth-child(3n + 1),
-  .row-cols-lg-4 > .col:nth-child(4n + 1),
-  .row-cols-lg-5 > .col:nth-child(5n + 1) {
+  .cardgroup.row-cols-lg-3 > .col:nth-child(3n + 1),
+  .cardgroup.row-cols-lg-4 > .col:nth-child(4n + 1),
+  .cardgroup.row-cols-lg-5 > .col:nth-child(5n + 1) {
     padding-left: 0; }
 
-  .row-cols-lg-3 > .col:nth-child(3n + 3),
-  .row-cols-lg-4 > .col:nth-child(4n + 4),
-  .row-cols-lg-5 > .col:nth-child(5n + 5) {
+  .cardgroup.row-cols-lg-3 > .col:nth-child(3n + 3),
+  .cardgroup.row-cols-lg-4 > .col:nth-child(4n + 4),
+  .cardgroup.row-cols-lg-5 > .col:nth-child(5n + 5) {
     padding-right: 0; } }
+.col.project.hide {
+  /* You can play with the seconds to change the "animation" */
+  animation: hide 0.1s ease 0s 1 normal forwards;
+  transform-origin: center;
+  display: none;
+  margin: 0;
+  padding-left: 0; }
+
+@keyframes hide {
+  0% {
+    transform: scale(1); }
+  70% {
+    transform: scale(1.5); }
+  100% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0; } }
+.filter:hover {
+  cursor: pointer; }
+
 /*a:focus,
 a:active,
 a:active:focus,
