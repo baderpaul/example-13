@@ -6,7 +6,7 @@
     <f:comment>Filter die verwendet werden</f:comment>
     <div class="d-flex flex-row justify-content-center mb-20 filters">
         <f:for each="{data.filter}" as="filterset" iteration="i">
-            <span class="badge p-7 rounded-pill filter mx-20 {f:if(condition:i.isFirst, then: 'ms-0 me-20')}
+            <span class="badge py-7 rounded-pill filter mx-20 {f:if(condition:i.isFirst, then: 'ms-0 me-20')}
             {f:if(condition:'{filterset.filter_name} == Herbst', then: ' text-bg-primary')}
             {f:if(condition:'{filterset.filter_name} == \'Frühling\'', then: ' text-bg-secondary')}
             {f:if(condition:'{filterset.filter_name} == Sommer', then: ' text-bg-danger')}
@@ -59,7 +59,7 @@
                     <div class="d-flex flex-row justify-content-center pt-5">
                         <f:for each="{cardset.filter_names}" as="filter_name">
                             <span
-                                class="badge p-5 rounded-pill {f:if(condition:'{filter_name.filter_name} == Herbst', then: ' text-bg-primary')}
+                                class="badge py-7 rounded-pill {f:if(condition:'{filter_name.filter_name} == Herbst', then: ' text-bg-primary')}
                         {f:if(condition:'{filter_name.filter_name} == \'Frühling\'', then: ' text-bg-secondary')}
                         {f:if(condition:'{filter_name.filter_name} == Sommer', then: ' text-bg-danger')}
                         {f:if(condition:'{filter_name.filter_name} == Winter', then: ' text-bg-info')}">{filter_name.filter_name}</span>
@@ -69,5 +69,4 @@
             </div>
         </f:for>
     </div>
-
 </f:section>
