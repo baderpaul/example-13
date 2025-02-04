@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "db7467dca6d64b8cc42375e497ee4ade",
+    "content-hash": "d4e6343bd9acf24eb6b78c0bd5e28e7a",
     "packages": [
         {
             "name": "autodudes/ai-suite",
@@ -989,16 +989,16 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v6.10.2",
+            "version": "v6.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "30c19ed0f3264cb660ea496895cfb6ef7ee3653b"
+                "reference": "8f718f4dfc9c5d5f0c994cdfd103921b43592712"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/30c19ed0f3264cb660ea496895cfb6ef7ee3653b",
-                "reference": "30c19ed0f3264cb660ea496895cfb6ef7ee3653b",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/8f718f4dfc9c5d5f0c994cdfd103921b43592712",
+                "reference": "8f718f4dfc9c5d5f0c994cdfd103921b43592712",
                 "shasum": ""
             },
             "require": {
@@ -1046,9 +1046,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v6.10.2"
+                "source": "https://github.com/firebase/php-jwt/tree/v6.11.0"
             },
-            "time": "2024-11-24T11:22:49+00:00"
+            "time": "2025-01-23T05:11:06+00:00"
         },
         {
             "name": "friendsoftypo3/content-blocks",
@@ -5552,16 +5552,16 @@
         },
         {
             "name": "tpwd/ke_search",
-            "version": "v6.2.0",
+            "version": "v6.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tpwd/ke_search.git",
-                "reference": "f2f6a8c88ac2f6f5ba08d26488c7f416418da52a"
+                "reference": "1b0d480d4e6070c69b20ce49426c44c626a80c9a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tpwd/ke_search/zipball/f2f6a8c88ac2f6f5ba08d26488c7f416418da52a",
-                "reference": "f2f6a8c88ac2f6f5ba08d26488c7f416418da52a",
+                "url": "https://api.github.com/repos/tpwd/ke_search/zipball/1b0d480d4e6070c69b20ce49426c44c626a80c9a",
+                "reference": "1b0d480d4e6070c69b20ce49426c44c626a80c9a",
                 "shasum": ""
             },
             "require": {
@@ -5622,9 +5622,9 @@
             ],
             "support": {
                 "issues": "https://github.com/tpwd/ke_search/issues",
-                "source": "https://github.com/tpwd/ke_search/tree/v6.2.0"
+                "source": "https://github.com/tpwd/ke_search/tree/v6.3.0"
             },
-            "time": "2025-01-17T09:05:23+00:00"
+            "time": "2025-01-24T12:42:16+00:00"
         },
         {
             "name": "typo3/class-alias-loader",

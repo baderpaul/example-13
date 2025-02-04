@@ -1,0 +1,20 @@
+<f:asset.css identifier="content-block-t3example-t3example/bttabs-be" href="{cb:assetPath()}/preview.css"/>
+<div class="mb-3">Herosection Backgroundvideo</div>
+<div class="d-inline-flex flex-wrap" style="gap: 24px">
+    <f:for each="{data.tabsets}" as="tabset" iteration="i">
+        <div class="d-inline-flex flex-column">
+            Video:
+            Text:
+            <h2 class="mb-0" style="font-size: 16px;"> {tabsetset.heading -> f:format.nl2br()}
+            </h2>
+            <p>
+                {tabset.bodytext -> f:format.crop(maxCharacters: 15) -> f:format.stripTags()}
+            </p>
+            <f:for each="{tabset.image}" as="image">
+                <img 
+                src="{f:uri.image(image: image, fileExtension:'webp')}"
+                 alt="{image.alternative}" width="100px" loading="lazy">
+            </f:for>            
+        </div>
+    </f:for>
+</div>

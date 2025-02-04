@@ -18,6 +18,12 @@ mutations:
       - "data:"
       - "https://example-13.ddev.site"
 
+  - mode: "extend"
+    directive: "font-src"
+    sources:
+      - "'self'"
+      - "https://example-13.ddev.site"
+
   # Extends the ancestor directive ('default-src'),
   # thus reuses 'self' and adds additional sources
   # Results in `script-src 'self' 'nonce-[random]'`
@@ -25,7 +31,7 @@ mutations:
   - mode: "extend"
     directive: "script-src"
     sources:
-      - "'nonce-proxy'"
+      #- "'nonce-proxy'"
       - "'self'"
       - "https://example-13.ddev.site"
 

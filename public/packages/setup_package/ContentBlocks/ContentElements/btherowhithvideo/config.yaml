@@ -1,0 +1,75 @@
+name: t3example/btherowithvideo
+title: t3example/btherowithvideo
+description: 'Bootstrap Hero Section with BGVideo'
+group: ContentBlocks
+saveAndClose: true
+prefixFields: true
+prefixType: full
+fields:
+  - identifier: cb_header
+    type: Text
+    label: Pluginbeschreibung für TYPO3 BE
+  - identifier: tab_1
+    type: Tab
+    label: Video + Einstellungen
+  - identifier: palette_411
+    type: Palette
+    label: Video + Einstellungen
+    description: Das Video kann im Loop ablaufen, Automatisch gestartet und stumm geschaltet werden 
+    fields:
+      - identifier: video
+        type: File
+        extendedPalette: false
+        allowed: mp4, ogg, youtube, vimeo
+      - type: Linebreak   
+      -  identifier: autoplay
+         label: 'Video starten'
+         description: Video wird automatisch beim laden gestartet
+         type: Checkbox
+         renderType: checkboxLabeledToggle
+         default: '1'
+         items:
+           - label: ''
+             labelUnchecked: 'Nein'
+             labelChecked: 'Ja'
+             invertStateDisplay: false 
+      -  identifier: autostop
+         label: 'Video kann bei Klick ins Video gestopt werden'
+         description: Das Video kann bei Klick in das Video gestopt oder gestartet werden.
+         type: Checkbox
+         renderType: checkboxLabeledToggle
+         default: '1'
+         items:
+           - label: ''
+             labelUnchecked: 'Nein'
+             labelChecked: 'Ja'
+             invertStateDisplay: false        
+      -  identifier: loop
+         label: 'Video loopen lassen'
+         description: Das Video läuft in einer Dauerschleife.
+         type: Checkbox
+         renderType: checkboxLabeledToggle
+         default: '1'
+         items:
+           - label: ''
+             labelUnchecked: 'Nein'
+             labelChecked: 'Ja'
+             invertStateDisplay: false
+      -  identifier: muted
+         label: 'Video stumm stellen'
+         description: Das Video ist per default stumm geschaltet.
+         type: Checkbox
+         renderType: checkboxLabeledToggle
+         default: '1'
+         items:
+           - label: ''
+             labelUnchecked: 'Nein'
+             labelChecked: 'Ja'
+             invertStateDisplay: true      
+  - identifier: tab_2
+    type: Tab
+    label: Text und Positionierung
+  - identifier: palette_412
+    type: Palette
+    label: Texte
+    description: Teasertext, Headline und Positionierung des Teasers, ggf. einen CTA Button

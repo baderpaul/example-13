@@ -7,7 +7,7 @@
 				<source>Teasertext mit Icon und ggf. Verlinkung</source>
 			</trans-unit>
 			<trans-unit id="description">
-				<source>TextIconteaser width Bootstrap</source>
+				<source>TextIconteaser with Bootstrap</source>
 			</trans-unit>
 			<trans-unit id="cb_header.label">
 				<source>Pluginbeschreibung für TYPO3 BE</source>

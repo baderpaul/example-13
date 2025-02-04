@@ -70,10 +70,12 @@ TCEFORM.tt_content {
 
     # Add new Labels
     header_layout {
-        altLabels.1 = <H1> Hauptüberschrift
-        altLabels.2 = <H2> Kleinere Überschrift
-        altLabels.3 = <H3> Kleinere Überschrift
-        altLabels.4 = <H4> Kleinere Überschrift mit Großbuchstaben
+        altLabels.1 = Hauptüberschrift(H1)
+        altLabels.2 = Subheadline(H2)
+        altLabels.3 = Kleinere Überschrift(H3)
+        altLabels.4 = Kleinere Überschrift(H4) 
+        altLabels.5 = Kleinere Überschrift(H5) 
+        altLabels.6 = Kleinere Überschrift(H6) 
         #altLabels.6 = <H2> Kleinere Überschrift grün
     }
     # overwrite for bootstrap5

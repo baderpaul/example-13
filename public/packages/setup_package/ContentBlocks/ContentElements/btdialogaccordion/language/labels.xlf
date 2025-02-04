@@ -7,7 +7,7 @@
 				<source>Bootstrap Detail Accordion</source>
 			</trans-unit>
 			<trans-unit id="description">
-				<source>Accordion width Bootstrap und Detail Tag</source>
+				<source>Accordion with Bootstrap und Detail Tag</source>
 			</trans-unit>
 			<trans-unit id="cb_header.label">
 				<source>Pluginbeschreibung für TYPO3 BE</source>

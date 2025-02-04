@@ -6,11 +6,11 @@
     font-family: $headings-font-family;
     font-weight: $headings-font-weight;
     line-height: $headings-line-height;
-    font-size: ($font-size-base * 2);
+    font-size: $font-size-xlg;
 }
 
 .slogan span + span {
-    font-size: ($font-size-base * 1.5);
+    font-size: $font-size-lg;
 }
 
 .carousel-indicators[data-bs-target] { 
@@ -28,10 +28,10 @@
 
 @include media-breakpoint-up(lg) { 
 
-    .slogan span + span {
-        font-size: ($font-size-base * 3.125);
+   /* .slogan span + span {
+        font-size: $font-size-xlg;
     }
-
+*/
     .carousel {
         .carousel-control-prev,
         .carousel-control-next {

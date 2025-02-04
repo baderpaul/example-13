@@ -1,0 +1,51 @@
+<f:layout name="Default" />
+
+<f:section name="Main">
+  <f:asset.script identifier="video-hero" src="{cb:assetPath()}/frontend.js" useNonce="1" />
+    <header class="d-block position-relative vh-50 vh-lg-75 vw-100 overflow-y-hidden">
+      <f:for each="{data.video}" as="herovideo">
+        <f:variable name="autoplay" value="" />
+        <f:variable name="loop" value="" />
+        <f:variable name="muted" value="" />
+      <f:if condition="{data.autoplay} == 1">
+        <f:variable name="autoplay" value="1" />
+      </f:if>
+      <f:if condition="{data.loop} == 1">
+          <f:variable name="loop" value="1" />
+      </f:if>
+     <f:if condition="{data.muted} == 0">
+      <f:then>
+          <f:variable name="muted" value="0" />
+        </f:then>
+        <f:else><f:variable name="muted" value="1" /></f:else>
+      </f:if>
+          <f:media id="video" file="{herovideo.originalFile}" title="{herovideo.title}" class="z-n1 position-absolute top-0 left-0 object-fit-fill w-100"  preload="auto"  additionalConfig="{playsinline:'1', controls:'0', loop:'{loop}', muted:'{muted}', autoplay:'{autoplay}'}"/>
+          <div class="d-flex flex-column p-20 position-absolute top-0 start-0 top-md-20 start-lg-40 z-1 text-white text-bg-white bg-opacity-10 w-100 w-lg-50 rounded-3 shadow-sm glass " style="border: solid green 1px;">
+              <h1 class=" text-white text-glass" >Riffe voller Leben Unterwasserzauber</h1>
+              <p class="lead text-glass position-relative">Korallenriffe sind Unterwasserparadiese, die mit ihrer Artenvielfalt und Farbenpracht begeistern. Sie bieten Lebensraum für unzählige Meeresbewohner und sind ein wahres Naturschauspiel.</p>
+              <span class="d-flex flex-row justify-content-end"><a href="#" role="button" aria-label="Mehr erfahren" class="btn btn-primary d-inline">Mehr erfahren</a></span>
+          </div>
+          <f:if condition="{data.autostop} == 1">
+            <div title="Video anhalten" role="button" aria-pressed="false" class="video-overlay position-absolute z-2 w-100 h-100"></div>
+          </f:if>
+      </f:for>
+      </header>
+
+
+    <f:comment>
+
+    <section>
+      <div class="typewriter monospace big-caret lorem">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id tortor massa. Quisque fermentum nibh non lacus suscipit, et laoreet elit sollicitudin.
+      </div>
+    </section>
+
+<div class="tab-content mb-25 mb-md-30 p-20 {f:if(condition: '{data.choose-display} == two', then: ' border-0 px-0', else: ' border border-primary')} border-1 {f:if(condition: '{data.choose-display} == one', then: ' border-top-0')}"
+id="tab-content">
+
+       <span> {tabset.bodytext -> f:format.stripTags(allowedTags: "<span><button><a><strong><i>")}</span>
+    </div>
+</f:for>
+</div>
+</f:comment>
+</f:section>

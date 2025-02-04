@@ -1,10 +1,11 @@
 // Options
 //$enable-negative-margins: true;
 $enable-dark-mode: false;
-$enable-important-utilities:  false;
-$enable-shadows: false;
+$enable-important-utilities: false;
+$enable-shadows: true;
 $enable-cssgrid: true;
 $enable-negative-margins: true;
+$enable-rfs: false;
 
 // Reset Browser defaults
 * {
@@ -165,13 +166,13 @@ $gutters: (0: 0,
   40: $spacer * 2.5,
   50: $spacer * 3.125,
 );
-
+/*
 $position-values: (
   0: 0,
   10: $spacer,
   50: 50%,
   100: 101%
-);
+);*/
 
 //
 // Fluid_styled_content variables - used in _FluidStyledContent.scss
@@ -199,32 +200,59 @@ $font-weight-500: 500;
 $font-family-sans-serif: 'Roboto'; 
 $font-family-base: 'Roboto';
 
-$font-size-base: $spacer;
-$font-size-sm: $font-size-base * .875;
-$font-size-lg: $font-size-base * 1.25;
-$font-size-xlg: $font-size-base * 1.875;
+// Line Height
+$line-height-base: 1.4;
+$line-height: 1;
+$line-height-lg: 1.6;
+$line-height-sm: 1.2;
+$input-line-height: 1.4;
 
-$font-size-nav: $font-size-base * 1.125;
-$font-size-nav-xl: $font-size-base * .9375;
-$font-size-nav-sub: $font-size-base * .9375;
+/*Fontsizes with css clamp function is rendered direct in the Browser - fluid-typography
+  See:
+  https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQ4MHB4IiwibWF4V2lkdGgiOiI5OTJweCIsIm1pbkZvbnRTaXplIjoiMTRweCIsIm1heEZvbnRTaXplIjoiMTZweCJ9
+  https://royalfig.github.io/fluid-typography-calculator/
+  https://modern-fluid-typography.vercel.app/
+*/
 
-$lead-font-size: $font-size-base;
+$font-size-base: clamp(0.875rem, calc(0.7578rem + 0.3906vw), 1rem);
+$font-size-sm: clamp(0.75rem, calc(0.6328rem + 0.3906vw), 0.875rem);
+$font-size-lg: clamp(1rem, calc(0.7656rem + 0.7813vw), 1.25rem);
+$font-size-xlg: clamp(1.125rem, calc(0.8906rem + 0.7813vw), 1.375rem);
+
+$navbar-brand-font-size: clamp(1rem, calc(0.7656rem + 0.7813vw), 1.25rem);
+$font-size-nav: clamp(1rem, calc(0.8828rem + 0.3906vw), 1.125rem);;
+/*$font-size-nav-xl: $font-size-base * .9375;*/
+$font-size-nav-sub: clamp(0.875rem, calc(0.7578rem + 0.3906vw), 1rem);
+$nav-link-height: clamp(0.875rem, calc(2.266vw + 0.195rem), 1.6rem);
+$navbar-brand-height: $line-height-base;
+$navbar-brand-padding-y: 0;
+
+$lead-font-size: clamp(0.875rem, calc(0.5234rem + 1.1719vw), 1.25rem);
 $lead-font-weight: 400;
 
-$h1-font-size: $font-size-base * 2.5;
-$h2-font-size: $font-size-base * 1.875;
-$h3-font-size: $font-size-base * 1.5;
-$h4-font-size: $font-size-base * 1.25;
-$h5-font-size: $font-size-base * 1.25;
-$h6-font-size: $font-size-base * 1.125;
+//$h1-font-size: $font-size-base * 2.5;
+$h1-font-size: clamp(1.5rem, calc(0.9141rem + 1.9531vw), 2.125rem);
+$h2-font-size: clamp(1.25rem, calc(-0.07rem + 3.41vw), 1.875rem);
+$h3-font-size: clamp(1.125rem, calc(1.0156rem + 0.7813vw), 1.5rem);
+$h4-font-size: clamp(1.125rem, calc(1.0078rem + 0.3906vw), 1.25rem);
+$h5-font-size: clamp(1rem, calc(0.883rem + 0.391vw), 1.25rem);
+$h6-font-size: clamp(1rem, calc(0.8828rem + 0.3906vw), 1.125rem);
 
-$font-sizes: (1: $h1-font-size,
+//font-sizes overwrite default vars from  default _variables
+$input-btn-font-size: clamp(0.875rem, calc(0.7578rem + 0.3906vw), 1rem);
+$btn-font-size: clamp(0.875rem, calc(0.7578rem + 0.3906vw), 1rem); 
+
+
+
+$font-sizes: (
+  1: $h1-font-size,
   2: $h2-font-size,
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size,
-  12: $font-size-base * .75,
+  6: $h6-font-size
+  );
+  /*12: $font-size-base * .75,
   14: $font-size-base * .875,
   17: 1.0625rem,
   18: $font-size-base * 1.125,
@@ -232,27 +260,45 @@ $font-sizes: (1: $h1-font-size,
   50: $font-size-base * 3.125,
   80: $font-size-base * 5);
 
+$font-sizes: (
+   1: clamp(0.5rem, 2vw, 1rem),
+   2: clamp(1.2rem, 2.5vw, 1.6rem),
+   3: clamp(1.5rem, 3vw, 2.0rem),
+   4: clamp(1.8rem, 3.5vw, 2.4rem),
+   5: clamp(2.2rem, 4vw, 2.8rem),
+   6: clamp(2.6rem, 4.5vw, 3.2rem),
+ );*/
+
+
 //$font-size-blockquotes: 2rem;
 //$blockquote-font-size: $font-size-base;
 
 $font-size-icon: $font-size-xlg;
 $list-inline-padding: 0;
 
-$line-height-base: 1.4;
-$line-height: 1.2;
-$line-height-lg: 1.6;
-$line-height-sm: 1.2;
 
 // headings-variables
 $headings-margin-bottom: $spacer;
 $headings-font-family: 'Roboto';
 $headings-font-weight: 700;
-$headings-line-height: $line-height-lg;
+$headings-line-height: $line-height;
 $headings-color: $gray-900;
-$headings-font-weight-light: 600;
+$headings-font-weight-light: 500;
 $headings-margin-bottom-20: 1.25rem;
 
-$display-font-weight: 400;
+/* scss-docs-start headings-variables
+$headings-margin-bottom:      $spacer * .5 !default;
+$headings-font-family:        null !default;
+$headings-font-style:         null !default;
+$headings-font-weight:        500 !default;
+$headings-line-height:        1.2 !default;
+$headings-color:              inherit !default;
+// scss-docs-end headings-variables*/
+
+
+$blockquote-font-size: clamp(1.125rem, calc(1.0078rem + 0.3906vw), 1.25rem);
+
+$display-font-weight: $headings-font-weight-light;
 $display-line-height: $headings-line-height;
 
 // Mark
@@ -380,5 +426,10 @@ $pagination-focus-box-shadow: 0 0 0 0;
 $focus-ring-width: 1rem;
 
 // Forms
+$form-check-min-height: 1.6;
 $input-border-color: $gray-900;
 $input-focus-border-color: $primary;
+
+
+// Progress
+$progress-font-size: 0.75rem;                

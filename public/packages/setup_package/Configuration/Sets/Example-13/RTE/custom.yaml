@@ -24,7 +24,7 @@ editor:
         - { name: 'Tabelle mit Hovereffekt', element: 'table', classes: [table-hover] }   
         - { name: 'Tabelle mit weniger Abständen', element: 'table', classes: [table-sm] }      
         # block level styles
-        - { name: 'H2', element: 'h2', classes: [fs-17 text-uppercase] }
+        - { name: 'H2', element: 'h2', classes: [text-uppercase] }
         - { name: 'Quote / Citation', element: 'blockquote', classes: [],  }
         - { name: 'Code block', element: 'code', classes: [],  }
         - { name: 'Test P', element: 'p', classes: ['text-capitalize'] }
@@ -34,6 +34,9 @@ editor:
         - { model: 'paragraph', title: 'Paragraph' }
         - { model: 'heading2', view: 'h2', title: 'Heading 2' }
         - { model: 'heading3', view: 'h3', title: 'Heading 3' }
+        - { model: 'heading4', view: 'h4', title: 'Heading 4' } 
+        - { model: 'heading5', view: 'h5', title: 'Heading 5' }
+        - { model: 'heading6', view: 'h56', title: 'Heading 6' }       
         - { model: 'formatted', view: 'pre', title: 'Pre-Formatted Text' }
 
     toolbar:

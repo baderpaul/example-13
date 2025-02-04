@@ -7,7 +7,7 @@
 				<source>Socialmedia Linklist</source>
 			</trans-unit>
 			<trans-unit id="description">
-				<source>Socialmedia Linklist width Bootstrap</source>
+				<source>Socialmedia Linklist with Bootstrap</source>
 			</trans-unit>
 			<trans-unit id="cb_header.label">
 				<source>Pluginbeschreibung für TYPO3 BE</source>

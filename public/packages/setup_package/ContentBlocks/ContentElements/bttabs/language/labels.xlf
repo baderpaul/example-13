@@ -7,7 +7,7 @@
 				<source>Bootstrap Tabs</source>
 			</trans-unit>
 			<trans-unit id="description">
-				<source>Tabscontainer width Bootstrap</source>
+				<source>Tabscontainer with Bootstrap</source>
 			</trans-unit>
 			<trans-unit id="cb_header.label">
 				<source>Pluginbeschreibung für TYPO3 BE</source>

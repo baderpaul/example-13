@@ -10,7 +10,7 @@
 
 // add custom mixins overwrite bootstrap mixins
 @import "../../Public/Contrib/bootstrap/scss/mixins";
-//@import "CustomVariables/Mixins";
+@import "CustomVariables/CustomMixins";
 
 // add custom utilities overwrite/extend bootstrap utilities
 @import "../../Public/Contrib/bootstrap/scss/utilities";
