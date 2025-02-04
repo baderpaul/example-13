@@ -105,12 +105,12 @@ fields:
         items:
           - label: 'Auswählen'
             value: ''
-          - label: '10px'
-            value: g-10
-          - label: '15px'
-            value: g-15
-          - label: '20px'
-            value: g-20
+          - label: '25px'
+            value: g-25
+          - label: '30px'
+            value: g-30
+          - label: '35px'
+            value: g-35
       - identifier: cardspace_tablet
         type: Select
         renderType: selectSingle
@@ -118,12 +118,12 @@ fields:
         items:
           - label: 'Auswählen'
             value: ''
-          - label: '15px'
-            value: g-ms-15
-          - label: '20px'
-            value: g-ms-20
           - label: '25px'
             value: g-ms-25
+          - label: '30px'
+            value: g-ms-30
+          - label: '35px'
+            value: g-ms-35
       - identifier: cardspace_desktop
         type: Select
         renderType: selectSingle
