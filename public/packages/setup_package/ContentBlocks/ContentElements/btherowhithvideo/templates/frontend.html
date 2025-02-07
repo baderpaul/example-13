@@ -2,7 +2,7 @@
 
 <f:section name="Main">
   <f:asset.script identifier="video-hero" src="{cb:assetPath()}/frontend.js" useNonce="1" />
-    <header class="d-block position-relative vh-50 vh-lg-75 vw-100 overflow-y-hidden">
+    <header class="d-block position-relative vh-35 vh-xs-32 vh-md-50 vh-lg-75 overflow-hidden">
       <f:for each="{data.video}" as="herovideo">
         <f:variable name="autoplay" value="" />
         <f:variable name="loop" value="" />
@@ -20,7 +20,7 @@
         <f:else><f:variable name="muted" value="1" /></f:else>
       </f:if>
           <f:media id="video" file="{herovideo.originalFile}" title="{herovideo.title}" class="z-n1 position-absolute top-0 left-0 object-fit-fill w-100"  preload="auto"  additionalConfig="{playsinline:'1', controls:'0', loop:'{loop}', muted:'{muted}', autoplay:'{autoplay}'}"/>
-          <div class="d-flex flex-column p-20 position-absolute top-0 start-0 top-md-20 start-lg-40 z-1 text-white text-bg-white bg-opacity-10 w-100 w-lg-50 rounded-3 shadow-sm glass " style="border: solid green 1px;">
+          <div class="d-flex flex-column p-20 position-absolute top-0 start-0 top-md-20 start-lg-40 z-1 text-white text-bg-white bg-opacity-10 w-100 w-lg-50 rounded-3 shadow-sm glass">
               <h1 class=" text-white text-glass" >Riffe voller Leben Unterwasserzauber</h1>
               <p class="lead text-glass position-relative">Korallenriffe sind Unterwasserparadiese, die mit ihrer Artenvielfalt und Farbenpracht begeistern. Sie bieten Lebensraum für unzählige Meeresbewohner und sind ein wahres Naturschauspiel.</p>
               <span class="d-flex flex-row justify-content-end"><a href="#" role="button" aria-label="Mehr erfahren" class="btn btn-primary d-inline">Mehr erfahren</a></span>

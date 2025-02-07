@@ -1,6 +1,7 @@
 // Bootstrap functions
 @import "../../Public/Contrib/bootstrap/scss/functions";
 // add custom variables overwrite bootstrap variables
+@import "CustomVariables/Font";
 @import "CustomVariables/Variables";
 @import "../../Public/Contrib/bootstrap/scss/variables";
 //@import "../../Public/Contrib/bootstrap/scss/variables-dark";
@@ -19,8 +20,3 @@
 //  custom Bootstrap Icons 
 //@import "CustomStyles/BootstrapIcons/Iconteaser";
 @import "CustomStyles/BootstrapIcons/BootstrapIcons";
-
-:root {
-    //@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap');
-    --bs-body-font-family: "Roboto";
-}

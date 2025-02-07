@@ -31,7 +31,7 @@ mutations:
   - mode: "extend"
     directive: "script-src"
     sources:
-      #- "'nonce-proxy'"
+      - "'nonce-proxy'"
       - "'self'"
       - "https://example-13.ddev.site"
 

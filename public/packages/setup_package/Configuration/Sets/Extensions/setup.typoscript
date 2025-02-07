@@ -1,2 +1,2 @@
-@import 'EXT:ke_search/Configuration/TypoScript/setup.typoscript'
-@import 'EXT:responsive_images/Configuration/TypoScript/BootstrapConfiguration/setup.typoscript'
+#@import 'EXT:ke_search/Configuration/TypoScript/setup.typoscript'
+#@import 'EXT:responsive_images/Configuration/TypoScript/BootstrapConfiguration/setup.typoscript'

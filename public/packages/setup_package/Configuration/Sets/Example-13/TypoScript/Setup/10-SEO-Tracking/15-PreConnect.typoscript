@@ -1,0 +1,17 @@
+
+#lib.preConnect = TEXT
+#lib.preConnect.value (
+##    <link rel="preconnect" href="https://fonts.googleapis.com">
+ #   <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+ #   <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+#)
+
+#lib.preLoad= TEXT
+#lib.preLoad.value (
+  #  <link rel="preload" href="EXT:{$extKey}/Resources/Public/Vendor/icons/font/fonts/bootstrap-icons.woff2" as="font" type="font/woff2" crossorigin>
+#)
+
+//lib.preImage = TEXT
+//lib.preImage.value (
+//    <link rel="preload" as="image" href="/fileadmin/bigheader/td-example-1.jpg" />
+//)

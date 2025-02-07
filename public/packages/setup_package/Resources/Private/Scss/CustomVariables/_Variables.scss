@@ -3,7 +3,7 @@
 $enable-dark-mode: false;
 $enable-important-utilities: false;
 $enable-shadows: true;
-$enable-cssgrid: true;
+$enable-cssgrid: false;
 $enable-negative-margins: true;
 $enable-rfs: false;
 
@@ -167,15 +167,7 @@ $gutters: (0: 0,
   40: $spacer * 2.5,
   50: $spacer * 3.125,
 );
-/*
-$position-values: (
-  0: 0,
-  10: $spacer,
-  50: 50%,
-  100: 101%
-);*/
 
-//
 // Fluid_styled_content variables - used in _FluidStyledContent.scss
 $styles-content-textmedia-textMargin: ($spacer * 1.875);
 $styles-content-textmedia-columnSpacing: ($spacer * .625);
@@ -192,10 +184,7 @@ $styles-content-textmedia-ce-galleryMultiImageWidth: (100%);
 $breadcrumb-divider: quote(">");
 
 // Typography
-$font-style-italic: italic;
 $font-style-normal: normal;
-$font-weight-600: 600;
-$font-weight-500: 500;
 
 // Fonthandling
 $font-family-sans-serif: 'Roboto'; 
@@ -243,8 +232,6 @@ $h6-font-size: clamp(1rem, calc(0.8828rem + 0.3906vw), 1.125rem);
 $input-btn-font-size: clamp(0.875rem, calc(0.7578rem + 0.3906vw), 1rem);
 $btn-font-size: clamp(0.875rem, calc(0.7578rem + 0.3906vw), 1rem); 
 
-
-
 $font-sizes: (
   1: $h1-font-size,
   2: $h2-font-size,
@@ -285,17 +272,12 @@ $headings-font-weight: 700;
 $headings-line-height: $line-height;
 $headings-color: $gray-900;
 $headings-font-weight-light: 500;
-$headings-margin-bottom-20: 1.25rem;
-
-/* scss-docs-start headings-variables
-$headings-margin-bottom:      $spacer * .5 !default;
-$headings-font-family:        null !default;
-$headings-font-style:         null !default;
-$headings-font-weight:        500 !default;
-$headings-line-height:        1.2 !default;
-$headings-color:              inherit !default;
-// scss-docs-end headings-variables*/
-
+$headings-margin-bottom: clamp(0.313rem, calc(-0.2565rem + 2.4298vw), 1.25rem);
+$headings-font-family: 'Roboto';
+$headings-font-style: null;
+$headings-font-weight: 700;
+$headings-line-height: 1;
+$headings-color: inherit;
 
 $blockquote-font-size: clamp(1.125rem, calc(1.0078rem + 0.3906vw), 1.25rem);
 
@@ -349,8 +331,8 @@ $carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w
 // Jumbotron
 // $jumbotron-bg: $white ;
 
-// Paragraphs
-//$paragraph-margin-bottom: 1.25rem;
+// Paragraphs/ Lead
+$paragraph-margin-bottom: 0;
 
 // position-map
 $position-values: (0: 0,
@@ -362,7 +344,6 @@ $position-values: (0: 0,
 $card-height: 100%;
 $card-cap-bg: $white;
 $card-border-color: var(--#{$prefix}primary);
-
 
 // Tabs
 $nav-tabs-border-color: $primary;
@@ -386,14 +367,12 @@ $navbar-toggler-focus-width: 0;
 $navbar-light-toggler-border-color: rgba($black, .0);
 
 // Badges
-
 $badge-font-size: clamp(0.875rem, calc(0.7578125rem + 0.390625vw), 1rem);
 $badge-font-weight: $font-style-normal;
 $badge-color: $white;
 $badge-padding-x: .3125rem;
 $badge-padding-y: .625rem;
 $badge-border-radius: var(--#{$prefix}border-radius);
-
 
 // Caret
 $caret-width: .4rem;
@@ -431,7 +410,6 @@ $focus-ring-width: 1rem;
 $form-check-min-height: 1.6;
 $input-border-color: $gray-900;
 $input-focus-border-color: $primary;
-
 
 // Progress
 $progress-font-size: 0.75rem;                

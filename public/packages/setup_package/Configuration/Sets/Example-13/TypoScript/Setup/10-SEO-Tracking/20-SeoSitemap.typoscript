@@ -1,0 +1,44 @@
+plugin.tx_seo {
+    config {
+        xmlSitemap {
+            sitemaps {
+                pages {
+                    provider = TYPO3\CMS\Seo\XmlSitemap\PagesXmlSitemapDataProvider
+                    config {
+                        excludedDoktypes = 3, 4, 6, 7, 199, 254, 255
+                        additionalWhere = AND (no_index = 0 OR no_follow = 0)
+                    }
+                }
+
+                news {
+                    provider = GeorgRinger\News\Seo\NewsXmlSitemapDataProvider
+                    config {
+                        excludedTypes = 1,2
+                        additionalWhere =
+
+                        sortField = datetime
+                        lastModifiedField = tstamp
+                        changeFreqField = news_changefreq
+                        priorityField = news_priority
+                        pid = 49
+                        recursive = 2
+                        url {
+                            pageId = 48
+
+                            fieldToParameterMap {
+                                uid = tx_news_pi1[news]
+                            }
+
+                            additionalGetParameters {
+                                tx_news_pi1.controller = News
+                                tx_news_pi1.action = detail
+                            }
+
+                            useCacheHash = 1
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

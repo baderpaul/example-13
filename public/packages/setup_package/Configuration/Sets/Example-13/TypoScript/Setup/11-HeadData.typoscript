@@ -1,20 +1,29 @@
+page.meta {
+    robots = index,follow
+    description.data = page:description
+    description.ifEmpty.data = levelfield :-1, description, slide
+    description.crop = 120|
+
+    keywords.data = page:keywords
+    keywords.ifEmpty.data = levelfield :-1, keywords, slide
+}
+
 page.headerData.8 = TEXT
 page.headerData.8.value (
 
     <meta name="theme-color" content="#444444"/>  
     <meta name="mobile-web-app-capable" content="yes">  
     <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
-    <meta name="apple-mobile-web-app-title" content="ebusiness PWA"> 
+    <meta name="apple-mobile-web-app-title" content="Test Package"> 
     <meta name="msapplication-TileImage" content="setup_package/Resources/Public/Icons/Pwa/apple-icon-144x144.png">  
-    <meta name="msapplication-TileColor" content="#FFFFFF">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap" rel="stylesheet">
+    <meta name="msapplication-TileColor" content="#000000">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
      )
+
 page.headerData.10 < lib.preConnect
 #page.headerData.11 < lib.preLoad
-
+additionalHeaders.60.header = Content-Security-Policy: frame-ancestors 'self'
 
 //page.headerData.13 < lib.preImage
 page.includeCSS {
@@ -23,6 +32,7 @@ page.includeCSS {
     themestyle {
         forceOnTop = 1
         media = all
+        
     }   
 }
 

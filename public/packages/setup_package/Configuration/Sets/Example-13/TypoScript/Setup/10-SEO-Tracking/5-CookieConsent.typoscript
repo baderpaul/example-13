@@ -1,0 +1,28 @@
+plugin.tx_mindshapecookieconsent {
+  view {
+    templateRootPaths.0 = EXT:mindshape_cookie_consent/Resources/Private/Templates/
+    templateRootPaths.1 = {$plugin.tx_mindshapecookieconsent.view.templateRootPath}
+    partialRootPaths.0 = EXT:mindshape_cookie_consent/Resources/Private/Partials/
+    partialRootPaths.1 = {$plugin.tx_mindshapecookieconsent.view.partialRootPath}
+    layoutRootPaths.0 = EXT:mindshape_cookie_consent/Resources/Private/Layouts/
+    layoutRootPaths.1 = {$plugin.tx_mindshapecookieconsent.view.layoutRootPath}
+  }
+
+  settings {
+    cookieName = {$plugin.tx_mindshapecookieconsent.settings.cookieName}
+    expiryDays = {$plugin.tx_mindshapecookieconsent.settings.expiryDays}
+    containerId = {$plugin.tx_mindshapecookieconsent.settings.containerId}
+    hideIfJavaScriptDisabled = {$plugin.tx_mindshapecookieconsent.settings.hideIfJavaScriptDisabled}
+    pushConsentToTagManager = {$plugin.tx_mindshapecookieconsent.settings.pushConsentToTagManager}
+    lazyloading = {$plugin.tx_mindshapecookieconsent.settings.lazyloading}
+    lazyloadingTimeout = {$plugin.tx_mindshapecookieconsent.settings.lazyloadingTimeout}
+    hideCategoriesInOverview = {$plugin.tx_mindshapecookieconsent.settings.hideCategoriesInOverview}
+    ajaxPageType = {$plugin.tx_mindshapecookieconsent.settings.ajaxPageType}
+    addMarkupToFooter = {$plugin.tx_mindshapecookieconsent.settings.addMarkupToFooter}
+    addConfiguration = {$plugin.tx_mindshapecookieconsent.settings.addConfiguration}
+    addJavaScript = {$plugin.tx_mindshapecookieconsent.settings.addJavaScript}
+    addStylesheet = {$plugin.tx_mindshapecookieconsent.settings.addStylesheet}
+    disableConsent = {$plugin.tx_mindshapecookieconsent.settings.disableConsent}
+    addLanguageToCookie = {$plugin.tx_mindshapecookieconsent.settings.addLanguageToCookie}
+  }
+}
