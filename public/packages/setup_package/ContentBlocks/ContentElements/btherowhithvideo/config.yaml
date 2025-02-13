@@ -73,3 +73,69 @@ fields:
     type: Palette
     label: Texte
     description: Teasertext, Headline und Positionierung des Teasers, ggf. einen CTA Button
+    fields:
+      - identifier: teaserheadline
+        type: Text
+        label: Überschrift des Teasers
+        description: Headline wird mit h1 angezeigt
+        placeholder: Überschrift 
+      - identifier: teasertext
+        type: Textarea
+        label: Teasertext
+        enableRichtext: true
+        richtextConfiguration: simple
+        description: Dieser Text wird auf Mobilen Geräten nicht ausgegeben.
+        placeholder: Text eingeben
+      - type: Linebreak
+      - identifier: links
+        label: Call to Action Link
+        description: Bis zu 3 einzelne links können bei Bedarf definiert werden.
+        type: Collection
+        labelField: link_title
+        fields:
+          - identifier: cta
+            label: Linktext
+            useExistingField: true
+            type: Text
+            placeholder: Call to Action Text
+          - identifier: link
+            label: Linksziel
+            type: Link
+            autocomplete: true
+            allowedTypes:
+              - page
+              - url
+              - file
+            max: 3
+          - identifier: link_title
+            label: Titletext für den Link
+            type: Text     
+      - identifier: teaserposition
+        type: Select
+        renderType: selectSingle
+        label: Positionierung des Teasers
+        description: Nur die headline wird auf Mobilen Geräten unten ausgegeben.
+        default: 1
+        items:
+          - label: 'mittig'
+            value: top-md-50 start-md-50 translate-middle
+          - label: 'Oben - Links'
+            value: top-md-20px start-md-20px
+          - label: 'Oben - Rechts'
+            value: top-md-20px end-md-20px
+          - label: 'Unten - Links'
+            value: bottom-md-20px start-md-20px
+          - label: 'Unten - Rechts'
+            value: bottom-md-20px end-md-20px
+      - identifier: linkposition
+        label: Linkposition
+        description: Wird unterhalb des Teasertextes positioniert
+        type: Select
+        renderType: selectSingle
+        items:
+          - label: 'Links'
+            value: justify-content-start
+          - label: 'Rechts'
+            value: justify-content-end 
+          - label: 'Mittig'
+            value: justify-content-center    

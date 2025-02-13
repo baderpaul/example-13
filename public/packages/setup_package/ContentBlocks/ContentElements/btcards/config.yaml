@@ -52,7 +52,6 @@ fields:
             value: row-cols-md-3
           - label: '4'
             value: row-cols-md-4
-      #- type: Linebreak
       - identifier: responsive_lg
         type: Select
         renderType: selectSingle
@@ -67,32 +66,6 @@ fields:
           - label: '5'
             value: row-cols-lg-5
       - type: Linebreak            
-      #- identifier: responsive_xl
-      #  type: Select
-      #  renderType: selectSingle
-      #  label: Anzahl Cards Desktop xl > 1200px 
-      #  items:
-      #    - label: 'Auswählen'
-      #      value: ''
-      #    - label: '3'
-      #      value: row-cols-xl-3
-      #    - label: '4'
-      #      value: row-cols-xl-4
-      #    - label: '5'
-      #      value: row-cols-xl-5
-      #- identifier: responsive_xxl
-      #  type: Select
-      #  renderType: selectSingle
-      #  label: Anzahl Cards Desktop xxl > 1400px
-      #  items:
-      #    - label: 'Auswählen'
-      #      value: ''
-      #    - label: '4'
-      #      value: row-cols-xxl-4
-      #    - label: '5'
-      #      value: row-cols-xxl-5
-      #    - label: '6'
-      #      value: row-cols-xxl-6
   - identifier: palette_02
     type: Palette
     label: Abstand zwischen den einzelnen Cardelementen

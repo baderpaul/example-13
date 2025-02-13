@@ -37,6 +37,12 @@ config {
 
 }
 
+config.additionalHeaders {
+  20 = X-Frame-Options: SAMEORIGIN
+  30 = X-XSS-Protection: 1; mode=block
+  40 = Content-Type-Options: nosniff
+}
+
 
 
 [applicationContext matches "/^Development/"]

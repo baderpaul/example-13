@@ -2,7 +2,15 @@
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2); 
+    @include media-breakpoint-down(md) { 
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: translate(0, -25px);
+        width: 100%;
+    }
 }
+
 
 .text-glass {
     white-space: pre-line;

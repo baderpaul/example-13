@@ -6,7 +6,7 @@
     <f:comment>Filter die verwendet werden</f:comment>
     <div class="d-flex flex-row justify-content-center mb-20 filters">
         <f:for each="{data.filter}" as="filterset" iteration="i">
-            <span class="badge py-7 rounded-pill filter mx-20 {f:if(condition:i.isFirst, then: 'ms-0 me-20')}
+            <span class="badge rounded-pill filter mx-20 {f:if(condition:i.isFirst, then: 'ms-0 me-20')}
             {f:if(condition:'{filterset.filter_name} == Herbst', then: ' text-bg-primary')}
             {f:if(condition:'{filterset.filter_name} == \'Frühling\'', then: ' text-bg-secondary')}
             {f:if(condition:'{filterset.filter_name} == Sommer', then: ' text-bg-danger')}
@@ -15,7 +15,7 @@
                 {filterset.filter_name}
             </span>
         </f:for>
-        <span class="badge py-7 me-5 rounded-pill filter text-bg-primary ms-20" data-filter="all">Alle</span>
+        <span class="badge me-5 rounded-pill filter text-bg-primary ms-20" data-filter="all">Alle</span>
     </div>
     <div class="row p-0 mb-25 mb-md-30 projects px-0 mx-0
         {f:if(condition: '{data.responsive_xs}', then: '{data.responsive_xs}')}

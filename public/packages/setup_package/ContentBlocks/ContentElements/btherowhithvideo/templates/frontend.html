@@ -1,5 +1,4 @@
 <f:layout name="Default" />
-
 <f:section name="Main">
   <f:asset.script identifier="video-hero" src="{cb:assetPath()}/frontend.js" useNonce="1" />
     <header class="d-block position-relative vh-35 vh-xs-32 vh-md-50 vh-lg-75 overflow-hidden">
@@ -20,32 +19,22 @@
         <f:else><f:variable name="muted" value="1" /></f:else>
       </f:if>
           <f:media id="video" file="{herovideo.originalFile}" title="{herovideo.title}" class="z-n1 position-absolute top-0 left-0 object-fit-fill w-100"  preload="auto"  additionalConfig="{playsinline:'1', controls:'0', loop:'{loop}', muted:'{muted}', autoplay:'{autoplay}'}"/>
-          <div class="d-flex flex-column p-20 position-absolute top-0 start-0 top-md-20 start-lg-40 z-1 text-white text-bg-white bg-opacity-10 w-100 w-lg-50 rounded-3 shadow-sm glass">
-              <h1 class=" text-white text-glass" >Riffe voller Leben Unterwasserzauber</h1>
-              <p class="lead text-glass position-relative">Korallenriffe sind Unterwasserparadiese, die mit ihrer Artenvielfalt und Farbenpracht begeistern. Sie bieten Lebensraum für unzählige Meeresbewohner und sind ein wahres Naturschauspiel.</p>
-              <span class="d-flex flex-row justify-content-end"><a href="#" role="button" aria-label="Mehr erfahren" class="btn btn-primary d-inline">Mehr erfahren</a></span>
-          </div>
-          <f:if condition="{data.autostop} == 1">
-            <div title="Video anhalten" role="button" aria-pressed="false" class="video-overlay position-absolute z-2 w-100 h-100"></div>
-          </f:if>
       </f:for>
-      </header>
+      <f:if condition="{data.autostop} == 1">
+        <div title="Video anhalten" role="button" aria-pressed="false" class="video-overlay position-absolute z-1 w-100 h-100"></div>
+      </f:if>         
+      <div class="d-flex flex-column px-20 pt-20 pb-15 position-absolute z-2 {f:if(condition: '{data.teaserposition}', then: '{data.teaserposition}')} text-white text-bg-white bg-opacity-10 w-100 w-md-60 rounded-3 shadow-sm glass">
+          <h1 class=" text-white text-glass" >{data.teaserheadline -> f:format.htmlspecialchars()}</span></h1>
+          <p class="lead text-glass position-relative d-none d-md-block">{data.teasertext -> f:format.stripTags(allowedTags: "<span><button><a><strong><i>")}</span></p>
 
-
-    <f:comment>
-
-    <section>
-      <div class="typewriter monospace big-caret lorem">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla id tortor massa. Quisque fermentum nibh non lacus suscipit, et laoreet elit sollicitudin.
+            <f:if condition="{data.links}">
+            <f:for each="{data.links}" as="linkitem">
+              <span class="d-flex flex-row {data.linkposition} pt-10">
+              <f:link.typolink parameter="{linkitem.link}" title="{linkitem.link_title}" class="btn btn-primary d-inline btn-sm"  additionalAttributes="{role:'button', aria-label:'{linkitem.link_title}'}">
+                  {linkitem.cta}</f:link.typolink>
+                </span>
+            </f:for>
+            </f:if>
       </div>
-    </section>
-
-<div class="tab-content mb-25 mb-md-30 p-20 {f:if(condition: '{data.choose-display} == two', then: ' border-0 px-0', else: ' border border-primary')} border-1 {f:if(condition: '{data.choose-display} == one', then: ' border-top-0')}"
-id="tab-content">
-
-       <span> {tabset.bodytext -> f:format.stripTags(allowedTags: "<span><button><a><strong><i>")}</span>
-    </div>
-</f:for>
-</div>
-</f:comment>
+      </header>
 </f:section>

@@ -1,12 +1,11 @@
-# Inherits default site-unspecific frontend policy mutations (enabled per default)
 inheritDefault: true
 mutations:
   # Results in `default-src 'self'`
   - mode: "set"
     directive: "default-src"
     sources:
-      - "'self'"
-      - "https://example-13.ddev.site"
+      - "'nonce-proxy'"
+      - "https://typo3.org/"
 
   # Extends the ancestor directive ('default-src'),
   # thus reuses 'self' and adds additional sources
@@ -14,15 +13,13 @@ mutations:
   - mode: "extend"
     directive: "img-src"
     sources:
-      - "'self'"
+      - "'nonce-proxy'"
       - "data:"
-      - "https://example-13.ddev.site"
 
   - mode: "extend"
     directive: "font-src"
     sources:
-      - "'self'"
-      - "https://example-13.ddev.site"
+      - "'nonce-proxy'"
 
   # Extends the ancestor directive ('default-src'),
   # thus reuses 'self' and adds additional sources
@@ -32,12 +29,25 @@ mutations:
     directive: "script-src"
     sources:
       - "'nonce-proxy'"
-      - "'self'"
-      - "https://example-13.ddev.site"
 
+  - mode: "extend"
+    directive: "media-src"
+    sources:
+      - "'self'"
   # Results in `worker-src blob:`
   #- mode: "set"
   #  directive: "worker-src"
   #  sources:
    #   - "blob:"
   #unsafe-inline TODO - How can i add this
+# Inherits default site-unspecific frontend policy mutations (enabled per default)
+#enforce:
+#  inheritDefault: true
+##  mutations: {}
+  # for disabling the reporting endpoint for a particular site
+#  reportingUrl: false
+  # for using a different external reporting endpoint
+#  reportingUrl: https://reporting.example.org/
+  # for using the default local reporting endpoint (default)
+
+#####
