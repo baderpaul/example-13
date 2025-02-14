@@ -5,30 +5,27 @@ mutations:
     directive: "default-src"
     sources:
       - "'nonce-proxy'"
-      - "https://typo3.org/"
 
-  # Extends the ancestor directive ('default-src'),
-  # thus reuses 'self' and adds additional sources
-  # Results in `img-src 'self' data: https://*.typo3.org`
   - mode: "extend"
     directive: "img-src"
     sources:
       - "'nonce-proxy'"
       - "data:"
 
-  - mode: "extend"
-    directive: "font-src"
-    sources:
-      - "'nonce-proxy'"
-
-  # Extends the ancestor directive ('default-src'),
-  # thus reuses 'self' and adds additional sources
-  # Results in `script-src 'self' 'nonce-[random]'`
-  # ('nonce-proxy' is substituted when compiling the policy)
-  - mode: "extend"
+  - mode: "set"
     directive: "script-src"
     sources:
       - "'nonce-proxy'"
+
+  - mode: "set"
+    directive: "script-src-elem"
+    sources:
+      - "'nonce-proxy'"
+
+  - mode: "set"
+    directive: "font-src"
+    sources:
+      - "'self'"
 
   - mode: "extend"
     directive: "media-src"
