@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "autodudes/ai-suite",
-            "version": "13.2.0",
+            "version": "13.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/autodudesde/ai-suite.git",
-                "reference": "ad33b3bca61d0b2b14c83e044dc6902275b35de6"
+                "reference": "072e5c564bc91e4c642ce499161c6138ed0c4933"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/autodudesde/ai-suite/zipball/ad33b3bca61d0b2b14c83e044dc6902275b35de6",
-                "reference": "ad33b3bca61d0b2b14c83e044dc6902275b35de6",
+                "url": "https://api.github.com/repos/autodudesde/ai-suite/zipball/072e5c564bc91e4c642ce499161c6138ed0c4933",
+                "reference": "072e5c564bc91e4c642ce499161c6138ed0c4933",
                 "shasum": ""
             },
             "require": {
@@ -89,9 +89,9 @@
             ],
             "support": {
                 "issues": "https://github.com/autodudesde/ai-suite/issues",
-                "source": "https://github.com/autodudesde/ai-suite/tree/v13.2.0"
+                "source": "https://github.com/autodudesde/ai-suite/tree/v13.3.0"
             },
-            "time": "2025-02-10T20:31:59+00:00"
+            "time": "2025-02-12T20:16:08+00:00"
         },
         {
             "name": "b13/container",
