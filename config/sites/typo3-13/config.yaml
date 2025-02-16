@@ -10,7 +10,6 @@ dependencies:
   - georgringer/news-twb5
   - t3example/setupnews
   - typo3/form
-  - typo3/styleguide
 languages:
   -
     title: Deutsch

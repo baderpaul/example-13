@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d4e6343bd9acf24eb6b78c0bd5e28e7a",
+    "content-hash": "853bec8164a67ec94e24180d754a99a6",
     "packages": [
         {
             "name": "autodudes/ai-suite",
@@ -1771,6 +1771,58 @@
                 }
             ],
             "time": "2024-12-27T16:56:20+00:00"
+        },
+        {
+            "name": "limesoda-com/ls-csp-widget",
+            "version": "v1.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/LimeSoda/ls_csp_widget.git",
+                "reference": "8b7fad17df9d14694b43ba366b77ef7c141e35b4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/LimeSoda/ls_csp_widget/zipball/8b7fad17df9d14694b43ba366b77ef7c141e35b4",
+                "reference": "8b7fad17df9d14694b43ba366b77ef7c141e35b4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.2 <=8.4.99",
+                "typo3/cms-core": "^13.4",
+                "typo3/cms-dashboard": "^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "ls_csp_widget"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "LimeSoda\\LsCspWidget\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Offers a widget to display the most recent content security policy (CSP) frontend violations",
+            "homepage": "https://www.limesoda.com",
+            "keywords": [
+                "LIMESODA",
+                "TYPO3 CMS",
+                "content security policy",
+                "csp",
+                "dashboard",
+                "extension",
+                "violations",
+                "widget"
+            ],
+            "support": {
+                "issues": "https://github.com/LimeSoda/ls_csp_widget/issues",
+                "source": "https://github.com/LimeSoda/ls_csp_widget/tree/v1.0.0"
+            },
+            "time": "2025-02-12T13:29:30+00:00"
         },
         {
             "name": "lolli42/finediff",
@@ -7664,132 +7716,7 @@
             "time": "2022-06-03T18:03:27+00:00"
         }
     ],
-    "packages-dev": [
-        {
-            "name": "typo3/cms-indexed-search",
-            "version": "v13.4.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/indexed_search.git",
-                "reference": "dd27603556f42e320803aca1d8b38400f3bc7c35"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/indexed_search/zipball/dd27603556f42e320803aca1d8b38400f3bc7c35",
-                "reference": "dd27603556f42e320803aca1d8b38400f3bc7c35",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "13.4.5"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "suggest": {
-                "ext-exif": "Used to extract exif metadata 'COMMENT' and 'ImageDescription' of uploaded images",
-                "typo3/cms-scheduler": "For garbage collection of search statistics"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "indexed_search"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\IndexedSearch\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 CMS Indexed Search - Provides indexing functionality for TYPO3 pages and records as well as files including PDF, Word, HTML and plain text.",
-            "homepage": "https://typo3.org",
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org/c/typo3/cms-indexed-search/main/en-us",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-02-11T08:52:03+00:00"
-        },
-        {
-            "name": "typo3/cms-styleguide",
-            "version": "v13.4.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/TYPO3-CMS/styleguide.git",
-                "reference": "71d144cee6c1f5ef2d8ad2ae4d20ad1df9215a53"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3-CMS/styleguide/zipball/71d144cee6c1f5ef2d8ad2ae4d20ad1df9215a53",
-                "reference": "71d144cee6c1f5ef2d8ad2ae4d20ad1df9215a53",
-                "shasum": ""
-            },
-            "require": {
-                "typo3/cms-core": "13.4.5",
-                "typo3/cms-felogin": "13.4.5",
-                "typo3/cms-fluid-styled-content": "13.4.5",
-                "typo3/cms-form": "13.4.5",
-                "typo3/cms-indexed-search": "13.4.5",
-                "typo3/cms-seo": "13.4.5"
-            },
-            "conflict": {
-                "typo3/cms": "*"
-            },
-            "type": "typo3-cms-framework",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "styleguide"
-                },
-                "branch-alias": {
-                    "dev-main": "13.4.x-dev"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "TYPO3\\CMS\\Styleguide\\": "Classes/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TYPO3 Core Team",
-                    "email": "typo3cms@typo3.org",
-                    "role": "Developer"
-                }
-            ],
-            "description": "TYPO3 extension to showcase TYPO3 Backend capabilities",
-            "homepage": "https://typo3.org",
-            "keywords": [
-                "style guide",
-                "typo3",
-                "typo3 backend"
-            ],
-            "support": {
-                "chat": "https://typo3.org/help",
-                "docs": "https://docs.typo3.org",
-                "issues": "https://forge.typo3.org",
-                "source": "https://github.com/typo3/typo3"
-            },
-            "time": "2025-02-11T08:52:03+00:00"
-        }
-    ],
+    "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {},

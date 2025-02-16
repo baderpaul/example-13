@@ -27,6 +27,7 @@ additionalHeaders.60.header = Content-Security-Policy: frame-ancestors 'self'
 
 //page.headerData.13 < lib.preImage
 page.includeCSS {
+    aos = https://unpkg.com/aos@2.3.1/dist/aos.css
     lightbox = EXT:{$extKey}/Resources/Public/Contrib/glightbox/dist/css/glightbox.min.css
     themestyle = EXT:{$extKey}/Resources/Public/Styles/StyleSheet.css
     themestyle {
@@ -50,6 +51,10 @@ page.includeJSFooter {
     javascriptfooter.defer = 1
     lightbox = EXT:{$extKey}/Resources/Public/Contrib/glightbox/dist/js/glightbox.min.js
     lightbox.defer = 1
+    aos = https://unpkg.com/aos@2.3.1/dist/aos.js
+    aos.excludeFromConcatenation = 1
+    lao.external = 1
+    aos.defer = 1
 }
 
 [tree.pagelayout == "pagets__default_onepage"]

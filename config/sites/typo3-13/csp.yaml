@@ -1,50 +1,42 @@
 inheritDefault: true
 mutations:
-  # Results in `default-src 'self'`
   - mode: "set"
     directive: "default-src"
     sources:
-      - "'nonce-proxy'"
+      - "example-13.ddev.site"
 
   - mode: "extend"
-    directive: "img-src"
-    sources:
-      - "'nonce-proxy'"
-      - "data:"
-
-  - mode: "set"
-    directive: "script-src"
+    directive: "default-src"
     sources:
       - "'nonce-proxy'"
 
   - mode: "set"
     directive: "script-src-elem"
     sources:
-      - "'nonce-proxy'"
-
-  - mode: "set"
-    directive: "font-src"
-    sources:
-      - "'self'"
+      - "'nonce-proxy'" 
 
   - mode: "extend"
-    directive: "media-src"
+    directive: "img-src"
     sources:
-      - "'self'"
-  # Results in `worker-src blob:`
-  #- mode: "set"
-  #  directive: "worker-src"
-  #  sources:
-   #   - "blob:"
-  #unsafe-inline TODO - How can i add this
-# Inherits default site-unspecific frontend policy mutations (enabled per default)
-#enforce:
-#  inheritDefault: true
-##  mutations: {}
-  # for disabling the reporting endpoint for a particular site
-#  reportingUrl: false
-  # for using a different external reporting endpoint
-#  reportingUrl: https://reporting.example.org/
-  # for using the default local reporting endpoint (default)
+      - data:;
 
-#####
+  - mode: "set"
+    directive: "script-src"
+    sources:
+      - "'unsafe-eval'"
+
+  - mode: "extend"
+    directive: "font-src"
+    sources:
+      - "'nonce-proxy'"       
+
+  - mode: "reduce"
+    directive: "font-src"
+    sources:
+      - http://example-13.ddev.site
+
+  - mode: "reduce"
+    directive: "style-src-attr"
+    sources:
+      - "'unsafe-inline'"
+

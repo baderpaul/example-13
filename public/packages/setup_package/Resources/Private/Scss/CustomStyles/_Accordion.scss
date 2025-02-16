@@ -1,6 +1,6 @@
 /*
  Bootstrap Accordion width js
- some default css classes also used in deteails accordion
+ some default css classes also used in details accordion
 */
 .accordion-header::after {
     display: none;
@@ -25,13 +25,13 @@
 }
 
 .accordion-button-plus-minus::after {
-background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' font-weight='bold' fill='white'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/></svg>") !important;
+background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' font-weight='bold' fill='white'><path fill-rule='evenodd' d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4'/></svg>");
 transform: rotate(-360deg) .2s ease-in-out;
 scale: 1.7;
 }
 
 .accordion-button-plus-minus:not(.collapsed)::after {
-background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' font-weight='bold' fill='white'> <path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>") !important;
+background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' font-weight='bold' fill='white'><path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>");
 transform: rotate(360deg) .2s ease-in-out;
 scale: 1.7;
 }
@@ -39,7 +39,7 @@ scale: 1.7;
 /*
  Details Accordion widthout js
  some css styles come from the default Bootstrap Accordion
- Good Pages for Informations are
+ Good Pages for Info are
  https://christianoliff.com/blog/building-a-bootstrap-accordion-with-the-details-summary-html-tags/
  https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
  https://nerdy.dev/open-and-close-transitions-for-the-details-element
@@ -55,9 +55,7 @@ details {
       opacity: 0;
       block-size: 0;
       overflow-y: clip; 
-      transition: content-visibility 1s allow-discrete,
-                  opacity 1s,
-                  block-size 1s;
+      transition: content-visibility 1s allow-discrete, opacity 1s, block-size 1s;
     }
     
     &[open]::details-content {

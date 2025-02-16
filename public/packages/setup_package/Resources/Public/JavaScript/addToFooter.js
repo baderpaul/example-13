@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(){
+
+    /*
+     * activate aos
+     */
+
+  AOS.init();
     
     /*
      * activate lightbox

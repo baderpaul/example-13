@@ -28,6 +28,7 @@
 		"friendsoftypo3/content-blocks": "^1.0",
 		"georgringer/news": "^12.1",
 		"helhum/typo3-console": "^8.2.1",
+		"limesoda-com/ls-csp-widget": "^1.0",
 		"t3example/setup-package": "^1.0",
 		"tpwd/ke_search": "^6.0",
 		"typo3/cms-backend": "^13.4",
@@ -57,8 +58,5 @@
 		"typo3/cms-tstemplate": "^13.4",
 		"typo3/cms-viewpage": "^13.4",
 		"typo3/cms-webhooks": "^13.4"
-	},
-	"require-dev": {
-		"typo3/cms-styleguide": "^13.4"
 	}
 }
