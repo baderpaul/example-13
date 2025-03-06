@@ -52,5 +52,8 @@ routes:
   -
     route: robots.txt
     type: staticText
-    content: 'User-agent: *\r\nSitemap: https://example-13.ddev.site/sitemap.xml'
+    content: |
+      User-agent: *
+      Allow: /
+      Sitemap: https://example-13.ddev.site/sitemap.xml
 websiteTitle: 'Example T3-13'
