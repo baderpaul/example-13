@@ -1,33 +1,33 @@
 page.meta {
     robots = index,follow
+    viewport = width=device-width, initial-scale=1  
     description.data = page:description
     description.ifEmpty.data = levelfield :-1, description, slide
     description.crop = 120|
-
     keywords.data = page:keywords
     keywords.ifEmpty.data = levelfield :-1, keywords, slide
 }
 
+# Info https://stackoverflow.com/questions/63558297/typo3-add-to-homescreen-icon/63558477#63558477
 page.headerData.8 = TEXT
-page.headerData.8.value (
-
-    <meta name="theme-color" content="#444444"/>  
+page.headerData.8 {
+    value (
+    <meta name="theme-color" content="#ffffff"/>  
     <meta name="mobile-web-app-capable" content="yes">  
     <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
     <meta name="apple-mobile-web-app-title" content="Test Package"> 
-    <meta name="msapplication-TileImage" content="setup_package/Resources/Public/Icons/Pwa/apple-icon-144x144.png">  
-    <meta name="msapplication-TileColor" content="#000000">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <meta name="msapplication-TileImage" content="{path:EXT:{$extKey}/Resources/Public/Icons/Pwa/apple-icon-144x144.png}">  
+    <meta name="msapplication-TileColor" content="#ffffff">
+     <link rel="manifest" href="/manifest.json">
      )
+     insertData = 1
+}
 
-page.headerData.10 < lib.preConnect
+#page.headerData.10 < lib.preConnect
 #page.headerData.11 < lib.preLoad
-additionalHeaders.60.header = Content-Security-Policy: frame-ancestors 'self'
 
 //page.headerData.13 < lib.preImage
 page.includeCSS {
-    aos = https://unpkg.com/aos@2.3.1/dist/aos.css
     lightbox = EXT:{$extKey}/Resources/Public/Contrib/glightbox/dist/css/glightbox.min.css
     themestyle = EXT:{$extKey}/Resources/Public/Styles/StyleSheet.css
     themestyle {
@@ -51,10 +51,6 @@ page.includeJSFooter {
     javascriptfooter.defer = 1
     lightbox = EXT:{$extKey}/Resources/Public/Contrib/glightbox/dist/js/glightbox.min.js
     lightbox.defer = 1
-    aos = https://unpkg.com/aos@2.3.1/dist/aos.js
-    aos.excludeFromConcatenation = 1
-    lao.external = 1
-    aos.defer = 1
 }
 
 [tree.pagelayout == "pagets__default_onepage"]

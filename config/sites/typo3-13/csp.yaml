@@ -14,6 +14,7 @@ mutations:
     directive: "script-src-elem"
     sources:
       - "'nonce-proxy'" 
+      - "example-13.ddev.site"
 
   - mode: "extend"
     directive: "img-src"
@@ -28,7 +29,7 @@ mutations:
   - mode: "extend"
     directive: "font-src"
     sources:
-      - "'nonce-proxy'"       
+      - "'nonce-proxy'"
 
   - mode: "reduce"
     directive: "font-src"

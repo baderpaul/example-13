@@ -8,13 +8,19 @@ dependencies:
   - typo3/fluid-styled-content
   - georgringer/news
   - georgringer/news-twb5
+  - typo3/seo-sitemap
   - t3example/setupnews
   - typo3/form
+errorHandling:
+  -
+    errorCode: 404
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=11'
 languages:
   -
     title: Deutsch
     enabled: true
-    locale: de-DE
+    locale: de_DE.utf8
     hreflang: de-DE
     base: /
     websiteTitle: 'Example T3-13 De'
@@ -29,9 +35,22 @@ languages:
     locale: en_US.UTF-8
     navigationTitle: English
     flag: gb
-    hreflang: ''
+    hreflang: en-EN
     websiteTitle: 'Example T3-13 En'
     fallbackType: strict
     fallbacks: ''
 rootPageId: 1
+routeEnhancers:
+  PageTypeSuffix:
+    type: PageType
+    default: /
+    index: ''
+    suffix: /
+    map:
+      sitemap.xml: 1533906435
+routes:
+  -
+    route: robots.txt
+    type: staticText
+    content: 'User-agent: *\r\nSitemap: https://example-13.ddev.site/sitemap.xml'
 websiteTitle: 'Example T3-13'

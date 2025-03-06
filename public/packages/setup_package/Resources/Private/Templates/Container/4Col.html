@@ -1,18 +1,19 @@
-<section id="c{data.uid}" class="b13-container d-block px-10 px-lg-0">
+<section id="c{data.uid}" class="d-block px-10 px-lg-0">
 <div class="mb-20 mb-md-40">
+    
     <f:if condition="{header4col}">
         <f:for each="{header4col}" as="child">
             <f:format.raw>{child.renderedContent}</f:format.raw>
         </f:for>
     </f:if>
-    <div class="d-block d-lg-flex
+    <div class="d-block
     {f:if(condition: '{flexform.set-grid-frame} == 1', then: 'border border-dark')}
     {f:if(condition: '{data.layout} == 10', then:' container-sm')}
     {f:if(condition: '{data.layout} == 11', then:' container-md')}
     {f:if(condition: '{data.layout} == 12', then:' container-xl')}
     {f:if(condition: '{data.layout} == 13', then:' container-fluid')}" >
+    <div class="row">
     <f:if condition="{childrenLeft}">
-        <div class="row">
     <div class="
         {f:if(condition: '{flexform.columnType} == cols-1-1-1-1', then: 'col-lg-3')}
         {f:if(condition: '{flexform.set-grid-frame} == 1', then: 'ps-15 pe-15 pe-lg-30 pt-10 pb-0 mb-0 mx-0', else: 'px-0 pe-lg-30 pt-10 mx-0 mb-0')}">

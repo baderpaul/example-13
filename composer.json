@@ -25,10 +25,14 @@
 		"autodudes/ai-suite": "^13.0",
 		"b13/container": "^3.0",
 		"brotkrueml/schema": "^3.7",
+		"ehaerer/paste-reference": "^4.0",
 		"friendsoftypo3/content-blocks": "^1.0",
 		"georgringer/news": "^12.1",
 		"helhum/typo3-console": "^8.2.1",
+		"ichhabrecht/content-defender": "^3.5",
 		"limesoda-com/ls-csp-widget": "^1.0",
+		"sitegeist/editor-widgets": "^2.1",
+		"stefanfroemken/mysql-widget": "^1.0",
 		"t3example/setup-package": "^1.0",
 		"tpwd/ke_search": "^6.0",
 		"typo3/cms-backend": "^13.4",
@@ -49,6 +53,7 @@
 		"typo3/cms-install": "^13.4",
 		"typo3/cms-lowlevel": "^13.4",
 		"typo3/cms-reactions": "^13.4",
+		"typo3/cms-redirects": "^13.4",
 		"typo3/cms-reports": "^13.4",
 		"typo3/cms-rte-ckeditor": "^13.4",
 		"typo3/cms-seo": "^13.4",
@@ -58,5 +63,10 @@
 		"typo3/cms-tstemplate": "^13.4",
 		"typo3/cms-viewpage": "^13.4",
 		"typo3/cms-webhooks": "^13.4"
-	}
+	},
+	"autoload": {
+		"psr-4": {
+		  "T3example\\SetupPackage\\": "Classes/"
+		}
+	  }
 }

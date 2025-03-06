@@ -1,5 +1,8 @@
 <html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
- <f:if condition="{data.animations}">
+ <f:if condition="{data.animations} != none">
+<f:asset.css identifier="aos-css" useNonce="1" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+<f:asset.script identifier="aos-js" useNonce="1" src="https://unpkg.com/aos@2.3.1/dist/aos.js" />
+<f:asset.script identifier="aos-js-i" useNonce="1" src="EXT:setup_package/Resources/Public/JavaScript/animationOn.js"></f:asset.script>
 </f:if>
     <f:if condition="{data.frame_class} != none">
         <f:then>
@@ -64,5 +67,4 @@
 
         </f:else>
     </f:if>
-  
 </html>

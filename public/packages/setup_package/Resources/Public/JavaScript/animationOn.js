@@ -1,0 +1,5 @@
+    /*
+     * activate aos
+     */
+
+    AOS.init();

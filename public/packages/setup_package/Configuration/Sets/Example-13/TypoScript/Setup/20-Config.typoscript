@@ -1,10 +1,10 @@
 config {
-    no_cache = 1
+    no_cache = 0
     admPanel = 0
     #frontend_editing = 0
 
     doctype = html5
-    #htmlTag.attributes.class = h-100
+    htmlTag.attributes.class = h-100
     removeDefaultCss = 1
     inlineStyle2TempFile = 0
     moveJsFromHeaderToFooter = 0
@@ -35,12 +35,6 @@ config {
 
     max-age=31536000
 
-}
-
-config.additionalHeaders {
-  20 = X-Frame-Options: SAMEORIGIN
-  30 = X-XSS-Protection: 1; mode=block
-  40 = Content-Type-Options: nosniff
 }
 
 

@@ -5,7 +5,7 @@ use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $packageKey = "setup_package";
 /***************
- * for et mask
+ * for ext mask
  */
 #$GLOBALS['TYPO3_CONF_VARS']['SYS']['features']['overrideSharedFields'] = true;
 
@@ -39,8 +39,6 @@ if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['simple'] )) {
     if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['iconteaser'] )) {
         $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['iconteaser'] = "EXT:$packageKey/Configuration/Sets/Example-13/RTE/iconteaser.yaml";
         }
-#$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['mask'] = "EXT:$packageKey/Configuration/Yaml/RTE/mask.yaml";
-##$GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['news'] = "EXT:$packageKey/Configuration/Yaml/RTE/news.yaml";
 
 /***************
  * Define TypoScript as content rendering template.

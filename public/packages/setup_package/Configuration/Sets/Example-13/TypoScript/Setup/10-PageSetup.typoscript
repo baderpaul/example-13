@@ -9,6 +9,7 @@ page {
         }
         variables {
             colPos0 < styles.content.get
+            colPos0.orderBy = sorting
             colPos0.select.where = colPos = 0
 
             colPos1 < styles.content.get
