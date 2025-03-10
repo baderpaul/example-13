@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f9133cc51eadc27a3d32d5ad38fdb567",
+    "content-hash": "cb5ca0586d4a77b1045b672e74f92670",
     "packages": [
         {
             "name": "autodudes/ai-suite",
@@ -2124,6 +2124,44 @@
                 "source": "https://github.com/Masterminds/html5-php/tree/2.9.0"
             },
             "time": "2024-03-31T07:05:07+00:00"
+        },
+        {
+            "name": "mittwald/mw-cache-widget",
+            "version": "3.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mittwald/typo3-mw-cache-widget.git",
+                "reference": "cc02ee8a090ddd8c01c96e3a11cb89795ba7f451"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mittwald/typo3-mw-cache-widget/zipball/cc02ee8a090ddd8c01c96e3a11cb89795ba7f451",
+                "reference": "cc02ee8a090ddd8c01c96e3a11cb89795ba7f451",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=8.1.0",
+                "typo3/cms-core": "^12.4 || ^13.4",
+                "typo3/cms-dashboard": "^12.4 || ^13.4"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "mw_cache_widget"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Mittwald\\CacheStatsWidget\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "description": "Dashboard widget that displays the current memory usage of OpCodeCache or APCu",
+            "support": {
+                "issues": "https://github.com/mittwald/typo3-mw-cache-widget/issues",
+                "source": "https://github.com/mittwald/typo3-mw-cache-widget/tree/3.1.0"
+            },
+            "time": "2025-03-04T12:59:15+00:00"
         },
         {
             "name": "nikic/php-parser",

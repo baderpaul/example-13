@@ -3,8 +3,8 @@
     <div id="accordion-{data.uid}" class="accordion">
         <f:for each="{data.accordionsets}" as="accordionset" iteration="i">
             <div class="accordion-item">
-                <h2 class="accordion-header mb-0 d-block">
-                    <button class="accordion-button fs-5
+                <h2 class="accordion-header mb-0 d-block fs-5">
+                    <button class="accordion-button bg-primary text-white
                     {f:if(condition:'{data.choose-icon} == two', then: ' accordion-button-plus-minus')} 
                     {f:if(condition:i.isFirst, then: ' collapsed')}" type="button" data-bs-toggle="collapse"
                         data-bs-target="#accordion-{i.index}"

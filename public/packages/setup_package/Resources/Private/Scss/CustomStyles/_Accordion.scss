@@ -6,17 +6,10 @@
     display: none;
 }
 
-.accordion-button {
-    font-size: 1.875rem;
-    color: $white;
-    background-color: $primary;
-}
-
 .accordion-button:focus:not(:focus-visible) {
     box-shadow: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.075);
 }
-
 
 .accordion-body{
     h2 {
@@ -71,8 +64,10 @@ details {
   
   details.accordion-item:not([open]) .accordion-button::after {
     background-image: var(--bs-accordion-btn-active-icon);
+    background-position: center center;
     transform: unset;
   }
+  
   details.accordion-item .accordion-button,
   details.accordion-item[open] .accordion-button {
     box-shadow: none;
@@ -81,12 +76,13 @@ details {
   details.accordion-item[open] .accordion-button::after {
     background-image: var(--bs-accordion-btn-icon);
     transform: var(--bs-accordion-btn-icon-transform);
+    background-position: center center;
   }
 
   summary {
     border-color: var(--bs-accordion-border-color);
   }
-  
+ 
   /* Hide the default disclosure triangle on Safari */
   summary.accordion-button::-webkit-details-marker {
     display: none;
@@ -102,4 +98,9 @@ details {
 
   details[open] :is(summary.accordion-button-plus-minus-dialog)::after {
     background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' font-weight='bold' fill='white'> <path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>") !important;
+  }
+
+  .accordion-header .accordion-button,
+  summary .accordion-button{
+    font-size: inherit;
   }

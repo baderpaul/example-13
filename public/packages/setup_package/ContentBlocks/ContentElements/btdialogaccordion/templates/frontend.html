@@ -3,8 +3,8 @@
     <div class="accordion border border-dark rounded-top rounded-bottom">
         <f:for each="{data.accordiondetailsset}" as="accordiondetailset" iteration="i">
         <details class="accordion-item border-0" role="group" name="accordion-{data.uid}"  {f:if(condition:i.isFirst, then: ' open')} >
-          <summary class="accordion-button  fs-5 border-bottom border-dark {f:if(condition:i.isLast, then: ' border-bottom-0')} {f:if(condition:'{data.choose-icon} == two', then: ' accordion-button-plus-minus-dialog')} "  role="button" aria-label="Weiter lesen - hier klicken">
-            <button class="accordion-header accordion-button p-0 d-block">
+          <summary class="accordion-button  fs-5 border-bottom border-dark {f:if(condition:i.isLast, then: ' border-bottom-0')} {f:if(condition:'{data.choose-icon} == two', then: ' accordion-button-plus-minus-dialog')} " >
+            <button class="accordion-header user-select-none d-block text-start w-100 bg-primary text-white border-0" role="button" aria-label="Weiter lesen - hier klicken">
                 {accordiondetailset.heading -> f:format.nl2br()}
             </button>
           </summary>

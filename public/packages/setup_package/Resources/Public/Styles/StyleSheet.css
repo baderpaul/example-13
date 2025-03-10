@@ -20205,11 +20205,6 @@ input:-webkit-autofill:active {
 .accordion-header::after {
   display: none; }
 
-.accordion-button {
-  font-size: 1.875rem;
-  color: #ffffff;
-  background-color: #0d6efd; }
-
 .accordion-button:focus:not(:focus-visible) {
   box-shadow: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.075); }
@@ -20253,6 +20248,7 @@ details.accordion-item:not([open]):last-of-type .accordion-button {
 
 details.accordion-item:not([open]) .accordion-button::after {
   background-image: var(--bs-accordion-btn-active-icon);
+  background-position: center center;
   transform: unset; }
 
 details.accordion-item .accordion-button,
@@ -20261,7 +20257,8 @@ details.accordion-item[open] .accordion-button {
 
 details.accordion-item[open] .accordion-button::after {
   background-image: var(--bs-accordion-btn-icon);
-  transform: var(--bs-accordion-btn-icon-transform); }
+  transform: var(--bs-accordion-btn-icon-transform);
+  background-position: center center; }
 
 summary {
   border-color: var(--bs-accordion-border-color); }
@@ -20278,6 +20275,10 @@ summary.accordion-button:focus:not(:focus-visible) {
 
 details[open] :is(summary.accordion-button-plus-minus-dialog)::after {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' font-weight='bold' fill='white'> <path fill-rule='evenodd' d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8'/></svg>") !important; }
+
+.accordion-header .accordion-button,
+summary .accordion-button {
+  font-size: inherit; }
 
 /* overwrite default style from bootstrap 
    .tab-content > .active  --> display:block 
