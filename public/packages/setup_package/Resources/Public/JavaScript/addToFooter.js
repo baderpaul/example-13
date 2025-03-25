@@ -21,7 +21,6 @@ document.addEventListener("DOMContentLoaded", function(){
     }
   });
 
-
     /*
      * hide/show navigation on landingpage
     
@@ -48,6 +47,8 @@ document.addEventListener("DOMContentLoaded", function(){
     }
        */
 }); 
+
+// Accordion Summary - Details
 
 class Accordion {
   constructor(i) {
@@ -106,3 +107,9 @@ class Accordion {
 document.querySelectorAll("details").forEach((i) => {
   new Accordion(i);
 });
+
+// News Overlay tx_news cards view
+
+document.querySelector(".card-news").ontouchstart = function (e) {
+    document.querySelector(".card-news .news-overlay").classList.toggle("news-overlay-touch");
+}

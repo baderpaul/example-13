@@ -7,10 +7,9 @@ dependencies:
   - t3example/setup-package
   - typo3/fluid-styled-content
   - georgringer/news
-  - georgringer/news-twb5
   - typo3/seo-sitemap
-  - t3example/setupnews
   - typo3/form
+  - t3example/setupnews
 errorHandling:
   -
     errorCode: 404
@@ -48,12 +47,51 @@ routeEnhancers:
     suffix: /
     map:
       sitemap.xml: 1533906435
+  NewsList:
+    type: Extbase
+    limitToPages:
+      - 6
+      - 14
+      - 19
+      - 20
+    extension: News
+    plugin: Pi1
+    routes:
+      -
+        routePath: '/page/{page}'
+        _controller: 'News::list'
+        _arguments:
+          page: currentPage       
+      -
+        routePath: '/{news-title}'
+        _controller: 'News::detail'
+        _arguments:
+          news-title: news
+    defaultController: 'News::list'
+    defaults:
+      page: ''
+    requirements:
+      page: \d+
+    aspects:
+      news-title:
+        type: PersistedPatternMapper
+        tableName: tx_news_domain_model_news
+        routeFieldPattern: '^(?P<path_segment>.+)-(?P<uid>\d+)$'
+        routeFieldResult: '{path_segment}-00{uid}'
+      page:
+        type: StaticRangeMapper
+        start: '1'
+        end: '999'
+      page-label:
+        type: LocaleModifier
+        default: page
+        localeMap:
+          -
+            locale: 'de_DE.*'
+            value: seite
 routes:
   -
     route: robots.txt
     type: staticText
-    content: |
-      User-agent: *
-      Allow: /
-      Sitemap: https://example-13.ddev.site/sitemap.xml
+    content: "User-agent: *\nAllow: /\nSitemap: https://example-13.ddev.site/sitemap.xml\n"
 websiteTitle: 'Example T3-13'

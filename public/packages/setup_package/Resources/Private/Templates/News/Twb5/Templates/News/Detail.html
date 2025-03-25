@@ -10,6 +10,7 @@
 -->
 
 <f:section name="content">
+	<f:asset.script src="EXT:setup_package/Resources/Public/JavaScript/newDetailBackLink.js" identifier="news-back-link"  async="true" useNonce="1" />
 	<f:if condition="{newsItem}">
 		<f:render section="headline" arguments="{_all}" />
 		<n:format.nothing>
@@ -84,14 +85,6 @@
 
 <f:section name="headline">
 	<h1 itemprop="headline" class="mb-25 mb-md-30 d-block single-headline">{newsItem.title}</h1>
-	<f:asset.css identifier="single-headline">
-		.single-headline {
-			line-height: 1;
-		}
-		.single-headline::after {
-			border: none;
-		}
-	</f:asset.css>
 </f:section>
 
 <f:section name="inner-content">
@@ -114,13 +107,15 @@
 			<f:format.html>{newsItem.bodytext}</f:format.html>
 		</div>
 	</n:renderMedia>
-
-	<f:if condition="{settings.backPid}">
+	<a class="btn btn-primary mb-3 news-backlink-wrap" href="javascript:history.go(-1)">
+		<f:translate key="back-link" />
+	  </a>
+	<f:comment><f:if condition="{settings.backPid}">
 		<!-- Link Back -->
 		<f:link.page class="btn btn-primary mb-3" pageUid="{settings.backPid}">
 			<f:translate key="back-link" />
 		</f:link.page>
-	</f:if>
+	</f:if></f:comment>
 
 	<f:if condition="{settings.detail.showSocialShareButtons}">
 		<f:comment>

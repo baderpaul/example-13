@@ -25,6 +25,11 @@ mutations:
     sources:
       - "'unsafe-eval'"
 
+  - mode: "set"
+    directive: "style-src-elem"
+    sources:
+      - "'nonce-proxy'"
+
   - mode: "extend"
     directive: "font-src"
     sources:

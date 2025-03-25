@@ -5,100 +5,39 @@
 <f:comment><!--
 	=====================
 		Templates/News/List.html
---></f:comment>
-
+--></f:comment> 
+//<button class="view-more-button">View more</button>
 <f:section name="content">
-<f:if condition="{news}">
+<f:if condition="{news}">   
 	<f:then>
-        <f:if condition="{settings.templateLayout} == 1">
+        <f:if condition="({settings.templateLayout} == 1) || ({settings.templateLayout} == 2)">
                 <f:then>
-                <div class="news-list-view {f:if(condition: '{settings.templateLayout} == 1', then: 'row row-cols-1 row-cols-sm-2 row-cols-lg-4 gy-25 gx-0 g-md-30')}" id="news-container-{contentObjectData.uid}">
                     <f:if condition="{settings.hidePagination}">
                         <f:then>
+                            <div class="news-list-view row row-cols-1 row-cols-md-2 row-cols-lg-4 gy-25 gx-0 g-md-30" id="news-container-{contentObjectData.uid}">
                                 <f:for each="{news}" as="newsItem" iteration="iterator">
                                     <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
                                 </f:for>
-                                <f:asset.script identifier="news-card-list-js">
-                                                document.querySelector(".card-news").ontouchstart = function (e) {
-                                                document.querySelector(".card-news .news-overlay").classList.toggle("news-overlay-touch");
-                                            }
-                                        </f:asset.script>                           
-                                        <f:asset.css identifier="news-card-list-css" priority="true">
-                                            .news-overlay,
-                                            .news-overlay-touch {
-                                                position: absolute;
-                                                bottom: 100%;
-                                                left: .625rem;
-                                                right: .625rem;
-                                                overflow: hidden;
-                                                width: calc(100% - 1.25rem);
-                                                height:0;
-                                                transition: .2s ease;
-                                                z-index: 1020;
-                                            }
-                                            @media (min-width: 768px) { 
-                                                .news-overlay,
-                                                .news-overlay-touch {
-                                                    left: .9375rem;
-                                                    right: .9375rem;
-                                                    width: calc(100% - 1.875rem);
-                                                }
-                                            }
-                                            
-                                            .card-news:hover .news-overlay,
-                                            .card-news .news-overlay-touch {
-                                                bottom: 0;
-                                                left: .625rem;
-                                                right: .625rem;
-                                                height: 100%;
-                                                z-index: 1020;
-                                            }
-                                            @media (min-width: 768px) { 
-                                                .card-news:hover .news-overlay,
-                                                .card-news .news-overlay-touch {
-                                                    left: .9375rem;
-                                                    right: .9375rem;
-                                                }
-                                            }
-
-                                            .card-news .news-overlay h5,
-                                            .card-news .news-overlay-touch h5 {
-                                                display: none;
-                                            }
-
-                                            .card-news:hover .news-overlay h5,
-                                            .card-news .news-overlay-touch h5 {
-                                                color: $white;
-                                                position: absolute;
-                                                display: block;
-                                                top: 50%;
-                                                left: 50%;
-                                                transform: translate(-50%, -50%);
-                                                text-align: center;
-                                                }
-
-                                            .card-news:hover .news-overlay h5:after,
-                                            .card-news .news-overlay-touch h5:after {
-                                                    border: none;
-                                                }
-                                        </f:asset.css>
-
-                        </f:then>
+                            </div>
+                            <f:render partial="List/MoreLink" />
+                        </f:then>                      
                         <f:else>
-                            <f:if condition="{settings.list.paginate.insertAbove}">
+                            <f:if condition="{settings.list.paginate.insertAbove} && ({settings.templateLayout} == 1)">
                                 <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
                             </f:if>
+                            <div class="news-list-view row row-cols-1 row-cols-sm-2 row-cols-lg-4 gy-25 gx-0 g-md-30" id="news-container-{contentObjectData.uid}">
                                 <f:for each="{pagination.paginator.paginatedItems}" as="newsItem" iteration="iterator">
-                                    <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
+                                 <f:render partial="List/Item" arguments="{newsItem: newsItem,settings:settings,iterator:iterator}" />
                                 </f:for>
-                            <f:if condition="{settings.list.paginate.insertBelow}">
+                            </div>
+                            <f:render partial="List/MoreLink" />
+                            <f:if condition="{settings.list.paginate.insertBelow} && ({settings.templateLayout} == 1)">
                                 <f:render partial="List/Pagination" arguments="{pagination: pagination.pagination, paginator: pagination.paginator}" />
-                            </f:if>
-                        </f:else>
+                            </f:if>                       
+                        </f:else>                  
                     </f:if>
-                </div>
-        </f:then>       
-        <f:else>          
+               </f:then>
+               <f:else>          
                 <f:if condition="{settings.hidePagination}">
                     <f:then>
                         <div class="news-list-view">
@@ -123,8 +62,9 @@
                         </f:if>
                     </f:else>
                 </f:if>
-        </f:else>
-        </f:if>
+        </f:else>    
+       
+        </f:if> 
 		</f:then>
 		<f:else>
 			<div class="alert ">

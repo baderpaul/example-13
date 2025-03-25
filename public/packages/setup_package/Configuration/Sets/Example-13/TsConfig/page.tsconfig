@@ -1,8 +1,7 @@
 RTE.default.preset = custom
 #RTE.default.proc.overruleMode = default
 #RTE.default.proc.allowTagsOutside = hr, header, div
-#RTE.config.tt_content.tx_mask_content.types.mask_bticonteaser.preset = mask
-#RTE.config.tx_news_domain_model_news.bodytext.preset = news
+RTE.config.tx_news_domain_model_news.bodytext.preset = simple
 
 # Show the content element wizard with tabs (for consistency)
 mod.wizards.newContentElement.renderMode = tabs
@@ -123,7 +122,7 @@ TCEMAIN.table.pages {
 #-------------------------------------------------------------------------------
 #    clear cache for new created newsreccords
 #-------------------------------------------------------------------------------
-#TCEMAIN.clearCacheCmd = 213
+TCEMAIN.clearCacheCmd = 15
 
 #-------------------------------------------------------------------------------
 #    delete folder tab
@@ -139,16 +138,17 @@ TCEMAIN.linkHandler.tx_news {
     label = Mit Newsartikel verlinken
     configuration {
         table = tx_news_domain_model_news
-        storagePid = 213
+        storagePid = 15
         hidePageTree = 0
     }
     scanAfter = page
-
-#tx_news.templateLayouts {
-#        1 = Listansicht Card
-#        2 = Listansicht bei Detailansicht
-#}
 }
+
+tx_news.templateLayouts  {
+    1 = Cards mit Pagination
+    2 = Cards mit mehr laden Button
+}
+
 TCAdefaults {
     tt_content {
         imagecols = 1

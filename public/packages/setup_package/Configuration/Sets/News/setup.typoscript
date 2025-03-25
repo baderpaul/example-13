@@ -3,21 +3,18 @@ plugin.tx_news {
 
     view {
         templateRootPaths {
-            0 = EXT:news/Resources/Private/Templates/
-            1 = EXT:{$extKey}/Resources/Private/Templates/News/Templates/
-            2 = EXT:{$extKey}/Resources/Private/Templates/News/Twb5/Templates/
+            0 = EXT:news/Resources/Private/Templates/Styles/Twb5/Templates/
+            20 = EXT:{$extKey}/Resources/Private/Templates/News/Twb5/Templates/
         }
 
         partialRootPaths {
-            0 = EXT:news/Resources/Private/Partials/
-            1 = EXT:{$extKey}/Resources/Private/Templates/News/Partials/
-            2 = EXT:{$extKey}/Resources/Private/Templates/News/Twb5/Partials/
+            0 = EXT:news/Resources/Private/Templates/Styles/Twb5/Partials/
+            20 = EXT:{$extKey}/Resources/Private/Templates/News/Twb5/Partials/
         }
 
         layoutRootPaths {
-            0 = EXT:news/Resources/Private/Layouts/
-            1 = EXT:{$extKey}/Resources/Private/Templates/News/Layouts/
-            2 = EXT:{$extKey}/Resources/Private/Templates/News/Twb5/Layouts/
+            0 = EXT:news/Resources/Private/Templates/Styles/Twb5/Layouts/
+            20 = EXT:{$extKey}/Resources/Private/Templates/News/Twb5/Layouts/
         }
 
         widget.GeorgRinger\News\ViewHelpers\Widget\PaginateViewHelper.templateRootPath = EXT:{$extKey}/Resources/Private/Templates/Plugins/News/Styles/Twb/Templates/
@@ -30,7 +27,7 @@ plugin.tx_news {
         cssFile >
         overrideFlexformSettingsIfEmpty = singleNews,cropMaxCharacters,dateField,timeRestriction,timeRestrictionHigh,archiveRestriction,orderBy,orderDirection,backPid,listPid,startingpoint,recursive,list.paginate.itemsPerPage,list.paginate.templatePath
         #Displays a dummy image if the news have no media items
-        displayDummyIfNoMedia = 0
+        displayDummyIfNoMedia = 1
         # adjust the last news as default for detailview if no id given
         #useStdWrap = singleNews
         #singleNews.stdWrap.cObject = CONTENT
@@ -108,8 +105,8 @@ plugin.tx_news {
             media {
                 #image.width = 200
                 
-                image >
-                image.maxWidthCard = 480
+                #image >
+                image.maxWidthCard = 580
                 image.maxWidthListDetail = 170
 
                 dummyImage = EXT:news/Resources/Public/Images/dummy-preview-image.png
@@ -118,7 +115,7 @@ plugin.tx_news {
             # Paginate configuration.
             paginate {
                 class = GeorgRinger\NumberedPagination\NumberedPagination
-                itemsPerPage = 3
+                itemsPerPage = 4
                 insertAbove = 0
                 insertBelow = 1
                 #prevNextHeaderTags = 1

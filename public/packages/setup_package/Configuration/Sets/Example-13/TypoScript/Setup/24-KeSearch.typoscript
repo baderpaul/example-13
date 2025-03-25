@@ -28,8 +28,8 @@ plugin.tx_kesearch_pi3 {
 lib.searchbox = TEXT
 lib.searchbox.value (
    <form method="get" aria-label="Suche" id="form_kesearch_searchfield" name="form_kesearch_searchfield" action="/suchergebnisse/">
-     <input type="text" id="ke_search_searchfield_sword" name="tx_kesearch_pi1[sword]" placeholder="Ihr Suchbegriff" />
-     <input type="submit" id="ke_search_searchfield_submit" alt="Suche starten" />
+     <input type="text" id="ke_search_searchfield_sword" name="tx_kesearch_pi1[sword]" aria-labelledby="ke_search_searchfield_submit" placeholder="Ihr Suchbegriff" title="Sucheingabefeld"/>
+     <button type="submit" id="ke_search_searchfield_submit" alt="Suche starten" />Suche</button>
    </form>
 )
 

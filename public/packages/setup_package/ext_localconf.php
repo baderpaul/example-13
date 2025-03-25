@@ -4,22 +4,18 @@ defined('TYPO3') or die();
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 $packageKey = "setup_package";
-/***************
- * for ext mask
- */
-#$GLOBALS['TYPO3_CONF_VARS']['SYS']['features']['overrideSharedFields'] = true;
 
 /***************
  * overrite default news files
  */
-#$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:news/Resources/Private/Language/locallang.xlf'][] = "EXT:$packageKey/Resources/Private/Language/News/locallang.xlf";
-#$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['de']['EXT:news/Resources/Private/Language/locallang.xlf'][] = "EXT:$packageKey/Resources/Private/Language/News/de.locallang.xlf";
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:news/Resources/Private/Language/locallang.xlf'][] = "EXT:$packageKey/Resources/Private/Language/News/locallang.xlf";
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['de']['EXT:news/Resources/Private/Language/locallang.xlf'][] = "EXT:$packageKey/Resources/Private/Language/News/de.locallang.xlf";
 
 /***************
  * ke_search
  */
-#$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf'][] = "EXT:$packageKey/Resources/Private/Language/KeSearch/locallang_searchbox.xml";
-#$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:ke_search/Resources/Private/Language/locallang_resultlist.xlf'][] = "EXT:$packageKey/Resources/Private/Language/KeSearch/locallang_resultlist.xml";
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:ke_search/Resources/Private/Language/locallang_searchbox.xlf'][] = "EXT:$packageKey/Resources/Private/Language/KeSearch/locallang_searchbox.xml";
+$GLOBALS['TYPO3_CONF_VARS']['SYS']['locallangXMLOverride']['EXT:ke_search/Resources/Private/Language/locallang_resultlist.xlf'][] = "EXT:$packageKey/Resources/Private/Language/KeSearch/locallang_resultlist.xml";
 
 /***************
  * overrite default cookie consent files
@@ -36,9 +32,9 @@ $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['custom'] = "EXT:$packageKey/Confi
 if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['simple'] )) {
     $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['simple'] = "EXT:$packageKey/Configuration/Sets/Example-13/RTE/simple.yaml";
     }
-    if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['iconteaser'] )) {
-        $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['iconteaser'] = "EXT:$packageKey/Configuration/Sets/Example-13/RTE/iconteaser.yaml";
-        }
+if (empty($GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['iconteaser'] )) {
+    $GLOBALS['TYPO3_CONF_VARS']['RTE']['Presets']['iconteaser'] = "EXT:$packageKey/Configuration/Sets/Example-13/RTE/iconteaser.yaml";
+     }
 
 /***************
  * Define TypoScript as content rendering template.

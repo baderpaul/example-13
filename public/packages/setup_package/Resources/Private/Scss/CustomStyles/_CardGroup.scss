@@ -1,6 +1,6 @@
 /*
   Fix for gutter padding left & right - remove it.
-  Gap will works for cards in Bootstrap 6 not jet.
+  Gap will works for cards in Bootstrap 6 but not jet.
 */
 @include media-breakpoint-down(sm) {
     .cardgroup.row-cols-1>.col {
