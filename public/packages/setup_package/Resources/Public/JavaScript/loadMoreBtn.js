@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   lessButton.style.display = "none"; // Hide "Less" button initially
 
-
   moreButton.addEventListener("click", function () {
     lessButton.style.display = "inline-block";
 
@@ -30,9 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-
   lessButton.addEventListener("click", function () {
-    shownItems = itemsPerPage; // Reset shown items to the initial count
+    shownItems -= itemsPerPage; // Decrement shown items by itemsPerPage
+
+    if (shownItems < itemsPerPage) {
+      shownItems = itemsPerPage; // Minimum shown items should be itemsPerPage
+      lessButton.style.display = "none"; // Hide less button if we're at the beginning
+    }
 
     for (let i = 0; i < cardElements.length; i++) {
       if (i < shownItems) {
@@ -44,10 +47,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     }
 
-    moreButton.style.display = cardElements.length > shownItems ? "inline-block" : "none"; // Show moreButton if needed
-    lessButton.style.display = "none";
+    moreButton.style.display =
+      cardElements.length > shownItems ? "inline-block" : "none"; // Show moreButton if needed
   });
-
 
   // Hilfsfunktion für Fade-In-Animation
   function animateFadeIn(element, duration) {
