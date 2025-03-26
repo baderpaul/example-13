@@ -46,9 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         });
       }
     }
-
-    moreButton.style.display =
-      cardElements.length > shownItems ? "inline-block" : "none"; // Show moreButton if needed
+    moreButton.style.display = cardElements.length > shownItems ? "inline-block" : "none"; // Show moreButton if needed
   });
 
   // Hilfsfunktion für Fade-In-Animation

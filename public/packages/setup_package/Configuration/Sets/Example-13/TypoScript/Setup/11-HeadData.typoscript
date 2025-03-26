@@ -24,7 +24,8 @@ page.headerData.8 {
 }
 
 #page.headerData.10 < lib.preConnect
-#page.headerData.11 < lib.preLoad
+page.headerData.11 < lib.preLoad
+page.headerData.11.insertData = 1
 
 //page.headerData.13 < lib.preImage
 page.includeCSS {

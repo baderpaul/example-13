@@ -110,6 +110,6 @@ document.querySelectorAll("details").forEach((i) => {
 
 // News Overlay tx_news cards view
 
-document.querySelector(".card-news").ontouchstart = function (e) {
-    document.querySelector(".card-news .news-overlay").classList.toggle("news-overlay-touch");
-}
+//document.querySelector(".card-news").ontouchstart = function (e) {
+//    document.querySelector(".card-news .news-overlay").classList.toggle("news-overlay-touch");
+//}
