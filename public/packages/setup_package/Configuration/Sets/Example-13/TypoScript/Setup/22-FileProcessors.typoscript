@@ -1,0 +1,20 @@
+page.10.dataProcessing {
+    # backroundimage for a page from media
+    60 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    60 {
+        references {
+            fieldName = media
+            table = pages
+        }
+        as = backgroundimage
+    }
+
+    # if media emty slide up
+    61 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+    61 {
+        references {
+            data = levelmedia: -1, slide
+        }
+        as = backgroundimageslide
+    }
+}

@@ -10,3 +10,7 @@ var/
 /vendor/*
 !/vendor/t3example/
 config/system/
+node_modules/
+webpackconfig.js
+package-lock.json
+package.json

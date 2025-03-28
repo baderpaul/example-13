@@ -1778,16 +1778,16 @@
         },
         {
             "name": "ichhabrecht/content-defender",
-            "version": "3.5.2",
+            "version": "3.5.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/IchHabRecht/content_defender.git",
-                "reference": "f75aacd81e413748f40f39f1eb459e9d76ee756f"
+                "reference": "dab78e79e3c53f13924a82ae9bbfa9141989d37d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/IchHabRecht/content_defender/zipball/f75aacd81e413748f40f39f1eb459e9d76ee756f",
-                "reference": "f75aacd81e413748f40f39f1eb459e9d76ee756f",
+                "url": "https://api.github.com/repos/IchHabRecht/content_defender/zipball/dab78e79e3c53f13924a82ae9bbfa9141989d37d",
+                "reference": "dab78e79e3c53f13924a82ae9bbfa9141989d37d",
                 "shasum": ""
             },
             "require": {
@@ -1844,9 +1844,9 @@
             ],
             "support": {
                 "issues": "https://github.com/IchHabRecht/content_defender/issues",
-                "source": "https://github.com/IchHabRecht/content_defender/tree/3.5.2"
+                "source": "https://github.com/IchHabRecht/content_defender/tree/3.5.3"
             },
-            "time": "2025-02-16T13:03:18+00:00"
+            "time": "2025-03-27T00:37:47+00:00"
         },
         {
             "name": "limesoda-com/ls-csp-widget",

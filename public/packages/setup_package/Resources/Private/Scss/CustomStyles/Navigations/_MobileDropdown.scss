@@ -40,7 +40,7 @@
     .toggle-menu .dropdown-toggle {
         height: 1.25rem;
         position: absolute;
-        right: 0;
+        right: 50px;
         width: 1.25rem;
         line-height: $line-height-sm;
     }
@@ -48,7 +48,7 @@
     .toggle-menu .dropdown-toggle:after {
         display: block;
         border: none;
-        /*font-size: $font-size-icon;*/
+        font-size: $font-size-icon;
         text-align: center;
     }
 
