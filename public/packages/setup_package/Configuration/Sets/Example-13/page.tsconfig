@@ -1,2 +1,2 @@
 @import './TsConfig/*.tsconfig'
-#@import 'EXT:setup_package/Configuration/TsConfig/Page/CropVariants/*.tsconfig'
+@import './TsConfig/Page/CropVariants/*.tsconfig'

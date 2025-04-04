@@ -1,10 +1,10 @@
 document.addEventListener("DOMContentLoaded", function(){
      /*
      * activate menu
-     */
+     
   new MetisMenu("#menu", {
     triggerElement: 'span'
-    });
+    });*/
 
     /*
      * activate lightbox

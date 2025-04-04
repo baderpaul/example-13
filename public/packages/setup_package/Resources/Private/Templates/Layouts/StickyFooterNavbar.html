@@ -1,10 +1,24 @@
 <html
 xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
   data-namespace-typo3-fluid="true">
+  <div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+    <div class="offcanvas-header">
+      <button class="navbar-toggler d-inline-block position-absolute top-20px end-20px" type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+        <span class="toggle-button close">
+          <span class="icon-bar bg-primary top-bar"></span>
+          <span class="icon-bar bg-primary middle-bar"></span>
+          <span class="icon-bar bg-primary bottom-bar"></span>
+      </span>
+      </button>
+    </div>
+    <div class="offcanvas-body d-flex justify-content-center">
+      <f:render partial="Navigation/Mega" arguments="{_all}" />
+    </div>
+  </div>
 <div name="top" class="d-flex flex-column h-100">
   <header class="bg-white">
     <div class="container-fluid px-0">
-      <div class="navbar navbar-expand-lg w-100">
+      <div class="navbar w-100">
           <div class="container-fluid align-items-start align-items-lg-center justify-content-start justify-content-lg-between px-0" >
             <f:comment><f:render partial="Header/Logo" arguments="{_all}"/>        
              <f:if condition="{data.backend_layout} == 'pagets__default_onepage'">
@@ -14,8 +28,9 @@ xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
             <f:else>
               <f:render partial="Navigation/Mega" arguments="{_all}" />
             </f:else>
-          </f:if></f:comment>  
+          </f:if>
           <f:render partial="Navigation/Mega" arguments="{_all}" />
+        </f:comment>  
          <f:cObject typoscriptObjectPath="lib.searchbox" />
           <f:render partial="Navigation/ResponsiveToggler" arguments="{_all}" />
         </div>

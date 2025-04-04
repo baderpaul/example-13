@@ -41,6 +41,17 @@ page.10.dataProcessing {
         levels = 10
         includeSpacer = 0
         as = menuMainMobileOverlap
+    } 
+
+#Topnav Offcanvas
+    12 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+    12 {
+        special = directory
+        special.value = 1
+        expandAll = 1
+        levels = 10
+        includeSpacer = 0
+        as = menuOffcanvas
     }    
 
 #Sidenav

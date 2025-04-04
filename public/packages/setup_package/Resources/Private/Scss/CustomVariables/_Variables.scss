@@ -175,7 +175,7 @@ $styles-content-textmedia-rowSpacing: ($spacer * .0625);
 $space-between-text-image: ($spacer * .625);
 $space-ce-frame: ($spacer * 1.875);
 $styles-content-textmedia-textMarginResponsive: (0);
-$styles-content-textmedia-ce-gallerySingleImageWidth: (50%);
+//$styles-content-textmedia-ce-gallerySingleImageWidth: (50%);
 $styles-content-textmedia-ce-galleryMultiImageWidthInText: (50%);
 $styles-content-textmedia-ce-galleryMultiImageWidth: (100%);
 // end
@@ -413,4 +413,18 @@ $input-border-color: $gray-900;
 $input-focus-border-color: $primary;
 
 // Progress
-$progress-font-size: 0.75rem;                
+$progress-font-size: 0.75rem;  
+
+// Offcanvas
+
+// scss-docs-start offcanvas-variables
+//$offcanvas-padding-y:               $modal-inner-padding !default;
+//$offcanvas-padding-x:               $modal-inner-padding !default;
+$offcanvas-horizontal-width:        400px !default;
+$offcanvas-vertical-height:         100vh;
+$offcanvas-transition-duration:     .3s !default;
+$offcanvas-bg-color:                var(--#{$prefix}body-bg) !default;
+$offcanvas-color:                   var(--#{$prefix}body-color) !default;
+//$offcanvas-box-shadow:              $modal-content-box-shadow-xs !default;
+//$offcanvas-backdrop-bg:             $modal-backdrop-bg !default;
+//$offcanvas-backdrop-opacity:        $modal-backdrop-opacity !default;

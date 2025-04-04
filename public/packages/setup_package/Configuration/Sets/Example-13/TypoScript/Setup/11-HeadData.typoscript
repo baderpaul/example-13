@@ -44,10 +44,10 @@ page.includeJSFooter {
     bootstrap.defer= 1
     mobiledropdown = EXT:{$extKey}/Resources/Public/Contrib/metismenujs/dist/metismenujs.js
     mobiledropdown.defer = 1
-    lazysizes = https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js
-    lazysizes.excludeFromConcatenation = 1
-    lazysizes.external = 1
-    lazysizes.defer = 1
+    //lazysizes = https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js
+    //lazysizes.excludeFromConcatenation = 1
+    //lazysizes.external = 1
+    //lazysizes.defer = 1
     javascriptfooter = EXT:{$extKey}/Resources/Public/JavaScript/addToFooter.js
     javascriptfooter.defer = 1
     lightbox = EXT:{$extKey}/Resources/Public/Contrib/glightbox/dist/js/glightbox.min.js

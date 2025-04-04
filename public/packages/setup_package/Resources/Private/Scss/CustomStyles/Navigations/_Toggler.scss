@@ -1,3 +1,4 @@
+/* Toggler for Flyoutmenu
 @include media-breakpoint-down(lg) {
   .navbar-toggler {
     top: 1.25rem;
@@ -40,5 +41,44 @@
       transform: rotate(-45deg);
       transform-origin: 10% 90%;
     }
+  }
+}*/
+
+.navbar-toggler .toggle-button .icon-bar,
+.toggle-button.close  {
+  display: block;
+  width: 25px;
+  height: 4px;
+  border-radius: 1px;
+  transition: all 0.3s;
+  + .icon-bar {
+    margin-top: 2px;
+  }
+}
+
+.navbar-toggler .toggle-button {
+  padding: 0;
+  .top-bar {
+    transform: rotate(0);
+  }
+  .middle-bar {
+    opacity: 1;
+  }
+  .bottom-bar {
+    transform: rotate(0);
+  }
+}
+
+.toggle-button.close {
+  .top-bar {
+    transform: rotate(45deg);
+    transform-origin: 20% 20%;
+  }
+  .middle-bar {
+    opacity: 0;
+  }
+  .bottom-bar {
+    transform: rotate(-45deg);
+    transform-origin: 10% 90%;
   }
 }

@@ -2,8 +2,10 @@
 @import "MobileDropdown";
 
 @include media-breakpoint-up(lg) {
-  .toggle-menu {
+  .menuOffcanvas {
+  //.toggle-menu { Flyout Menu
     a {
+      font-size: $h3-font-size; 
       &:hover {
         text-decoration: none;
       }
@@ -24,11 +26,12 @@
         transform-origin: bottom left;
       }
     }
-    font-size: $font-size-nav;
+    //font-size: $h2-font-size; // Remove 
+    //font-size: $font-size-nav; Font Size for Flyout Menu
     ul {
-      display: none;
-      font-size: $font-size-nav-sub;
+      //display: none;
       animation: fadeIn 900ms;
+      font-size: $font-size-nav;
       a {
         font-weight: 900;
         &:hover {
@@ -55,6 +58,7 @@
       a {
         text-decoration: none;
         font-weight: 400;
+        font-size: $font-size-nav; // Remove 
         &::after {
           transform: none;
           transition: none;

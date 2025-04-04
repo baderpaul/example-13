@@ -34,18 +34,6 @@ ExtensionManagementUtility::addToAllTCAtypes(
     'after:nav_title'
 );
 /*
-ExtensionManagementUtility::registerPageTSConfigFile(
-    $package,
-    'Configuration/TSconfig/Page/TSBeLayouts.tsconfig',
-    'Backend Layouts (Templates, Crop Variants)'
-);
-
-ExtensionManagementUtility::registerPageTSConfigFile(
-    $package,
-    'Configuration/TSconfig/Page/Page.tsconfig',
-    'Backend settings'
-);
-
 $GLOBALS['TCA']['pages']['types']['1']['columnsOverrides']['media']['config']['overrideChildTca']['columns']['crop'] = [
     'config' => [
         'cropVariants' => [

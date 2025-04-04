@@ -1,4 +1,41 @@
-<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+   <f:comment>
+<f:media class="image-embed-item" 
+file="{file}" width="{dimensions.width}" 
+height="{dimensions.height}" 
+alt="{file.alternative}" 
+title="{file.title}" 
+loading="{settings.media.lazyLoading}" 
+decoding="{settings.media.imageDecoding}" />  </f:comment>
+
+
+    <picture class="image-embed-item">
+        <source
+            srcset="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: '350', fileExtension:'webp', fileExtension:'webp', cropVariant: 'desktop')}"
+            media="(min-width: 1200px)">
+        <source
+            srcset="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: '250', fileExtension:'webp', cropVariant: 'desktop')}, {f:uri.image(image: file, treatIdAsReference: 1, fileExtension:'webp', maxWidth: '250', cropVariant: 'desktop')} 2x"
+            media="(min-width: 992px)">
+        <source
+            srcset="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: '350', fileExtension:'webp', cropVariant: 'tablet')}, {f:uri.image(image: file, treatIdAsReference: 1, fileExtension:'webp', maxWidth: '350', cropVariant: 'tablet')} 2x"
+            media="(min-width: 577px)">
+        <source
+            srcset="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: '550', fileExtension:'webp', cropVariant: 'smartphone')}, {f:uri.image(image: file, treatIdAsReference: 1, fileExtension:'webp', maxWidth: '550', cropVariant: 'smartphone')} 2x"
+            media="(max-width: 576px)">
+        <f:comment>Fallback</f:comment>
+        <img class="img-fluid"
+            src="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: settings.maxImgWidth, cropVariant: 'default', fileExtension:'webp')}"
+            alt="{file.alternative}" title="{file.title}" loading="{settings.media.lazyLoading}" decoding="{settings.media.imageDecoding}">
+    </picture>
+
+
+ 
+
+</html>
+
+
+
+<f:comment><html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       data-namespace-typo3-fluid="true">
       <ai:ratioBox file="{file}" mediaQueries="{mobile: '(max-width:767px)', default: ''}">
 <picture class="loader">
@@ -26,4 +63,4 @@
   </picture>
 </ai:ratioBox>
 
-</html>
+</html></f:comment>
