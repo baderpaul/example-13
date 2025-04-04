@@ -1,5 +1,5 @@
 TCEFORM.sys_file_reference.crop.config.cropVariants {
-    default {
+    desktop {
         title = Desktop
         selectedRatio = NaN
         allowedAspectRatios {
