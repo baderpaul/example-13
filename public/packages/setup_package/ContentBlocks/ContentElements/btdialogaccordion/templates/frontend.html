@@ -3,12 +3,12 @@
     <div class="accordion border border-dark rounded-top rounded-bottom">
         <f:for each="{data.accordiondetailsset}" as="accordiondetailset" iteration="i">
         <details class="accordion-item border-0" role="group" name="accordion-{data.uid}"  {f:if(condition:i.isFirst, then: ' open')} >
-          <summary class="accordion-button  fs-5 border-bottom border-dark {f:if(condition:i.isLast, then: ' border-bottom-0')} {f:if(condition:'{data.choose-icon} == two', then: ' accordion-button-plus-minus-dialog')} " >
-            <button class="accordion-header user-select-none d-block text-start w-100 bg-primary text-white border-0" role="button" aria-label="Weiter lesen - hier klicken">
+          <summary class="accordion-button  py-0 fs-5 border-bottom border-dark {f:if(condition:i.isLast, then: ' border-bottom-0')} {f:if(condition:'{data.choose-icon} == two', then: ' accordion-button-plus-minus-dialog')} " >
+            <button class="accordion-header user-select-none d-block text-start w-100 bg-primary text-white border-0 py-12" role="button" aria-label="Weiter lesen - hier klicken">
                 {accordiondetailset.heading -> f:format.nl2br()}
             </button>
           </summary>
-          <div class="accordion-body d-flex {f:if(condition:'{accordiondetailset.imageposition} == right', then: 'flex-row-reverse column-gap-20', else: 'flex-row column-gap-20')} ">
+          <div class="accordion-body d-flex  {f:if(condition:'{accordiondetailset.imageposition} == right', then: 'flex-row-reverse column-gap-20', else: 'flex-row column-gap-20')} ">
             <f:if condition="{accordiondetailset.image}">
                 <f:for each="{accordiondetailset.image}" as="image">
                     <picture>

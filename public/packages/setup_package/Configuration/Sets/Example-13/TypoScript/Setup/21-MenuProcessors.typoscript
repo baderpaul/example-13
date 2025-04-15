@@ -48,7 +48,7 @@ page.10.dataProcessing {
     12 {
         special = directory
         special.value = 1
-        expandAll = 1
+        expandAll = 0
         levels = 10
         includeSpacer = 0
         as = menuOffcanvas

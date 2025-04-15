@@ -8,25 +8,24 @@ title="{file.title}"
 loading="{settings.media.lazyLoading}" 
 decoding="{settings.media.imageDecoding}" />  </f:comment>
 
-    <picture class="image-embed-item">
+    <picture>
         <source
             srcset="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: '350', fileExtension:'webp', fileExtension:'webp', cropVariant: 'desktop')}"
-            media="(min-width: 1200px)">
+            media="(min-width: 1200px)" type="image/webp">
         <source
             srcset="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: '250', fileExtension:'webp', cropVariant: 'desktop')}, {f:uri.image(image: file, treatIdAsReference: 1, fileExtension:'webp', maxWidth: '250', cropVariant: 'desktop')} 2x"
-            media="(min-width: 992px)">
+            media="(min-width: 992px)" type="image/webp">
         <source
             srcset="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: '200', fileExtension:'webp', cropVariant: 'tablet')}, {f:uri.image(image: file, treatIdAsReference: 1, fileExtension:'webp', maxWidth: '200', cropVariant: 'tablet')} 2x"
-            media="(min-width: 768px)">
+            media="(min-width: 768px)" type="image/webp">
         <source
             srcset="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: '200', fileExtension:'webp', cropVariant: 'mobilelandscape')}, {f:uri.image(image: file, treatIdAsReference: 1, fileExtension:'webp', maxWidth: '200', cropVariant: 'mobilelandscape')} 2x"
-            media="(min-width: 577px)">   
+            media="(min-width: 577px)" type="image/webp">   
         <source
             srcset="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: '480', fileExtension:'webp', cropVariant: 'mobile')}, {f:uri.image(image: file, treatIdAsReference: 1, fileExtension:'webp', maxWidth: '480', cropVariant: 'smartphone')} 2x"
-            media="(max-width: 576px)">
-        <f:comment>Fallback</f:comment>
-        <img class="img-fluid"
-            src="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: settings.maxImgWidth, cropVariant: 'desktop', fileExtension:'webp')}"
-            alt="{file.alternative}" title="{file.title}" loading="{settings.media.lazyLoading}" decoding="{settings.media.imageDecoding}" class="img-fluid">
+            media="(max-width: 576px)" type="image/webp">
+        <img itemprop="thumbnail"
+            src="{f:uri.image(image: file, treatIdAsReference: 1, maxWidth: 500, cropVariant: 'desktop')}" width="{file.properties.width}" height="{file.properties.height}" 
+            alt="{file.alternative}" title="{file.title}" loading="{settings.media.lazyLoading}" decoding="async" class="image-embed-item  img-fluid">
     </picture>
 </html>

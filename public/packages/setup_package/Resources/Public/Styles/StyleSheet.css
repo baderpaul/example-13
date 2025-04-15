@@ -73,6 +73,9 @@ $font-sizes: (
    5: clamp(2.2rem, 4vw, 2.8rem),
    6: clamp(2.6rem, 4.5vw, 3.2rem),
  );*/
+p {
+  text-wrap: pretty; }
+
 @font-face {
   font-family: "bootstrap-icons";
   src: url("../Contrib/bootstrap-icons/font/fonts/bootstrap-icons.woff2") format("woff2"), url("../Contrib/bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff");

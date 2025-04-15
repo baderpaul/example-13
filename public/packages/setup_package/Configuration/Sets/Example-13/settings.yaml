@@ -13,6 +13,7 @@ styles:
     textmedia:
     image:
       lazyLoading: lazy
+      imageDecoding: async
       maxW: 1200
       maxWInText: 600
       linkWrap:

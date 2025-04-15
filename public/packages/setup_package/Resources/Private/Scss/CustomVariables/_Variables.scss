@@ -335,6 +335,11 @@ $carousel-control-next-icon-bg: url("data:image/svg+xml,<svg xmlns='http://www.w
 // Paragraphs/ Lead
 $paragraph-margin-bottom: 0;
 
+p {
+  text-wrap: pretty;
+}
+
+
 // position-map
 $position-values: (0: 0,
   50: 50%,
