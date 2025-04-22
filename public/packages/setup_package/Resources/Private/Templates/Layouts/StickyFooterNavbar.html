@@ -17,7 +17,7 @@ xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
       <f:render partial="Navigation/Mega" arguments="{_all}" />
     </div>
   </div>
-<div name="top" class="d-flex flex-column h-100">
+<div class="d-flex flex-column h-100">
   <header class="bg-white">
     <div class="container-fluid px-0">
       <div class="navbar w-100">
@@ -50,4 +50,4 @@ xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
     <f:render partial="Footer/Copyright" arguments="{_all}" />
   </footer>
 </div>
-</html>
+</html><f:render partial="Footer/ToTop.html" arguments="{_all}"/>

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3784e195dc59602050c26fb4e9cab667",
+    "content-hash": "29fad6049cd29eba45be998d384a9ef0",
     "packages": [
         {
             "name": "autodudes/ai-suite",
@@ -215,16 +215,16 @@
         },
         {
             "name": "brotkrueml/schema",
-            "version": "v3.11.1",
+            "version": "v3.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/brotkrueml/schema.git",
-                "reference": "9d778a99e83dc0a1552f1265245f2ee65e11b83c"
+                "reference": "60ee9a809f46e45b7225b02c8bf4fb6e96dd65e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/brotkrueml/schema/zipball/9d778a99e83dc0a1552f1265245f2ee65e11b83c",
-                "reference": "9d778a99e83dc0a1552f1265245f2ee65e11b83c",
+                "url": "https://api.github.com/repos/brotkrueml/schema/zipball/60ee9a809f46e45b7225b02c8bf4fb6e96dd65e4",
+                "reference": "60ee9a809f46e45b7225b02c8bf4fb6e96dd65e4",
                 "shasum": ""
             },
             "require": {
@@ -238,20 +238,20 @@
             },
             "require-dev": {
                 "brotkrueml/coding-standards": "~6.1.0",
-                "ergebnis/composer-normalize": "~2.45.0",
+                "ergebnis/composer-normalize": "~2.46.0",
                 "ext-sqlite3": "*",
                 "infection/infection": "^0.29.14",
                 "phpstan/extension-installer": "^1.4",
                 "phpstan/phpstan": "2.1.11",
                 "phpstan/phpstan-strict-rules": "2.0.4",
-                "phpunit/phpunit": "^10.5 || ^11.5",
+                "phpunit/phpunit": "^10.5 || ^11.5 || ^12.1",
                 "rector/rector": "2.0.11",
                 "symfony/yaml": "^5.4 || ^6.4 || ^7.2",
                 "symplify/phpstan-rules": "^14.5",
                 "tomasvotruba/cognitive-complexity": "^1.0",
                 "typo3/cms-adminpanel": "^11.5.19 || ^12.4 || ^13.4",
                 "typo3/cms-lowlevel": "^11.5.19 || ^12.4 || ^13.4",
-                "typo3/testing-framework": "^7.0 || ^8.2 || ^9.1"
+                "typo3/testing-framework": "^7.0 || ^8.2 || ^9.2"
             },
             "suggest": {
                 "brotkrueml/schema-auto": "Provides additional terms related to auto",
@@ -270,7 +270,7 @@
                     "extension-key": "schema"
                 },
                 "branch-alias": {
-                    "dev-main": "3.11.x-dev"
+                    "dev-main": "3.12.x-dev"
                 }
             },
             "autoload": {
@@ -303,7 +303,7 @@
                 "issues": "https://github.com/brotkrueml/schema/issues",
                 "source": "https://github.com/brotkrueml/schema"
             },
-            "time": "2025-04-10T17:22:33+00:00"
+            "time": "2025-04-14T16:23:12+00:00"
         },
         {
             "name": "christian-riesen/base32",
@@ -7942,16 +7942,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "cbfa140ebb79a8b9a40e29ee6280a20cffe03cc7"
+                "reference": "009181708b666c91b65652bbb4c4bbb69d9dfd3e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/cbfa140ebb79a8b9a40e29ee6280a20cffe03cc7",
-                "reference": "cbfa140ebb79a8b9a40e29ee6280a20cffe03cc7",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/009181708b666c91b65652bbb4c4bbb69d9dfd3e",
+                "reference": "009181708b666c91b65652bbb4c4bbb69d9dfd3e",
                 "shasum": ""
             },
             "require": {
@@ -7976,6 +7976,11 @@
                 "bin/fluid"
             ],
             "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-main": "4.x-dev"
+                }
+            },
             "autoload": {
                 "psr-4": {
                     "TYPO3Fluid\\Fluid\\": "src/"
@@ -7992,7 +7997,7 @@
                 "issues": "https://github.com/TYPO3/Fluid/issues",
                 "source": "https://github.com/TYPO3/Fluid"
             },
-            "time": "2025-04-09T16:14:37+00:00"
+            "time": "2025-04-17T15:34:54+00:00"
         },
         {
             "name": "webmozart/assert",

@@ -22,12 +22,12 @@
 		}
 	],
 	"require": {
-		"autodudes/ai-suite": "^13.0",
+		"autodudes/ai-suite": "^13",
 		"b13/container": "^3.1",
 		"brotkrueml/schema": "^3.7",
 		"friendsoftypo3/content-blocks": "^1.0",
 		"georgringer/news": "^12.3",
-		"helhum/typo3-console": "^8.2.1",
+		"helhum/typo3-console": "^8.2",
 		"ichhabrecht/content-defender": "^3.5",
 		"limesoda-com/ls-csp-widget": "^1.0",
 		"sitegeist/editor-widgets": "^2.1",

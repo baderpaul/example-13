@@ -1,4 +1,4 @@
-if ('serviceWorker' in navigator) {
+/*if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js') // Pfad zu deiner Service Worker Datei
       .then(registration => {
@@ -8,9 +8,9 @@ if ('serviceWorker' in navigator) {
         console.log('ServiceWorker registration failed: ', error);
       });
   });
-}
+}*/
 
-document.addEventListener("DOMContentLoaded", function(){
+document.addEventListener("DOMContentLoaded", () => {
      /*
      * activate menu
      
@@ -27,6 +27,31 @@ document.addEventListener("DOMContentLoaded", function(){
     loop: true,
     autoplayVideos: true
   });
+
+  /**
+   * Scroll to Top
+   */
+  
+   const scrollToTopBtn = document.getElementById("backtotop");
+   const scrollThreshold = 150;
+   const checkScrollPosition = () => {
+       const scrollY = window.scrollY || document.documentElement.scrollTop;
+       if (scrollY > scrollThreshold) {
+           scrollToTopBtn.classList.add("show");
+       } else {
+           scrollToTopBtn.classList.remove("show");
+       }
+   };
+   const scrollToTop = (event) => {
+       if (event) event.preventDefault();
+       window.scrollTo({
+           top: 10,             
+           behavior: "smooth"
+       });
+   };
+   window.addEventListener("scroll", checkScrollPosition);
+   scrollToTopBtn.addEventListener("click", scrollToTop);
+   checkScrollPosition();
 
     /*
      * email spam protection

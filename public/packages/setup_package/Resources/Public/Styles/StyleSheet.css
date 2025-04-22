@@ -20698,6 +20698,26 @@ input:-webkit-autofill:focus,
 input:-webkit-autofill:active {
   -webkit-box-shadow: 0 0 0 60px var(--bs-body-bg) inset !important; }
 
+.scroll-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  cursor: pointer;
+  font-size: clamp(1.125rem, calc(0.8906rem + 0.7813vw), 1.375rem);
+  line-height: 1.2 !important;
+  /*transform: translateY(100px);*/
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease-in-out, visibility 0.4s ease-in-out;
+  z-index: 1045; }
+
+#backtotop.show {
+  display: inline-block;
+  /*transform: translateY(0);*/
+  opacity: 1;
+  visibility: visible; }
+
 .img-filter {
   filter: brightness(60%); }
 
