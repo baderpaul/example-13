@@ -56,7 +56,7 @@ $GLOBALS['TYPO3_CONF_VARS']['BE']['stylesheets']['setup_package']  = "EXT:$packa
         module.tx_form {
         settings {
             yamlConfigurations {
-                100 = EXT:setup_package/Configuration/Sets/Example-13/RTE/FormDefinition/DefaultFormConfiguration.yaml
+                100 = EXT:setup_package/Configuration/Sets/Example-13/Forms/FormDefinition/DefaultFormConfiguration.yaml
                 }
             }
         }

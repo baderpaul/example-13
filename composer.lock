@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "29fad6049cd29eba45be998d384a9ef0",
+    "content-hash": "313875a61ca1d69d43edcfd38bc1ab68",
     "packages": [
         {
             "name": "autodudes/ai-suite",
@@ -99,16 +99,16 @@
         },
         {
             "name": "b13/container",
-            "version": "3.1.6",
+            "version": "3.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/b13/container.git",
-                "reference": "d059dc39f29980f6ce93380cd3cdfc30fee454fb"
+                "reference": "3fe08c7e0d537d585cbf87c1b462deae70391e70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/b13/container/zipball/d059dc39f29980f6ce93380cd3cdfc30fee454fb",
-                "reference": "d059dc39f29980f6ce93380cd3cdfc30fee454fb",
+                "url": "https://api.github.com/repos/b13/container/zipball/3fe08c7e0d537d585cbf87c1b462deae70391e70",
+                "reference": "3fe08c7e0d537d585cbf87c1b462deae70391e70",
                 "shasum": ""
             },
             "require": {
@@ -155,9 +155,9 @@
             "homepage": "https://b13.com",
             "support": {
                 "issues": "https://github.com/b13/container/issues",
-                "source": "https://github.com/b13/container/tree/3.1.6"
+                "source": "https://github.com/b13/container/tree/3.1.7"
             },
-            "time": "2025-03-31T07:58:15+00:00"
+            "time": "2025-04-22T06:08:19+00:00"
         },
         {
             "name": "bacon/bacon-qr-code",
@@ -7942,16 +7942,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "4.1.1",
+            "version": "4.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "009181708b666c91b65652bbb4c4bbb69d9dfd3e"
+                "reference": "0b9f07e63858c526333a1f5f518c6ef3b6027645"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/009181708b666c91b65652bbb4c4bbb69d9dfd3e",
-                "reference": "009181708b666c91b65652bbb4c4bbb69d9dfd3e",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/0b9f07e63858c526333a1f5f518c6ef3b6027645",
+                "reference": "0b9f07e63858c526333a1f5f518c6ef3b6027645",
                 "shasum": ""
             },
             "require": {
@@ -7997,7 +7997,7 @@
                 "issues": "https://github.com/TYPO3/Fluid/issues",
                 "source": "https://github.com/TYPO3/Fluid"
             },
-            "time": "2025-04-17T15:34:54+00:00"
+            "time": "2025-04-22T08:28:25+00:00"
         },
         {
             "name": "webmozart/assert",

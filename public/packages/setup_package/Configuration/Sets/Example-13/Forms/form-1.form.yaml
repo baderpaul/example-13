@@ -67,16 +67,16 @@ renderables:
               validationErrorMessages:
                 -
                   code: 1221560910
-                  message: 'Bitte teilen Sie uns den Betreff Ihrer Nachricht mit.'
+                  message: 'Bitte teilen Sie uns den Grund Ihrer Nachricht mit.'
                 -
                   code: 1221560718
-                  message: 'Bitte teilen Sie uns den Betreff Ihrer Nachricht mit.'
+                  message: 'Bitte teilen Sie uns den Grund Ihrer Nachricht mit.'
                 -
                   code: 1347992400
-                  message: 'Bitte teilen Sie uns den Betreff Ihrer Nachricht mit.'
+                  message: 'Bitte teilen Sie uns den Grund Ihrer Nachricht mit.'
                 -
                   code: 1347992453
-                  message: 'Bitte teilen Sie uns den Betreff Ihrer Nachricht mit.'
+                  message: 'Bitte teilen Sie uns den Grund Ihrer Nachricht mit.'
             validators:
               -
                 identifier: NotEmpty

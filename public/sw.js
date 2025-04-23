@@ -1,4 +1,4 @@
-/** First Test */
+/** First Test 
 
 const CACHE_NAME = 'my-pwa-cache-v1';
 const urlsToCache = [
@@ -32,4 +32,4 @@ self.addEventListener('fetch', event => {
         return fetch(event.request);
       })
   );
-});
+});*/
