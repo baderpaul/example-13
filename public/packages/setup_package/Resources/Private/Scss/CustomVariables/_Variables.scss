@@ -404,17 +404,19 @@ $accordion-button-active-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3
 // Pagination
 $pagination-color: $primary;
 $pagination-active-bg: $primary;
+$pagination-active-color: $white;
 $pagination-active-border-color: $primary;
 $pagination-focus-color: $primary;
 $pagination-focus-box-shadow: 0 0 0 0;
 
 // focus-ring-variables
-$focus-ring-width: 1rem;
+$focus-ring-width: 0;
 
 // Forms
 $form-check-min-height: 1.6;
 $input-border-color: $gray-900;
 $input-focus-border-color: $primary;
+
 
 // Progress
 $progress-font-size: 0.75rem;  

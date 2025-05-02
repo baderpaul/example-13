@@ -49,13 +49,17 @@ url("../Contrib/bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff")
 .bi-search::before { 
   content: "\f52a"; 
 }
-
+/*Search Close*/
+.bi-x-circle::before { 
+  content: "\F623"; 
+}
+/*
 @media (min-width: 992px) {
   .bi-search::before { 
     color: $white;
   }
  }
-
+*/
 /*ToTop*/
 .bi-chevron-up::before { content: "\f286"; }
 

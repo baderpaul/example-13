@@ -23,7 +23,7 @@
 	],
 	"require": {
 		"autodudes/ai-suite": "^13",
-		"b13/container": "3.1.7",
+		"b13/container": "^3.1",
 		"brotkrueml/schema": "^3.7",
 		"friendsoftypo3/content-blocks": "^1.0",
 		"georgringer/news": "^12.3",

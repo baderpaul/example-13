@@ -89,6 +89,56 @@ document.addEventListener("DOMContentLoaded", () => {
       }); 
     }
        */
+/**
+ * Search Overlay */
+  // Elemente anhand ihrer IDs auswählen
+  const closeBtn = document.getElementById('close-btn');
+  const searchOverlay = document.getElementById('search-overlay');
+  const searchBtn = document.getElementById('search-btn');
+
+  // Prüfen, ob alle Elemente gefunden wurden, um Fehler zu vermeiden
+  if (closeBtn && searchOverlay && searchBtn) {
+
+    // --- Event Listener für den Schließen-Button ---
+    closeBtn.addEventListener('click', function() {
+      // Einfache Ausblendung (keine Animation wie fadeOut)
+      // searchOverlay.style.display = 'none';
+
+      // Alternative mit CSS-Klasse für Fade-Out (benötigt entsprechendes CSS)
+      searchOverlay.classList.remove('visible'); // Angenommen, 'visible' steuert Sichtbarkeit/Opacity
+
+      // Such-Button wieder anzeigen
+      searchBtn.style.display = ''; // Setzt auf den Standard-Display-Wert zurück (z.B. 'block', 'inline')
+      // Oder mit CSS-Klasse
+      // searchBtn.classList.remove('hidden');
+    });
+
+    // --- Event Listener für den Suchen-Button ---
+    searchBtn.addEventListener('click', function() {
+      // Den Suchen-Button selbst ausblenden
+      searchBtn.style.display = 'none';
+      // Oder mit CSS-Klasse
+      // searchBtn.classList.add('hidden');
+
+      // Einfache Einblendung (keine Animation wie fadeIn)
+      // searchOverlay.style.display = 'block'; // Oder 'flex', 'grid', etc., je nach Layout
+
+      // Alternative mit CSS-Klasse für Fade-In (benötigt entsprechendes CSS)
+      searchOverlay.classList.add('visible'); // Angenommen, 'visible' steuert Sichtbarkeit/Opacity
+
+      // Optional: Fokus auf das Such-Input-Feld im Overlay setzen
+      const searchInput = searchOverlay.querySelector('input[type="search"], input[type="text"]');
+      if (searchInput) {
+        // Kurze Verzögerung kann nötig sein, damit das Feld sichtbar ist bevor der Fokus gesetzt wird
+        setTimeout(() => searchInput.focus(), 50);
+      }
+    });
+
+  } else {
+    // Warnung ausgeben, wenn ein Element nicht gefunden wurde
+    console.warn('Ein oder mehrere Elemente für die Suchfunktion wurden nicht gefunden (IDs: close-btn, search-overlay, search-btn)');
+  }
+
 }); 
 
 // Accordion Summary - Details
