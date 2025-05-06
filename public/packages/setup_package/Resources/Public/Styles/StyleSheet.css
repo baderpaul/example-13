@@ -3901,20 +3901,20 @@ textarea.form-control-lg {
       .card-group > .card:not(:last-child) {
         border-top-right-radius: 0;
         border-bottom-right-radius: 0; }
-        .card-group > .card:not(:last-child) .card-img-top,
-        .card-group > .card:not(:last-child) .card-header {
+        .card-group > .card:not(:last-child) > .card-img-top,
+        .card-group > .card:not(:last-child) > .card-header {
           border-top-right-radius: 0; }
-        .card-group > .card:not(:last-child) .card-img-bottom,
-        .card-group > .card:not(:last-child) .card-footer {
+        .card-group > .card:not(:last-child) > .card-img-bottom,
+        .card-group > .card:not(:last-child) > .card-footer {
           border-bottom-right-radius: 0; }
       .card-group > .card:not(:first-child) {
         border-top-left-radius: 0;
         border-bottom-left-radius: 0; }
-        .card-group > .card:not(:first-child) .card-img-top,
-        .card-group > .card:not(:first-child) .card-header {
+        .card-group > .card:not(:first-child) > .card-img-top,
+        .card-group > .card:not(:first-child) > .card-header {
           border-top-left-radius: 0; }
-        .card-group > .card:not(:first-child) .card-img-bottom,
-        .card-group > .card:not(:first-child) .card-footer {
+        .card-group > .card:not(:first-child) > .card-img-bottom,
+        .card-group > .card:not(:first-child) > .card-footer {
           border-bottom-left-radius: 0; } }
 
 .accordion {
@@ -5189,6 +5189,9 @@ textarea.form-control-lg {
   .visually-hidden:not(caption),
   .visually-hidden-focusable:not(:focus):not(:focus-within):not(caption) {
     position: absolute !important; }
+  .visually-hidden *,
+  .visually-hidden-focusable:not(:focus):not(:focus-within) * {
+    overflow: hidden !important; }
 
 .stretched-link::after, .tx-kesearch-pi1 a::after {
   position: absolute;
@@ -21070,15 +21073,10 @@ summary .accordion-button {
   .tx-kesearch-pi1 a:hover {
     text-decoration: none !important; }
 
-/***
+/**
  * Search Overlay
  */
-#search-btn {
-  position: fixed;
-  top: 1em;
-  left: 1em; }
-
-#search-btn:hover {
+.search-close-btn:hover {
   cursor: pointer; }
 
 #search-overlay {
@@ -21087,60 +21085,12 @@ summary .accordion-button {
 #search-overlay.visible {
   display: block; }
 
-.block {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.8); }
-
 .block:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
   margin-right: 0; }
-
-.centered {
-  display: inline-block;
-  vertical-align: middle;
-  width: 75%;
-  padding: 10px 15px;
-  color: #fff;
-  border: none;
-  background: transparent; }
-
-#search-button {
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 4.7em;
-  width: 100px;
-  font-size: 14px;
-  color: #fff;
-  text-align: center;
-  line-height: 42px;
-  border-width: 0;
-  -webkit-border-radius: 0 2px 2px 0;
-  -moz-border-radius: 0 2px 2px 0;
-  border-radius: 0 2px 2px 0;
-  cursor: pointer; }
-
-#search-box {
-  position: relative;
-  width: 100%;
-  margin: 0; }
-
-#close-btn {
-  position: fixed;
-  top: 1em;
-  left: 1em; }
-
-#close-btn:hover {
-  cursor: pointer; }
 
 .glass {
   backdrop-filter: blur(10px);

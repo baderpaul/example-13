@@ -5,6 +5,8 @@ config {
 
     doctype = html5
     htmlTag.attributes.class = h-100
+    renderCharset = utf-8
+    metaCharset = utf-8
     removeDefaultCss = 1
     inlineStyle2TempFile = 0
     moveJsFromHeaderToFooter = 0
@@ -29,6 +31,9 @@ config {
     cache_period = 7776000
 
     headerComment = {$td.configHeaderComment}
+    index_enable = 1
+    index_externals = 1
+    index_metatags = 1
 
     // Errorhandling
     contentObjectExceptionHandler = 0

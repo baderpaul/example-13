@@ -28,11 +28,11 @@ plugin.tx_kesearch_pi3 {
 
 lib.searchbox = TEXT
 lib.searchbox.value (
-    <i id="search-btn" class="text-primary sm-icon-medium bi bi-search"></i>
-    <div id="search-overlay" class="block z-1">
-  <div class="centered">
-    <div id='search-box'>
-      <i id="close-btn" class="text-primary sm-icon-medium bi bi-x-circle"></i>
+    <i id="search-btn" class="search-close-btn position-absolute top-20px start-20px text-primary sm-icon-medium bi bi-search z-3"></i>
+    <div id="search-overlay" class="block position-fixed start-0 top-0 bottom-0 end-0 overflow-auto text-center z-3 bg-black bg-opacity-75">
+     <i id="close-btn" class="search-close-btn position-absolute top-20px start-20px text-primary sm-icon-medium bi bi-x-circle  z-3"></i>
+  <div class="d-inline-block align-middle w-75 py-10 px-15 bg-transparent border-0">
+    <div id="search-box">
    <form method="get" aria-label="Suche" id="form_kesearch_searchfield" name="form_kesearch_searchfield" action="/suchergebnisse/" class="border-2 rounded-3 bg-white shadow-sm" role="search">
      <div class="input-group">
      <input type="text" class="form-control form-control-lg" id="ke_search_searchfield_sword" name="tx_kesearch_pi1[sword]" aria-labelledby="ke_search_searchfield_submit" placeholder="Ihr Suchbegriff" title="Sucheingabefeld"/>
