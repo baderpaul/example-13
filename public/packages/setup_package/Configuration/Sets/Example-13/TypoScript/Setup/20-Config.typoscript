@@ -28,7 +28,7 @@ config {
     spamProtectEmailAddresses_lastDotSubst = (at)
 
     sendCacheHeaders = 1
-    cache_period = 7776000
+    cache_period = 31536000
 
     headerComment = {$td.configHeaderComment}
     index_enable = 1
