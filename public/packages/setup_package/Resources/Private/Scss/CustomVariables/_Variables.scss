@@ -53,52 +53,6 @@ $grays: ("100": $gray-100,
 // scss-docs-end gray-colors-map test
 // fusv-enable
 
-// scss-docs-start color-variables
-$white: #ffffff;
-$blue: #0d6efd;
-$coal: #000000;
-$red: #dc3545;
-$orange: #fd7e14; 
-$cyan:#0dcaf0 ;
-// scss-docs-end color-variables
-
-// scss-docs-start colors-map
-$colors: ("blue": $blue,
-  "white": $white,
-  "gray": $gray-900,
-  "coal": $coal,
-  "red": $red,
-  "orange":$orange,
-  "cyan": $cyan,
-);
-// scss-docs-end colors-map
-
-// scss-docs-start theme-color-variables
-$primary: $blue;
-$secondary: $gray-900;
-$light: $gray-300;
-$dark: $gray-900 !default;
-$coal: $coal;
-$white: $white;
-$info: $cyan !default;
-$danger: $red !default;
-// scss-docs-end theme-color-variables
-
-// scss-docs-start theme-colors-map
-$theme-colors: ("primary": $primary,
-  "secondary": $secondary,
-  "light": $light,
-  "dark": $dark,
-  "coal": $coal,
-  "white": $white,
-  "info": $info,
-  "danger": $danger,
-);
-// scss-docs-end theme-colors-map
-
-// Body
-$body-bg: $white;
-$body-color: $coal;
 
 // Spacing
 //
@@ -220,7 +174,7 @@ $lead-font-size: clamp(0.875rem, calc(0.5234rem + 1.1719vw), 1.25rem);
 $lead-font-weight: 400;
 
 //$h1-font-size: $font-size-base * 2.5;
-$h1-font-size: clamp(1.5rem, calc(0.9141rem + 1.9531vw), 2.125rem);
+$h1-font-size: clamp(1.5rem, calc(0.5rem + 3.3333333333333335vw), 3rem);
 $h2-font-size: clamp(1.25rem, calc(-0.07rem + 3.41vw), 1.875rem);
 $h3-font-size: clamp(1.125rem, calc(1.0156rem + 0.7813vw), 1.5rem);
 $h4-font-size: clamp(1.125rem, calc(1.0078rem + 0.3906vw), 1.25rem);

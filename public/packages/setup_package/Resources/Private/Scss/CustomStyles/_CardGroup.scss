@@ -75,3 +75,7 @@
   .filter:hover {
     cursor: pointer;
   }
+
+  .card-title {
+    font-size: clamp(1rem, calc(0.883rem + 0.391vw), 1.25rem);
+  }

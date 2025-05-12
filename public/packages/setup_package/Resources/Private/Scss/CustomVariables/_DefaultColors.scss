@@ -1,0 +1,49 @@
+
+$gray-300: #dee2e6;
+$gray-900: #444444;
+// scss-docs-start color-variables
+$white: #ffffff;
+$blue: #0d6efd;
+$coal: #000000;
+$red: #dc3545;
+$orange: #fd7e14; 
+$cyan:#0dcaf0 ;
+// scss-docs-end color-variables
+
+// scss-docs-start colors-map
+$colors: ("blue": $blue,
+  "white": $white,
+  "gray": $gray-900,
+  "coal": $coal,
+  "red": $red,
+  "orange":$orange,
+  "cyan": $cyan,
+);
+// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary: $blue;
+$secondary: $gray-900;
+$light: $gray-300;
+$dark: $gray-900 !default;
+$coal: $coal;
+$white: $white;
+$info: $cyan !default;
+$danger: $red !default;
+// scss-docs-end theme-color-variables
+
+// scss-docs-start theme-colors-map
+$theme-colors: ("primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+  "dark": $dark,
+  "coal": $coal,
+  "white": $white,
+  "info": $info,
+  "danger": $danger,
+);
+// scss-docs-end theme-colors-map
+
+// Body
+$body-bg: $white;
+$body-color: $coal;
