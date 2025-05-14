@@ -1,6 +1,11 @@
 page.meta {
     robots = index,follow
-    viewport = width=device-width, initial-scale=1  
+    viewport = width=device-width, initial-scale=1 
+    apple-mobile-web-app-capable = no 
+    X-UA-Compatible = IE=edge
+    X-UA-Compatible {
+            attribute = http-equiv
+        }
     description.data = page:description
     description.ifEmpty.data = levelfield :-1, description, slide
     description.crop = 120|
