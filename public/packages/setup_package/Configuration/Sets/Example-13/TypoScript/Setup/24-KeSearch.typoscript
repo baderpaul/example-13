@@ -36,7 +36,7 @@ lib.searchbox.value (
    <form method="get" aria-label="Suche" id="form_kesearch_searchfield" name="form_kesearch_searchfield" action="/suchergebnisse/" class="border-2 rounded-3 bg-white shadow-sm" role="search">
      <div class="input-group">
      <input type="text" class="form-control form-control-lg" id="ke_search_searchfield_sword" name="tx_kesearch_pi1[sword]" aria-labelledby="ke_search_searchfield_submit" placeholder="Ihr Suchbegriff" title="Sucheingabefeld"/>
-     <button type="submit" id="ke_search_searchfield_submit" class="btn btn-primary btn-lg" type="button" aria-label="Suche starten" />Suche</button>
+     <button type="submit" id="ke_search_searchfield_submit" class="btn btn-primary btn-lg" aria-label="Suche starten">Suche</button>
    </div>
    </form>
        </div>

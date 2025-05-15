@@ -24,8 +24,8 @@
         <div title="Video anhalten" role="button" aria-pressed="false" class="video-overlay position-absolute z-1 w-100 h-100"></div>
       </f:if>         
       <div class="d-flex flex-column px-20 pt-20 pb-15 position-absolute z-2 {f:if(condition: '{data.teaserposition}', then: '{data.teaserposition}')} text-white text-bg-white bg-opacity-10 w-100 w-md-60 rounded-3 shadow-sm glass">
-          <h1 class=" text-white text-glass" >{data.teaserheadline -> f:format.htmlspecialchars()}</span></h1>
-          <p class="lead text-glass position-relative d-none d-md-block">{data.teasertext -> f:format.stripTags(allowedTags: "<span><button><a><strong><i>")}</span></p>
+          <h1 class=" text-white text-glass" >{data.teaserheadline -> f:format.htmlspecialchars()}</h1>
+          <p class="lead text-glass position-relative d-none d-md-block">{data.teasertext -> f:format.stripTags(allowedTags: "<span><button><a><strong><i>")}</p>
 
             <f:if condition="{data.links}">
             <f:for each="{data.links}" as="linkitem">
