@@ -20440,6 +20440,9 @@ textarea.form-control-lg {
   .toggle-button.close + .icon-bar {
     margin-top: 2px; }
 
+.toggle-button.close {
+  margin-right: 15px; }
+
 .navbar-toggler .toggle-button {
   padding: 0; }
   .navbar-toggler .toggle-button .top-bar {
@@ -20513,6 +20516,9 @@ textarea.form-control-lg {
   .navbar-toggler .toggle-button .icon-bar + .icon-bar,
   .toggle-button.close + .icon-bar {
     margin-top: 2px; }
+
+.toggle-button.close {
+  margin-right: 15px; }
 
 .navbar-toggler .toggle-button {
   padding: 0; }
