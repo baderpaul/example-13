@@ -31,7 +31,9 @@
 		"ichhabrecht/content-defender": "^3.5",
 		"limesoda-com/ls-csp-widget": "^1.0",
 		"sitegeist/editor-widgets": "^2.1",
+		"ssch/typo3-encore": "^6.0",
 		"stefanfroemken/mysql-widget": "^1.0",
+		"symfony/webpack-encore-bundle": "^2.2",
 		"t3example/setup-package": "^1.0",
 		"tpwd/ke_search": "^6.0",
 		"typo3/cms-backend": "^13.4",
@@ -50,6 +52,7 @@
 		"typo3/cms-impexp": "^13.4",
 		"typo3/cms-info": "^13.4",
 		"typo3/cms-install": "^13.4",
+		"typo3/cms-linkvalidator": "^13.4",
 		"typo3/cms-lowlevel": "^13.4",
 		"typo3/cms-reactions": "^13.4",
 		"typo3/cms-redirects": "^13.4",
@@ -62,7 +65,8 @@
 		"typo3/cms-t3editor": "^13.4",
 		"typo3/cms-tstemplate": "^13.4",
 		"typo3/cms-viewpage": "^13.4",
-		"typo3/cms-webhooks": "^13.4"
+		"typo3/cms-webhooks": "^13.4",
+		"xima/xima-typo3-content-audit": "^1.0"
 	},
 	"autoload": {
 		"psr-4": {
