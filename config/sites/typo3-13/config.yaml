@@ -6,8 +6,9 @@ baseVariants:
 dependencies:
   - t3example/setup-package
   - typo3/fluid-styled-content
-  - georgringer/news
   - typo3/seo-sitemap
+  - georgringer/news
+  - georgringer/news-sitemap
   - typo3/form
   - t3example/setupnews
 errorHandling:
@@ -40,12 +41,22 @@ languages:
     fallbacks: ''
 rootPageId: 1
 routeEnhancers:
+  Sitemap:
+    type: Simple
+    routePath: 'sitemap/{sitemap}'
+    aspects:
+      sitemap:
+        type: StaticValueMapper
+        map:
+          pages: pages
+          news: news
   PageTypeSuffix:
     type: PageType
     default: /
     index: ''
     suffix: /
     map:
+      '/': 0
       sitemap.xml: 1533906435
   NewsList:
     type: Extbase
@@ -61,7 +72,7 @@ routeEnhancers:
         routePath: '/page/{page}'
         _controller: 'News::list'
         _arguments:
-          page: currentPage       
+          page: currentPage
       -
         routePath: '/{news-title}'
         _controller: 'News::detail'
@@ -93,5 +104,5 @@ routes:
   -
     route: robots.txt
     type: staticText
-    content: "User-agent: *\nAllow: /\nSitemap: https://example-13.ddev.site/sitemap.xml\n"
+    content: "User-agent: *\r\nAllow: /\r\nSitemap: https://example-13.ddev.site/sitemap.xml\r\n"
 websiteTitle: 'Example T3-13'

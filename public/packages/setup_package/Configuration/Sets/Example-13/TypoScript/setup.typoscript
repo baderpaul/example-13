@@ -1,6 +1,3 @@
-# SEO Tracking
-@import './Setup/10-SEO-Tracking/*.typoscript'
-
 # Document
 @import './Setup/*.typoscript'
 

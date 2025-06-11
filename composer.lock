@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2eb3d282fee5124ce32d6f85f35867f6",
+    "content-hash": "baf074bed0dd710c02536d05f8305acf",
     "packages": [
         {
             "name": "autodudes/ai-suite",
@@ -2936,72 +2936,6 @@
                 "source": "https://github.com/ralouphie/getallheaders/tree/develop"
             },
             "time": "2019-03-08T08:55:37+00:00"
-        },
-        {
-            "name": "sitegeist/editor-widgets",
-            "version": "v2.1.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/sitegeist/editor-widgets.git",
-                "reference": "4fda6915d113803f105f3df249683472bfc0e302"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/sitegeist/editor-widgets/zipball/4fda6915d113803f105f3df249683472bfc0e302",
-                "reference": "4fda6915d113803f105f3df249683472bfc0e302",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=8.1",
-                "typo3/cms-dashboard": "^12.4 || ^13.0"
-            },
-            "suggest": {
-                "typo3/cms-indexed-search": "List of most searched words widget shows search words tracked by IndexedSearch",
-                "typo3/cms-linkvalidator": "Broken links widget shows links found by LinkValidator",
-                "typo3/cms-redirects": "Shows a list of latest redirects"
-            },
-            "type": "typo3-cms-extension",
-            "extra": {
-                "typo3/cms": {
-                    "extension-key": "editor_widgets"
-                }
-            },
-            "autoload": {
-                "psr-4": {
-                    "Sitegeist\\EditorWidgets\\": "Classes"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Ulrich Mathes",
-                    "email": "mathes@sitegeist.de",
-                    "homepage": "https://www.sitegeist.de",
-                    "role": "Developer"
-                },
-                {
-                    "name": "Benjamin Tammling",
-                    "email": "benjamin.tammling@sitegeist.de",
-                    "homepage": "https://www.sitegeist.de",
-                    "role": "Developer"
-                }
-            ],
-            "description": "Collection of dashboard widgets designed for TYPO3 editors",
-            "homepage": "https://github.com/sitegeist/editor-widgets",
-            "keywords": [
-                "dashboard",
-                "typo3",
-                "typo3-extension",
-                "widget"
-            ],
-            "support": {
-                "issues": "https://github.com/sitegeist/editor-widgets/issues",
-                "source": "https://github.com/sitegeist/editor-widgets/tree/v2.1.7"
-            },
-            "time": "2025-05-20T11:55:42+00:00"
         },
         {
             "name": "ssch/typo3-encore",

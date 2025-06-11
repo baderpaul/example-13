@@ -1,0 +1,16 @@
+plugin.tx_seo {
+    config {
+        xmlSitemap {
+            sitemaps {
+                pages {
+                    provider = TYPO3\CMS\Seo\XmlSitemap\PagesXmlSitemapDataProvider
+                    config {
+                        excludedDoktypes = 254, 255
+                        additionalWhere = AND (no_index = 0 OR no_follow = 0)
+                        rootPage = 1
+                    }
+                }
+            }
+        }
+    }
+}
