@@ -10,11 +10,6 @@ mutations:
     sources:
       - "'nonce-proxy'"
 
-  - mode: "set"
-    directive: "script-src-elem"
-    sources:
-      - "'nonce-proxy'" 
-
   - mode: "extend"
     directive: "img-src"
     sources:
@@ -29,6 +24,18 @@ mutations:
     directive: "style-src-elem"
     sources:
       - "'nonce-proxy'"
+      - "'unsafe-eval'"
+
+  - mode: "set"
+    directive: "script-src-elem"
+    sources:
+      - "'nonce-proxy'"
+
+  - mode: "extend"
+    directive: "style-src-elem"
+    sources:
+     - "https://example-13.ddev.site"
+     - "'unsafe-eval'"
 
   - mode: "extend"
     directive: "font-src"
@@ -39,6 +46,11 @@ mutations:
     directive: "font-src"
     sources:
       - http://example-13.ddev.site
+
+  - mode: "extend"
+    directive: "style-src-attr"
+    sources:
+      - "'nonce-proxy'"
 
   - mode: "reduce"
     directive: "style-src-attr"
