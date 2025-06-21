@@ -30,6 +30,7 @@
 		"helhum/typo3-console": "^8.2",
 		"ichhabrecht/content-defender": "^3.5",
 		"limesoda-com/ls-csp-widget": "^1.0",
+		"macopedia/typo3-interactive-tour": "^1.0",
 		"sitegeist/editor-widgets": "^2.1",
 		"ssch/typo3-encore": "^6.0",
 		"stefanfroemken/mysql-widget": "^1.0",

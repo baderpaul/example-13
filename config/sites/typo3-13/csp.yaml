@@ -20,22 +20,22 @@ mutations:
     sources:
       - "'unsafe-eval'"
 
-  - mode: "set"
+  - mode: "extend"
     directive: "style-src-elem"
     sources:
       - "'nonce-proxy'"
-      - "'unsafe-eval'"
-
-  - mode: "set"
-    directive: "script-src-elem"
-    sources:
-      - "'nonce-proxy'"
+      #- "'unsafe-eval'"
 
   - mode: "extend"
     directive: "style-src-elem"
     sources:
      - "https://example-13.ddev.site"
-     - "'unsafe-eval'"
+
+  - mode: "set"
+    directive: "script-src-elem"
+    sources:
+      - "'nonce-proxy'"
+     # - "'unsafe-eval'"
 
   - mode: "extend"
     directive: "font-src"

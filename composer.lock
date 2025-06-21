@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2eb3d282fee5124ce32d6f85f35867f6",
+    "content-hash": "d7fbcbf74d13ec2fac7f96ca8495fd0d",
     "packages": [
         {
             "name": "autodudes/ai-suite",
@@ -1058,16 +1058,16 @@
         },
         {
             "name": "friendsoftypo3/content-blocks",
-            "version": "1.3.5",
+            "version": "1.3.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/content-blocks.git",
-                "reference": "ccbe5e9df7f029281fa6bb699823cddb736d84a4"
+                "reference": "87c1edb2e9b59ea8846bdfa626ca5abb77e9184c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/ccbe5e9df7f029281fa6bb699823cddb736d84a4",
-                "reference": "ccbe5e9df7f029281fa6bb699823cddb736d84a4",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/87c1edb2e9b59ea8846bdfa626ca5abb77e9184c",
+                "reference": "87c1edb2e9b59ea8846bdfa626ca5abb77e9184c",
                 "shasum": ""
             },
             "require": {
@@ -1132,7 +1132,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2025-06-16T13:15:04+00:00"
+            "time": "2025-06-20T17:55:54+00:00"
         },
         {
             "name": "georgringer/news",
@@ -1966,6 +1966,77 @@
                 "source": "https://github.com/lolli42/FineDiff/tree/1.1.1"
             },
             "time": "2024-07-09T14:25:40+00:00"
+        },
+        {
+            "name": "macopedia/typo3-interactive-tour",
+            "version": "v1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/macopedia/typo3-interactive-tour.git",
+                "reference": "2a58183c16ba19f0be032bd3a0a9834bab31ea4b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/macopedia/typo3-interactive-tour/zipball/2a58183c16ba19f0be032bd3a0a9834bab31ea4b",
+                "reference": "2a58183c16ba19f0be032bd3a0a9834bab31ea4b",
+                "shasum": ""
+            },
+            "require": {
+                "symfony/http-foundation": "*",
+                "typo3/cms-lowlevel": "^13",
+                "typo3/cms-setup": "^13"
+            },
+            "conflict": {
+                "typo3/cms-core": "<13"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^3",
+                "roave/security-advisories": "dev-latest"
+            },
+            "type": "typo3-cms-extension",
+            "extra": {
+                "typo3/cms": {
+                    "extension-key": "typo3_interactive_tour"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Macopedia\\Typo3InteractiveTour\\": "Classes"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Marcin Sągol",
+                    "email": "m.sagol@macopedia.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Mateusz Gdula",
+                    "email": "m.gdula@macopedia.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "An interactive tour through the TYPO3 backend.",
+            "keywords": [
+                "backend",
+                "cms",
+                "guide",
+                "interactive",
+                "modules",
+                "tour",
+                "tutorial",
+                "typo3",
+                "walkthrough"
+            ],
+            "support": {
+                "issues": "https://github.com/macopedia/typo3-interactive-tour/issues",
+                "source": "https://github.com/macopedia/typo3-interactive-tour/tree/v1.0.2"
+            },
+            "time": "2025-06-17T09:57:27+00:00"
         },
         {
             "name": "masterminds/html5",
