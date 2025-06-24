@@ -1058,16 +1058,16 @@
         },
         {
             "name": "friendsoftypo3/content-blocks",
-            "version": "1.3.6",
+            "version": "1.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/content-blocks.git",
-                "reference": "87c1edb2e9b59ea8846bdfa626ca5abb77e9184c"
+                "reference": "121bcbbf31ca72303ff4be93572d1f4d91d91a22"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/87c1edb2e9b59ea8846bdfa626ca5abb77e9184c",
-                "reference": "87c1edb2e9b59ea8846bdfa626ca5abb77e9184c",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/121bcbbf31ca72303ff4be93572d1f4d91d91a22",
+                "reference": "121bcbbf31ca72303ff4be93572d1f4d91d91a22",
                 "shasum": ""
             },
             "require": {
@@ -1132,7 +1132,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2025-06-20T17:55:54+00:00"
+            "time": "2025-06-24T16:55:40+00:00"
         },
         {
             "name": "georgringer/news",
@@ -8727,16 +8727,16 @@
         },
         {
             "name": "typo3fluid/fluid",
-            "version": "4.2.0",
+            "version": "4.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/TYPO3/Fluid.git",
-                "reference": "f70cd55da0f5aefc411da3f201503e16df155a03"
+                "reference": "54bf43fcd4bac95fb858528f3e150565936494dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/f70cd55da0f5aefc411da3f201503e16df155a03",
-                "reference": "f70cd55da0f5aefc411da3f201503e16df155a03",
+                "url": "https://api.github.com/repos/TYPO3/Fluid/zipball/54bf43fcd4bac95fb858528f3e150565936494dd",
+                "reference": "54bf43fcd4bac95fb858528f3e150565936494dd",
                 "shasum": ""
             },
             "require": {
@@ -8747,9 +8747,9 @@
                 "ext-json": "*",
                 "ext-simplexml": "*",
                 "friendsofphp/php-cs-fixer": "^3.59.3",
-                "phpstan/phpstan": "^2.0.2",
-                "phpstan/phpstan-phpunit": "^2.0.1",
-                "phpunit/phpunit": "^11.4.3",
+                "phpstan/phpstan": "^2.1.17",
+                "phpstan/phpstan-phpunit": "^2.0.6",
+                "phpunit/phpunit": "^11.5.22 || ^12.2.1",
                 "psr/container": "^2.0",
                 "t3docs/fluid-documentation-generator": "^4.3"
             },
@@ -8782,7 +8782,7 @@
                 "issues": "https://github.com/TYPO3/Fluid/issues",
                 "source": "https://github.com/TYPO3/Fluid"
             },
-            "time": "2025-05-19T11:24:59+00:00"
+            "time": "2025-06-24T12:53:54+00:00"
         },
         {
             "name": "webmozart/assert",
