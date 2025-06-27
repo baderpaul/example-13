@@ -1058,16 +1058,16 @@
         },
         {
             "name": "friendsoftypo3/content-blocks",
-            "version": "1.3.7",
+            "version": "1.3.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/FriendsOfTYPO3/content-blocks.git",
-                "reference": "121bcbbf31ca72303ff4be93572d1f4d91d91a22"
+                "reference": "25ecf071b738d7f877ce37eaa7e620b6435f08c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/121bcbbf31ca72303ff4be93572d1f4d91d91a22",
-                "reference": "121bcbbf31ca72303ff4be93572d1f4d91d91a22",
+                "url": "https://api.github.com/repos/FriendsOfTYPO3/content-blocks/zipball/25ecf071b738d7f877ce37eaa7e620b6435f08c0",
+                "reference": "25ecf071b738d7f877ce37eaa7e620b6435f08c0",
                 "shasum": ""
             },
             "require": {
@@ -1132,7 +1132,7 @@
                 "issues": "https://forge.typo3.org",
                 "source": "https://github.com/typo3/typo3"
             },
-            "time": "2025-06-24T16:55:40+00:00"
+            "time": "2025-06-25T07:26:40+00:00"
         },
         {
             "name": "georgringer/news",
